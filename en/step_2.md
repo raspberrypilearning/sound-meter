@@ -13,6 +13,6 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 --- task ---
 
-Open the <code background-color="#dc143c">Variables</code> menu
+Open the <code style="background-color=#dc143c">Variables</code> menu
 
 --- /task ---
