@@ -13,8 +13,8 @@ steps:
   completion:
     - engaged
 - title: Sound the alarm!
-- title: Log it
-- title: Shhhh!
+- title: Change the sensitivity
+- title: Try another sensor
   completion:
     - internal
 - title: Quick quiz
