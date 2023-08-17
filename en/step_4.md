@@ -19,19 +19,27 @@ You can complete this task by using the A and B buttons on the micro:bit
 
 From the <code style="background-color: #D400D4">Input</code> menu, drag out an `on button A pressed` block and place it in the code editor.
 
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Cef96Ef0YiYx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 In the previous step you created two variables, `maximum` and `alarm`. You will need to create another.
 
 --- task ---
 
-In the <code style="background-color: #DC143C">Variables</code> menu, click on `make a variable` to create a variable called `level`.
+From the <code style="background-color: #DC143C">Variables</code> menu, click on `make a variable` to create a variable called `level`.
 
 --- /task --- 
 
 --- task ---
 
-Drag the `change level by 1` block and place it inside the `on button A pressed` block.
+Drag the `change ... by 1` block and place it inside the `on button A pressed` block. 
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_hiaDED72s9q0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+Change the variable shown on the block from `maxium` to `level` by clicking on the variable name.
+
+![Animation showing the drop down menu on the `change maximum by 1` variable block](images/change-variable.gif)
 
 Change the `1` to `-1`.
 
@@ -45,6 +53,8 @@ Place it below the `change level by -1` block.
 
 Change the `1` to `-50`
 
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_fz1FgF5aEi7k" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 This means every time you press the button A, it will decrease the sound level by 1 and reduce the sound sensitivity by 50 decibels.
@@ -57,6 +67,8 @@ From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an 
 
 Place it below the `change maximum by -50` block.
 
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_5kbWwj8aHeTj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 --- task ---
@@ -65,27 +77,31 @@ From the <code style="background-color: #00A4A6">Logic</code> menu, drag out the
 
 Place it inside the `true` space in the `if..true..then` block. 
 
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_JrAM55EWFeEj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 --- task ---
 
 From the <code style="background-color: #DC143C">Variables</code> menu, drag out the `level` block.
 
-Place it inside the `0` on the left hand side in the `0 < 0` comparison block.
+Place it inside the `0` on the left hand side of the `0 < 0` comparison block.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_2iFC25Dt3KRt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-Change the `0` to `1` on the right hand side in the `0 < 0` comparison block.
+Change the `0` to `1` on the right hand side of the `0 < 0` comparison block.
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the `set level to 0` block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the `set maximum to 0` block.
 
-Place it inside the `if.. then` block.
+Place it inside the `if.. then` block. Ensure you change the variable selected from `maximum` to `level`.
 
 --- /task ---
 
@@ -143,13 +159,29 @@ There will now be two `on button A pressed` block on the code editor panel.
 
 Click on the `A` on the duplicated `on button A pressed` block, a drop down menu will open.
 
-Change the `A` to `B`. There should now be an `on button A pressed` and `on button A pressed` blocks on the code editor panel.
+Change the `A` to `B`. There should now be `on button A pressed` and `on button B pressed` blocks on the code editor panel.
 
 --- /task ---
 
 --- task ---
 
+Change the `-1` to `1` on the `change level by -1` block inside the `on button B pressed` block.
 
+Change the `-50` to `50` on the `change maximum by -50` block inside the `on button B pressed` block.
+
+--- /task ---
+
+--- task ---
+
+Change the `1` to `5` inside the second part of the `if.. then` block on the `on button B pressed` block.
+
+--- /task ---
+
+--- task ---
+
+Change the `1` to `5` on the `set level to 1` block inside the `on button B pressed` block.
+
+Change the `250` to `50` on the `set maximum to 50` block inside the `on button B pressed` block.
 
 --- /task ---
 --- task ---
