@@ -207,9 +207,7 @@ You can use the touch logo on the micro:bit to do this.
 
 From the <code style="background-color: #d400d4">Input</code> menu, drag out an <code style="background-color: #d400d4">on logo</code> block.
 
-![The 'micro:bit V2' section of the input menu, with the 'on logo' block highlighted.](images/onlogo-block-location.png)
-
-<img src="images/onlogo-block-location.png" alt="The microbit v2 section of the Input menu, with an 'on logo' block highlighted" width="300"/>
+<img src="images/onlogo-block-location.png" alt="The microbit v2 section of the Input menu, with an 'on logo' block highlighted" width="200"/>
 
 From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm to false </code> block and place it inside the <code style="background-color: #d400d4">on logo</code> block.     
 
