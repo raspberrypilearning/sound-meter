@@ -103,11 +103,15 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag out
 
 Place it inside the `if.. then` block. Ensure you change the variable selected from `maximum` to `level`.
 
+div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Lvrdu09btA3i" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 --- task ---
 
 Change the `0` to `5` on the `set level to 0` block.
+
+div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_L8uHrDTJ14mH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -119,6 +123,8 @@ Place it below the `set level to 5` block.
 
 Change the `0` to `250` on the `set maximum to 0` block.
 
+div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Pm3REheUD1uo" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 --- task ---
@@ -127,21 +133,27 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the
 
 Place it below the `if.. then` block.
 
+div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_ACcH4j7hj5p1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 --- task ---
 
 From the <code style="background-color: #DC143C">Variables</code> menu drag out the `level` block.
 
-Place it inside the `0` in the `show number 0` block.
+Place it in the `0` in the `show number 0` block.
+
+div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_KDyMygJveb02" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-Also from the <code style="background-color: #1E90FF">Basic</code> menu, drag out the `pause ms 500`block.
+Also from the <code style="background-color: #1E90FF">Basic</code> menu, drag out the `pause ms 100`block.
 
-Place it below the `show number` block.
+Place it below the `show number` block. Change the `100` to `500`.
+
+div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_TE52mwevkU37" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -149,7 +161,9 @@ Now you have programmed the `on button A pressed` block, you will need to do the
 
 --- task ---
 
-Right-click on the entire `show number 0` block and click `Duplicate`.
+Right-click on the entire `on button A pressed` block and click `Duplicate`.
+
+
 
 There will now be two `on button A pressed` block on the code editor panel.
 
