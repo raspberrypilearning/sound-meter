@@ -163,7 +163,7 @@ Now you have programmed the `on button A pressed` block, you will need to do the
 
 Right-click on the entire `on button A pressed` block and click `Duplicate`.
 
-
+![Animation showing the right-click menu on the 'on button A pressed' block with 'Duplicate highlighted](images/onbuttonA-duplicate.gif)
 
 There will now be two `on button A pressed` block on the code editor panel.
 
@@ -173,7 +173,11 @@ There will now be two `on button A pressed` block on the code editor panel.
 
 Click on the `A` on the duplicated `on button A pressed` block, a drop down menu will open.
 
+![The drop down menu on button A to change the block to button B](images/button-menu.png)
+
 Change the `A` to `B`. There should now be `on button A pressed` and `on button B pressed` blocks on the code editor panel.
+
+div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_9Kagwi4L3Ppp" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -193,9 +197,11 @@ Change the `1` to `5` inside the second part of the `if.. then` block on the `on
 
 --- task ---
 
-Change the `1` to `5` on the `set level to 1` block inside the `on button B pressed` block.
+Change the `5` to `1` on the `set level to 5` block inside the `if level > 5` block.
 
-Change the `250` to `50` on the `set maximum to 50` block inside the `on button B pressed` block.
+Change the `250` to `50` on the `set maximum to 50` block inside the `if level > 5` block.
+
+Your 
 
 --- /task ---
 --- task ---
