@@ -17,7 +17,7 @@ You will need to make a Variable to set the sound level that will trigger the al
 
 Open the <code style="background-color: #dc143c">Variables</code> menu and click `Make a Variable`.
 
-<img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a variable' button highlighted" width="300"/>
+<img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a variable' button highlighted" width="350"/>
 
 --- /task ---
 
@@ -25,7 +25,7 @@ Open the <code style="background-color: #dc143c">Variables</code> menu and click
 
 Name your new variable `maximum`. 
 
-<img src="images/max-variable-name.png" alt="The 'New variable name' window, with the name 'maximum' written in the box" width="300"/>
+<img src="images/max-variable-name.png" alt="The 'New variable name' window, with the name 'maximum' written in the box" width="400"/>
 
 --- /task ---
 
@@ -33,7 +33,7 @@ Name your new variable `maximum`.
 
 From the <code style="background-color: #dc143c">Variables</code> menu, grab the <code style="background-color: #dc143c">set maximum</code> block. 
 
-<img src="images/set-max-start.png" alt="The Variables menu with the 'set maximum to 0' block highlighted" width="300"/>
+<img src="images/set-max-start.png" alt="The Variables menu with the 'set maximum to 0' block highlighted" width="350"/>
 
 Place the block inside the <code style="background-color: #1e90ff">on start</code> block, and change the `0` to `150`.
 
@@ -42,6 +42,16 @@ Place the block inside the <code style="background-color: #1e90ff">on start</cod
 --- /task ---
 
 `150` is a little over half the maximum sound level the micro:bit can sense, so that should be a good level to start with. 
+
+--- collapse ---
+
+---
+title: For microbit V1
+---
+
+This maximum should work for light levels too!
+
+--- /collapse ---
 
 ### Turn the alarm off
 
@@ -53,7 +63,7 @@ To do this you will use another variable that will be set to `false` when the al
 
 Create another new <code style="background-color: #dc143c">Variable</code> this time called `alarm`. 
 
-<img src="images/alarm-variable-name.png" alt="The 'New variable name' window, with the name 'maximum' written in the box" width="300"/>
+<img src="images/alarm-variable-name.png" alt="The 'New variable name' window, with the name 'maximum' written in the box" width="350"/>
 
 --- /task ---
 
@@ -71,7 +81,7 @@ You need to set this new variable to `false` instead of a number.
 
 Open the <code style="background-color: #00a4a6">Logic</code> menu. Grab a <code style="background-color: #00a4a6">false</code> block. 
 
-<img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section" width="200"/>
+<img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section" width="250"/>
 
 Place this block over the top of the `0`. 
 
@@ -87,7 +97,7 @@ The alarm should only sound **if** the current sound level is **larger** than th
 
 From the <code style="background-color: #00a4a6">Logic</code> menu grab an <code style="background-color: #00a4a6">if</code> block. 
 
-<img src="images/if-block-location.png" alt="The Logic menu, open with an 'if block' highlighted" width="300"/>
+<img src="images/if-block-location.png" alt="The Logic menu, open with an 'if block' highlighted" width="350"/>
 
 Place the block inside the <code style="background-color: #1e90ff">forever</code> underneath the <code style="background-color: #5c2d91">plot bar graph</code> block.
 
@@ -99,7 +109,7 @@ Place the block inside the <code style="background-color: #1e90ff">forever</code
 
 Open the <code style="background-color: #00a4a6">Logic</code> menu again and take an <code style="background-color: #00a4a6">and</code> block. 
 
-<img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the and block in the 'Boolean' section" width="200"/>
+<img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the and block in the 'Boolean' section" width="250"/>
 
 Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
 
@@ -133,6 +143,20 @@ On the other side, put a <code style="background-color: #dc143c">maximum</code> 
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_fLpDvkeLv0CU" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
+--- collapse ---
+
+---
+title: For microbit V1
+---
+
+On the **left hand side** (where the first `0` is) put a <code style="background-color: #d400d4">light level</code> block from the <code style="background-color: #d400d4">Input</code> menu.
+
+On the other side, put a <code style="background-color: #dc143c">maximum</code> block from the <code style="background-color: #dc143c">Variables</code> menu. 
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_2bqE7cTXjexP" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /collapse ---
+
 --- /task ---
 
 --- task ---
@@ -165,7 +189,7 @@ Now it is time to add your alarm sound!
 
 From the <code style="background-color: #e63022">Music</code> menu, take a <code style="background-color: #e63022">play</code> block. 
 
-<img src="images/and-block-location.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="200"/>
+<img src="images/and-block-location.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
 
 Place this inside of the <code style="background-color: #00a4a6">if</code> block that checks if the alarm should sound. 
 
@@ -201,17 +225,37 @@ When the alarm goes off, you will want to reset it.
 
 You can use the touch logo on the micro:bit to do this.
 
-![TODO: Add screenshot of logo here]()
+<img src="images/logo-location.png" alt="The microbit logo" width="200"/>
 
 --- task ---
 
 From the <code style="background-color: #d400d4">Input</code> menu, drag out an <code style="background-color: #d400d4">on logo</code> block.
 
-<img src="images/onlogo-block-location.png" alt="The microbit v2 section of the Input menu, with an 'on logo' block highlighted" width="200"/>
+<img src="images/onlogo-block-location.png" alt="The logo on the top of the microbit above the LEDs." width="200"/>
 
 From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm to false </code> block and place it inside the <code style="background-color: #d400d4">on logo</code> block.     
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_2eDAPFTsAVxh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- collapse ---
+
+---
+title: For microbit V1
+---
+
+There is no touch sensor in the logo on the micro:bit V1, so instead you can use both the `A` and `B` buttons.
+
+From the <code style="background-color: #d400d4">Input</code> menu, drag out an <code style="background-color: #d400d4">on button</code> block.
+
+<img src="images/on-button-location.png" alt="The microbit v2 section of the Input menu, with an 'on logo' block highlighted" width="350"/>
+
+Use the dropdown to change the button to <code style="background-color: #d400d4">A+B</code>.
+
+From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm to false </code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.     
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_L6pHzMi2F4m0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /collapse ---
 
 --- /task ---
 
