@@ -14,7 +14,6 @@ steps:
     - engaged
 - title: Sound the alarm!
 - title: Change the sensitivity
-- title: Try another sensor
   completion:
     - internal
 - title: Quick quiz
