@@ -187,6 +187,8 @@ Change the `-1` to `1` on the `change level by -1` block inside the `on button B
 
 Change the `-50` to `50` on the `change maximum by -50` block inside the `on button B pressed` block.
 
+![The `on button B pressed` block with the change level and change maximum variables shown.](images/onbuttonB-changes.png)
+
 --- /task ---
 
 --- task ---
@@ -201,7 +203,7 @@ Change the `5` to `1` on the `set level to 5` block inside the `if level > 5` bl
 
 Change the `250` to `50` on the `set maximum to 50` block inside the `if level > 5` block.
 
-Your 
+![The final blocks of code showing the changes made to `on button B pressed`.](images/onbuttonB-final.png)
 
 --- /task ---
 --- task ---

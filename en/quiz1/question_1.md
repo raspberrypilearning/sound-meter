@@ -1,10 +1,8 @@
 ## Reflection
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Answer the three questions below to reflect on what you've learned.
-
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+When you have answered each question, click on **Check my answer**.
 
 Have fun!
 
@@ -14,30 +12,31 @@ Have fun!
 legend: Question 1 of 3
 ---
 
+Which menu contains the blocks for input on the micro:bit e.g. 'on button A pressed' and 'on logo pressed'?
 
 --- choices ---
 
-- ( )
+- ( ) Basic
 
   --- feedback ---
+
+Not quite! The Basic menu contains blocks for the basic functionality of the micro:bit.
 
   --- /feedback ---
 
-- ( )
+- (x) Input
 
   --- feedback ---
+
+Awesome! You have answered correctly, the Input menu contains all the input and gesture blocks.
 
   --- /feedback ---
 
-- (x) 
+- ( ) Logic
 
   --- feedback ---
 
-  --- /feedback ---
-
-- ( ) 
-
-  --- feedback ---
+Not quite! The Logic menu contains blocks for conditional and boolean logic.
 
   --- /feedback ---
 
