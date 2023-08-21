@@ -16,10 +16,6 @@ Fantastic effort! You have created your micro:bit sound level meter. Here are so
 
 ![TODO: Add upgrade embed]()
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- <span style="color: #0faeb0">Healthy Sound Levels</span> are an important part of our wellbeing. Peaceful and soothing sounds such as the sounds of nature or the ocean can help calm us down. However, being around louder noises such as loud music for too long can be bad for our ears. If things get too loud, it is good to take breaks, move away or use ear protectors.
-</p>
-
 --- collapse ---
 
 ---

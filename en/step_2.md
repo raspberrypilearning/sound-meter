@@ -29,13 +29,19 @@ There is also a [downloadable version of the MakeCode editor](https://makecode.m
 
 --- /task ---
 
+### First micro:bit project?
+
+[[[makecode-tour]]]
+
+### Create your project
+
 Once the editor is open, you will need to create a New Project and give your project a name. 
 
 --- task ---
 
 Click on the **New Project** button.
 
-![The new project button inside of MakeCode.](images/new-project-button.png)
+<img src="images/new-project-button.png" alt="The new project button inside of MakeCode." width="250"/>
 
 --- /task ---
 
@@ -43,13 +49,11 @@ Click on the **New Project** button.
 
 Give your new project the name `sound level meter` and click **Create**.
 
-![The name 'sound level meter ' written in the New Project dialogue box.](images/soundlevel-meter.png)
+<img src="images/soundlevel-meter.png" alt="The name 'sound level meter ' written in the New Project dialogue box." width="350"/>
 
 **Tip:** Give your project a helpful name that relates to the activity you’re creating. This will make it easier to find if you create other projects on MakeCode.
 
 --- /task ---
-
-[[[makecode-tour]]]
 
 ### Plot a graph of the sound level
 
@@ -59,19 +63,19 @@ You can delete the 'forever' block now by dragging it to the menu panel.
 
 ![Animation showing the forever block being deleted](images/delete-forever.gif)
 
+You want the micro:bit to take a reading of the sound levels on regular intervals, there is another loop you can use to do this.
+
 --- task ---
 
-From the <code style="background-color: #00AA00">Loops</code> menu, drag out an 'every 500 ms' block and place it on the code editor panel
+From the <code style="background-color: #00AA00">Loops</code> menu, drag out an <code style="background-color: #00aa00">every 500 ms</code> block and place it on the code editor panel
 
-![The Loops menu, open with the 'every 500 ms' block highlighted](images/every-500ms.png)
+<img src="images/every-500ms.png" alt="The Loops menu, open with the 'every 500 ms' block highlighted" width="350"/>
 
 --- /task ---
 
-The microbit already has a built in sound level feature so you can use this.
-
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led</code> menu drag a 'plot bar graph of' block.
+From the <code style="background-color: #5C2D91">Led</code> menu drag a <code style="background-color: #5c2d91">plot bar graph of</code> block.
 
 ![The Led menu, open with the 'plot bar graph of' block highlighted](images/plot-bargraph.png)
 
@@ -86,6 +90,18 @@ Place it inside the ''every 500 ms' block.
 From the <code style="background-color: #D400D4">Input</code> menu, drag out a 'sound level' block and place it inside the first '0' on the 'plot bar graph of' block.
 
 ![Animation showing the sound level block being placed inside the first '0' on the 'plot bar graph of' block ](images/sound-level.gif)
+
+--- collapse ---
+
+---
+title: For microbit V1
+---
+
+There is not a sound sensor on the micro:bit V1, so instead you can use the <code style="background-color: #d400d4">light level</code> block and measure the light levels of your environment.
+
+![Animation showing the light level block being placed inside the first '0' on the 'plot bar graph of' block ](images/light-level.gif)
+
+--- /collapse ---
 
 --- /task ---
 
@@ -115,7 +131,7 @@ On the menu panel, click on Extensions. Another window will open showing recomme
 
 From the <code style="background-color: #378273">Data Logger</code> menu, drag out a 'log data column.. value' block.
 
-![The Data Logger menu, open with the 'log data column.. value' block highlighted](images/datalogger.png)
+![The Data Logger menu, open with the 'log data column.. value' block highlighted](images/data-logger.png)
 
 Place it below the 'plot bar graph of' block.
 
