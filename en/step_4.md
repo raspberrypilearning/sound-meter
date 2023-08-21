@@ -211,6 +211,68 @@ Change the `250` to `50` on the `set maximum to 50` block inside the `if level >
 
 ### Set a normal sound level
 
+Using the `on start` block, you will need to program a normal sound level and the maximum sensitivity.
+
+--- task ---
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out a `set maximum to 0` block.
+
+Place it inside the `on start` block
+
+Click on the variable name `maximum` and change it to `alarm`
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a `false` block and place it inside the `0` on the `set alarm to 0` block.
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out a `set maximum to 0` block.
+
+Place it below the  `set alarm to false` block.
+
+Click on the variable name `maximum` and change it to `level`
+
+--- /task ---
+
+--- task ---
+
+Change the `0` to `3` on the `set level to 0` block.
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out a `set maximum to 0` block.
+
+Place it below the  `set level to 3` block.
+
+--- /task ---
+
+--- task ---
+
+Change the `0` to `155` on the `set level to maximum` block.
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #378273">Data Logger</code> menu, drag out a `set columns` block.
+
+Place it below the `set maximum to 155` block
+
+--- /task ---
+
+--- task ---
+
+Inside the empty field on the `set columns` block, write `Sound level.`
+
+--- /task ---
+
 --- task ---
 
 Step content... 
