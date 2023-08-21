@@ -1,5 +1,14 @@
 ## Log the sound level
 
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+You are going to create your MakeCode project and add code to measure the sound (or light) levels. You will show the user the current level on the LEDs. 
+</div>
+<div>
+![The microbit simulator displaying a bar graph of the current sound level. The level is dragged up and down, the bar graph grows and shrinks with the sound level.](images/sound-level-demo.gif){:width="300px"}
+</div>
+</div>
+
 ### Opening MakeCode
 
 To get started creating your micro:bit project, you will need to open the MakeCode editor.

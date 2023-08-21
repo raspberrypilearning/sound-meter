@@ -5,7 +5,7 @@
 In this step you will add an alarm that triggers when the levels get too high. To stop the alarm adding to the noise you will make sure it only goes off once and can be reset whenever you want. 
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![The code to trigger the alarm. Inside an 'every 500 ms' block, the sound level is plotted on the LEDs. Afterwards an if statement is used to check if the sound level exceeds the maxixum and whether the alarm variable is set to false. Inside the if block a sound is played and the alarm variable is set to 'true'.](images/alarm-code-demo.png){:width="300px"}
 </div>
 </div>
 
@@ -99,9 +99,9 @@ From the <code style="background-color: #00a4a6">Logic</code> menu grab an <code
 
 <img src="images/if-block-location.png" alt="The Logic menu, open with an 'if block' highlighted" width="350"/>
 
-Place the block inside the <code style="background-color: #1e90ff">forever</code> underneath the <code style="background-color: #5c2d91">plot bar graph</code> block.
+Place the block inside the <code style="background-color: #00aa00">every</code> loop underneath the <code style="background-color: #5c2d91">plot bar graph</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_Fwg1j1V0qX3z" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_Ve9W13cyKXTi" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -113,7 +113,7 @@ Open the <code style="background-color: #00a4a6">Logic</code> menu again and tak
 
 Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_csx9JCEgUi7R" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_JYu2mx9ku6pC" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -131,7 +131,7 @@ Use the dropdown to change the less than symbol (`<`) to a greater than (`>`) sy
 
 ![A demo of clicking the drop down and changing the < symbol to a > symbol in the condition.](images/changing-condition.gif)
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_dh1W0cKYpMhd" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_MtYUvfg1RT9a" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -141,7 +141,7 @@ On the **left hand side** (where the first `0` is) put a <code style="background
 
 On the other side, put a <code style="background-color: #dc143c">maximum</code> block from the <code style="background-color: #dc143c">Variables</code> menu. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_fLpDvkeLv0CU" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_L7M4isPeYR3c" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- collapse ---
 
@@ -153,7 +153,7 @@ On the **left hand side** (where the first `0` is) put a <code style="background
 
 On the other side, put a <code style="background-color: #dc143c">maximum</code> block from the <code style="background-color: #dc143c">Variables</code> menu. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_2bqE7cTXjexP" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_h2Y4WJ4LPL1J" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
 
@@ -165,7 +165,7 @@ Grab a <code style="background-color: #00a4a6">0 = 0</code> condition block from
 
 Place it on the other side of the <code style="background-color: #00a4a6">and</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_DvqcsRCc7MER" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_X84gwbPC3guw" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -177,7 +177,7 @@ This means the alarm has not gone off yet.
 
 Place an <code style="background-color: #dc143c">alarm</code> variable block on one side of the equals and a <code style="background-color: #00a4a6">false</code> block on the other side. Like this:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_DzVg5gfjRiKM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_4sYXrcHcg0Lt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -189,11 +189,23 @@ Now it is time to add your alarm sound!
 
 From the <code style="background-color: #e63022">Music</code> menu, take a <code style="background-color: #e63022">play</code> block. 
 
-<img src="images/and-block-location.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
+<img src="images/play-block-location-v2.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
+
+--- collapse ---
+
+---
+title: For microbit V1
+---
+
+If you are using a micro:bit V1 you can use the <code style="background-color: #e63022">play</code> block in the **Melody Advanced** section instead. 
+
+<img src="images/play-block-location-v1.png" alt="The 'Melody Advanced' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
+
+--- /collapse ---
 
 Place this inside of the <code style="background-color: #00a4a6">if</code> block that checks if the alarm should sound. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_A4H4YAR6dFmP" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_bHYiMdKDjcw2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -215,7 +227,7 @@ Place the duplicated block below the <code style="background-color: #e63022">pla
 
 Change the <code style="background-color: #00a4a6">false</code> to <code style="background-color: #00a4a6">true</code>.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_E9cDpEVjRMe1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_UmibCbeCJhPm" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
