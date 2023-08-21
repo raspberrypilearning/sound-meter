@@ -7,7 +7,7 @@ In this step you will program the buttons on the micro:bit to be used to change 
 
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![The microbit simulator displaying the sound level numbers when the `A` and `B` buttons are clicked. The `A` button decreases the levels while the `B` button increases the levels.](images/buttons-pressed-demo.gif){:width="300px"}
 </div>
 </div>
 
@@ -211,7 +211,8 @@ Change the `250` to `50` on the `set maximum to 50` block inside the `if level >
 
 ### Set a normal sound level
 
-Using the `on start` block, you will need to program a normal sound level and the maximum sensitivity.
+Using the `on start` block, you will need to program a normal sound level.
+
 
 --- task ---
 
@@ -219,23 +220,9 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag out
 
 Place it inside the `on start` block
 
-Click on the variable name `maximum` and change it to `alarm`
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a `false` block and place it inside the `0` on the `set alarm to 0` block.
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out a `set maximum to 0` block.
-
-Place it below the  `set alarm to false` block.
-
 Click on the variable name `maximum` and change it to `level`
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_ccYWRDM7d5c9" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -243,25 +230,22 @@ Click on the variable name `maximum` and change it to `level`
 
 Change the `0` to `3` on the `set level to 0` block.
 
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_fXxC5cYgkUHb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+
+--- /task ---
+
+
+---- task ---
+
+**Test** When the program runs, you should now be able to press the A and B buttons to see the sound levels increase and decrease. The default starting point is level 3.
+
+**Drag** The mic input levels up and down to test the maximum sound for each level when using the simulator.
+
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out a `set maximum to 0` block.
-
-Place it below the  `set level to 3` block.
+[[[download-to-microbit]]]
 
 --- /task ---
-
-
---- task ---
-
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
-
---- /task ---
-
---- save ---
