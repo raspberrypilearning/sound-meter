@@ -157,6 +157,8 @@ div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden
 
 --- /task ---
 
+### Decrease the sound level
+
 Now you have programmed the `on button A pressed` block, you will need to do the same for `on button B`.
 
 --- task ---
@@ -206,6 +208,9 @@ Change the `250` to `50` on the `set maximum to 50` block inside the `if level >
 ![The final blocks of code showing the changes made to `on button B pressed`.](images/onbuttonB-final.png)
 
 --- /task ---
+
+### Set a normal sound level
+
 --- task ---
 
 Step content... 
