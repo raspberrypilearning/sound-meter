@@ -236,7 +236,7 @@ Change the `0` to `3` on the `set level to 0` block.
 --- /task ---
 
 
----- task ---
+--- task ---
 
 **Test** When the program runs, you should now be able to press the A and B buttons to see the sound levels increase and decrease. The default starting point is level 3.
 
