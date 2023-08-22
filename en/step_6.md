@@ -14,7 +14,15 @@ Fantastic effort! You have created your micro:bit sound level meter. Here are so
 </div>
 </div>
 
-![TODO: Add upgrade embed]()
+Click on the embedded project.
+
+Drag the yellow light level in the circle up and down, see what happens on the LEDs. 
+Press the A or B buttons to change the sensitivity:
++ How many levels are there?
++ What happens on the minimum and maximum?
+Once the alarm has sounded click the logo at the top to reset it.
+
+<div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S67714-27742-96763-52596" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
 --- collapse ---
 
