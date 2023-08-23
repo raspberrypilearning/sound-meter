@@ -107,7 +107,7 @@ There is no microphone on the micro:bit V1, so instead you can use the <code sty
 
 --- /task ---
 
-We can use the Data logger extension to keep track of the sound level data.
+You can use the Data logger extension to keep track of the sound level data.
 
 --- collapse ---
 

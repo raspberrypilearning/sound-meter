@@ -2,22 +2,24 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will add an alarm that triggers when the levels get too high. To stop the alarm adding to the noise you will make sure it only goes off once and can be reset whenever you want. 
+In this step you will add an alarm that triggers when the sound level get too high. To stop the alarm adding to the noise you will make sure it only goes off once and can be reset whenever you want. 
 </div>
 <div>
-![The code to trigger the alarm. Inside an 'every 500 ms' block, the sound level is plotted on the LEDs. Afterwards an if statement is used to check if the sound level exceeds the maxixum and whether the alarm variable is set to false. Inside the if block a sound is played and the alarm variable is set to 'true'.](images/alarm-code-demo.png){:width="300px"}
+
+![The code to trigger the alarm. Inside an 'every 500 ms' block, the sound level is plotted on the LEDs. Afterwards an if statement is used to check if the sound level exceeds the maximum and whether the alarm variable is set to false. Inside the if block a sound is played and the alarm variable is set to 'true'.](images/alarm-code-demo.png){:width="300px"}
+
 </div>
 </div>
 
 ### Set the maximum
 
-You will need to make a Variable to set the sound level that will trigger the alarm.
+You will need to make a variable to hold the sound level that will trigger the alarm.
 
 --- task ---
 
 Open the <code style="background-color: #dc143c">Variables</code> menu and click `Make a Variable`.
 
-<img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a variable' button highlighted" width="350"/>
+<img src="images/variable-menu.png" alt="The Variables block menu, open with the 'Make a Variable' button highlighted" width="350"/>
 
 --- /task ---
 
@@ -37,41 +39,41 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 Place the block inside the <code style="background-color: #1e90ff">on start</code> block, and change the `0` to `150`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_D7PUcJXFR51p" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_D7PUcJXFR51p" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-`150` is a little over half the maximum sound level the micro:bit can sense, so that should be a good level to start with. 
+`150` is a little more than half the maximum sound level the micro:bit can sense, so that should be a good level to start with. 
 
 --- collapse ---
 
 ---
-title: For microbit V1
+title: For micro:bit V1
 ---
 
-This maximum should work for light levels too!
+This maximum should work for light levels, too!
 
 --- /collapse ---
 
 ### Turn the alarm off
 
-You will also want to make sure the alarm noise itself does not add to the already noisy surroundings!
+You will also want to make sure the alarm noise does not add to the already noisy environment!
 
-To do this you will use another variable that will be set to `false` when the alarm has not sounded, and then `true` when the alarm sounds. 
+To do this, you will use another variable that will be set to `false` when the alarm has not sounded, and then `true` when the alarm sounds. 
 
 --- task ---
 
-Create another new <code style="background-color: #dc143c">Variable</code> this time called `alarm`. 
+Create another new <code style="background-color: #dc143c">Variable</code>, this time called `alarm`.
 
-<img src="images/alarm-variable-name.png" alt="The 'New variable name' window, with the name 'maximum' written in the box" width="350"/>
+<img src="images/alarm-variable-name.png" alt="The 'New variable name' window, with the name 'alarm' written in the box" width="350"/>
 
 --- /task ---
 
 --- task ---
 
-Drag another <code style="background-color: #dc143c">set</code> block from the <code style="background-color: #dc143c">Variables</code> menu.
+Drag the <code style="background-color: #dc143c">set alarm</code> block from the <code style="background-color: #dc143c">Variables</code> menu.
 
-Place it inside the <code style="background-color: #1e90ff">on start</code> block. Underneath the previous one. 
+Place it inside the <code style="background-color: #1e90ff">on start</code> block, underneath the previous one. 
 
 --- /task ---
 
@@ -79,13 +81,15 @@ You need to set this new variable to `false` instead of a number.
 
 --- task ---
 
-Open the <code style="background-color: #00a4a6">Logic</code> menu. Grab a <code style="background-color: #00a4a6">false</code> block. 
+Open the <code style="background-color: #00a4a6">Logic</code> menu. 
 
-<img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section" width="250"/>
+Grab a <code style="background-color: #00a4a6">false</code> block. 
+
+<img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section" width="200"/>
 
 Place this block over the top of the `0`. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_43jPJYC2z2fR" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_43jPJYC2z2fR" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -99,7 +103,7 @@ From the <code style="background-color: #00a4a6">Logic</code> menu grab an <code
 
 <img src="images/if-block-location.png" alt="The Logic menu, open with an 'if block' highlighted" width="350"/>
 
-Place the block inside the <code style="background-color: #00aa00">every</code> loop underneath the <code style="background-color: #5c2d91">plot bar graph</code> block.
+Place the block inside the <code style="background-color: #00aa00">every</code> loop underneath the <code style="background-color: #378273">log data</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_Ve9W13cyKXTi" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -131,27 +135,37 @@ Use the dropdown to change the less than symbol (`<`) to a greater than (`>`) sy
 
 ![A demo of clicking the drop down and changing the < symbol to a > symbol in the condition.](images/changing-condition.gif)
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_MtYUvfg1RT9a" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
 --- /task ---
 
 --- task ---
 
-On the **left hand side** (where the first `0` is) put a <code style="background-color: #d400d4">sound level</code> block from the <code style="background-color: #d400d4">Input</code> menu.
+From the <code style="background-color: #d400d4">Input</code> menu, drag out a <code style="background-color: #d400d4">sound level</code> block.
 
-On the other side, put a <code style="background-color: #dc143c">maximum</code> block from the <code style="background-color: #dc143c">Variables</code> menu. 
+Put it in the first `0` of the <code style="background-color: #00a4a6">0 > 0</code> block
+
+From the <code style="background-color: #dc143c">Variables</code> menu, drag out a <code style="background-color: #dc143c">maximum</code> block.
+
+Put it in the second `0` of the <code style="background-color: #00a4a6">0 > 0</code> block.
+
+Your code should look like this:
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_L7M4isPeYR3c" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- collapse ---
 
 ---
-title: For microbit V1
+title: For micro:bit V1
 ---
 
-On the **left hand side** (where the first `0` is) put a <code style="background-color: #d400d4">light level</code> block from the <code style="background-color: #d400d4">Input</code> menu.
+From the <code style="background-color: #d400d4">Input</code> menu, drag out a <code style="background-color: #d400d4">light level</code> block.
 
-On the other side, put a <code style="background-color: #dc143c">maximum</code> block from the <code style="background-color: #dc143c">Variables</code> menu. 
+Put it in the first `0` of the <code style="background-color: #00a4a6">0 > 0</code> block
+
+From the <code style="background-color: #dc143c">Variables</code> menu, drag out a <code style="background-color: #dc143c">maximum</code> block.
+
+Put it in the second `0` of the <code style="background-color: #00a4a6">0 > 0</code> block.
+
+Your code should look like this:
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_h2Y4WJ4LPL1J" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -159,25 +173,25 @@ On the other side, put a <code style="background-color: #dc143c">maximum</code> 
 
 --- /task ---
 
+You only want to set the alarm off if it is **not** already active!
+
+To do this, you need to check whether the <code style="background-color: #dc143c">alarm</code> variable **is equal to** <code style="background-color: #00a4a6">false</code>. 
+
 --- task ---
 
 Grab a <code style="background-color: #00a4a6">0 = 0</code> condition block from the <code style="background-color: #00a4a6">Logic</code> menu. 
 
 Place it on the other side of the <code style="background-color: #00a4a6">and</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_X84gwbPC3guw" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_X84gwbPC3guw" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-This condition needs to check whether the <code style="background-color: #dc143c">alarm</code> variable **is equal to** <code style="background-color: #00a4a6">false</code>. 
-
-This means the alarm has not gone off yet. 
-
 Place an <code style="background-color: #dc143c">alarm</code> variable block on one side of the equals and a <code style="background-color: #00a4a6">false</code> block on the other side. Like this:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_4sYXrcHcg0Lt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_4sYXrcHcg0Lt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -194,7 +208,7 @@ From the <code style="background-color: #e63022">Music</code> menu, take a <code
 --- collapse ---
 
 ---
-title: For microbit V1
+title: For micro:bit V1
 ---
 
 If you are using a micro:bit V1 you can use the <code style="background-color: #e63022">play</code> block in the **Melody Advanced** section instead. 
@@ -211,7 +225,7 @@ Place this inside of the <code style="background-color: #00a4a6">if</code> block
 
 --- task ---
 
-**Choose:** which alarm sound you would like to use, from the available sounds in the dropdown. 
+**Choose** which alarm sound you would like to use, from the available sounds in the dropdown. 
 
 ![The dropdown menu in the play block, to choose which sound you would like to play.](images/choose-sound.gif)
 
@@ -219,7 +233,7 @@ Place this inside of the <code style="background-color: #00a4a6">if</code> block
 
 --- task ---
 
-Inside your <code style="background-color: #1e90ff">on start</code> block, **right click** on the <code style="background-color: #dc143c">set alarm to false</code> part and select **Duplicate**. 
+Inside your <code style="background-color: #1e90ff">on start</code> block, **right click** on the <code style="background-color: #dc143c">set</code> block and select **Duplicate**. 
 
 ![A demo of right clicking on the 'set alarm to false', and then Duplicating it](images/duplicate-block.gif)
 
@@ -245,14 +259,14 @@ From the <code style="background-color: #d400d4">Input</code> menu, drag out an 
 
 <img src="images/onlogo-block-location.png" alt="The logo on the top of the microbit above the LEDs." width="200"/>
 
-From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm to false </code> block and place it inside the <code style="background-color: #d400d4">on logo</code> block.     
+From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm</code> block and place it inside the <code style="background-color: #d400d4">on logo</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_2eDAPFTsAVxh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- collapse ---
 
 ---
-title: For microbit V1
+title: For micro:bit V1
 ---
 
 There is no touch sensor in the logo on the micro:bit V1, so instead you can use both the `A` and `B` buttons.
@@ -263,9 +277,9 @@ From the <code style="background-color: #d400d4">Input</code> menu, drag out an 
 
 Use the dropdown to change the button to <code style="background-color: #d400d4">A+B</code>.
 
-From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm to false </code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.     
+From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.     
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_L6pHzMi2F4m0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_L6pHzMi2F4m0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
 
