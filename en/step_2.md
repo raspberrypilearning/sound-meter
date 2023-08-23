@@ -77,21 +77,21 @@ From the <code style="background-color: #00AA00">Loops</code> menu, drag out an 
 
 From the <code style="background-color: #5C2D91">Led</code> menu drag a <code style="background-color: #5c2d91">plot bar graph of</code> block.
 
-![The Led menu, open with the 'plot bar graph of' block highlighted](images/plot-bargraph.png)
+<img src="images/plot-bargraph.png" alt="The Led menu, open with the 'plot bar graph of' block highlighted" width="350"/>
 
 Place it inside the <code style="background-color: #00aa00">every 500 ms</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:60%;" src="https://makecode.microbit.org/---codeembed#pub:_LheU15Tfr59C" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
-Space check
-
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag out a 'sound level' block and place it inside the first '0' on the 'plot bar graph of' block.
+From the <code style="background-color: #D400D4">Input</code> menu, drag out a <code style="background-color: #D400D4">sound level</code> block and place it inside the first `0` in the <code style="background-color: #5c2d91">plot bar graph of</code> block.
 
-![Animation showing the sound level block being placed inside the first '0' on the 'plot bar graph of' block ](images/sound-level.gif)
+Change the second `0` to `255`.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Xbc6McLCi5gJ" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- collapse ---
 
@@ -99,7 +99,7 @@ From the <code style="background-color: #D400D4">Input</code> menu, drag out a '
 title: For microbit V1
 ---
 
-There is not a sound sensor on the micro:bit V1, so instead you can use the <code style="background-color: #d400d4">light level</code> block and measure the light levels of your environment.
+There is no microphone on the micro:bit V1, so instead you can use the <code style="background-color: #d400d4">light level</code> block to measure the light levels of your environment.
 
 ![Animation showing the light level block being placed inside the first '0' on the 'plot bar graph of' block ](images/light-level.gif)
 
@@ -107,15 +107,7 @@ There is not a sound sensor on the micro:bit V1, so instead you can use the <cod
 
 --- /task ---
 
---- task ---
-
-Change the second '0' to '255 on the 'plot bar graph of' block.
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Xbc6McLCi5gJ" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
-You will now need a way of tracking the data from the sound levels. 
+We can use the Data logger extension to keep track of the sound level data.
 
 --- collapse ---
 
@@ -131,38 +123,40 @@ On the menu panel, click on Extensions. Another window will open showing recomme
 
 --- task ---
 
-From the <code style="background-color: #378273">Data Logger</code> menu, drag out a 'log data column.. value' block.
+From the <code style="background-color: #378273">Data Logger</code> menu, drag out a <code style="background-color: #378273">log data</code> block.
 
-![The Data Logger menu, open with the 'log data column.. value' block highlighted](images/data-logger.png)
+<img src="images/data-logger.png" alt="The Data Logger menu, open with the 'log data column.. value' block highlighted" width="350"/>
 
-Place it below the 'plot bar graph of' block.
+Place it below the <code style="background-color: #5C2D91">plot bar graph of</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_93KR1vXYFPj1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
---- task ---
-
-Inside the empty string column field on the 'log data column.. value' block, type 'Sound level'
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_JHr0atCoo2ju" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_93KR1vXYFPj1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag another 'sound level' block and place it inside the '0' on the 'log data column.. value' block.
+Type 'Sound level' in the column field.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_VCJdqy3yALDh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_JHr0atCoo2ju" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #D400D4">Input</code> menu, drag another <code style="background-color: #D400D4">sound level</code> block and place it inside the `0` on the <code style="background-color: #378273">log data</code> block.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:85%;height:85%;" src="https://makecode.microbit.org/---codeembed#pub:_VCJdqy3yALDh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 When you make a change to a code block in the code editor panel, the simulator will restart.
 
-**Test** When the program runs, drag the red sound level bar up and down to change the sound levels.
+**Test** your program:
 
-**Click** The 'Show data.. Simulator' link below the micro:bit simulator to see the sound levels being logged.
++ Drag the red sound level bar up and down to change the sound levels.
 
-![Animation showing the mic bar on the microbit simulator being dragged up and down to increase and reduce the sound. The 'Show data' button is clicked to show the data from the monitor being logged.](images/mic-test.gif)
++ Click The '**Show data** Simulator' link below the micro:bit simulator to see the sound levels being logged.
+
+![Animation showing the microphone bar on the microbit simulator being dragged up and down to increase and reduce the sound. The 'Show data' button is clicked to show the data being logged.](images/mic-test.gif)
 
 Awesome work, you have created your first data logging program on a micro:bit!
