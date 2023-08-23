@@ -96,7 +96,7 @@ Change the second `0` to `255`.
 --- collapse ---
 
 ---
-title: For microbit V1
+title: For micro:bit V1
 ---
 
 There is no microphone on the micro:bit V1, so instead you can use the <code style="background-color: #d400d4">light level</code> block to measure the light levels of your environment.

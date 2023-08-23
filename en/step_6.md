@@ -6,7 +6,7 @@ Fantastic effort! You have created your micro:bit sound level meter. Here are so
 
 + Use a different sensor - light for v1 or temperature v2
 + Show an icon for maximum/minimum sound levels
-+ Add more levels of sensitivity for the sound
++ Add more levels of sensitivity
 
 </div>
 <div>

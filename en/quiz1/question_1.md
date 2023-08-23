@@ -36,7 +36,7 @@ Awesome! You have answered correctly, the Input menu contains all the input and 
 
   --- feedback ---
 
-Not quite! The Logic menu contains blocks for conditional and boolean logic.
+Not quite! The Logic menu contains blocks for conditional and Boolean logic.
 
   --- /feedback ---
 

@@ -5,7 +5,9 @@
 legend: Question 2 of 3
 ---
 
-The block of code below shows a loop block `every 500 ms`. In programming what is a loop?
+This block of code shows a `every 500 ms` loop block. 
+
+What is a loop?
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_79v0rC7XT6ce" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -19,19 +21,19 @@ Fantastic work! Loops are a concept used across all programming languages. Loops
 
   --- /feedback ---
 
-- ( ) A logic condition that controls what happens in a logic block
+- ( ) A condition that controls what happens in a logic block.
 
   --- feedback ---
 
-  Not quite. A condition can be used to compare a variable value with something else. This does not loop.
+  Not quite. A condition can be used to compare a variable value with something else. The condition does not loop.
 
   --- /feedback ---
 
-- ( ) A sequence of instructions that performs a specific task
+- ( ) A sequence of instructions that performs a specific task.
 
   --- feedback ---
 
-  Not quite. Sequence of instructions for a specific task is called a `function`.
+  Not quite. A sequence of instructions for a specific task is called a `function`.
 
   --- /feedback ---
 
