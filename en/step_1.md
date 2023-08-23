@@ -9,7 +9,7 @@ You will also create a way of letting other people know that the noise level is 
 This project will also show you how to save the sound level data to your micro:bit so you can see the noisiest times of the day.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- <span style="color: #0faeb0">Healthy Sound Levels</span> are an important part of our wellbeing. Peaceful and soothing sounds such as the sounds of nature or the ocean can help calm us down. However, being around louder noises such as loud music for too long can be bad for our ears. If things get too loud, it is good to take breaks, move away or use ear protectors.
+ <span style="color: #0faeb0">Healthy sound levels</span> are an important part of our wellbeing. Peaceful and soothing sounds such as the sounds of nature or the ocean can help calm us down. However, being around louder noises such as loud music for too long can be bad for our ears. If things get too loud, it is good to take breaks, move away or use ear protectors.
 </p>
 
 You will:

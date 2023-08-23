@@ -11,7 +11,7 @@ You are going to create your MakeCode project and add code to measure the sound 
 
 ### Opening MakeCode
 
-To get started creating your micro:bit project, you will need to open the MakeCode editor.
+To start creating your micro:bit project, you need to open the MakeCode editor.
 
 --- task ---
 
@@ -79,9 +79,11 @@ From the <code style="background-color: #5C2D91">Led</code> menu drag a <code st
 
 ![The Led menu, open with the 'plot bar graph of' block highlighted](images/plot-bargraph.png)
 
-Place it inside the ''every 500 ms' block.
+Place it inside the <code style="background-color: #00aa00">every 500 ms</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_LheU15Tfr59C" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:60%;" src="https://makecode.microbit.org/---codeembed#pub:_LheU15Tfr59C" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+Space check
 
 --- /task ---
 
