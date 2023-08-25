@@ -35,7 +35,7 @@ There is also a [downloadable version of the MakeCode editor](https://makecode.m
 
 ### Create your project
 
-Once the editor is open, you will need to create a New Project and give your project a name. 
+Once the editor is open, you will need to create a new project and give your project a name. 
 
 --- task ---
 
