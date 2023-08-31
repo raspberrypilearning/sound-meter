@@ -89,7 +89,7 @@ Grab a <code style="background-color: #00a4a6">false</code> block.
 
 Place this block over the top of the `0`. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_43jPJYC2z2fR" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_U76eECeWUiMf" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -205,21 +205,29 @@ From the <code style="background-color: #e63022">Music</code> menu, take a <code
 
 <img src="images/play-block-location-v2.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
 
+Place this inside of the <code style="background-color: #00a4a6">if</code> block that checks if the alarm should sound. 
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bHYiMdKDjcw2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- collapse ---
 
 ---
 title: For micro:bit V1
 ---
 
-If you are using a micro:bit V1 you can use the <code style="background-color: #e63022">play</code> block in the **Melody Advanced** section instead. 
+The micro:bit V1 has no speaker, so you have to adapt the program for the alarm. 
 
-<img src="images/play-block-location-v1.png" alt="The 'Melody Advanced' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
+Rather than an alarm that uses sound you can display an icon on the LEDs when the light level is larger than the maximum. 
 
---- /collapse ---
+From the <code style="background-color: #1e90ff">Basic</code> menu, grab an <code style="background-color: #1e90ff">show icon</code> block.
 
 Place this inside of the <code style="background-color: #00a4a6">if</code> block that checks if the alarm should sound. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_bHYiMdKDjcw2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+**Select** an icon to use for your alarm. 
+
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_YCfaePdWAchL" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /collapse ---
 
 --- /task ---
 

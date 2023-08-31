@@ -57,19 +57,25 @@ Give your new project the name `sound level meter` and click **Create**.
 
 ### Plot a graph of the sound level
 
-In this project, you will make use of the 'on start' block but not the 'forever' block. 
+In this project, you will make use of the <code style="background-color: #1e90ff">on start</code> block but not the <code style="background-color: #1e90ff">forever</code> block. 
 
-You can delete the 'forever' block now by dragging it to the menu panel.
+--- task ---
 
-![Animation showing the forever block being deleted](images/delete-forever.gif)
+You can delete the <code style="background-color: #1e90ff">forever</code> block now by dragging it to the menu panel.
 
-You want the micro:bit to take a reading of the sound levels on regular intervals, there is another loop you can use to do this.
+![Animation showing the forever block being deleted by dragging it back on top of the block menus.](images/delete-forever.gif)
+
+--- /task ---
+
+The first step is to get the micro:bit capturing the sound levels at regular intervals, there is a specifc loop you can use to do this.
 
 --- task ---
 
 From the <code style="background-color: #00AA00">Loops</code> menu, drag out an <code style="background-color: #00aa00">every 500 ms</code> block and place it on the code editor panel
 
 <img src="images/every-500ms.png" alt="The Loops menu, open with the 'every 500 ms' block highlighted" width="350"/>
+
+Any code inside this loop will run every **500 milliseconds**, there are a 1000 milliseconds in a second so 500 ms is **half a second** 
 
 --- /task ---
 
@@ -81,7 +87,7 @@ From the <code style="background-color: #5C2D91">Led</code> menu drag a <code st
 
 Place it inside the <code style="background-color: #00aa00">every 500 ms</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:60%;" src="https://makecode.microbit.org/---codeembed#pub:_LheU15Tfr59C" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_LheU15Tfr59C" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -91,7 +97,7 @@ From the <code style="background-color: #D400D4">Input</code> menu, drag out a <
 
 Change the second `0` to `255`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Xbc6McLCi5gJ" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:80%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Xbc6McLCi5gJ" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- collapse ---
 
@@ -117,6 +123,8 @@ title: Installing the Data Logger extension
 
 The V2 of the micro:bit has a built in data logger which enables you to track data from various sensors and inputs. You will need to install an extension to use this.
 
+![The data logger extension beging installed by clicking the extensions menu and then 'data logger'. A new block menu appears labelled 'Data Logger'.](images/installing-datalogger.gif)
+
 On the menu panel, click on Extensions. Another window will open showing recommended extensions. Click on the data logger and it will be installed as a menu item.
 
 --- /collapse ---
@@ -129,7 +137,7 @@ From the <code style="background-color: #378273">Data Logger</code> menu, drag o
 
 Place it below the <code style="background-color: #5C2D91">plot bar graph of</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_93KR1vXYFPj1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:80%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_93KR1vXYFPj1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -137,7 +145,7 @@ Place it below the <code style="background-color: #5C2D91">plot bar graph of</co
 
 Type 'Sound level' in the column field.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_JHr0atCoo2ju" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:80%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JHr0atCoo2ju" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -145,7 +153,7 @@ Type 'Sound level' in the column field.
 
 From the <code style="background-color: #D400D4">Input</code> menu, drag another <code style="background-color: #D400D4">sound level</code> block and place it inside the `0` on the <code style="background-color: #378273">log data</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:85%;height:85%;" src="https://makecode.microbit.org/---codeembed#pub:_VCJdqy3yALDh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(250px + 5em);width:90%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VCJdqy3yALDh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 

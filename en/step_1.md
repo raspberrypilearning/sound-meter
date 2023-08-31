@@ -1,6 +1,6 @@
 ## You will make
 
-Do you sometimes get tired of our noisy lives and just want a bit of quiet time? 
+Do you sometimes get tired of our noisy lives and just want a bit of quiet time? 🤫  
 
 In this project, you are going to make a sound level meter that will use the micro:bit to display how noisy the environment is. 
 
@@ -31,7 +31,7 @@ Click on the embedded project.
 
 Drag the red sound level bar up and down, see what happens on the LEDs. 
 Press the A or B buttons to change the sensitivity
-Once the alarm has sounded click the logo at the top to reset it.
+Once the alarm has sounded it won't activate again, you can click the logo at the top to reset it.
 
 <div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_h86K9q8Yb49s" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 

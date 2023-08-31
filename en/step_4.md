@@ -3,7 +3,7 @@
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-In this step you will program the buttons on the micro:bit to change the sound levels and adjust the sensitivity of the sound that could be considered too high for you. You will be able to increase and decrease the sound levels. You will be using a range of sound levels from 1-5.
+In this step you will program the buttons on the micro:bit to adjust the sensitivity of the alarm with settings from 1 - lowest maximum value to 5 - highest maximum value. 
 
 </div>
 <div>
@@ -15,103 +15,95 @@ In this step you will program the buttons on the micro:bit to change the sound l
 
 ### Decrease the sound level
 
-You can complete this task by using the A and B buttons on the micro:bit
+The **A button** is on the left so you will use this to decrease the maximum value for the alarm. 
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag out an `on button A pressed` block and place it in the code editor.
+From the <code style="background-color: #D400D4">Input</code> menu, drag out an  block and place it in the code editor.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Cef96Ef0YiYx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="350"/>
 
 --- /task ---
 
-In the previous step you created two variables, `maximum` and `alarm`. You will need to create another.
+In the previous step you created two variables, `maximum` and `alarm`. Now you need to create another variable for the current sensitivity **level**.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, click on `make a variable` to create a variable called `level`.
+From the <code style="background-color: #DC143C">Variables</code> menu, click on `Make a variable` to create a variable called `level`.
 
 --- /task --- 
 
 --- task ---
 
-Drag the `change ... by 1` block and place it inside the `on button A pressed` block. 
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_hiaDED72s9q0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
-Change the variable shown on the block from `maximum` to `level` by clicking on the variable name.
-
-![Animation showing the drop down menu on the `change maximum by 1` variable block](images/change-variable.gif)
+Drag the <code style="background-color: #dc143c">change</code> block and place it inside the <code style="background-color: #d400d4">on button pressed</code> block. 
 
 Change the `1` to `-1`.
 
+<div style="position:relative;height:calc(150px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_0m6H8aMea4AW" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, also drag the `change maximum by 1` block. 
+From the <code style="background-color: #DC143C">Variables</code> menu, also drag the <code style="background-color: #dc143c">change</code> block. 
 
-Place it below the `change level by -1` block.
+Place it below the <code style="background-color: #dc143c">change level by -1</code> block.
+
+Change the variable shown on the block from `level` to `maximum` by clicking on the variable name.
 
 Change the `1` to `-50`
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_fz1FgF5aEi7k" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+![Animation showing the drop down menu on the `change maximum by 1` variable block](images/change-variable.gif)
+
+<div style="position:relative;height:calc(150px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fz1FgF5aEi7k" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-This means every time you press button A, it will decrease the sound level by 1 and reduce the sound sensitivity by 50 decibels.
+This means every time you press button A, it will decrease the sensitivity level by 1 and reduce the sound sensitivity by 50.
 
-What happens if the sound levels drop below 1 to 0? 
-
-You want to stop this from happening using an `if` block.
+If the A button is pressed when the level is already 1 then you need to make it so the level changes to `5` and not `0`
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an `if..true..then` block. 
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an <code style="background-color: #00a4a6">if</code> block. 
 
-Place it below the `change maximum by -50` block.
+Place it below the <code style="background-color: #dc143c">change maximum by -50</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_5kbWwj8aHeTj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out the `0 < 0` comparison block.
-
-Place it inside the `true` space in the `if..true..then` block. 
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_JrAM55EWFeEj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5kbWwj8aHeTj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the `level` block.
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
 
-Place it inside the `0` on the left hand side of the `0 < 0` comparison block.
+Place it inside the `true` space in the <code style="background-color: #00a4a6">if</code> block. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_2iFC25Dt3KRt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
---- task ---
-
-Change the `0` to `1` on the right hand side of the `0 < 0` comparison block.
+<div style="position:relative;height:calc(175px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JrAM55EWFeEj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out the `set maximum to 0` block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #dc143c">level</code> block.
 
-Place it inside the `if.. then` block. Ensure you change the variable selected from `maximum` to `level`.
+Place it inside the first `0` of the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Lvrdu09btA3i" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2iFC25Dt3KRt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
+
+Change the `0` to `1` on the right hand side of the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #dc143c">set</code> block.
+
+Place it inside the <code style="background-color: #00a4a6">if</code> block. Ensure the variable selected is `level`.
 
 Change the `0` to `5` on the `set level to 0` block.
 
@@ -121,7 +113,7 @@ Change the `0` to `5` on the `set level to 0` block.
 
 --- task ---
 
-Also from the <code style="background-color: #DC143C">Variables</code> menu, drag out the `set maximum to 0` block.
+Also from the <code style="background-color: #DC143C">Variables</code> menu, drag out another <code style="background-color: #dc143c">set</code> block.
 
 Place it below the `set level to 5` block.
 
