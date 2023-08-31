@@ -12,7 +12,7 @@ What will happen when the `B` button is pressed on the micro:bit?
 
 --- choices ---
 
-- ( ) The sound level will be changed by -1 and sensitivity by -50 decibels.
+- ( ) The sound level will be changed by -1 and sensitivity by -50.
 
 
   --- feedback ---
@@ -21,7 +21,7 @@ What will happen when the `B` button is pressed on the micro:bit?
 
   --- /feedback ---
 
-- ( ) The sound level will be changed by 5 and sensitivity by -50 decibels.
+- ( ) The sound level will be changed by 5 and sensitivity by -50.
 
   --- feedback ---
 
@@ -29,11 +29,11 @@ What will happen when the `B` button is pressed on the micro:bit?
 
   --- /feedback ---
 
-- (x) The sound level will be changed by 1 and sensitivity by 50 decibels.
+- (x) The sound level will be changed by 1 and sensitivity by 50.
 
   --- feedback ---
 
-  Awesome job! Button B has been programmed to increase the sound level by 1 and the sensitivity by 50 decibels.
+  Awesome job! Button B has been programmed to increase the sound level by 1 and the sensitivity by 50.
 
   --- /feedback ---
 

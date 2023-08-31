@@ -107,7 +107,7 @@ Place it inside the <code style="background-color: #00a4a6">if</code> block. Ens
 
 Change the `0` to `5` on the `set level to 0` block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_L8uHrDTJ14mH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_L8uHrDTJ14mH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -115,75 +115,77 @@ Change the `0` to `5` on the `set level to 0` block.
 
 Also from the <code style="background-color: #DC143C">Variables</code> menu, drag out another <code style="background-color: #dc143c">set</code> block.
 
-Place it below the `set level to 5` block.
+Place it below the <code style="background-color: #dc143c">set level to 5</code> block.
 
-Change the `0` to `250` on the `set maximum to 0` block.
+Change the `0` to `250`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_Pm3REheUD1uo" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the `show number 0` block.
-
-Place it below the `if.. then` block.
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_ACcH4j7hj5p1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Pm3REheUD1uo" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu drag out the `level` block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the <code style="background-color: #1e90ff">show number</code> block.
 
-Place it in the `0` in the `show number 0` block.
+Place it **below** the <code style="background-color: #00a4a6">if</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_KDyMygJveb02" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(225px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ACcH4j7hj5p1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-Also from the <code style="background-color: #1E90FF">Basic</code> menu, drag out the `pause ms 100` block.
+From the <code style="background-color: #DC143C">Variables</code> menu drag out the <code style="background-color: #dc143c">level</code> block.
 
-Place it below the `show number` block. Change the `100` to `500`.
+Place it in the `0` in the <code style="background-color: #1e90ff">show number</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_TE52mwevkU37" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(250px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_KDyMygJveb02" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+--- task ---
+
+Also from the <code style="background-color: #1E90FF">Basic</code> menu, drag out the <code style="background-color: #1e90ff">pause</code> block.
+
+Place it below the <code style="background-color: #1e90ff">show number</code> block. 
+
+Change the `100` to `500`.
+
+<div style="position:relative;height:calc(275px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TE52mwevkU37" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 ### Decrease the sound level
 
-Now you have programmed the `on button A pressed` block, you will need to do the same for `on button B`.
+Now you have programmed the <code style="background-color: #d400d4">on button A pressed</code> block, you will need to do the same for <code style="background-color: #d400d4">on button B pressed</code>.
 
 --- task ---
 
-Right-click on the entire `on button A pressed` block and click `Duplicate`.
+Right-click on the entire <code style="background-color: #d400d4">on button A pressed</code> block and click `Duplicate`.
 
 ![Animation showing the right-click menu on the 'on button A pressed' block with 'Duplicate highlighted](images/onbuttonA-duplicate.gif)
 
-There will now be two `on button A pressed` blocks on the code editor panel.
+There will now be two <code style="background-color: #d400d4">on button A pressed</code> blocks on the code editor panel.
 
 --- /task ---
 
 --- task ---
 
-Click on the `A` on the duplicated `on button A pressed` block, a drop down menu will open.
+Click on the `A` on the duplicated <code style="background-color: #d400d4">on button A pressed</code> block, a drop down menu will open.
 
-![The drop down menu on button A to change the block to button B](images/button-menu.png)
+Change the `A` to `B`.
 
-Change the `A` to `B`. There should now be `on button A pressed` and `on button B pressed` blocks on the code editor panel.
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_9Kagwi4L3Ppp" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<img src="images/button-menu.png" alt="The drop down menu on button A to change the block to button B" width="400"/>
 
 --- /task ---
 
 --- task ---
 
-Change the `-1` to `1` on the `change level by -1` block inside the `on button B pressed` block.
+Inside the <code style="background-color: #d400d4">on button B pressed</code> block:
 
-Change the `-50` to `50` on the `change maximum by -50` block inside the `on button B pressed` block.
+- Change the `-1` to `1` on the <code style="background-color: #dc143c">change level</code> block 
+
+- Change the `-50` to `50` on the <code style="background-color: #dc143c">change maximum</code> block
 
 ![The `on button B pressed` block with the change level and change maximum variables shown.](images/onbuttonB-changes.png)
 
@@ -191,46 +193,41 @@ Change the `-50` to `50` on the `change maximum by -50` block inside the `on but
 
 --- task ---
 
-Change the `1` to `5` inside the second part of the `if.. then` block on the `on button B pressed` block.
+For the <code style="background-color: #00a4a6">if</code> block's condition:
 
---- /task ---
+- Change the `<` to a `>`
+- Change the `1` to `5`
 
---- task ---
+Inside the <code style="background-color: #00a4a6">if</code> block:
 
-Change the `5` to `1` on the `set level to 5` block inside the `if level > 5` block.
+- Change the `5` to `1` on the <code style="background-color: #dc143c">set level to 5</code> block
+- Change the `250` to `50` on the <code style="background-color: #dc143c">set maximum to 50</code> block
 
-Change the `250` to `50` on the `set maximum to 50` block inside the `if level > 5` block.
-
-![The final blocks of code showing the changes made to `on button B pressed`.](images/onbuttonB-final.png)
+<div style="position:relative;height:calc(300px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_61hUcH2P8Frx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 ### Set a normal sound level
 
-Using the `on start` block, you will need to program a normal sound level.
-
+Using the <code style="background-color: #1e90ff">on start</code> block, you will need to program a normal alarm sensitivity level.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag out a `set maximum to 0` block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out a <code style="background-color: #dc143c">set maximum to 0</code> block.
 
-Place it inside the `on start` block
+Place it inside the <code style="background-color: #1e90ff">on start</code> block
+
+--- /task ---
+
+--- task ---
 
 Click on the variable name `maximum` and change it to `level`
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_ccYWRDM7d5c9" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+Change the `0` to `3` on the <code style="background-color: #dc143c">set level</code> block.
+
+<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Hoiqo1sqUyY" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
-
---- task ---
-
-Change the `0` to `3` on the `set level to 0` block.
-
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_fXxC5cYgkUHb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
-
---- /task ---
-
 
 --- task ---
 
