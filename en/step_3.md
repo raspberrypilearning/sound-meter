@@ -39,7 +39,7 @@ From the <code style="background-color: #dc143c">Variables</code> menu, grab the
 
 Place the block inside the <code style="background-color: #1e90ff">on start</code> block, and change the `0` to `150`.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_D7PUcJXFR51p" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(125px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_D7PUcJXFR51p" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -51,7 +51,7 @@ Place the block inside the <code style="background-color: #1e90ff">on start</cod
 title: For micro:bit V1
 ---
 
-This maximum should work for light levels, too!
+This maximum value works for light levels, too!
 
 --- /collapse ---
 
@@ -89,13 +89,17 @@ Grab a <code style="background-color: #00a4a6">false</code> block.
 
 Place this block over the top of the `0`. 
 
-<div style="position:relative;height:calc(150px + 5em);width:80%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_U76eECeWUiMf" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fwaYDuJi42M4" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 ### Check if the alarm should sound
 
-The alarm should only sound **if** the current sound level is **larger** than the maximum **and** the alarm variable is **equal to** `false`. 
+The alarm should only sound **if:** 
+
++ Sound level is **larger** than the maximum   
+**AND** 
++ the alarm variable is **equal to** `false`. 
 
 --- task ---
 
@@ -105,7 +109,7 @@ From the <code style="background-color: #00a4a6">Logic</code> menu grab an <code
 
 Place the block inside the <code style="background-color: #00aa00">every</code> loop underneath the <code style="background-color: #378273">log data</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_Ve9W13cyKXTi" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Ve9W13cyKXTi" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -113,17 +117,15 @@ Place the block inside the <code style="background-color: #00aa00">every</code> 
 
 Open the <code style="background-color: #00a4a6">Logic</code> menu again and take an <code style="background-color: #00a4a6">and</code> block. 
 
-<img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the and block in the 'Boolean' section" width="250"/>
+<img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the and block in the 'Boolean' section" width="200"/>
 
 Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_JYu2mx9ku6pC" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JYu2mx9ku6pC" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 Now you need to add the **two** conditions either side of the **and**. 
-
-This will mean that the code inside your <code style="background-color: #00a4a6">if</code> block will only run if **both** conditions are true. 
 
 --- task ---
 
@@ -149,7 +151,7 @@ Put it in the second `0` of the <code style="background-color: #00a4a6">0 > 0</c
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_L7M4isPeYR3c" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(275px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_L7M4isPeYR3c" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- collapse ---
 
@@ -167,15 +169,13 @@ Put it in the second `0` of the <code style="background-color: #00a4a6">0 > 0</c
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_h2Y4WJ4LPL1J" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(275px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iCic5U99A508" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
 
 --- /task ---
 
-You only want to set the alarm off if it is **not** already active!
-
-To do this, you need to check whether the <code style="background-color: #dc143c">alarm</code> variable **is equal to** <code style="background-color: #00a4a6">false</code>. 
+You only want to set the alarm off if the <code style="background-color: #dc143c">alarm</code> variable **is equal to** <code style="background-color: #00a4a6">false</code>. 
 
 --- task ---
 
@@ -225,7 +225,7 @@ Place this inside of the <code style="background-color: #00a4a6">if</code> block
 
 **Select** an icon to use for your alarm. 
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_YCfaePdWAchL" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(275px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_YCfaePdWAchL" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
 
@@ -249,7 +249,7 @@ Place the duplicated block below the <code style="background-color: #e63022">pla
 
 Change the <code style="background-color: #00a4a6">false</code> to <code style="background-color: #00a4a6">true</code>.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_UmibCbeCJhPm" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_UmibCbeCJhPm" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -269,7 +269,7 @@ From the <code style="background-color: #d400d4">Input</code> menu, drag out an 
 
 From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm</code> block and place it inside the <code style="background-color: #d400d4">on logo</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_2eDAPFTsAVxh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2eDAPFTsAVxh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- collapse ---
 
@@ -287,7 +287,7 @@ Use the dropdown to change the button to <code style="background-color: #d400d4"
 
 From your <code style="background-color: #1e90ff">on start</code> block, Duplicate the <code style="background-color: #dc143c">set alarm</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.     
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_L6pHzMi2F4m0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_L6pHzMi2F4m0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
 

@@ -13,7 +13,7 @@ In this step you will program the buttons on the micro:bit to adjust the sensiti
 </div>
 </div>
 
-### Decrease the sound level
+### Decrease the maximum sound level
 
 The **A button** is on the left so you will use this to decrease the maximum value for the alarm. 
 
@@ -21,11 +21,13 @@ The **A button** is on the left so you will use this to decrease the maximum val
 
 From the <code style="background-color: #D400D4">Input</code> menu, drag out an  block and place it in the code editor.
 
-<img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="350"/>
+<img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="300"/>
 
 --- /task ---
 
-In the previous step you created two variables, `maximum` and `alarm`. Now you need to create another variable for the current sensitivity **level**.
+In the previous step you created two variables, <code style="background-color: #dc143c">maximum</code> and <code style="background-color: #dc143c">alarm</code>. 
+
+Now you will create another variable for the sensitivity **level**.
 
 --- task ---
 
@@ -39,7 +41,7 @@ Drag the <code style="background-color: #dc143c">change</code> block and place i
 
 Change the `1` to `-1`.
 
-<div style="position:relative;height:calc(150px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_0m6H8aMea4AW" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_0m6H8aMea4AW" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -47,15 +49,15 @@ Change the `1` to `-1`.
 
 From the <code style="background-color: #DC143C">Variables</code> menu, also drag the <code style="background-color: #dc143c">change</code> block. 
 
-Place it below the <code style="background-color: #dc143c">change level by -1</code> block.
+Place it **below the <code style="background-color: #dc143c">change level by -1</code> block.
 
 Change the variable shown on the block from `level` to `maximum` by clicking on the variable name.
 
-Change the `1` to `-50`
+Change the `1` to `-50`.
 
-![Animation showing the drop down menu on the `change maximum by 1` variable block](images/change-variable.gif)
+<img src="images/change-variable.gif" alt="Animation showing the drop down menu on the `change maximum by 1` variable block." width="300"/>
 
-<div style="position:relative;height:calc(150px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fz1FgF5aEi7k" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fz1FgF5aEi7k" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -69,7 +71,7 @@ From the <code style="background-color: #00A4A6">Logic</code> menu, drag out an 
 
 Place it below the <code style="background-color: #dc143c">change maximum by -50</code> block.
 
-<div style="position:relative;height:calc(175px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5kbWwj8aHeTj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5kbWwj8aHeTj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -79,7 +81,7 @@ From the <code style="background-color: #00A4A6">Logic</code> menu, drag out the
 
 Place it inside the `true` space in the <code style="background-color: #00a4a6">if</code> block. 
 
-<div style="position:relative;height:calc(175px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JrAM55EWFeEj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JrAM55EWFeEj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -89,7 +91,7 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag out
 
 Place it inside the first `0` of the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
 
-<div style="position:relative;height:calc(175px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2iFC25Dt3KRt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2iFC25Dt3KRt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -155,9 +157,11 @@ Change the `100` to `500`.
 
 --- /task ---
 
-### Decrease the sound level
+### Increase the maximum sound level
 
-Now you have programmed the <code style="background-color: #d400d4">on button A pressed</code> block, you will need to do the same for <code style="background-color: #d400d4">on button B pressed</code>.
+Now you have programmed the <code style="background-color: #d400d4">on button A pressed</code> block. 
+
+You will need to do the same for <code style="background-color: #d400d4">on button B pressed</code> to increase the maximum.
 
 --- task ---
 
@@ -187,7 +191,7 @@ Inside the <code style="background-color: #d400d4">on button B pressed</code> bl
 
 - Change the `-50` to `50` on the <code style="background-color: #dc143c">change maximum</code> block
 
-![The `on button B pressed` block with the change level and change maximum variables shown.](images/onbuttonB-changes.png)
+<img src="images/onbuttonB-changes.png" alt="The `on button B pressed` block with the change level and change maximum variables shown." width="350"/>
 
 --- /task ---
 
@@ -203,7 +207,7 @@ Inside the <code style="background-color: #00a4a6">if</code> block:
 - Change the `5` to `1` on the <code style="background-color: #dc143c">set level to 5</code> block
 - Change the `250` to `50` on the <code style="background-color: #dc143c">set maximum to 50</code> block
 
-<div style="position:relative;height:calc(300px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_61hUcH2P8Frx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_61hUcH2P8Frx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -225,7 +229,7 @@ Click on the variable name `maximum` and change it to `level`
 
 Change the `0` to `3` on the <code style="background-color: #dc143c">set level</code> block.
 
-<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Hoiqo1sqUyY" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Hoiqo1sqUyY" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -243,6 +247,12 @@ The default starting point is level 3.
 
 --- task ---
 
-[[[download-to-microbit]]]
+Download your program onto your micro:bit!
 
 --- /task ---
+
+[[[download-to-microbit]]]
+
+Well done! You now have a fully working sound or light meter! 
+
+Next it is time to check what you have learned!
