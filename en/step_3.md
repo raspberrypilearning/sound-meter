@@ -73,7 +73,7 @@ Create another new <code style="background-color: #dc143c">Variable</code>, this
 
 Drag the <code style="background-color: #dc143c">set alarm</code> block from the <code style="background-color: #dc143c">Variables</code> menu.
 
-Place it inside the <code style="background-color: #1e90ff">on start</code> block, underneath the previous one. 
+Place it inside the <code style="background-color: #1e90ff">on start</code> block. 
 
 --- /task ---
 
@@ -89,7 +89,7 @@ Grab a <code style="background-color: #00a4a6">false</code> block.
 
 Place this block over the top of the `0`. 
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_9xjcWTAr934t" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(225px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Pc7HtrCL7KeK" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
