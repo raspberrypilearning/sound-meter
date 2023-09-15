@@ -2,7 +2,7 @@
 title: Sound level meter
 hero_image: images/banner.png
 description: 
-  Measure, display and log sound levels on your micro:bit! Set an alarm if the level is too high.
+  Measure, display, and log sound levels on your micro:bit! Set an alarm if the level is too high.
 version: 4
 listed: false
 copyedit: false
