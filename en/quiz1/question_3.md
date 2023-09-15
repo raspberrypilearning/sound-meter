@@ -17,7 +17,7 @@ What will happen when the `B` button is pressed on the micro:bit?
 
   --- feedback ---
 
-  Not quite! Pressing button `A` will make these changes but not button `B`
+  Not quite! Pressing button `A` will make these changes, but not button `B`.
 
   --- /feedback ---
 
