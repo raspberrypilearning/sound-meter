@@ -1,6 +1,6 @@
 ## What next?
 
-If you are following the [Intro to micro:bit](https://projects.raspberrypi.org/en/raspberrypi/path-name) path, you can move on to the [Sleep tracker](https://projects.raspberrypi.org/en/projects/sleep-tracker) project. 
+If you are following the [Introduction to micro:bit](https://projects.raspberrypi.org/en/raspberrypi/path-name) path, you can move on to the [Sleep tracker](https://projects.raspberrypi.org/en/projects/sleep-tracker) project. 
 
 In this project, you will make a sleep tracker that uses the micro:bit's accelerometer to track how many times you move in the night. Getting good sleep is really important to help you feel your best!
 
@@ -17,4 +17,4 @@ In this project, you will make a sleep tracker that uses the micro:bit's acceler
 
 --- /no-print ---
 
-If you want to have more fun exploring micro:bit, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=makecode&curriculum%5B%5D=%201).
+If you want to have more fun exploring micro:bit, then you could try any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=makecode&curriculum%5B%5D=%201).
