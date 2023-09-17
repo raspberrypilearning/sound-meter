@@ -119,7 +119,7 @@ There is no microphone on the micro:bit V1, so instead you can use the <code sty
 
 ### Log the sound levels (V2 only)
 
-The V2 of the micro:bit has a built-in data logger, which enables you to track data from various sensors and inputs. You will need to install an extension to use this.
+The V2 micro:bit has a built-in data logger, which enables you to track data from various sensors and inputs. You will need to install an extension to use this.
 
 --- task ---
 
