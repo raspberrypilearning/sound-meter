@@ -43,7 +43,7 @@ Place the block inside the <code style="background-color: #1e90ff">on start</cod
 
 --- /task ---
 
-THe value `150` is a little more than half the maximum sound level the micro:bit can sense, so that should be a good level to start with. 
+The value `150` is a little more than half the maximum sound level the micro:bit can sense, so that should be a good level to start with. 
 
 --- collapse ---
 
@@ -83,7 +83,7 @@ You need to set this new variable to `false` instead of a number.
 
 Open the <code style="background-color: #00a4a6">Logic</code> menu. 
 
-Grab a <code style="background-color: #00a4a6">false</code> block. 
+Get a <code style="background-color: #00a4a6">false</code> block. 
 
 <img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section." width="200"/>
 
@@ -241,7 +241,7 @@ Place this inside the <code style="background-color: #00a4a6">if</code> block th
 
 --- task ---
 
-Inside your <code style="background-color: #1e90ff">on start</code> block, **right click** on the <code style="background-color: #dc143c">set</code> block and select **Duplicate**. 
+Inside your <code style="background-color: #1e90ff">on start</code> block, **right-click** on the <code style="background-color: #dc143c">set</code> block and select **Duplicate**. 
 
 ![A demo of right clicking on the 'set alarm to false' block, and then duplicating it.](images/duplicate-block.gif)
 
