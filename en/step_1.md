@@ -6,7 +6,7 @@ In this project, you will make a sound level meter that will use the micro:bit t
 
 You will also create a way to let other people know that the noise level is too high, so they know to keep it quiet, even if just for a few minutes.
 
-This project will also show you how to save the sound level data to your micro:bit so you can see the noisiest times of the day.
+This project will also show you how to save the sound level data to your micro:bit so you can find the noisiest times of the day.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  <span style="color: #0faeb0">Healthy sound levels</span> are an important part of our wellbeing. Peaceful and soothing sounds such as the sounds of nature or the ocean can help calm us down. However, being around louder noises such as loud music for too long can be bad for our ears. If things get too loud, it is good to take breaks, move away, or use ear protectors.
