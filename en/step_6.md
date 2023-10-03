@@ -33,5 +33,3 @@ title: Completed project
 You can view the [completed project here](https://makecode.microbit.org/_H86aov1mw9pA){:target="_blank"}.
 
 --- /collapse ---
-
---- save ---
