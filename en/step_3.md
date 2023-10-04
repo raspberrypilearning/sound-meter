@@ -85,13 +85,16 @@ You need to set this new variable to `false` instead of a number.
 
 Open the `Logic`{:class="microbitlogic"} menu. 
 
-Get a `false`{:class="microbit"} block. 
+Get a `false`{:class="microbitlogic"} block. 
 
 <img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section." width="200"/>
 
 Place this block over the top of the `0`. 
 
-<div style="position:relative;height:calc(225px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Pc7HtrCL7KeK" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let maximum = 150
+let alarm = false
+```
 
 --- /task ---
 
@@ -101,29 +104,51 @@ The alarm should only sound **if:**
 
 + The sound level is **larger** than the maximum   
 **AND** 
-+ The alarm variable is **equal to** `false` 
++ The alarm variable is **not true**
 
 --- task ---
 
-From the <code style="background-color: #00a4a6">Logic</code> menu, get an <code style="background-color: #00a4a6">if</code> block. 
+From the `Logic`{:class="microbitlogic"} menu, get an `if...then`{:class="microbitlogic"} block. 
 
 <img src="images/if-block-location.png" alt="The Logic menu with an 'if' block highlighted." width="350"/>
 
-Place the block inside the <code style="background-color: #00aa00">every</code> loop underneath the <code style="background-color: #378273">log data</code> block.
+Place the block inside the `every`{:class="microbitloops"} loop underneath the `log data`{:class="microbitdatalogger"} block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Ve9W13cyKXTi" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
+    if (true) {
+    	
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Open the <code style="background-color: #00a4a6">Logic</code> menu again and take an <code style="background-color: #00a4a6">and</code> block. 
+Open the `Logic`{:class="microbitlogic"} menu again and take an `and`{:class="microbitlogic"} block. 
 
 <img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'and' block in the 'Boolean' section." width="200"/>
 
-Place it in the `true` section of the <code style="background-color: #00a4a6">if</code> block. 
+Place it in the `true` section of the `if...then`{:class="microbitlogic"} block. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JYu2mx9ku6pC" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbi
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
+    if (false && false) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -131,9 +156,9 @@ Now you need to add the **two** conditions either side of the **and**.
 
 --- task ---
 
-Again in the <code style="background-color: #00a4a6">Logic</code> menu, get a <code style="background-color: #00a4a6">0 < 0</code> condition block. 
+Again in the `Logic`{:class="microbitlogic"} menu, get a `0 < 0`{:class="microbitlogic"} condition block. 
 
-Place it on one side of the <code style="background-color: #00a4a6">and</code> block. 
+Place it on one side of the `and`{:class="microbitlogic"} block. 
 
 Use the drop-down menu to change the less than symbol (`<`) to a greater than (`>`) symbol. 
 
@@ -143,17 +168,29 @@ Use the drop-down menu to change the less than symbol (`<`) to a greater than (`
 
 --- task ---
 
-From the <code style="background-color: #d400d4">Input</code> menu, drag a <code style="background-color: #d400d4">sound level</code> block.
+From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
 
-Put it in the first `0` of the <code style="background-color: #00a4a6">0 > 0</code> block
+Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block
 
-From the <code style="background-color: #dc143c">Variables</code> menu, drag a <code style="background-color: #dc143c">maximum</code> block.
+From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
 
-Put it in the second `0` of the <code style="background-color: #00a4a6">0 > 0</code> block.
+Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(275px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_L7M4isPeYR3c" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    let maximum = 0
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
+    if (input.soundLevel() > maximum && false) {
+    	
+    }
+})
+```
 
 --- collapse ---
 
@@ -161,23 +198,34 @@ Your code should look like this:
 title: For micro:bit V1
 ---
 
-From the <code style="background-color: #d400d4">Input</code> menu, drag a <code style="background-color: #d400d4">light level</code> block.
+From the `Input`{:class="microbitinput"} menu, drag a `light level`{:class="microbitinput"} block.
 
-Put it in the first `0` of the <code style="background-color: #00a4a6">0 > 0</code> block.
+Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block.
 
-From the <code style="background-color: #dc143c">Variables</code> menu, drag a <code style="background-color: #dc143c">maximum</code> block.
+From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
 
-Put it in the second `0` of the <code style="background-color: #00a4a6">0 > 0</code> block.
+Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
 
 Your code should look like this:
 
-<div style="position:relative;height:calc(275px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iCic5U99A508" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    let maximum = 0
+    led.plotBarGraph(
+    input.lightLevel(),
+    255
+    )
+    if (input.lightLevel() > maximum && false) {
+    	
+    }
+})
+```
 
 --- /collapse ---
 
 --- /task ---
 
-You only want to set the alarm off if the <code style="background-color: #dc143c">alarm</code> variable **is equal to** <code style="background-color: #00a4a6">false</code>. 
+You only want to set the alarm off if the `alarm`{:class="microbitvariables"} variable **is** `true`{:class="microbitlogic"}. 
 
 --- task ---
 
