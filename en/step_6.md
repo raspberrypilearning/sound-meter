@@ -24,6 +24,10 @@ Once the alarm sounds, click the logo at the top to reset it.
 </div>
 </div>
 
+[[[download-to-microbit]]]
+
+[[[microbit-share]]]
+
 --- collapse ---
 
 ---

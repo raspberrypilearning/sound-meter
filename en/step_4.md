@@ -255,6 +255,4 @@ Download your program onto your micro:bit!
 
 Well done! You now have a fully working sound or light meter! 
 
-[[[microbit-share]]]
-
 Next, it is time to check what you have learnt!
