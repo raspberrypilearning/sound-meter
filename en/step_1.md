@@ -18,8 +18,6 @@ You will:
 + Use the buttons to change the alarm sensitivity
 + Log sound data to analyse later
 
---- no-print ---
-
 ### Play ▶️
 
 --- task ---
@@ -39,9 +37,3 @@ Click on the embedded project.
 </div>
 
 --- /task ---
-
---- /no-print ---
-
---- print-only ---
-![Completed project](images/showcase_static.png)
---- /print-only ---

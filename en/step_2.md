@@ -57,11 +57,11 @@ Give your new project the name `sound level meter` and click **Create**.
 
 ### Plot a graph of the sound level
 
-In this project, you will make use of the <code style="background-color: #1e90ff">on start</code> block, but not the <code style="background-color: #1e90ff">forever</code> block. 
+In this project, you will make use of the `on start`{:class="microbitbasic"} block, but not the `forever`{:class="microbitbasic"} block. 
 
 --- task ---
 
-You can delete the <code style="background-color: #1e90ff">forever</code> block now by dragging it to the menu panel.
+You can delete the `forever`{:class="microbitbasic"} block now by dragging it to the menu panel.
 
 ![Animation showing the forever block being deleted by dragging it back on top of the block menus.](images/delete-forever.gif)
 
@@ -71,7 +71,7 @@ The first step is to get the micro:bit to capture the sound levels at regular in
 
 --- task ---
 
-From the <code style="background-color: #00AA00">Loops</code> menu, drag an <code style="background-color: #00aa00">every 500 ms</code> block and place it in the code editor panel.
+From the `Loops`{:class="microbitloops"} menu, drag an `every 500 ms`{:class="microbitloops"} block and place it in the code editor panel.
 
 <img src="images/every-500ms.png" alt="The Loops menu with the 'every 500 ms' block highlighted." width="350"/>
 
@@ -83,25 +83,39 @@ Any code inside this loop will run every **500 milliseconds**.
 
 --- task ---
 
-From the <code style="background-color: #5C2D91">Led</code> menu, drag a <code style="background-color: #5c2d91">plot bar graph</code> block.
+From the `Led`{:class="microbitled"} menu, drag a `plot bar graph`{:class="microbitled"} block.
 
 <img src="images/plot-bargraph.png" alt="The Led menu with the 'plot bar graph' block highlighted." width="350"/>
 
-Place it inside the <code style="background-color: #00aa00">every 500 ms</code> block.
+Place it inside the `every 500 ms`{:class="microbitloops"} block.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_LheU15Tfr59C" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    0,
+    0
+    )
+})
+```
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag a <code style="background-color: #D400D4">sound level</code> block.  
+From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.  
 
-Place it inside the first `0` in the <code style="background-color: #5c2d91">plot bar graph of</code> block.
+Place it inside the first `0` in the `plot bar graph of`{:class="microbitled"} block.
 
 Change the second `0` to `255`.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Xbc6McLCi5gJ" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+})
+```
 
 --- collapse ---
 
@@ -109,7 +123,7 @@ Change the second `0` to `255`.
 title: For micro:bit V1
 ---
 
-There is no microphone on the micro:bit V1, so instead you can use the <code style="background-color: #d400d4">light level</code> block to measure the light levels of your environment.
+There is no microphone on the micro:bit V1, so instead you can use the `light level`{:class="microbitinput"} block to measure the light levels of your environment.
 
 ![Animation showing the light level block being placed inside the first '0' on the 'plot bar graph of' block.](images/light-level.gif)
 
@@ -131,13 +145,21 @@ On the menu panel, click on **Extensions**. Another window will open showing rec
 
 --- task ---
 
-From the <code style="background-color: #378273">Data Logger</code> menu, drag a <code style="background-color: #378273">log data</code> block.
+From the `Data Logger`{:class="microbitdatalogger"} menu, drag a `log data`{:class="microbitdatalogger"} block.
 
 <img src="images/data-logger.png" alt="The Data Logger menu with the 'log data column...value' block highlighted." width="350"/>
 
 Place it below the <code style="background-color: #5C2D91">plot bar graph of</code> block.
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_93KR1vXYFPj1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("", 0))
+})
+```
 
 --- /task ---
 
@@ -145,15 +167,31 @@ Place it below the <code style="background-color: #5C2D91">plot bar graph of</co
 
 Type `Sound level` in the column field.
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JHr0atCoo2ju" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound level", 0))
+})
+```
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag another <code style="background-color: #D400D4">sound level</code> block and place it inside the `0` on the <code style="background-color: #378273">log data</code> block.
+From the `Input`{:class="microbitinput"} menu, drag another `sound level`{:class="microbitinput"} block and place it inside the `0` on the `log data`{:class="microbitdatalogger"} block.
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VCJdqy3yALDh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+})
+```
 
 --- /task ---
 
