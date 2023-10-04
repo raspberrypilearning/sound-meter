@@ -181,7 +181,7 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-From the `Input`{:class="microbitinput"} menu, drag another `sound level`{:class="microbitinput"} block and place it inside the `0` on the `log data`{:class="microbitlogdata"} block.
+From the `Input`{:class="microbitinput"} menu, drag another `sound level`{:class="microbitinput"} block and place it inside the `0` on the `log data`{:class="microbitdatalogger"} block.
 
 ```microbit
 loops.everyInterval(500, function () {
