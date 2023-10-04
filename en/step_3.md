@@ -17,7 +17,7 @@ You will need to make a variable to hold the sound level that will trigger the a
 
 --- task ---
 
-Open the <code style="background-color: #dc143c">Variables</code> menu and click **Make a Variable**.
+Open the `Variables`{:class="microbitvariables"} menu and click **Make a Variable**.
 
 <img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a Variable' button highlighted." width="350"/>
 
@@ -33,13 +33,15 @@ Name your new variable `maximum`.
 
 --- task ---
 
-From the <code style="background-color: #dc143c">Variables</code> menu, get the <code style="background-color: #dc143c">set maximum</code> block. 
+From the `Variables`{:class="microbitvariables"} menu, get the `set maximum`{:class="microbitvariables"} block. 
 
 <img src="images/set-max-start.png" alt="The Variables menu with the 'set maximum to 0' block highlighted." width="350"/>
 
-Place the block inside the <code style="background-color: #1e90ff">on start</code> block, and change the `0` to `150`.
+Place the block inside the `on start`{:class="microbitbasic"} block, and change the `0` to `150`.
 
-<div style="position:relative;height:calc(125px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_D7PUcJXFR51p" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let maximum = 150
+```
 
 --- /task ---
 
@@ -63,7 +65,7 @@ To do this, you will use another variable that will be set to `false` to start, 
 
 --- task ---
 
-Create another new <code style="background-color: #dc143c">Variable</code>, this time called `alarm`.
+Create another new `Variable`{:class="microbitvariables"}, this time called `alarm`.
 
 <img src="images/alarm-variable-name.png" alt="The 'New variable name' window with the name 'alarm' written in the box." width="350"/>
 
@@ -71,9 +73,9 @@ Create another new <code style="background-color: #dc143c">Variable</code>, this
 
 --- task ---
 
-Drag the <code style="background-color: #dc143c">set alarm</code> block from the <code style="background-color: #dc143c">Variables</code> menu.
+Drag the `set alarm`{:class="microbitvariables"} block from the `Variables`{:class="microbitvariables"} menu.
 
-Place it inside the <code style="background-color: #1e90ff">on start</code> block. 
+Place it inside the `on start`{:class="microbitbasic"} block. 
 
 --- /task ---
 
@@ -81,9 +83,9 @@ You need to set this new variable to `false` instead of a number.
 
 --- task ---
 
-Open the <code style="background-color: #00a4a6">Logic</code> menu. 
+Open the `Logic`{:class="microbitlogic"} menu. 
 
-Get a <code style="background-color: #00a4a6">false</code> block. 
+Get a `false`{:class="microbit"} block. 
 
 <img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section." width="200"/>
 
