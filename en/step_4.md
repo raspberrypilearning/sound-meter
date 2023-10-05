@@ -41,7 +41,12 @@ Drag the `change`{:class='microbitvariables'} block and place it inside the `on 
 
 Change the `1` to `-1`.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_0m6H8aMea4AW" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+})
+```
 
 --- /task ---
 
@@ -57,7 +62,14 @@ Change the `1` to `-50`.
 
 <img src="images/change-variable.gif" alt="Animation showing the drop-down menu on the `change maximum by 1` variable block." width="300"/>
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fz1FgF5aEi7k" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+})
+```
 
 --- /task ---
 
@@ -71,7 +83,17 @@ From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogi
 
 Place it below the `change maximum by -50`{:class='microbitvariables'} block.
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5kbWwj8aHeTj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (true) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -81,7 +103,17 @@ From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbit
 
 Place it inside the `true` space in the `if`{:class='microbitlogic'} block. 
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JrAM55EWFeEj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (0 < 0) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -91,7 +123,17 @@ From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='
 
 Place it inside the first `0` of the `0 < 0`{:class='microbitlogic'} comparison block.
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2iFC25Dt3KRt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 0) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -109,7 +151,17 @@ Place it inside the `if`{:class='microbitlogic'} block. Ensure the variable sele
 
 Change the `0` to `5` on the `set level to 0`{:class='microbitvariables'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_L8uHrDTJ14mH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+    }
+})
+```
 
 --- /task ---
 
@@ -121,7 +173,18 @@ Place it below the `set level to 5`{:class='microbitvariables'} block.
 
 Change the `0` to `250`.
 
-<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Pm3REheUD1uo" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+})
+```
 
 --- /task ---
 
@@ -131,7 +194,19 @@ From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='mi
 
 Place it **below** the `if`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(225px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ACcH4j7hj5p1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(0)
+})
+```
 
 --- /task ---
 
@@ -141,7 +216,19 @@ From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='
 
 Place it in the `0` in the `show number`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(250px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_KDyMygJveb02" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(level)
+})
+```
 
 --- /task ---
 
@@ -153,7 +240,20 @@ Place it below the `show number`{:class='microbitbasic'} block.
 
 Change the `100` to `500`.
 
-<div style="position:relative;height:calc(275px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TE52mwevkU37" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(level)
+    basic.pause(500)
+})
+```
 
 --- /task ---
 
@@ -207,7 +307,20 @@ Inside the `if`{:class='microbitlogic'} block:
 - Change the `5` to `1` in the `set level to 5`{:class='microbitvariables'} block
 - Change the `250` to `50` in the `set maximum to 50`{:class='microbitvariables'} block
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_61hUcH2P8Frx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.B, function () {
+    level += 1
+    maximum += 50
+    if (level > 5) {
+        level = 1
+        maximum = 50
+    }
+    basic.showNumber(level)
+    basic.pause(500)
+})
+```
 
 --- /task ---
 
@@ -229,7 +342,11 @@ Click on the variable name `maximum` and change it to `level`.
 
 Change the `0` to `3` in the `set level`{:class='microbitvariables'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Hoiqo1sqUyY" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let maximum = 150
+let alarm = false
+let level = 3
+```
 
 --- /task ---
 
