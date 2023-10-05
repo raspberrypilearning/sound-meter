@@ -34,6 +34,6 @@ Once the alarm sounds, click the logo at the top to reset it.
 title: Completed project
 ---
 
-You can view the [completed project here](https://makecode.microbit.org/_H86aov1mw9pA){:target="_blank"}.
+You can view the [completed project here](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}.
 
 --- /collapse ---
