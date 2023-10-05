@@ -149,7 +149,7 @@ From the `Data Logger`{:class="microbitdatalogger"} menu, drag a `log data`{:cla
 
 <img src="images/data-logger.png" alt="The Data Logger menu with the 'log data column...value' block highlighted." width="350"/>
 
-Place it below the <code style="background-color: #5C2D91">plot bar graph of</code> block.
+Place it below the `plot bar graph of`{:class='microbitled'} block.
 
 ```microbit
 loops.everyInterval(500, function () {

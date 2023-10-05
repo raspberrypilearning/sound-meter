@@ -12,7 +12,7 @@ Have fun!
 legend: Question 1 of 3
 ---
 
-Which menu contains the blocks for <code style="background-color: #d400d4">on button A pressed</code> and <code style="background-color: #d400d4">on logo pressed</code>?
+Which menu contains the blocks for `on button A pressed`{:class='microbitinput'} and `on logo pressed`{:class='microbitinput'}?
 
 --- choices ---
 
