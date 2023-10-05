@@ -120,7 +120,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (true) {
     	
     }
@@ -137,13 +137,13 @@ Open the `Logic`{:class="microbitlogic"} menu again and take an `and`{:class="mi
 
 Place it in the `true` section of the `if...then`{:class="microbitlogic"} block. 
 
-```microbi
+```microbit
 loops.everyInterval(500, function () {
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (false && false) {
     	
     }
@@ -225,23 +225,48 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-You only want to set the alarm off if the `alarm`{:class="microbitvariables"} variable **is** `true`{:class="microbitlogic"}. 
+You only want to set the alarm off if the `alarm`{:class="microbitvariables"} variable is **not** set `true`{:class="microbitlogic"}. 
 
 --- task ---
 
-Get a <code style="background-color: #00a4a6">0 = 0</code> condition block from the <code style="background-color: #00a4a6">Logic</code> menu. 
+Get a `not`{:class='microbitlogic'} block from the `Logic`{:class='microbitlogic'} menu. 
 
-Place it on the other side of the <code style="background-color: #00a4a6">and</code> block.
+Place it on the other side of the `and`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_X84gwbPC3guw" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    let maximum = 0
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(false)) {
+    	
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Place an <code style="background-color: #dc143c">alarm</code> variable block on one side of the equal sign and a <code style="background-color: #00a4a6">false</code> block on the other side. Like this:
+Place an `alarm`{:class='microbitvariables'} variable block in the `not`{:class='microbitlogic'} block like this:
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_4sYXrcHcg0Lt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    let alarm = 0
+    let maximum = 0
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -251,13 +276,26 @@ Now it's time to add your alarm sound!
 
 --- task ---
 
-From the <code style="background-color: #e63022">Music</code> menu, take a <code style="background-color: #e63022">play</code> block. 
+From the `Music`{:class='microbitmusic'} menu, take a `play`{:class='microbitmusic'} block. 
 
 <img src="images/play-block-location-v2.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
 
-Place this inside the <code style="background-color: #00a4a6">if</code> block that checks if the alarm should sound. 
+Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound. 
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bHYiMdKDjcw2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    let alarm = 0
+    let maximum = 0
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
+        music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
+    }
+})
+```
 
 --- collapse ---
 
@@ -269,13 +307,26 @@ The micro:bit V1 has no speaker, so you have to adapt the program for the alarm.
 
 Rather than an alarm that uses sound, you can display an icon on the LEDs when the light level is higher than the maximum. 
 
-From the <code style="background-color: #1e90ff">Basic</code> menu, get a <code style="background-color: #1e90ff">show icon</code> block.
+From the `Basic`{:class='microbitbasic'} menu, get a `show icon`{:class='microbitbasic'} block.
 
-Place this inside the <code style="background-color: #00a4a6">if</code> block that checks if the alarm should sound. 
+Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound. 
 
 **Select** an icon to use for your alarm. 
 
-<div style="position:relative;height:calc(275px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_YCfaePdWAchL" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    let alarm = 0
+    let maximum = 0
+    led.plotBarGraph(
+    input.lightLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Light level", input.lightLevel()))
+    if (input.lightLevel() > maximum && !(alarm)) {
+        basic.showIcon(IconNames.Sad)
+    }
+})
+```
 
 --- /collapse ---
 
@@ -285,21 +336,33 @@ Place this inside the <code style="background-color: #00a4a6">if</code> block th
 
 **Choose** which alarm sound you would like to use, from the available sounds in the drop-down menu. 
 
-![The drop-down menu in the play block, which lets you choose which sound you would like to play.](images/choose-sound.gif)
-
 --- /task ---
 
 --- task ---
 
-Inside your <code style="background-color: #1e90ff">on start</code> block, **right-click** on the <code style="background-color: #dc143c">set</code> block and select **Duplicate**. 
+Inside your `on start`{:class='microbitbasic'} block, **right-click** on the `set`{:class='microbitvariables'} block and select **Duplicate**. 
 
 ![A demo of right clicking on the 'set alarm to false' block, and then duplicating it.](images/duplicate-block.gif)
 
-Place the duplicated block below the <code style="background-color: #e63022">play</code> block. 
+Place the duplicated block below the `play`{:class='microbitmusic'} block. 
 
-Change the <code style="background-color: #00a4a6">false</code> to <code style="background-color: #00a4a6">true</code>.
+Change the `false`{:class='microbitlogic'} to `true`{:class='microbitlogic'}.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_UmibCbeCJhPm" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let alarm = false
+loops.everyInterval(500, function () {
+    let maximum = 0
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
+        music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
+        alarm = true
+    }
+})
+```
 
 --- /task ---
 
@@ -313,13 +376,18 @@ You can use the touch logo on the micro:bit to do this.
 
 --- task ---
 
-From the <code style="background-color: #d400d4">Input</code> menu, drag an <code style="background-color: #d400d4">on logo</code> block.
+From the `Input`{:class='microbitinput'} menu, drag an `on logo`{:class='microbitinput'} block.
 
 <img src="images/onlogo-block-location.png" alt="The logo on the top of the microbit above the LEDs." width="200"/>
 
-From your <code style="background-color: #1e90ff">on start</code> block, duplicate the <code style="background-color: #dc143c">set alarm</code> block and place it inside the <code style="background-color: #d400d4">on logo</code> block.
+From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on logo`{:class='microbitinput'} block.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2eDAPFTsAVxh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let alarm = false
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    alarm = false
+})
+```
 
 --- collapse ---
 
@@ -329,15 +397,20 @@ title: For micro:bit V1
 
 There is no touch sensor in the logo on the micro:bit V1, so instead you can use both the `A` and `B` buttons.
 
-From the <code style="background-color: #d400d4">Input</code> menu, drag an <code style="background-color: #d400d4">on button</code> block.
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
 
 <img src="images/on-button-location.png" alt="The Input menu with the 'on button A' block highlighted." width="350"/>
 
-Use the drop-down menu to change the button to <code style="background-color: #d400d4">A+B</code>.
+Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
 
-From your <code style="background-color: #1e90ff">on start</code> block, duplicate the <code style="background-color: #dc143c">set alarm</code> block and place it inside the <code style="background-color: #d400d4">on button</code> block.     
+From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.     
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_L6pHzMi2F4m0" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let alarm = false
+input.onButtonPressed(Button.AB, function () {
+    alarm = false
+})
+```
 
 --- /collapse ---
 

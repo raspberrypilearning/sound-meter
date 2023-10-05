@@ -19,37 +19,42 @@ The **A button** is on the left so you will use this to decrease the maximum val
 
 --- task ---
 
-From the <code style="background-color: #D400D4">Input</code> menu, drag an <code style="background-color: #d400d4">on button pressed</code> block and place it in the code editor.
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block and place it in the code editor.
 
 <img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="300"/>
 
 --- /task ---
 
-In the previous step, you created two variables, <code style="background-color: #dc143c">maximum</code> and <code style="background-color: #dc143c">alarm</code>. 
+In the previous step, you created two variables, `maximum`{:class='microbitvariables'} and `alarm`{:class='microbitvariables'}. 
 
 Now you will create another variable for the sensitivity **level**.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, click on **Make a variable** to create a variable called `level`.
+From the `Variables`{:class='microbitvariables'} menu, click on **Make a variable** to create a variable called `level`.
 
 --- /task --- 
 
 --- task ---
 
-Drag the <code style="background-color: #dc143c">change</code> block and place it inside the <code style="background-color: #d400d4">on button pressed</code> block. 
+Drag the `change`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block. 
 
 Change the `1` to `-1`.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_0m6H8aMea4AW" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+})
+```
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag another <code style="background-color: #dc143c">change</code> block. 
+From the `Variables`{:class='microbitvariables'} menu, drag another `change`{:class='microbitvariables'} block. 
 
-Place it **below** the <code style="background-color: #dc143c">change level by -1</code> block.
+Place it **below** the `change level by -1`{:class='microbitvariables'} block.
 
 Change the variable shown in the block from `level` to `maximum` by clicking on the variable name.
 
@@ -57,7 +62,14 @@ Change the `1` to `-50`.
 
 <img src="images/change-variable.gif" alt="Animation showing the drop-down menu on the `change maximum by 1` variable block." width="300"/>
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fz1FgF5aEi7k" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+})
+```
 
 --- /task ---
 
@@ -67,115 +79,203 @@ If button A is pressed when the level is already 1, then you need to make it so 
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag an <code style="background-color: #00a4a6">if</code> block. 
+From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block. 
 
-Place it below the <code style="background-color: #dc143c">change maximum by -50</code> block.
+Place it below the `change maximum by -50`{:class='microbitvariables'} block.
 
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5kbWwj8aHeTj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
-
-Place it inside the `true` space in the <code style="background-color: #00a4a6">if</code> block. 
-
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_JrAM55EWFeEj" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
---- task ---
-
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #dc143c">level</code> block.
-
-Place it inside the first `0` of the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
-
-<div style="position:relative;height:calc(175px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2iFC25Dt3KRt" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (true) {
+    	
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Change the `0` to `1` on the right-hand side of the <code style="background-color: #00a4a6">0 < 0</code> comparison block.
+From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
+
+Place it inside the `true` space in the `if`{:class='microbitlogic'} block. 
+
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (0 < 0) {
+    	
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #dc143c">set</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
 
-Place it inside the <code style="background-color: #00a4a6">if</code> block. Ensure the variable selected is `level`.
+Place it inside the first `0` of the `0 < 0`{:class='microbitlogic'} comparison block.
 
-Change the `0` to `5` on the `set level to 0` block.
-
-<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_L8uHrDTJ14mH" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 0) {
+    	
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Again from the <code style="background-color: #DC143C">Variables</code> menu, drag another <code style="background-color: #dc143c">set</code> block.
+Change the `0` to `1` on the right-hand side of the `0 < 0`{:class='microbitlogic'} comparison block.
 
-Place it below the <code style="background-color: #dc143c">set level to 5</code> block.
+--- /task ---
+
+--- task ---
+
+From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block.
+
+Place it inside the `if`{:class='microbitlogic'} block. Ensure the variable selected is `level`{:class='microbitvariables'}.
+
+Change the `0` to `5` on the `set level to 0`{:class='microbitvariables'} block.
+
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+    }
+})
+```
+
+--- /task ---
+
+--- task ---
+
+Again from the `Variables`{:class='microbitvariables'} menu, drag another `set`{:class='microbitvariables'} block.
+
+Place it below the `set level to 5`{:class='microbitvariables'} block.
 
 Change the `0` to `250`.
 
-<div style="position:relative;height:calc(200px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_Pm3REheUD1uo" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1e90ff">show number</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block.
 
-Place it **below** the <code style="background-color: #00a4a6">if</code> block.
+Place it **below** the `if`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(225px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ACcH4j7hj5p1" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(0)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #dc143c">level</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
 
-Place it in the `0` in the <code style="background-color: #1e90ff">show number</code> block.
+Place it in the `0` in the `show number`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(250px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_KDyMygJveb02" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(level)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Also from the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1e90ff">pause</code> block.
+Also from the `Basic`{:class='microbitbasic'} menu, drag the `pause`{:class='microbitbasic'} block.
 
-Place it below the <code style="background-color: #1e90ff">show number</code> block. 
+Place it below the `show number`{:class='microbitbasic'} block. 
 
 Change the `100` to `500`.
 
-<div style="position:relative;height:calc(275px + 5em);width:60%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TE52mwevkU37" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(level)
+    basic.pause(500)
+})
+```
 
 --- /task ---
 
 ### Increase the maximum sound level
 
-You have now programmed the <code style="background-color: #d400d4">on button A pressed</code> block. 
+You have now programmed the `on button A pressed`{:class='microbitinput'} block. 
 
-You will need to do the same for <code style="background-color: #d400d4">on button B pressed</code> to increase the maximum.
+You will need to do the same for `on button B pressed`{:class='microbitinput'} to increase the maximum.
 
 --- task ---
 
-Right-click on the entire <code style="background-color: #d400d4">on button A pressed</code> block and click **Duplicate**.
+Right-click on the entire `on button A pressed`{:class='microbitinput'} block and click **Duplicate**.
 
 ![Animation showing the right-click menu on the 'on button A pressed' block with 'Duplicate' highlighted.](images/onbuttonA-duplicate.gif)
 
-There will now be two <code style="background-color: #d400d4">on button A pressed</code> blocks in the code editor panel.
+There will now be two `on button A pressed`{:class='microbitinput'} blocks in the code editor panel.
 
 --- /task ---
 
 --- task ---
 
-Click on the `A` in the duplicated <code style="background-color: #d400d4">on button A pressed</code> block. A drop-down menu will open.
+Click on the `A` in the duplicated `on button A pressed`{:class='microbitinput'} block. A drop-down menu will open.
 
 Change the `A` to `B`.
 
@@ -185,11 +285,11 @@ Change the `A` to `B`.
 
 --- task ---
 
-Inside the <code style="background-color: #d400d4">on button B pressed</code> block:
+Inside the `on button B pressed`{:class='microbitinput'} block:
 
-- Change the `-1` to `1` in the <code style="background-color: #dc143c">change level</code> block 
+- Change the `-1` to `1` in the `change level`{:class='microbitvariables'} block 
 
-- Change the `-50` to `50` in the <code style="background-color: #dc143c">change maximum</code> block
+- Change the `-50` to `50` in the `change maximum`{:class='microbitvariables'} block
 
 <img src="images/onbuttonB-changes.png" alt="The `on button B pressed` block with the change level and change maximum variables shown." width="350"/>
 
@@ -197,29 +297,42 @@ Inside the <code style="background-color: #d400d4">on button B pressed</code> bl
 
 --- task ---
 
-For the <code style="background-color: #00a4a6">if</code> block's conditions:
+For the `if`{:class='microbitlogic'} block's conditions:
 
 - Change the `<` to a `>`
 - Change the `1` to `5`
 
-Inside the <code style="background-color: #00a4a6">if</code> block:
+Inside the `if`{:class='microbitlogic'} block:
 
-- Change the `5` to `1` in the <code style="background-color: #dc143c">set level to 5</code> block
-- Change the `250` to `50` in the <code style="background-color: #dc143c">set maximum to 50</code> block
+- Change the `5` to `1` in the `set level to 5`{:class='microbitvariables'} block
+- Change the `250` to `50` in the `set maximum to 50`{:class='microbitvariables'} block
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_61hUcH2P8Frx" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.B, function () {
+    level += 1
+    maximum += 50
+    if (level > 5) {
+        level = 1
+        maximum = 50
+    }
+    basic.showNumber(level)
+    basic.pause(500)
+})
+```
 
 --- /task ---
 
 ### Set a normal sound level
 
-You need to program a normal alarm sensitivity level by using the <code style="background-color: #1e90ff">on start</code> block.
+You need to program a normal alarm sensitivity level by using the `on start`{:class='microbitbasic'} block.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag a <code style="background-color: #dc143c">set maximum to 0</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag a `set maximum to 0`{:class='microbitvariables'} block.
 
-Place it inside the <code style="background-color: #1e90ff">on start</code> block.
+Place it inside the `on start`{:class='microbitbasic'} block.
 
 --- /task ---
 
@@ -227,9 +340,13 @@ Place it inside the <code style="background-color: #1e90ff">on start</code> bloc
 
 Click on the variable name `maximum` and change it to `level`.
 
-Change the `0` to `3` in the <code style="background-color: #dc143c">set level</code> block.
+Change the `0` to `3` in the `set level`{:class='microbitvariables'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Hoiqo1sqUyY" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let maximum = 150
+let alarm = false
+let level = 3
+```
 
 --- /task ---
 

@@ -6,7 +6,29 @@ legend: Question 3 of 3
 ---
 Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_W5c2v9CdzPk9" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+let level = 0
+let maximum = 0
+input.onButtonPressed(Button.A, function () {
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(level)
+    basic.pause(500)
+})
+input.onButtonPressed(Button.B, function () {
+    level += 1
+    maximum += 50
+    if (level < 5) {
+        level = 5
+        maximum = 250
+    }
+    basic.showNumber(level)
+    basic.pause(500)
+})
+
 
 What will happen when the `B` button is pressed on the micro:bit?
 
