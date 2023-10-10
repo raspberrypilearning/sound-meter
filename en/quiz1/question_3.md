@@ -6,6 +6,7 @@ legend: Question 3 of 3
 ---
 Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
 
+```microbit
 let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
@@ -28,7 +29,7 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(level)
     basic.pause(500)
 })
-
+```
 
 What will happen when the `B` button is pressed on the micro:bit?
 
