@@ -1,3 +1,3 @@
-## Quick quiz
+## Snelle quiz
 
 
