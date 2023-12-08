@@ -2,8 +2,8 @@ maximum
 
 alarm
 
-Sound Level
+Geluidsniveau
 
-level
+niveau
 
-activity
+activiteit
