@@ -2,9 +2,9 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Vraag 3 van 3
 ---
-Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
+Hier is de code voor het programmeren van de `wanneer knop A wordt ingedrukt` en `wanneer knop B wordt ingedrukt` blokken.
 
 ```microbit
 let level = 0
@@ -31,32 +31,32 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-What will happen when the `B` button is pressed on the micro:bit?
+Wat gebeurt er als de `B` knop op de micro:bit wordt ingedrukt?
 
 --- choices ---
 
-- ( ) The sound level will be changed by -1 and sensitivity by -50.
+- ( ) Het geluidsniveau wordt gewijzigd met -1 en de gevoeligheid met -50.
 
 
   --- feedback ---
 
-  Not quite! Pressing button `A` will make these changes, but not button `B`.
+  Niet helemaal! Als u op knop `A` drukt, worden deze wijzigingen doorgevoerd, maar niet op knop `B`.
 
   --- /feedback ---
 
-- ( ) The sound level will be changed by 5 and sensitivity by -50.
+- ( ) Het geluidsniveau wordt gewijzigd met -5 en de gevoeligheid met -50.
 
   --- feedback ---
 
-  Not quite! Neither button A or button B are programmed to change the sound level or sensitivity by these amounts.
+  Niet helemaal! Noch knop A, noch knop B zijn geprogrammeerd om het geluidsniveau of de gevoeligheid met deze hoeveelheden te wijzigen.
 
   --- /feedback ---
 
-- (x) The sound level will be changed by 1 and sensitivity by 50.
+- (x) Het geluidsniveau zal worden gewijzigd met 1 en gevoeligheid met 50.
 
   --- feedback ---
 
-  Awesome job! Button B has been programmed to increase the sound level by 1 and the sensitivity by 50.
+  Goed gedaan! Knop B is geprogrammeerd om het geluidsniveau met 1 en de gevoeligheid met 50 te verhogen.
 
   --- /feedback ---
 
