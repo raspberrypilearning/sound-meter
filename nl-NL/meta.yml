@@ -1,26 +1,26 @@
 ---
-title: Sound level meter
+title: Geluidsniveau meter
 hero_image: images/banner.png
-description: Measure, display, and log sound levels on your micro:bit! Set an alarm if the level is too high.
+description: Meet, toon en log geluidsniveaus op je micro:bit! Stel een alarm in als het niveau te hoog is.
 version: 4
 listed: false
 copyedit: false
 last_tested: '2023-08-15'
 steps:
   - 
-    title: You will make
+    title: Wat ga je maken
   - 
-    title: Level meter
+    title: Niveau meter
     completion:
       - engaged
   - 
-    title: Sound the alarm!
+    title: Sla alarm!
   - 
-    title: Change the sensitivity
+    title: Wijzig de gevoeligheid
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Snelle quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -29,6 +29,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Verbeter je project
   - 
-    title: What next?
+    title: Wat kun je verder nog doen?
