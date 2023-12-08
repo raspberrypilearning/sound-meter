@@ -1,43 +1,43 @@
-## Sound the alarm
+## Sla alarm
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will add an alarm that triggers when the sound level get too high. To stop the alarm adding to the noise, you will make sure it only goes off once and can be reset whenever you want. 
+In deze stap voeg je een alarm toe dat geactiveerd wordt wanneer het geluidsniveau te hoog wordt. Om te voorkomen dat het alarm extra geluid toevoegt, zorg je ervoor dat het slechts eenmaal afgaat en kan worden gereset wanneer je dat wilt. 
 </div>
 <div>
 
-![The code to trigger the alarm. Inside an 'every 500 ms' block, the sound level is plotted on the LEDs. Afterwards, an if statement is used to check if the sound level exceeds the maximum and whether the alarm variable is set to false. Inside the if block, a sound is played and the alarm variable is set to 'true'.](images/alarm-code-demo.png){:width="300px"}
+![De code om het alarm te activeren. Binnen een blok 'elke 500 ms' wordt het geluidsniveau op de LED's weergegeven. Daarna wordt met een als-statement gecontroleerd of het geluidsniveau het maximum overschrijdt en of de alarmvariabele op onwaar staat. Binnen het als-blok wordt een geluid afgespeeld en de alarmvariabele is ingesteld op 'waar'.](images/alarm-code-demo.png){:width="300px"}
 
 </div>
 </div>
 
-### Set the maximum
+### Stel het maximum in
 
-You will need to make a variable to hold the sound level that will trigger the alarm.
+Je moet een variabele maken om het geluidsniveau te bepalen dat het alarm uitlokt.
 
 --- task ---
 
-Open the `Variables`{:class="microbitvariables"} menu and click **Make a Variable**.
+Open het `Variabelen`{:class="microbitvariables"} menu en klik op **Maak een variabele**.
 
-<img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a Variable' button highlighted." width="350" />
+<img src="images/variable-menu.png" alt="Het menu Variabelen met de knop 'Maak een variabele' gemarkeerd." width="350" />
 
 --- /task ---
 
 --- task ---
 
-Name your new variable `maximum`.
+Geef je nieuwe variabele de naam `maximum`.
 
-<img src="images/max-variable-name.png" alt="The 'New variable name' window with the name 'maximum' written in the box." width="400" />
+<img src="images/max-variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'maximum' in het vak." width="400" />
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class="microbitvariables"} menu, get the `set maximum`{:class="microbitvariables"} block.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel maximum in op`{:class="microbitvariables"}.
 
-<img src="images/set-max-start.png" alt="The Variables menu with the 'set maximum to 0' block highlighted." width="350" />
+<img src="images/set-max-start.png" alt="Het Variabelenblok menu met het blok 'stel maximum in op' blok gemarkeerd." width="350" />
 
-Place the block inside the `on start`{:class="microbitbasic"} block, and change the `0` to `150`.
+Plaats het blok binnen het `bij opstarten`{:class="microbitbasic"} blok en verander de `0` in `150`.
 
 ```microbit
 let maximum = 150
@@ -45,51 +45,51 @@ let maximum = 150
 
 --- /task ---
 
-The value `150` is a little more than half the maximum sound level the micro:bit can sense, so that should be a good level to start with.
+De waarde `150` is iets meer dan de helft van het maximale geluidsniveau dat de micro:bit kan waarnemen, dus dat zou een goed niveau moeten zijn om mee te beginnen.
 
 --- collapse ---
 
 ---
-title: For micro:bit V1
+title: Voor micro:bit V1
 ---
 
-This maximum value works for light levels, too!
+Deze maximale waarde geldt ook voor lichtniveaus!
 
 --- /collapse ---
 
-### Turn the alarm off
+### Schakel het alarm uit
 
-You also want to make sure the alarm noise does not add to the already noisy environment!
+Je wilt er ook voor zorgen dat het alarmgeluid de toch al luidruchtige omgeving niet verergert!
 
-To do this, you will use another variable that will be set to `false` to start, and it will change to `true` when the alarm sounds.
+Om dit te doen, gebruik je een andere variabele die zal worden ingesteld op `onwaar` om te starten en zal veranderen in `waar` wanneer het alarm klinkt.
 
 --- task ---
 
-Create another new `Variable`{:class="microbitvariables"}, this time called `alarm`.
+Maak nog een nieuwe `Variabele`{:class="microbitvariables"}, deze keer genaamd `alarm`.
 
-<img src="images/alarm-variable-name.png" alt="The 'New variable name' window with the name 'alarm' written in the box." width="350" />
+<img src="images/alarm-variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'alarm' in het vak." width="350" />
 
 --- /task ---
 
 --- task ---
 
-Drag the `set alarm`{:class="microbitvariables"} block from the `Variables`{:class="microbitvariables"} menu.
+Sleep het `stel alarm in op`{:class="microbitvariables"} blok uit het `Variabelen`{:class="microbitvariables"} menu.
 
-Place it inside the `on start`{:class="microbitbasic"} block.
+Plaats het in het `bij opstarten`{:class='microbitbasic'} blok.
 
 --- /task ---
 
-You need to set this new variable to `false` instead of a number.
+Je moet deze nieuwe variabele instellen op `onwaar` in plaats van een getal.
 
 --- task ---
 
-Open the `Logic`{:class="microbitlogic"} menu.
+Open het `Logisch`{:class="microbitlogic"} menu.
 
-Get a `false`{:class="microbitlogic"} block.
+Haal een `onwaar`{:class="microbitlogic"} blok op.
 
-<img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section." width="200" />
+<img src="images/false-block-location.png" alt="Het onderste deel van het Logisch-menu, met de locatie van het 'onwaar'-blok in de 'Booleaanse waarde'-sectie." width="200" />
 
-Place this block over the top of the `0`.
+Plaats dit blok bovenop de `0`.
 
 ```microbit
 let maximum = 150
@@ -98,21 +98,21 @@ let alarm = false
 
 --- /task ---
 
-### Check if the alarm should sound
+### Controleer of het alarm moeten afgaan
 
-The alarm should only sound **if:**
+Het alarm mag alleen afgaan **als:**
 
-+ The sound level is **larger** than the maximum   
-  **AND**
-+ The alarm variable is **not true**
++ Het geluidsniveau **groter** is dan het maximum   
+  **EN**
++ De alarm variabele is **onwaar**
 
 --- task ---
 
-From the `Logic`{:class="microbitlogic"} menu, get an `if...then`{:class="microbitlogic"} block.
+Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep het `als...dan`{:class="microbitlogic"} blok.
 
-<img src="images/if-block-location.png" alt="The Logic menu with an 'if' block highlighted." width="350" />
+<img src="images/if-block-location.png" alt="Het Logisch blokmenu met het 'als' blok gemarkeerd." width="350" />
 
-Place the block inside the `every`{:class="microbitloops"} loop underneath the `log data`{:class="microbitdatalogger"} block.
+Plaats het blok in de `elke`{:class="microbitloops"} lus onder het `log data`{:class="microbitdatalogger"} blok.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -131,11 +131,11 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-Open the `Logic`{:class="microbitlogic"} menu again and take an `and`{:class="microbitlogic"} block.
+Open het `Logisch`{:class='microbitlogic'} menu opnieuw en sleep een `en`{:class='microbitlogic'} blok.
 
-<img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'and' block in the 'Boolean' section." width="200" />
+<img src="images/and-block-location.png" alt="Het onderste deel van het Logisch-menu, met de locatie van het 'en'-blok in de 'Booleaanse waarde'-sectie." width="200" />
 
-Place it in the `true` section of the `if...then`{:class="microbitlogic"} block.
+Plaats het in het `waar` gedeelte van het `als...dan`{:class='microbitlogic'} blok.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -152,31 +152,31 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-Now you need to add the **two** conditions either side of the **and**.
+Nu moet je de **twee** voorwaarden aan weerszijden van de **of** toevoegen.
 
 --- task ---
 
-Again in the `Logic`{:class="microbitlogic"} menu, get a `0 < 0`{:class="microbitlogic"} condition block.
+Sleep opnieuw vanuit het menu `Logisch`{:class="microbitlogic"} een blok `0 < 0`{:class="microbitlogic"}.
 
-Place it on one side of the `and`{:class="microbitlogic"} block.
+Plaats het aan één kant van het `en`{:class="microbitlogic"} blok.
 
-Use the drop-down menu to change the less than symbol (`<`) to a greater than (`>`) symbol.
+Gebruik het vervolgkeuzemenu om het kleiner dan-symbool (`<`) te wijzigen in een groter dan-symbool (`>`).
 
-![A demo of clicking the drop-down menu and changing the less than symbol to a greater than symbol in the condition.](images/changing-condition.gif)
+![Een demo van het klikken op het vervolgkeuzemenu en het wijzigen van het kleiner dan-symbool in een groter dan-symbool in de voorwaarde.](images/changing-condition.gif)
 
 --- /task ---
 
 --- task ---
 
-From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `geluidsniveau`{:class='microbitinput'} blok.
 
-Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block
+Plaats het in de eerste `0` in het `0 > 0`{:class="microbitlogic"} blok
 
-From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `maximum`{:class="microbitvariables"}.
 
-Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
+Plaats het in het tweede `0` van het `0 > 0`{:class="microbitlogic"} blok.
 
-Your code should look like this:
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -195,18 +195,18 @@ loops.everyInterval(500, function () {
 --- collapse ---
 
 ---
-title: For micro:bit V1
+title: Voor micro:bit V1
 ---
 
-From the `Input`{:class="microbitinput"} menu, drag a `light level`{:class="microbitinput"} block.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `lichtniveau`{:class='microbitinput'} blok.
 
-Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block.
+Plaats het in de eerste `0` in het `0 > 0`{:class="microbitlogic"} blok.
 
-From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `maximum`{:class="microbitvariables"}.
 
-Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
+Plaats het in het tweede `0` van het `0 > 0`{:class="microbitlogic"} blok.
 
-Your code should look like this:
+Je code zou er als volgt uit moeten zien:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -225,13 +225,13 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-You only want to set the alarm off if the `alarm`{:class="microbitvariables"} variable is **not** set `true`{:class="microbitlogic"}.
+Je wilt het alarm alleen af laten gaan als de `alarm`{:class="microbitvariables"} variabele **niet** ingesteld is op `waar`{:class="microbitlogic"}.
 
 --- task ---
 
-Get a `not`{:class='microbitlogic'} block from the `Logic`{:class='microbitlogic'} menu.
+Haal een `niet`{:class='microbitlogic'} blok op uit het menu `Logisch`{:class='microbitlogic'}.
 
-Place it on the other side of the `and`{:class='microbitlogic'} block.
+Plaats het aan de andere kant van de `en`{:class='microbitlogic'} blok.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -251,7 +251,7 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-Place an `alarm`{:class='microbitvariables'} variable block in the `not`{:class='microbitlogic'} block like this:
+Plaats een `alarm`{:class='microbitvariables'} variabele blok in het `niet`{:class='microbitlogic'} blok zoals hier:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -270,17 +270,17 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-### Sound the alarm
+### Sla alarm
 
-Now it's time to add your alarm sound!
+Nu is het tijd om je alarmgeluid toe te voegen!
 
 --- task ---
 
-From the `Music`{:class='microbitmusic'} menu, take a `play`{:class='microbitmusic'} block.
+Neem vanuit het menu `Muziek`{:class='microbitmusic'} een `play`{:class='microbitmusic'} blok.
 
-<img src="images/play-block-location-v2.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250" />
+<img src="images/play-block-location-v2.png" alt="De 'micro:bit v2'-sectie van het Muziekmenu, met het 'play'-blok gemarkeerd bovenaan de sectie." width="250" />
 
-Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
+Plaats dit in het `als`{:class='microbitlogic'} blok dat controleert of het alarm moet afgaan.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -300,18 +300,18 @@ loops.everyInterval(500, function () {
 --- collapse ---
 
 ---
-title: For micro:bit V1
+title: Voor micro:bit V1
 ---
 
-The micro:bit V1 has no speaker, so you have to adapt the program for the alarm.
+De micro:bit V1 heeft geen luidspreker, waardoor je het programma voor het alarm moet aanpassen.
 
-Rather than an alarm that uses sound, you can display an icon on the LEDs when the light level is higher than the maximum.
+In plaats van een alarm dat geluid gebruikt, kun je een pictogram op de LED's weergeven wanneer het lichtniveau hoger is dan het maximum.
 
-From the `Basic`{:class='microbitbasic'} menu, get a `show icon`{:class='microbitbasic'} block.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} het blok `toon pictogram`{:class="microbitbasic"}.
 
-Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
+Plaats dit in het `als`{:class='microbitlogic'} blok dat controleert of het alarm moet afgaan.
 
-**Select** an icon to use for your alarm.
+**Selecteer** een pictogram om te gebruiken voor je alarm.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -334,19 +334,19 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-**Choose** which alarm sound you would like to use, from the available sounds in the drop-down menu.
+**Kies** welk alarmgeluid je wilt gebruiken, uit de beschikbare geluiden in het vervolgkeuzemenu.
 
 --- /task ---
 
 --- task ---
 
-Inside your `on start`{:class='microbitbasic'} block, **right-click** on the `set`{:class='microbitvariables'} block and select **Duplicate**.
+Binnen je `bij opstarten`{:class='microbitbasic'} blok, **klik met de rechtermuisknop** op het `stel in op`{:class='microbitvariables'} blok en selecteer **Dupliceren**.
 
-![A demo of right clicking on the 'set alarm to false' block, and then duplicating it.](images/duplicate-block.gif)
+![Een demo van rechtsklikken op het 'zet alarm naar onwaar' blok en dupliceer het.](images/duplicate-block.gif)
 
-Place the duplicated block below the `play`{:class='microbitmusic'} block.
+Plaats het gedupliceerde blok onder het blok `play`{:class='microbitmusic'}.
 
-Change the `false`{:class='microbitlogic'} to `true`{:class='microbitlogic'}.
+Verander de `onwaar`{:class='microbitlogic'} naar `waar`{:class='microbitlogic'}.
 
 ```microbit
 let alarm = false
@@ -366,25 +366,25 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-### Reset the alarm
+### Reset het alarm
 
-When the alarm goes off, you will want to reset it.
+Wanneer het alarm af is gegaan, wil je het kunnen resetten.
 
-You can use the touch logo on the micro:bit to do this.
+Je kunt het touch logo op de micro:bit gebruiken om dit te doen.
 
-<img src="images/logo-location.png" alt="The microbit logo." width="200" />
+<img src="images/logo-location.png" alt="Het microbit-logo." width="200" />
 
 --- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on logo`{:class='microbitinput'} block.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `bij logo ingedrukt`{:class='microbitinput'} blok.
 
-<img src="images/onlogo-block-location.png" alt="The logo on the top of the microbit above the LEDs." width="200" />
+<img src="images/onlogo-block-location.png" alt="Het logo aan de bovenkant van de microbit boven de LED's." width="200" />
 
-From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on logo`{:class='microbitinput'} block.
+Vanaf je `bij opstarten`{:class='microbitbasic'} blok, dupliceer het `stel alarm in op`{:class='microbitvariables'} blok en plaats het in de `bij logo ingedrukt`{:class='microbitinput'} blok.
 
 ```microbit
 let alarm = false
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+input.onLogoEvent(TouchButtonEvent.Prested, function () {
     alarm = false
 })
 ```
@@ -392,18 +392,18 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 --- collapse ---
 
 ---
-title: For micro:bit V1
+title: Voor micro:bit V1
 ---
 
-There is no touch sensor in the logo on the micro:bit V1, so instead you can use both the `A` and `B` buttons.
+Er is geen touch sensor in het logo van de micro:bit dus in plaats daarvan kun je zowel de `A` en `B` knoppen gebruiken.
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok.
 
-<img src="images/on-button-location.png" alt="The Input menu with the 'on button A' block highlighted." width="350" />
+<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok gemarkeerd." width="350" />
 
-Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
+Gebruik het vervolgkeuzemenu om de knop te wijzigen in `A+B`{:class='microbitinput'}.
 
-From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
+Vanaf je `bij opstarten`{:class='microbitbasic'} blok, dupliceer het `stel alarm in op`{:class='microbitvariables'} blok en plaats het in het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok.
 
 ```microbit
 let alarm = false
@@ -416,4 +416,4 @@ input.onButtonPressed(Button.AB, function () {
 
 --- /task ---
 
-Next you are going to use the `A` button and `B` button to change the sensitivity of your alarm!
+Vervolgens ga je de `A` knop en `B` knop gebruiken om de gevoeligheid van je alarm te wijzigen!
