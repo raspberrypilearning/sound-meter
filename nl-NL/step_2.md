@@ -39,7 +39,7 @@ Zodra de editor is geopend, moet je een nieuw project aanmaken en je project een
 
 --- task ---
 
-Klik op de knop **Nieuw Project**.
+Klik op de knop **Nieuw project**.
 
 <img src="images/new-project-button.png" alt="De knop Nieuw project in MakeCode." width="250" />
 
@@ -67,7 +67,7 @@ Je kunt het blok `de hele tijd`{:class="microbitbasic"} nu verwijderen door het 
 
 --- /task ---
 
-De eerste stap is om de micro:bit met regelmatige tussenpozen de geluidsniveaus te laten maken. Er is een speciale lus die je kunt gebruiken om dit te doen.
+De eerste stap is om de micro:bit met regelmatige tussenpozen de geluidsniveaus te laten registreren. Er is een speciale lus die je kunt gebruiken om dit te doen.
 
 --- task ---
 
