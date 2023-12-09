@@ -285,7 +285,7 @@ Verander de `A` naar `B`.
 
 --- task ---
 
-In het `wanneer knop B wordt ingedrukt`op {:class='microbitinput'} blok:
+In het `wanneer knop B wordt ingedrukt`{:class='microbitinput'} blok:
 
 - Verander de `-1` naar `1` in het `verander niveau`{:class='microbitvariables'} blok
 
