@@ -372,7 +372,7 @@ Wanneer het alarm af is gegaan, wil je het kunnen resetten.
 
 Je kunt het touch logo op de micro:bit gebruiken om dit te doen.
 
-<img src="images/logo-location.png" alt="Het microbit-logo." width="200 />
+<img src="images/logo-location.png" alt="Het microbit-logo." width="200/>
 
 --- task ---
 
