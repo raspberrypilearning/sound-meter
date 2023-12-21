@@ -1,6 +1,6 @@
 ## Verbeter je project
 
-Fantastische inspanning! Je hebt een micro:bit geluidsniveaumeter gemaakt. Hier zijn enkele ideeën om je project te verbeteren en een meer geavanceerde geluidsniveaumeter app te maken:
+Goed gedaan! Je hebt een micro:bit geluidsniveaumeter gemaakt. Hier zijn enkele ideeën om je project te verbeteren en een meer geavanceerde geluidsniveaumeter app te maken:
 
 + Gebruik een andere sensor: licht voor V2 of temperatuur voor V1
 + Toon een pictogram voor maximum/minimum geluidsniveaus

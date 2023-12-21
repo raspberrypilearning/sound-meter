@@ -40,7 +40,7 @@ Wat gebeurt er als de `B` knop op de micro:bit wordt ingedrukt?
 
   --- feedback ---
 
-  Niet helemaal! Als u op knop `A` drukt, worden deze wijzigingen doorgevoerd, maar niet op knop `B`.
+  Niet helemaal! Als je op knop `A` drukt, worden deze wijzigingen doorgevoerd, maar niet op knop `B`.
 
   --- /feedback ---
 
