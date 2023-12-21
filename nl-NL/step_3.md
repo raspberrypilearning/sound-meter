@@ -104,7 +104,7 @@ Het alarm mag alleen afgaan **als:**
 
 + Het geluidsniveau **groter** is dan het maximum   
   **EN**
-+ De alarm variabele is **onwaar**
++ De alarm variabele **onwaar** is
 
 --- task ---
 

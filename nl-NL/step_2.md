@@ -67,7 +67,7 @@ Je kunt het blok `de hele tijd`{:class="microbitbasic"} nu verwijderen door het 
 
 --- /task ---
 
-De eerste stap is om de micro:bit met regelmatige tussenpozen de geluidsniveaus te laten maken. Er is een speciale lus die je kunt gebruiken om dit te doen.
+De eerste stap is om de micro:bit met regelmatige tussenpozen de geluidsniveaus te laten registreren. Er is een speciale lus die je kunt gebruiken om dit te doen.
 
 --- task ---
 
@@ -133,11 +133,11 @@ Er zit geen microfoon op de micro:bit V1, dus in plaats daarvan kun je het `lich
 
 ### Registreer de geluidsniveaus (alleen V2)
 
-De V2 micro:bit heeft een ingebouwde data logger, waarmee je gegevens kunt bijhouden van verschillende sensoren en inputs. Je moet een extensie installeren om dit te kunnen gebruiken.
+De V2 micro:bit heeft een ingebouwde data logger, waarmee je gegevens kunt bijhouden van verschillende sensoren en inputs. Je moet een uitbreiding installeren om dit te kunnen gebruiken.
 
 --- task ---
 
-Klik op het menu paneel op **Extensies**. Er wordt een ander venster geopend met de aanbevolen extensies. Klik op de **data logger** en het zal worden geïnstalleerd als menu-item.
+Klik op het menu paneel op **Uitbreidingen**. Er wordt een ander venster geopend met de aanbevolen uitbreidingen. Klik op de **data logger** en het zal worden geïnstalleerd als menu-item.
 
 ![De datalog-extensie wordt geïnstalleerd door te klikken op het menu extensies en vervolgens op 'data logger'. Er verschijnt een nieuw blokmenu met de naam 'Data Logger'.](images/installing-datalogger.gif)
 
