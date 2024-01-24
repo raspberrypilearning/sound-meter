@@ -1,26 +1,26 @@
 ---
-title: Sound level meter
+title: Μετρητής στάθμης ήχου
 hero_image: images/banner.png
-description: Measure, display, and log sound levels on your micro:bit! Set an alarm if the level is too high.
+description: Μέτρησε, εμφάνισε και κατάγραψε τα επίπεδα ήχου στο micro:bit σου! Ρύθμισε έναν συναγερμό εάν το επίπεδο είναι πολύ υψηλό.
 version: 4
 listed: true
 copyedit: true
 last_tested: '2023-08-15'
 steps:
   - 
-    title: You will make
+    title: Τι θα φτιάξεις
   - 
-    title: Level meter
+    title: Μετρητής στάθμης
     completion:
       - engaged
   - 
-    title: Sound the alarm!
+    title: Σήμανε συναγερμό!
   - 
-    title: Change the sensitivity
+    title: Άλλαξε την ευαισθησία
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Γρήγορο κουίζ
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -29,6 +29,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Αναβάθμισε το έργο σου
   - 
-    title: What next?
+    title: Τι υπάρχει στη συνέχεια;
