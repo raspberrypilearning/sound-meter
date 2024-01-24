@@ -2,12 +2,12 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Ερώτηση 2 από 3
 ---
 
-This block of code shows a `every 500 ms` loop block.
+Αυτό το μπλοκ κώδικα δείχνει ένα μπλοκ βρόχου `every 500 ms`.
 
-What is a loop?
+Τι είναι ένας βρόχος;
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -21,27 +21,27 @@ loops.everyInterval(500, function () {
 
 --- choices ---
 
-- (x) A sequence of instructions that is repeated constantly or until a certain condition is reached.
+- (x) Μια ακολουθία εντολών που επαναλαμβάνεται συνεχώς ή μέχρι να επιτευχθεί μια ορισμένη συνθήκη.
 
   --- feedback ---
 
-Fantastic work! Loops are a concept used across all programming languages. Loops repeat constantly or until a condition is reached.
+Φανταστική δουλειά! Οι βρόχοι είναι μια έννοια που χρησιμοποιείται σε όλες τις γλώσσες προγραμματισμού. Οι βρόχοι επαναλαμβάνονται συνεχώς ή μέχρι να επιτευχθεί μια συνθήκη.
 
   --- /feedback ---
 
-- ( ) A condition that controls what happens in a logic block.
+- ( ) Μια συνθήκη που ελέγχει τι συμβαίνει σε ένα λογικό μπλοκ.
 
   --- feedback ---
 
-  Not quite. A condition can be used to compare a variable value with something else. The condition does not loop.
+  Όχι ακριβώς. Μια συνθήκη μπορεί να χρησιμοποιηθεί για να συγκρίνει μια τιμή μεταβλητής με κάτι άλλο. Η συνθήκη δεν επαναλαμβάνεται.
 
   --- /feedback ---
 
-- ( ) A sequence of instructions that performs a specific task.
+- ( ) Μια ακολουθία εντολών που εκτελεί μια συγκεκριμένη εργασία.
 
   --- feedback ---
 
-  Not quite. A sequence of instructions for a specific task is called a `function`.
+  Όχι ακριβώς. Μια ακολουθία εντολών για μια συγκεκριμένη εργασία ονομάζεται `συνάρτηση`.
 
   --- /feedback ---
 
