@@ -1,45 +1,45 @@
-## Change the sensitivity
+## Αλλαγή της ευαισθησίας
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-In this step, you will program the buttons on the micro:bit to adjust the sensitivity of the alarm with settings from 1 (lowest maximum value) to 5 (highest maximum value). 
+Σε αυτό το βήμα, θα προγραμματίσεις τα κουμπιά στο micro:bit για να προσαρμόσεις την ευαισθησία του συναγερμού με ρυθμίσεις από 1 (χαμηλότερη μέγιστη τιμή) έως 5 (υψηλότερη μέγιστη τιμή). 
 
 </div>
 <div>
 
-![The micro:bit simulator displaying the sound level numbers when the `A` and `B` buttons are clicked. The `A` button decreases the levels while the `B` button increases the levels.](images/buttons-pressed-demo.gif){:width="300px"}
+![Ο προσομοιωτής micro:bit που εμφανίζει τους αριθμούς επιπέδου ήχου όταν πατηθούν τα κουμπιά «A» και «B». Το κουμπί "A" μειώνει τα επίπεδα ενώ το κουμπί "B" αυξάνει τα επίπεδα.](images/buttons-pressed-demo.gif){:width="300px"}
 
 </div>
 </div>
 
-### Decrease the maximum sound level
+### Μείωση της μέγιστης στάθμης ήχου
 
-The **A button** is on the left so you will use this to decrease the maximum value for the alarm.
+Το κουμπί **A** βρίσκεται στα αριστερά, επομένως θα το χρησιμοποιήσεις για να μειώσεις τη μέγιστη τιμή του συναγερμού.
 
 --- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block and place it in the code editor.
+Από το μενού `Είσοδος`{:class='microbitinput'}, σύρε ένα μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'} και τοποθέτησέ το στο πρόγραμμα επεξεργασίας κώδικα.
 
-<img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="300" />
+<img src="images/on-button-location.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;όταν πιεστεί το πλήκτρο button A'&quot; στην κορυφή." width="300" />
 
 --- /task ---
 
-In the previous step, you created two variables, `maximum`{:class='microbitvariables'} and `alarm`{:class='microbitvariables'}.
+Στο προηγούμενο βήμα, δημιούργησες δύο μεταβλητές, `μέγιστο`{:class='microbitvariables'} και `συναγερμός`{:class='microbitvariables'}.
 
-Now you will create another variable for the sensitivity **level**.
+Τώρα θα δημιουργήσεις μια άλλη μεταβλητή για το **επίπεδο** ευαισθησίας.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, click on **Make a variable** to create a variable called `level`.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, κάνε κλικ στο **Δημιουργία μεταβλητής** για να δημιουργήσεις μια μεταβλητή που ονομάζεται `επίπεδο`.
 
 --- /task ---
 
 --- task ---
 
-Drag the `change`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
+Σύρε το μπλοκ `άλλαξε`{:class='microbitvariables'} και τοποθέτησέ το μέσα στο μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'}.
 
-Change the `1` to `-1`.
+Άλλαξε το `1` σε `-1`.
 
 ```microbit
 let level = 0
@@ -52,15 +52,15 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag another `change`{:class='microbitvariables'} block.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε ένα ακόμη μπλοκ `άλλαξε`{:class='microbitvariables'}.
 
-Place it **below** the `change level by -1`{:class='microbitvariables'} block.
+Τοποθέτησέ το **κάτω** από το μπλοκ `άλλαξε επίπεδο κατά -1`{:class='microbitvariables'}.
 
-Change the variable shown in the block from `level` to `maximum` by clicking on the variable name.
+Άλλαξε τη μεταβλητή που εμφανίζεται στο μπλοκ από `επίπεδο` σε `μέγιστο` κάνοντας κλικ στο όνομα της μεταβλητής.
 
-Change the `1` to `-50`.
+Άλλαξε το `1` σε `-50`.
 
-<img src="images/change-variable.gif" alt="Animation showing the drop-down menu on the `change maximum by 1` variable block." width="300" />
+<img src="images/change-variable.gif" alt="Κινούμενη εικόνα που εμφανίζει το αναπτυσσόμενο μενού στο μπλοκ μεταβλητής «άλλαξε μέγιστο κατά 1»." width="300" />
 
 ```microbit
 let level = 0
@@ -73,15 +73,15 @@ input.onButtonPressed(Button.A, function () {
 
 --- /task ---
 
-This means that every time you press button A, it will decrease the sensitivity level by 1 and reduce the sound sensitivity by 50.
+Αυτό σημαίνει ότι κάθε φορά που πατάς το κουμπί A, θα μειώνεται το επίπεδο ευαισθησίας κατά 1 και θα μειώνεται η ευαισθησία του ήχου κατά 50.
 
-If button A is pressed when the level is already 1, then you need to make it so the level changes to `5` and not `0`.
+Εάν το κουμπί A πατηθεί όταν το επίπεδο είναι ήδη 1, τότε πρέπει να το κάνεις έτσι ώστε το επίπεδο να αλλάξει σε `5` και όχι σε `0`.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
+Από το μενού `Λογική`{:class='microbitlogic'} σύρε το μπλοκ `εάν`{:class='microbitlogic'}.
 
-Place it below the `change maximum by -50`{:class='microbitvariables'} block.
+Τοποθέτησέ το κάτω από το μπλοκ `άλλαξε μέγιστο κατά -50`{:class='microbitvariables'}.
 
 ```microbit
 let level = 0
@@ -99,9 +99,9 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
+Από το μενού `Λογική`{:class='microbitlogic'}, σύρε το μπλοκ σύγκρισης `0 < 0`{:class='microbitlogic'}.
 
-Place it inside the `true` space in the `if`{:class='microbitlogic'} block.
+Τοποθέτησέ το μέσα στο διάστημα `αληθές` μέσα στο μπλοκ `εάν`{:class='microbitlogic'}.
 
 ```microbit
 let level = 0
@@ -119,9 +119,9 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε ένα μπλοκ `επίπεδο`{:class='microbitvariables'}.
 
-Place it inside the first `0` of the `0 < 0`{:class='microbitlogic'} comparison block.
+Τοποθέτησέ το μέσα στο πρώτο `0` του μπλοκ `0 < 0`{:class='microbitlogic'}.
 
 ```microbit
 let level = 0
@@ -139,17 +139,17 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Change the `0` to `1` on the right-hand side of the `0 < 0`{:class='microbitlogic'} comparison block.
+Άλλαξε το `0` σε `1` στη δεξιά πλευρά του μπλοκ σύγκρισης `0 < 0`{:class='microbitlogic'}.
 
 --- /task ---
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε το μπλοκ `ορισμός`{:class='microbitvariables'}.
 
-Place it inside the `if`{:class='microbitlogic'} block. Ensure the variable selected is `level`{:class='microbitvariables'}.
+Τοποθέτησέ το μέσα στο μπλοκ `εάν`{:class='microbitlogic'}. Βεβαιώσου ότι η επιλεγμένη μεταβλητή είναι `επίπεδο`{:class='microbitvariables'}.
 
-Change the `0` to `5` on the `set level to 0`{:class='microbitvariables'} block.
+Άλλαξε το μπλοκ `0` σε `5` στο `ορισμός επίπεδο σε 0`{:class='microbitvariables'}.
 
 ```microbit
 let level = 0
@@ -167,11 +167,11 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Again from the `Variables`{:class='microbitvariables'} menu, drag another `set`{:class='microbitvariables'} block.
+Ξανά από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε ένα ακόμη μπλοκ `ορισμός`{:class='microbitvariables'}.
 
-Place it below the `set level to 5`{:class='microbitvariables'} block.
+Τοποθέτησέ το κάτω από το μπλοκ `ορισμός επίπεδο σε 5`{:class='microbitvariables'}.
 
-Change the `0` to `250`.
+Άλλαξε το `0` σε `250`.
 
 ```microbit
 let level = 0
@@ -190,9 +190,9 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block.
+Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'}.
 
-Place it **below** the `if`{:class='microbitlogic'} block.
+Τοποθέτησέ το **κάτω** από το μπλοκ `εάν`{:class='microbitlogic'}.
 
 ```microbit
 let level = 0
@@ -212,9 +212,9 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε ένα μπλοκ `επίπεδο`{:class='microbitvariables'}.
 
-Place it in the `0` in the `show number`{:class='microbitbasic'} block.
+Τοποθέτησέ το στο μπλοκ `0` στο μπλοκ `εμφάνιση αριθμού`{:class='microbitbasic'}.
 
 ```microbit
 let level = 0
@@ -234,11 +234,11 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Also from the `Basic`{:class='microbitbasic'} menu, drag the `pause`{:class='microbitbasic'} block.
+Επίσης, από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `παύση`{:class='microbitbasic'}.
 
-Place it below the `show number`{:class='microbitbasic'} block.
+Τοποθέτησέ το κάτω από το μπλοκ `εμφάνιση αριθμού`{:class='microbitbasic'}.
 
-Change the `100` to `500`.
+Άλλαξε το `100` σε `500`.
 
 ```microbit
 let level = 0
@@ -257,55 +257,55 @@ input.onButtonPressed(Button.A, function () {
 
 --- /task ---
 
-### Increase the maximum sound level
+### Αύξηση της μέγιστης στάθμης ήχου
 
-You have now programmed the `on button A pressed`{:class='microbitinput'} block.
+Τώρα έχεις προγραμματίσει το μπλοκ `όταν πιεστεί το πλήκτρο button A`{:class='microbitinput'}.
 
-You will need to do the same for `on button B pressed`{:class='microbitinput'} to increase the maximum.
+Θα χρειαστεί να κάνεις το ίδιο για το `όταν πιεστεί το πλήκτρο button B`{:class='microbitinput'} για να αυξήσεις το μέγιστο.
 
 --- task ---
 
-Right-click on the entire `on button A pressed`{:class='microbitinput'} block and click **Duplicate**.
+Κάνε δεξί κλικ σε ολόκληρο το μπλοκ `όταν πιεστεί το πλήκτρο button A`μπλοκ {:class='microbitinput'} και κάτε κλικ στο **Αντίγραφο**.
 
-![Animation showing the right-click menu on the 'on button A pressed' block with 'Duplicate' highlighted.](images/onbuttonA-duplicate.gif)
+![Κινούμενη εικόνα που δείχνει το μενού με το δεξί κλικ στο μπλοκ «όταν πιεστεί το πλήκτρο button A» με τονισμένο το «Αντίγραφο».](images/onbuttonA-duplicate.gif)
 
-There will now be two `on button A pressed`{:class='microbitinput'} blocks in the code editor panel.
+Θα υπάρχουν τώρα δύο μπλοκ `όταν πιεστεί το πλήκτρο button A`{:class='microbitinput'} στον πίνακα επεξεργασίας κώδικα.
 
 --- /task ---
 
 --- task ---
 
-Click on the `A` in the duplicated `on button A pressed`{:class='microbitinput'} block. A drop-down menu will open.
+Κάνε κλικ στο `A` στο αντιγραμμένο μπλοκ `όταν πιεστεί το πλήκτρο button A`{:class='microbitinput'}. Θα ανοίξει ένα αναπτυσσόμενο μενού.
 
-Change the `A` to `B`.
+Άλλαξε το `A` σε `B`.
 
-<img src="images/button-menu.png" alt="The drop-down menu for 'on button A pressed' that lets you change the block to button B." width="400" />
-
---- /task ---
-
---- task ---
-
-Inside the `on button B pressed`{:class='microbitinput'} block:
-
-- Change the `-1` to `1` in the `change level`{:class='microbitvariables'} block
-
-- Change the `-50` to `50` in the `change maximum`{:class='microbitvariables'} block
-
-<img src="images/onbuttonB-changes.png" alt="The `on button B pressed` block with the change level and change maximum variables shown." width="350" />
+<img src="images/button-menu.png" alt="Το αναπτυσσόμενο μενού για το «όταν πιεστεί το πλήκτρο button A» που σου επιτρέπει να αλλάξεις το μπλοκ σε κουμπί Β." width="400" />
 
 --- /task ---
 
 --- task ---
 
-For the `if`{:class='microbitlogic'} block's conditions:
+Μέσα στο το μπλοκ `όταν πιεστεί το πλήκτρο button B`{:class='microbitinput'}:
 
-- Change the `<` to a `>`
-- Change the `1` to `5`
+- Άλλαξε το `-1` σε `1` στο μπλοκ `άλλαξε επίπεδο`{:class="microbitvariables"}
 
-Inside the `if`{:class='microbitlogic'} block:
+- Άλλαξε το μπλοκ `-50` σε `50` στο μπλοκ `άλλαξε μέγιστο`{:class='microbitvariables'}
 
-- Change the `5` to `1` in the `set level to 5`{:class='microbitvariables'} block
-- Change the `250` to `50` in the `set maximum to 50`{:class='microbitvariables'} block
+<img src="images/onbuttonB-changes.png" alt="Το μπλοκ «όταν πιεστεί το πλήκτρο button B» με τα μπλοκ για την αλλαγή των μεταβλητών επίπεδο και μέγιστο να εμφανίζονται." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Για τις συνθήκες του μπλοκ `εάν`{:class='microbitlogic'}:
+
+- Άλλαξε το `<` σε `>`
+- Άλλαξε το `1` σε `5`
+
+Μέσα στο μπλοκ `εάν`{:class='microbitlogic'}:
+
+- Άλλαξε το `5` σε `1` στο μπλοκ `ορισμός επίπεδο σε 5`{:class='microbitvariables'}
+- Άλλαξε το `250` σε `50` στο μπλοκ `ορισμός μέγιστο σε 50`{:class='microbitvariables'}
 
 ```microbit
 let level = 0
@@ -324,23 +324,23 @@ input.onButtonPressed(Button.B, function () {
 
 --- /task ---
 
-### Set a normal sound level
+### Ορισμός κανονικής στάθμης έντασης ήχου
 
-You need to program a normal alarm sensitivity level by using the `on start`{:class='microbitbasic'} block.
+Χρειάζεται να προγραμματίσεις ένα κανονικό επίπεδο ευαισθησίας συναγερμού χρησιμοποιώντας το μπλοκ `κατά την έναρξη`{:class='microbitbasic'}.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag a `set maximum to 0`{:class='microbitvariables'} block.
+Από το μενού `Μεταβλητές`{:class="microbitvariables"}, σύρε ένα μπλοκ `ορισμός μέγιστο σε 0`{:class="microbitvariables"}.
 
-Place it inside the `on start`{:class='microbitbasic'} block.
+Τοποθέτησέ το μέσα στο μπλοκ `κατά την έναρξη`{:class="microbitbasic"}.
 
 --- /task ---
 
 --- task ---
 
-Click on the variable name `maximum` and change it to `level`.
+Κάνε κλικ στο όνομα της μεταβλητής `μέγιστο` και άλλαξέ το σε `επίπεδο`.
 
-Change the `0` to `3` in the `set level`{:class='microbitvariables'} block.
+Άλλαξε το `0` σε `3` στο μπλοκ `ορισμός επίπεδο`{:class='microbitvariables'}.
 
 ```microbit
 let maximum = 150
@@ -352,24 +352,24 @@ let level = 3
 
 --- task ---
 
-**Test your program**
+**Δοκίμασε το έργο σου**
 
-+ Press the A and B buttons to see the sound levels increase and decrease
++ Πάτησε τα κουμπιά A και B για να δεις τα επίπεδα ήχου να αυξάνονται και να μειώνονται
 
-The default starting point is level 3.
+Το προεπιλεγμένο σημείο εκκίνησης είναι το επίπεδο 3.
 
-**Drag** the mic input levels up and down to test the maximum sound for each level when using the simulator.
+**Σύρε** τα επίπεδα εισόδου μικροφώνου πάνω και κάτω για να ελέγξεις τον μέγιστο ήχο για κάθε επίπεδο όταν χρησιμοποιείς τον προσομοιωτή.
 
 --- /task ---
 
 --- task ---
 
-Download your program onto your micro:bit!
+Κατέβασε το πρόγραμμά σου στο micro:bit!
 
 --- /task ---
 
 [[[download-to-microbit]]]
 
-Well done! You now have a fully working sound or light meter!
+Συγχαρητήρια! Τώρα έχεις έναν πλήρως λειτουργικό μετρητή ήχου ή φωτός!
 
-Next, it is time to check what you have learnt!
+Στη συνέχεια, ήρθε η ώρα να ελέγξεις τι έχεις μάθει!
