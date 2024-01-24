@@ -1,9 +1,9 @@
-maximum
+μέγιστο
 
-alarm
+συναγερμός
 
-Sound Level
+Ένταση Ήχου
 
-level
+επίπεδο
 
-activity
+δραστηριότητα
