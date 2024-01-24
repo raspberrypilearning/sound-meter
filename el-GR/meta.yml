@@ -1,0 +1,27 @@
+---
+title: Μετρητής στάθμης ήχου
+hero_image: images/banner.png
+description: Μέτρησε, εμφάνισε και κατάγραψε τα επίπεδα ήχου στο micro:bit σου! Ρύθμισε έναν συναγερμό εάν το επίπεδο είναι πολύ υψηλό.
+version: 4
+listed: true
+copyedit: true
+last_tested: '2023-08-15'
+steps:
+  - title: Τι θα φτιάξεις
+  - title: Μετρητής στάθμης
+    completion:
+      - engaged
+  - title: Σήμανε συναγερμό!
+  - title: Άλλαξε την ευαισθησία
+    completion:
+      - internal
+  - title: Γρήγορο κουίζ
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Αναβάθμισε το έργο σου
+  - title: Τι υπάρχει στη συνέχεια;
