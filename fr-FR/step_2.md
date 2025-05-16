@@ -1,93 +1,93 @@
-## Log the sound level
+## Enregistrer le niveau sonore
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-You will create your MakeCode project and add code to measure the sound (or light) levels. You will display the current level on the LEDs for the user. 
+Tu vas créer ton projet MakeCode et ajouter du code pour mesurer le niveau sonore (ou lumière). Tu afficheras le niveau actuel sur les LED pour l'utilisateur. 
 </div>
 <div>
-![The micro:bit simulator displaying a bar graph of the current sound level. The level is dragged up and down and the bar graph grows and shrinks with the sound level.](images/sound-level-demo.gif){:width="300px"}
+![Le simulateur micro:bit affichant un graphique à barres du niveau sonore actuel. Le niveau est déplacé vers le haut et vers le bas et le graphique à barres grandit et rétrécit avec le niveau sonore.](images/sound-level-demo.gif){:width="300px"}
 </div>
 </div>
 
-### Open MakeCode
+### Ouvrir MakeCode
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+Pour commencer à créer ton projet micro:bit, tu dois ouvrir l'éditeur MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Ouvre l'éditeur MakeCode sur [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Version hors ligne de l'éditeur
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Il y a aussi une version [téléchargeable de l'éditeur MakeCode](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
 --- /task ---
 
-### First micro:bit project?
+### Premier projet sur micro:bit ?
 
 [[[makecode-tour]]]
 
-### Create your project
+### Créer ton projet
 
-Once the editor is open, you will need to create a new project and give your project a name.
+Une fois que l'éditeur est ouvert, tu devras créer un nouveau projet et donner un nom à ton projet.
 
 --- task ---
 
-Click on the **New Project** button.
+Clique sur le bouton **Nouveau projet**.
 
-<img src="images/new-project-button.png" alt="The new project button in MakeCode." width="250" />
+<img src="images/new-project-button.png" alt="Le bouton Nouveau projet dans MakeCode." width="250" />
 
 --- /task ---
 
 --- task ---
 
-Give your new project the name `sound level meter` and click **Create**.
+Donne à ton nouveau projet le nom `sonomètre` et clique sur **Créer**.
 
-<img src="images/soundlevel-meter.png" alt="The name 'sound level meter' written in the New Project dialogue box." width="350" />
+<img src="images/soundlevel-meter.png" alt="Le nom &quot;sonomètre&quot; écrit dans la boîte de dialogue Nouveau projet." width="350" />
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
-
---- /task ---
-
-### Plot a graph of the sound level
-
-In this project, you will make use of the `on start`{:class="microbitbasic"} block, but not the `forever`{:class="microbitbasic"} block.
-
---- task ---
-
-You can delete the `forever`{:class="microbitbasic"} block now by dragging it to the menu panel.
-
-![Animation showing the forever block being deleted by dragging it back on top of the block menus.](images/delete-forever.gif)
+**Astuce :** pour faciliter la recherche de ton projet plus tard, donne-lui un nom utile qui se rapporte à l'activité que tu crées.
 
 --- /task ---
 
-The first step is to get the micro:bit to capture the sound levels at regular intervals. There is a specifc loop you can use to do this.
+### Tracer un graphe du niveau sonore
+
+Dans ce projet, tu utiliseras le bloc `au démarrage`{:class="microbitbasic"}, mais pas le bloc `toujours`{:class="microbitbasic"}.
 
 --- task ---
 
-From the `Loops`{:class="microbitloops"} menu, drag an `every 500 ms`{:class="microbitloops"} block and place it in the code editor panel.
+Tu peux supprimer le bloc `toujours`{:class="microbitbasic"} maintenant en le faisant glisser vers le panneau de menu.
 
-<img src="images/every-500ms.png" alt="The Loops menu with the 'every 500 ms' block highlighted." width="350" />
+![Animation montrant le bloc toujours supprimé en le faisant glisser vers le haut des menus du bloc.](images/delete-forever.gif)
 
-Any code inside this loop will run every **500 milliseconds**.
+--- /task ---
 
-1000 milliseconds is 1 second, so this loop will run every **half second**.
+La première étape consiste à amener le micro:bit à capturer les niveaux sonores à intervalles réguliers. Il existe une boucle spécifique que tu peux utiliser pour faire cela.
+
+--- task ---
+
+Dans le menu `Boucles`{:class="microbitloops"}, fais glisser un bloc `chaque 500 ms`{:class="microbitloops"} et place-le dans le panneau de l'éditeur de code.
+
+<img src="images/every-500ms.png" alt="Le menu Boucles avec le bloc &quot;chaque 500 ms&quot; en surbrillance." width="350" />
+
+Tout code à l'intérieur de cette boucle s'exécutera toutes les **500 millisecondes**.
+
+1 000 millisecondes correspondent à 1 seconde, donc cette boucle s'exécutera toutes les **demi-secondes**.
 
 --- /task ---
 
 --- task ---
 
-From the `Led`{:class="microbitled"} menu, drag a `plot bar graph`{:class="microbitled"} block.
+Dans le menu `LED`{:class="microbitled"}, fais glisser un bloc `tracer graphique en barres`{:class="microbitled"}.
 
-<img src="images/plot-bargraph.png" alt="The Led menu with the 'plot bar graph' block highlighted." width="350" />
+<img src="images/plot-bargraph.png" alt="Le menu LED avec le bloc &quot;tracer graphique en barres&quot; en surbrillance." width="350" />
 
-Place it inside the `every 500 ms`{:class="microbitloops"} block.
+Place-le à l'intérieur du bloc `chaque 500 ms`{:class="microbitloops"}.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -102,11 +102,11 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
+Dans le menu `Entrée`{:class="microbitinput"}, fais glisser un bloc `niveau sonore`{:class="microbitinput"}.
 
-Place it inside the first `0` in the `plot bar graph of`{:class="microbitled"} block.
+Place-le à l'intérieur du premier `0` dans le bloc `tracer graphique en barres de`{:class="microbitled"}.
 
-Change the second `0` to `255`.
+Remplace le deuxième `0` par `255`.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -120,36 +120,36 @@ loops.everyInterval(500, function () {
 --- collapse ---
 
 ---
-title: For micro:bit V1
+title: Pour micro:bit V1
 ---
 
-There is no microphone on the micro:bit V1, so instead you can use the `light level`{:class="microbitinput"} block to measure the light levels of your environment.
+Le micro:bit V1 n'est pas équipé d'un microphone, tu peux donc utiliser le bloc `niveau d'intensité lumineuse`{:class="microbitinput"} pour mesurer le niveau de luminosité de ton environnement.
 
-![Animation showing the light level block being placed inside the first '0' on the 'plot bar graph of' block.](images/light-level.gif)
+![Animation montrant le bloc niveau d'intensité lumineuse qui est placé à l'intérieur du premier bloc "0" sur le bloc "tracer graphique en barres".](images/light-level.gif)
 
 --- /collapse ---
 
 --- /task ---
 
-### Log the sound levels (V2 only)
+### Enregistrer les niveaux sonores (V2 uniquement)
 
-The V2 micro:bit has a built-in data logger, which enables you to track data from various sensors and inputs. You will need to install an extension to use this.
+Le micro:bit V2 dispose d'un enregistreur de données intégré, qui te permet de suivre les données de divers capteurs et entrées. Tu devras installer une extension pour l'utiliser.
 
 --- task ---
 
-On the menu panel, click on **Extensions**. Another window will open showing recommended extensions. Click on the **data logger** and it will be installed as a menu item.
+Dans le panneau de menu, clique sur **Extensions**. Une autre fenêtre s'ouvrira affichant les extensions recommandées. Clique sur le **data logger** et il sera installé en tant qu'élément de menu.
 
-![The data logger extension being installed by clicking the extensions menu and then 'data logger'. A new block menu appears labelled 'Data Logger'.](images/installing-datalogger.gif)
+![L'extension data logger est installée en cliquant sur le menu des extensions puis sur "data logger". Un nouveau menu de blocs apparaît intitulé "Data Logger".](images/installing-datalogger.gif)
 
 --- /task ---
 
 --- task ---
 
-From the `Data Logger`{:class="microbitdatalogger"} menu, drag a `log data`{:class="microbitdatalogger"} block.
+Dans le menu `Data Logger`{:class="microbitdatalogger"}, fais glisser un bloc `log data`{:class="microbitdatalogger"}.
 
-<img src="images/data-logger.png" alt="The Data Logger menu with the 'log data column...value' block highlighted." width="350" />
+<img src="images/data-logger.png" alt="Le menu Data Logger avec le bloc &quot;log data column...value&quot; en surbrillance." width="350" />
 
-Place it below the `plot bar graph of`{:class='microbitled'} block.
+Place-le sous le bloc `tracer graphique en barres de`{:class='microbitled'}.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -165,7 +165,7 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-Type `Sound level` in the column field.
+Tape `niveau sonore` dans le champ colonne (column).
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -181,7 +181,7 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-From the `Input`{:class="microbitinput"} menu, drag another `sound level`{:class="microbitinput"} block and place it inside the `0` on the `log data`{:class="microbitdatalogger"} block.
+Dans le menu `Entrée`{:class="microbitinput"}, fais glisser un autre bloc `niveau sonore`{:class="microbitinput"} et place-le à l'intérieur du bloc `0` sur le bloc `log data`{:class="microbitalogger"}.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -195,18 +195,18 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-### Test your program
+### Teste ton programme
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+Lorsque tu modifies un bloc de code dans le panneau de l'éditeur de code, le simulateur redémarrera.
 
-**Test your program**
+**Teste ton programme**
 
-+ Drag the red sound level bar up and down to change the sound levels.
++ Fais glisser la barre de son rouge vers le haut et vers le bas pour changer les niveaux sonores.
 
-**V2 only**
+**V2 uniquement**
 
-+ Click The '**Show data** Simulator' link below the micro:bit simulator to see the sound levels being logged.
++ Clique sur le lien « **Afficher données** Simulateur » sous le simulateur micro:bit pour voir les niveaux sonores enregistrés.
 
-![Animation showing the microphone bar on the microbit simulator being dragged up and down to increase and reduce the sound. The 'Show data' button is clicked to show the data being logged.](images/mic-test.gif)
+![Animation montrant la barre du microphone sur le simulateur micro:bit que l'on fait glisser de haut en bas pour augmenter ou réduire le son. Le bouton "Afficher données" est cliqué pour afficher les données enregistrées.](images/mic-test.gif)
 
-Awesome work! You have created your first data display program on a micro:bit!
+Excellent travail ! Tu as créé ton premier programme d'affichage de données sur un micro:bit !
