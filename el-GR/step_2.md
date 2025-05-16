@@ -207,6 +207,6 @@ loops.everyInterval(500, function () {
 
 + Κάνε κλικ στο σύνδεσμο «**Show data** προσομοιωτή» κάτω από τον προσομοιωτή micro:bit για να δεις τα επίπεδα έντασης ήχου που καταγράφονται.
 
-![Κινούμενη εικόνα που δείχνει τη γραμμή μικροφώνου στον προσομοιωτή microbit να σύρεται πάνω και κάτω για να αυξήσει και να μειώσει τον ήχο. Το κουμπί "Show data" γίνεται κλικ για να εμφανίσει τα δεδομένα που καταγράφονται.](images/mic-test.gif)
+![Animation showing the microphone bar on the micro:bit simulator being dragged up and down to increase and reduce the sound. Το κουμπί "Show data" γίνεται κλικ για να εμφανίσει τα δεδομένα που καταγράφονται.](images/mic-test.gif)
 
 Εκπληκτική δουλειά! Έχεις δημιουργήσει το πρώτο σου πρόγραμμα εμφάνισης δεδομένων σε micro:bit!
