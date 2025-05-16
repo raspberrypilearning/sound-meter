@@ -1,12 +1,12 @@
-## What next?
+## Et ensuite ?
 
-If you are following the [Introduction to micro:bit](https://projects.raspberrypi.org/en/raspberrypi/path-name) path, you can move on to the [Sleep tracker](https://projects.raspberrypi.org/en/projects/sleep-tracker) project.
+Si tu suis le parcours [Introduction à micro:bit](https://projects.raspberrypi.org/en/raspberrypi/path-name), tu peux passer au projet [Suivi du sommeil](https://projects.raspberrypi.org/en/projects/sleep-tracker).
 
-In this project, you will make a sleep tracker that uses the micro:bit's accelerometer to track how many times you move in the night. Getting good sleep is really important to help you feel your best!
+Dans ce projet, tu créeras un tracker de sommeil qui utilise l'accéléromètre du micro:bit pour suivre le nombre de fois que tu bouges pendant la nuit. Il est très important de bien dormir pour se sentir au mieux de sa forme !
 
 --- print-only ---
 
-![Sleep tracker](images/sleep-tracker.png)
+![Suivi du sommeil](images/sleep-tracker.png)
 
 --- /print-only ---
 
@@ -16,4 +16,4 @@ In this project, you will make a sleep tracker that uses the micro:bit's acceler
 
 --- /no-print ---
 
-If you want to have more fun exploring micro:bit, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=microbit).
+Si tu souhaites t'amuser encore plus en explorant micro:bit, tu peux essayer l'un de ces [projets](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=microbit).
