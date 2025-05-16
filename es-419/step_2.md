@@ -207,6 +207,6 @@ When you make a change to a code block in the code editor panel, the simulator w
 
 + Click The '**Show data** Simulator' link below the micro:bit simulator to see the sound levels being logged.
 
-![Animation showing the microphone bar on the microbit simulator being dragged up and down to increase and reduce the sound. The 'Show data' button is clicked to show the data being logged.](images/mic-test.gif)
+![Animation showing the microphone bar on the micro:bit simulator being dragged up and down to increase and reduce the sound. The 'Show data' button is clicked to show the data being logged.](images/mic-test.gif)
 
 Awesome work! You have created your first data display program on a micro:bit!
