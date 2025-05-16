@@ -2,12 +2,12 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-This block of code shows a `every 500 ms` loop block.
+Ce bloc de code montre un bloc de boucle `chaque 500 ms`.
 
-What is a loop?
+Qu'est-ce qu'une boucle ?
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -21,27 +21,27 @@ loops.everyInterval(500, function () {
 
 --- choices ---
 
-- (x) A sequence of instructions that is repeated constantly or until a certain condition is reached.
+- (x) Une séquence d’instructions qui est répétée constamment ou jusqu’à ce qu’une certaine condition soit remplie.
 
   --- feedback ---
 
-Fantastic work! Loops are a concept used across all programming languages. Loops repeat constantly or until a condition is reached.
+Bravo ! Les boucles sont un concept utilisé dans tous les langages de programmation. Les boucles se répètent constamment ou jusqu'à ce qu'une condition soit remplie.
 
   --- /feedback ---
 
-- ( ) A condition that controls what happens in a logic block.
+- ( ) Une condition qui contrôle ce qui se passe dans un bloc logique.
 
   --- feedback ---
 
-  Not quite. A condition can be used to compare a variable value with something else. The condition does not loop.
+  Pas tout à fait. Une condition peut être utilisée pour comparer une valeur de variable avec autre chose. La condition ne boucle pas.
 
   --- /feedback ---
 
-- ( ) A sequence of instructions that performs a specific task.
+- ( ) Une séquence d'instructions qui exécute une tâche spécifique.
 
   --- feedback ---
 
-  Not quite. A sequence of instructions for a specific task is called a `function`.
+  Pas tout à fait. Une séquence d'instructions pour une tâche spécifique est appelée une `fonction`.
 
   --- /feedback ---
 
