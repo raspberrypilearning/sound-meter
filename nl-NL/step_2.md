@@ -207,6 +207,6 @@ Als je een wijziging aanbrengt in een codeblok in het bewerkingspaneel zal de si
 
 + Klik op de '**Gegevens weergeven** Simulator' link onder de micro:bit simulator om de geluidsniveaus te zien die worden gelogd.
 
-![Animatie toont de microfoonbalk op de microbit-simulator die omhoog en omlaag wordt gesleept om het geluid te verhogen en te verminderen. De knop 'Gegevens weergeven' wordt aangeklikt om de gegevens te tonen die gelogd worden.](images/mic-test.gif)
+![Animation showing the microphone bar on the micro:bit simulator being dragged up and down to increase and reduce the sound. De knop 'Gegevens weergeven' wordt aangeklikt om de gegevens te tonen die gelogd worden.](images/mic-test.gif)
 
 Geweldig werk! Je hebt je eerste programma voor het weergeven van gegevens gemaakt op de micro:bit!
