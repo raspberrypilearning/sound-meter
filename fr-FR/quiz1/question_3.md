@@ -2,9 +2,9 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Question 3 sur 3
 ---
-Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
+Voici le code pour programmer les blocs `lorsque le bouton A est pressé` et `lorsque le bouton B est pressé`.
 
 ```microbit
 let level = 0
@@ -31,32 +31,32 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-What will happen when the `B` button is pressed on the micro:bit?
+Que se passera-t-il lorsque le bouton `B` sera pressé sur le micro:bit ?
 
 --- choices ---
 
-- ( ) The sound level will be changed by -1 and sensitivity by -50.
+- ( ) Le niveau sonore sera modifié de -1 et la sensibilité de -50.
 
 
   --- feedback ---
 
-  Not quite! Pressing button `A` will make these changes, but not button `B`.
+  Pas tout à fait ! Appuyer sur le bouton `A` effectuera ces modifications, mais pas sur le bouton `B`.
 
   --- /feedback ---
 
-- ( ) The sound level will be changed by 5 and sensitivity by -50.
+- ( ) Le niveau sonore sera modifié de 5 et la sensibilité de -50.
 
   --- feedback ---
 
-  Not quite! Neither button A or button B are programmed to change the sound level or sensitivity by these amounts.
+  Pas tout à fait ! Ni le bouton A ni le bouton B ne sont programmés pour modifier le niveau sonore ou la sensibilité de ces quantités.
 
   --- /feedback ---
 
-- (x) The sound level will be changed by 1 and sensitivity by 50.
+- (x) Le niveau sonore sera modifié de 1 et la sensibilité de 50.
 
   --- feedback ---
 
-  Awesome job! Button B has been programmed to increase the sound level by 1 and the sensitivity by 50.
+  Super ! Le bouton B a été programmé pour augmenter le niveau sonore de 1 et la sensibilité de 50.
 
   --- /feedback ---
 
