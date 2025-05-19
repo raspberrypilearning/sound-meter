@@ -1,0 +1,27 @@
+---
+title: Sonomètre
+hero_image: images/banner.png
+description: Mesure, affiche et enregistre les niveaux sonores sur ton micro:bit ! Règle une alarme si le niveau est trop élevé.
+version: 4
+listed: true
+copyedit: true
+last_tested: '2023-08-15'
+steps:
+  - title: Ce que tu vas faire
+  - title: Indicateur de niveau
+    completion:
+      - engaged
+  - title: Sonner l'alarme !
+  - title: Modifier la sensibilité
+    completion:
+      - internal
+  - title: Questionnaire rapide
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Améliorer ton projet
+  - title: Et ensuite ?
