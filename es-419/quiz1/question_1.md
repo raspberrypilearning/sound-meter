@@ -1,42 +1,42 @@
-## Reflection
+## Reflexion
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Resuelve las tres preguntas. Hay pistas que te guiaran a la respuesta correcta.
 
-When you have answered each question, click on **Check my answer**.
+Cuando hayas respondido cada pregunta, haz click en **Revisar mis respuestas**.
 
-Have fun!
+¡Diviertete!
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Pregunta 1 de 3
 ---
 
-Which menu contains the blocks for `on button A pressed`{:class='microbitinput'} and `on logo pressed`{:class='microbitinput'}?
+¿Que menu contiene los bloques `al presionar el boton A`{:class='microbitinput'} y `al pulsar el logotipo`{:class='microbitinput'}?
 
 --- choices ---
 
-- ( ) Basic
+- ( ) Basico
 
   --- feedback ---
 
-Not quite! The Basic menu contains blocks for the basic functionality of the micro:bit.
+¡No exactamente! El menu Basico contiene los bloques para funcionalidades bascias del micro:bit.
 
   --- /feedback ---
 
-- (x) Input
+- (x) Entrada
 
   --- feedback ---
 
-Awesome! You have answered correctly, the Input menu contains all the input and gesture blocks.
+¡Asombroso! Has respondido correctamente, el menu de Entrada contiene todos los vloques de Entrada y gestos.
 
   --- /feedback ---
 
-- ( ) Logic
+- ( ) Logica
 
   --- feedback ---
 
-Not quite! The Logic menu contains blocks for conditional and Boolean logic.
+¡No exactamente! El menu de Logica contiene bloques condicionales y Booleanos.
 
   --- /feedback ---
 
