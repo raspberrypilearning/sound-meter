@@ -79,7 +79,7 @@ If button A is pressed when the level is already 1, then you need to make it so 
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
+O'r ddewislen <code style="background-color: #00A4A6">Logic</code>, llusgwch bloc <code style="background-color: #00A4A6">os</code>.
 
 Place it below the `change maximum by -50`{:class='microbitvariables'} block.
 
@@ -370,6 +370,6 @@ Download your program onto your micro:bit!
 
 [[[download-to-microbit]]]
 
-Well done! You now have a fully working sound or light meter!
+Da iawn! You now have a fully working sound or light meter!
 
 Next, it is time to check what you have learnt!
