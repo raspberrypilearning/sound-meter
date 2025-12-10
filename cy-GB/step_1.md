@@ -1,10 +1,10 @@
 ## New to the micro:bit?
 
 You can try out our amazing `Discover` projects:
-- [Hobby selector](https://projects.raspberrypi.org/en/projects/hobby-selector)
-- [Silly reminder](https://projects.raspberrypi.org/en/projects/silly-reminder)
+- [Detholwr hobi](https://projects.raspberrypi.org/en/projects/hobby-selector)
+- [Nodyn atgoffa gwirion](https://projects.raspberrypi.org/en/projects/silly-reminder)
 
-## You will make
+## Cyflwyniad
 
 Do you sometimes get tired of our noisy lives and just want a bit of quiet time? 🤫
 
@@ -18,13 +18,13 @@ This project will also show you how to save the sound level data to your micro:b
  <span style="color: #0faeb0">Healthy sound levels</span> are an important part of our wellbeing. Peaceful and soothing sounds such as the sounds of nature or the ocean can help calm us down. However, being around louder noises such as loud music for too long can be bad for our ears. If things get too loud, it is good to take breaks, move away, or use ear protectors.
 </p>
 
-You will:
+Byddwch yn:
 + Use the sound sensor (V2) or the light sensor (V1)
 + Combine conditions to create an alarm
 + Use the buttons to change the alarm sensitivity
 + Log sound data to analyse later
 
-### Play ▶️
+### Rhowch gynnig arni
 
 --- task ---
 
