@@ -176,7 +176,7 @@ From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="
 
 Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
 
-Your code should look like this:
+コードは以下のようになります：
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -206,7 +206,7 @@ From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="
 
 Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
 
-Your code should look like this:
+コードは以下のようになります：
 
 ```microbit
 loops.everyInterval(500, function () {
