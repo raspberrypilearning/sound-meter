@@ -8,7 +8,7 @@ copyedit: true
 last_tested: '2023-08-15'
 steps:
   - 
-    title: You will make
+    title: Cyflwyniad
   - 
     title: Level meter
     completion:
@@ -20,7 +20,7 @@ steps:
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Effeithiau llwyfan
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -29,4 +29,4 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Myfyrio
