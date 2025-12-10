@@ -1,4 +1,4 @@
-## Upgrade your project
+## Uwchraddio eich prosiect
 
 Fantastic effort! You have created your micro:bit sound level meter. Here are some ideas to upgrade your project and create a more advanced sound level meter:
 
@@ -6,7 +6,7 @@ Fantastic effort! You have created your micro:bit sound level meter. Here are so
 + Show an icon for maximum/minimum sound levels
 + Add more levels of sensitivity
 
-### Play ▶️
+### Rhowch gynnig arni
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
@@ -31,9 +31,9 @@ Once the alarm sounds, click the logo at the top to reset it.
 --- collapse ---
 
 ---
-title: Completed project
+title: Ychwanegu eich delwedd eich hun at Trinket
 ---
 
-You can view the [completed project here](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}.
+Galli di weld y [prosiect wedi'i gwblhau yma](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}.
 
 --- /collapse ---
