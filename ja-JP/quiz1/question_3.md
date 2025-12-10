@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: 質問3/3
 ---
 Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
 
