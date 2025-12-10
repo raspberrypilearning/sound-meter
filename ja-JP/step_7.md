@@ -1,4 +1,4 @@
-## What next?
+## 次は何をしますか？
 
 If you are following the [Introduction to micro:bit](https://projects.raspberrypi.org/en/raspberrypi/path-name) path, you can move on to the [Sleep tracker](https://projects.raspberrypi.org/en/projects/sleep-tracker) project.
 
