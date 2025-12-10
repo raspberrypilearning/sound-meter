@@ -9,21 +9,21 @@ You will create your MakeCode project and add code to measure the sound (or ligh
 </div>
 </div>
 
-### Open MakeCode
+### Agor MakeCode
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+I ddechrau creu eich prosiect micro:bit, mae angen ichi agor golygydd MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Agorwch y golygydd MakeCode yn [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Fersiwn all-lein o'r golygydd
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Mae yna hefyd fersiwn [y gellir ei lawrlwytho o olygydd MakeCode](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
@@ -35,11 +35,11 @@ There is also a [downloadable version of the MakeCode editor](https://makecode.m
 
 ### Create your project
 
-Once the editor is open, you will need to create a new project and give your project a name.
+Unwaith y bydd y golygydd ar agor, bydd angen i chi greu prosiect newydd a rhoi enw i'ch prosiect.
 
 --- task ---
 
-Click on the **New Project** button.
+Cliciwch ar y botwm **Prosiect Newydd**.
 
 <img src="images/new-project-button.png" alt="The new project button in MakeCode." width="250" />
 
@@ -51,7 +51,7 @@ Give your new project the name `sound level meter` and click **Create**.
 
 <img src="images/soundlevel-meter.png" alt="The name 'sound level meter' written in the New Project dialogue box." width="350" />
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
+**Awgrym:** Er mwyn ei gwneud hi'n haws dod o hyd i'ch prosiect yn nes ymlaen, rhowch enw defnyddiol iddo sy'n ymwneud â'r gweithgaredd rydych chi'n ei greu.
 
 --- /task ---
 
