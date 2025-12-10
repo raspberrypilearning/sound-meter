@@ -9,9 +9,9 @@ You will create your MakeCode project and add code to measure the sound (or ligh
 </div>
 </div>
 
-### Open MakeCode
+### MakeCodeを開く
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+micro:bit プロジェクトの作成を開始するには、MakeCode エディターを開く必要があります。
 
 --- task ---
 
@@ -20,7 +20,7 @@ Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.or
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: エディタのオフラインバージョン
 ---
 
 There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
@@ -29,13 +29,13 @@ There is also a [downloadable version of the MakeCode editor](https://makecode.m
 
 --- /task ---
 
-### First micro:bit project?
+### 最初の micro:bit プロジェクトですか?
 
 [[[makecode-tour]]]
 
-### Create your project
+### プロジェクトを作成する
 
-Once the editor is open, you will need to create a new project and give your project a name.
+エディターが開いたら、新しいプロジェクトを作成し、プロジェクトに名前を付ける必要があります。
 
 --- task ---
 
@@ -51,7 +51,7 @@ Give your new project the name `sound level meter` and click **Create**.
 
 <img src="images/soundlevel-meter.png" alt="The name 'sound level meter' written in the New Project dialogue box." width="350" />
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
+**ヒント:** 後でプロジェクトを見つけやすくするために、作成しているものに関連するわかりやすい名前を付けましょう。
 
 --- /task ---
 
@@ -106,7 +106,7 @@ From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="micr
 
 Place it inside the first `0` in the `plot bar graph of`{:class="microbitled"} block.
 
-Change the second `0` to `255`.
+2番目の `0` を `255`に変更します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -195,11 +195,11 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-### Test your program
+### プログラムを試してみましょう。
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+コード エディター パネルでコード ブロックを変更すると、シミュレーターが再起動します。
 
-**Test your program**
+**プログラムを試してみましょう。**
 
 + Drag the red sound level bar up and down to change the sound levels.
 
