@@ -171,7 +171,7 @@ Again from the `Variables`{:class='microbitvariables'} menu, drag another `set`{
 
 Place it below the `set level to 5`{:class='microbitvariables'} block.
 
-Change the `0` to `250`.
+`0` を `250`に変更します。
 
 ```microbit
 let level = 0
@@ -352,7 +352,7 @@ let level = 3
 
 --- task ---
 
-**Test your program**
+**プログラムを試してみましょう。**
 
 + Press the A and B buttons to see the sound levels increase and decrease
 
@@ -364,12 +364,12 @@ The default starting point is level 3.
 
 --- task ---
 
-Download your program onto your micro:bit!
+プログラムをmicro:bitにダウンロードしましょう！
 
 --- /task ---
 
 [[[download-to-microbit]]]
 
-Well done! You now have a fully working sound or light meter!
+よくできました！ You now have a fully working sound or light meter!
 
-Next, it is time to check what you have learnt!
+次に、学んだ内容を確認します。
