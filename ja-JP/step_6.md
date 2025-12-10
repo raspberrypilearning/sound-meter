@@ -1,4 +1,4 @@
-## Upgrade your project
+## プロジェクトをアップグレードする
 
 Fantastic effort! You have created your micro:bit sound level meter. Here are some ideas to upgrade your project and create a more advanced sound level meter:
 
@@ -6,12 +6,12 @@ Fantastic effort! You have created your micro:bit sound level meter. Here are so
 + Show an icon for maximum/minimum sound levels
 + Add more levels of sensitivity
 
-### Play ▶️
+### 試してみる▶️
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-Click on the embedded project.
+組み込み済みのプロジェクトをクリックしてみてください。
 
 Drag the yellow light level in the circle up and down, see what happens with the LEDs. 
 Press the A or B buttons to change the sensitivity:
@@ -31,9 +31,9 @@ Once the alarm sounds, click the logo at the top to reset it.
 --- collapse ---
 
 ---
-title: Completed project
+title: 完成したプロジェクト
 ---
 
-You can view the [completed project here](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}.
+[完成したプロジェクトはこちら](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}で確認できます。
 
 --- /collapse ---
