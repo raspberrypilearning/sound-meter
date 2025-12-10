@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Cwestiwn 3 o 3
 ---
 Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
 
@@ -40,7 +40,7 @@ What will happen when the `B` button is pressed on the micro:bit?
 
   --- feedback ---
 
-  Not quite! Pressing button `A` will make these changes, but not button `B`.
+  Ddim cweit! Pressing button `A` will make these changes, but not button `B`.
 
   --- /feedback ---
 
@@ -48,7 +48,7 @@ What will happen when the `B` button is pressed on the micro:bit?
 
   --- feedback ---
 
-  Not quite! Neither button A or button B are programmed to change the sound level or sensitivity by these amounts.
+  Ddim cweit! Neither button A or button B are programmed to change the sound level or sensitivity by these amounts.
 
   --- /feedback ---
 
