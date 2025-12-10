@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Cwestiwn 2 o 3
 ---
 
 This block of code shows a `every 500 ms` loop block.
@@ -33,7 +33,7 @@ Fantastic work! Loops are a concept used across all programming languages. Loops
 
   --- feedback ---
 
-  Not quite. A condition can be used to compare a variable value with something else. The condition does not loop.
+  Ddim cweit. A condition can be used to compare a variable value with something else. The condition does not loop.
 
   --- /feedback ---
 
@@ -41,7 +41,7 @@ Fantastic work! Loops are a concept used across all programming languages. Loops
 
   --- feedback ---
 
-  Not quite. A sequence of instructions for a specific task is called a `function`.
+  Ddim cweit. A sequence of instructions for a specific task is called a `function`.
 
   --- /feedback ---
 
