@@ -21,7 +21,7 @@
 
 Από το μενού `Είσοδος`{:class='microbitinput'}, σύρε ένα μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'} και τοποθέτησέ το στο πρόγραμμα επεξεργασίας κώδικα.
 
-<img src="images/on-button-location.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;όταν πιεστεί το πλήκτρο button A'&quot; στην κορυφή." width="300"/>
+<img src="images/on-button-location.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;όταν πιεστεί το πλήκτρο button A'&quot; στην κορυφή." width="300" />
 
 --- /task ---
 
@@ -33,7 +33,7 @@
 
 Από το μενού `Μεταβλητές`{:class='microbitvariables'}, κάνε κλικ στο **Δημιουργία μεταβλητής** για να δημιουργήσεις μια μεταβλητή που ονομάζεται `επίπεδο`.
 
---- /task --- 
+--- /task ---
 
 --- task ---
 
@@ -42,9 +42,9 @@
 Άλλαξε το `1` σε `-1`.
 
 ```microbit
-let επίπεδο = 0
+let level = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
+    level += -1
 })
 ```
 
@@ -60,14 +60,14 @@ input.onButtonPressed(Button.A, function () {
 
 Άλλαξε το `1` σε `-50`.
 
-<img src="images/change-variable.gif" alt="Κινούμενη εικόνα που εμφανίζει το αναπτυσσόμενο μενού στο μπλοκ μεταβλητής «άλλαξε μέγιστο κατά 1»." width="300"/>
+<img src="images/change-variable.gif" alt="Κινούμενη εικόνα που εμφανίζει το αναπτυσσόμενο μενού στο μπλοκ μεταβλητής «άλλαξε μέγιστο κατά 1»." width="300" />
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
+    level += -1
+    maximum += -50
 })
 ```
 
@@ -84,11 +84,11 @@ input.onButtonPressed(Button.A, function () {
 Τοποθέτησέ το κάτω από το μπλοκ `άλλαξε μέγιστο κατά -50`{:class='microbitvariables'}.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
+    level += -1
+    maximum += -50
     if (true) {
 
     }
@@ -104,11 +104,11 @@ input.onButtonPressed(Button.A, function () {
 Τοποθέτησέ το μέσα στο διάστημα `αληθές` μέσα στο μπλοκ `εάν`{:class='microbitlogic'}.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
+    level += -1
+    maximum += -50
     if (0 < 0) {
 
     }
@@ -124,12 +124,12 @@ input.onButtonPressed(Button.A, function () {
 Τοποθέτησέ το μέσα στο πρώτο `0` του μπλοκ `0 < 0`{:class='microbitlogic'}.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 0) {
+    level += -1
+    maximum += -50
+    if (level < 0) {
 
     }
 })
@@ -152,13 +152,13 @@ input.onButtonPressed(Button.A, function () {
 Άλλαξε το μπλοκ `0` σε `5` στο `ορισμός επίπεδο σε 0`{:class='microbitvariables'}.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 1) {
-        επίπεδο = 5
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
     }
 })
 ```
@@ -174,14 +174,14 @@ input.onButtonPressed(Button.A, function () {
 Άλλαξε το `0` σε `250`.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 1) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
     }
 })
 ```
@@ -195,14 +195,14 @@ input.onButtonPressed(Button.A, function () {
 Τοποθέτησέ το **κάτω** από το μπλοκ `εάν`{:class='microbitlogic'}.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 1) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
     }
     basic.showNumber(0)
 })
@@ -217,16 +217,16 @@ input.onButtonPressed(Button.A, function () {
 Τοποθέτησέ το στο μπλοκ `0` στο μπλοκ `εμφάνιση αριθμού`{:class='microbitbasic'}.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 1) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
     }
-    basic.showNumber(επίπεδο)
+    basic.showNumber(level)
 })
 ```
 
@@ -241,16 +241,16 @@ input.onButtonPressed(Button.A, function () {
 Άλλαξε το `100` σε `500`.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 1) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
     }
-    basic.showNumber(επίπεδο)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```
@@ -279,7 +279,7 @@ input.onButtonPressed(Button.A, function () {
 
 Άλλαξε το `A` σε `B`.
 
-<img src="images/button-menu.png" alt="Το αναπτυσσόμενο μενού για το «όταν πιεστεί το πλήκτρο button A» που σου επιτρέπει να αλλάξεις το μπλοκ σε κουμπί Β." width="400"/>
+<img src="images/button-menu.png" alt="Το αναπτυσσόμενο μενού για το «όταν πιεστεί το πλήκτρο button A» που σου επιτρέπει να αλλάξεις το μπλοκ σε κουμπί Β." width="400" />
 
 --- /task ---
 
@@ -308,16 +308,16 @@ input.onButtonPressed(Button.A, function () {
 - Άλλαξε το `250` σε `50` στο μπλοκ `ορισμός μέγιστο σε 50`{:class='microbitvariables'}
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.B, function () {
-    επίπεδο += 1
-    μέγιστο += 50
-    if (επίπεδο > 5) {
-        επίπεδο = 1
-        μέγιστο = 50
+    level += 1
+    maximum += 50
+    if (level > 5) {
+        level = 1
+        maximum = 50
     }
-    basic.showNumber(επίπεδο)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```
@@ -343,9 +343,9 @@ input.onButtonPressed(Button.B, function () {
 Άλλαξε το `0` σε `3` στο μπλοκ `ορισμός επίπεδο`{:class='microbitvariables'}.
 
 ```microbit
-let μέγιστο = 150
-let συναγερμός = false
-let επίπεδο = 3
+let maximum = 150
+let alarm = false
+let level = 3
 ```
 
 --- /task ---

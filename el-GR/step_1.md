@@ -1,8 +1,8 @@
 ## Νέος/νέα στο micro:bit;
 
 Μπορείς να δοκιμάσεις τα εκπληκτικά έργα μας στο `Ανακάλυψε`:
-- [Επιλογέας χόμπι](https://projects.raspberrypi.org/el-GR/projects/hobby-selector)
-- [Υπενθύμιση διασκέδασης](https://projects.raspberrypi.org/el-GR/projects/silly-reminder)
+- [Επιλογέας χόμπι](https://projects.raspberrypi.org/en/projects/hobby-selector)
+- [Υπενθύμιση διασκέδασης](https://projects.raspberrypi.org/en/projects/silly-reminder)
 
 ## Τι θα φτιάξεις
 

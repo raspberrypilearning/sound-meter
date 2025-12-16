@@ -23,7 +23,7 @@
 title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 ---
 
-Υπάρχει επίσης μια έκδοση με [δυνατότητα λήψης του προγράμματος επεξεργασίας MakeCode](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Υπάρχει επίσης μια έκδοση με [δυνατότητα λήψης του προγράμματος επεξεργασίας MakeCode](https://makecode.microbit.org/offline-app)"{:target="_blank"}.
 
 --- /collapse ---
 
@@ -41,7 +41,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Κάνε κλικ στο κουμπί **Νέο έργο**.
 
-<img src="images/new-project-button.png" alt="Το κουμπί νέου έργου στο MakeCode." width="250"/>
+<img src="images/new-project-button.png" alt="Το κουμπί νέου έργου στο MakeCode." width="250" />
 
 --- /task ---
 
@@ -49,7 +49,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Δώσε στο νέο σου έργο το όνομα `μετρητής έντασης ήχου` και κάνε κλικ στο **Δημιουργία**.
 
-<img src="images/soundlevel-meter.png" alt="Το όνομα «μετρητής έντασης ήχου» εμφανίζεται στο πλαίσιο διαλόγου Νέο έργο." width="350"/>
+<img src="images/soundlevel-meter.png" alt="Το όνομα «μετρητής έντασης ήχου» εμφανίζεται στο πλαίσιο διαλόγου Νέο έργο." width="350" />
 
 **Συμβουλή:** Για να γίνει πιο εύκολη η εύρεση του έργου σου αργότερα, δώσε του ένα όνομα που να σχετίζεται με τη δραστηριότητα που δημιουργείς.
 
@@ -73,7 +73,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Από το μενού `Βρόχοι`{:class="microbitinput"}, σύρε το μπλοκ `every 500 ms`{:class="microbitinput"} στον πίνακα επεξεργασίας κώδικα.
 
-<img src="images/every-500ms.png" alt="Το μενού Βρόχοι με τονισμένο το μπλοκ &quot;every 500 ms&quot;." width="350"/>
+<img src="images/every-500ms.png" alt="Το μενού Βρόχοι με τονισμένο το μπλοκ &quot;every 500 ms&quot;." width="350" />
 
 Οποιοσδήποτε κώδικας μέσα σ' αυτόν τον βρόχο θα εκτελείται κάθε **500 χιλιοστά του δευτερολέπτου**.
 
@@ -83,9 +83,9 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 --- task ---
 
-Από το μενού `Led`{:class="microbitmath"}, σύρε ένα μπλοκ `plot bar graph`{:class="microbitled"}.
+Από το μενού `Led`{:class="microbitmath"}, σύρε ένα μπλοκ `plot bar graph`{:class="microbitmath"}.
 
-<img src="images/plot-bargraph.png" alt="Το μενού Led με τονισμένο το μπλοκ «plot bar graph»." width="350"/>
+<img src="images/plot-bargraph.png" alt="Το μενού Led με τονισμένο το μπλοκ «plot bar graph»." width="350" />
 
 Τοποθέτησέ το μέσα στο μπλοκ `every 500 ms`{:class='microbitlogic'}.
 
@@ -147,7 +147,7 @@ title: Για το micro:bit V1
 
 Από το μενού `Data Logger`{:class="microbitdatalogger"}, σύρε ένα μπλοκ `log data`{:class="microbitdatalogger"}.
 
-<img src="images/data-logger.png" alt="Το μενού Data Logger με τονισμένο το μπλοκ 'log data column...value'." width="350"/>
+<img src="images/data-logger.png" alt="Το μενού Data Logger με τονισμένο το μπλοκ 'log data column...value'." width="350" />
 
 Τοποθέτησέ το κάτω από το μπλοκ`plot bar graph of`{:class='microbitled'}.
 
@@ -173,7 +173,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", 0))
+    datalogger.log(datalogger.createCV("Sound level", 0))
 })
 ```
 
@@ -181,7 +181,7 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα ακόμη μπλοκ `sound level`{:class="microbitinput"} και τοποθέτησέ το μέσα στο `0` στο μπλοκ `log data`{:class="microbitdatalogger"}.
+Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα ακόμη μπλοκ `sound level`{:class="microbitinput"} και τοποθέτησέ το μέσα στο `0` στο μπλοκ `log data`{:class="microbitdatalogger "}.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -189,7 +189,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
 })
 ```
 
@@ -207,6 +207,6 @@ loops.everyInterval(500, function () {
 
 + Κάνε κλικ στο σύνδεσμο «**Show data** προσομοιωτή» κάτω από τον προσομοιωτή micro:bit για να δεις τα επίπεδα έντασης ήχου που καταγράφονται.
 
-![Κινούμενη εικόνα που δείχνει τη γραμμή μικροφώνου στον προσομοιωτή microbit να σύρεται πάνω και κάτω για να αυξήσει και να μειώσει τον ήχο. Το κουμπί "Show data" γίνεται κλικ για να εμφανίσει τα δεδομένα που καταγράφονται.](images/mic-test.gif)
+![Animation showing the microphone bar on the micro:bit simulator being dragged up and down to increase and reduce the sound. Το κουμπί "Show data" γίνεται κλικ για να εμφανίσει τα δεδομένα που καταγράφονται.](images/mic-test.gif)
 
 Εκπληκτική δουλειά! Έχεις δημιουργήσει το πρώτο σου πρόγραμμα εμφάνισης δεδομένων σε micro:bit!

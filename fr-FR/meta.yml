@@ -7,15 +7,20 @@ listed: true
 copyedit: true
 last_tested: '2023-08-15'
 steps:
-  - title: Ce que tu vas faire
-  - title: Indicateur de niveau
+  - 
+    title: Ce que tu vas faire
+  - 
+    title: Indicateur de niveau
     completion:
       - engaged
-  - title: Sonner l'alarme !
-  - title: Modifier la sensibilité
+  - 
+    title: Sonner l'alarme !
+  - 
+    title: Modifier la sensibilité
     completion:
       - internal
-  - title: Questionnaire rapide
+  - 
+    title: Questionnaire rapide
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -23,4 +28,5 @@ steps:
       passing_score: 3
     completion:
       - external
-  - title: Améliorer ton projet
+  - 
+    title: Améliorer ton projet

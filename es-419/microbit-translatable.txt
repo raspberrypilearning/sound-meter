@@ -1,0 +1,9 @@
+maximo
+
+alarma
+
+Nivel de sonido
+
+nivel
+
+actividad

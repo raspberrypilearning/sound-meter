@@ -19,7 +19,7 @@ Je moet een variabele maken om het geluidsniveau te bepalen dat het alarm uitlok
 
 Open het `Variabelen`{:class="microbitvariables"} menu en klik op **Maak een variabele**.
 
-<img src="images/variable-menu.png" alt="Het menu Variabelen met de knop 'Maak een variabele' gemarkeerd." width="350"/>
+<img src="images/variable-menu.png" alt="Het menu Variabelen met de knop 'Maak een variabele' gemarkeerd." width="350" />
 
 --- /task ---
 
@@ -27,7 +27,7 @@ Open het `Variabelen`{:class="microbitvariables"} menu en klik op **Maak een var
 
 Geef je nieuwe variabele de naam `maximum`.
 
-<img src="images/max-variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'maximum' in het vak." width="400"/>
+<img src="images/max-variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'maximum' in het vak." width="400" />
 
 --- /task ---
 
@@ -35,7 +35,7 @@ Geef je nieuwe variabele de naam `maximum`.
 
 Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel maximum in op`{:class="microbitvariables"}.
 
-<img src="images/set-max-start.png" alt="Het Variabelenblok menu met het blok 'stel maximum in op' blok gemarkeerd." width="350"/>
+<img src="images/set-max-start.png" alt="Het Variabelenblok menu met het blok 'stel maximum in op' blok gemarkeerd." width="350" />
 
 Plaats het blok binnen het `bij opstarten`{:class="microbitbasic"} blok en verander de `0` in `150`.
 
@@ -67,7 +67,7 @@ Om dit te doen, gebruik je een andere variabele die zal worden ingesteld op `onw
 
 Maak nog een nieuwe `Variabele`{:class="microbitvariables"}, deze keer genaamd `alarm`.
 
-<img src="images/alarm-variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'alarm' in het vak." width="350"/>
+<img src="images/alarm-variable-name.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'alarm' in het vak." width="350" />
 
 --- /task ---
 
@@ -75,7 +75,7 @@ Maak nog een nieuwe `Variabele`{:class="microbitvariables"}, deze keer genaamd `
 
 Sleep het `stel alarm in op`{:class="microbitvariables"} blok uit het `Variabelen`{:class="microbitvariables"} menu.
 
-Plaats het in het `bij opstarten`{:class="microbitbasic"} blok.
+Plaats het in het `bij opstarten`{:class='microbitbasic'} blok.
 
 --- /task ---
 
@@ -87,7 +87,7 @@ Open het `Logisch`{:class="microbitlogic"} menu.
 
 Haal een `onwaar`{:class="microbitlogic"} blok op.
 
-<img src="images/false-block-location.png" alt="Het onderste deel van het Logisch-menu, met de locatie van het 'onwaar'-blok in de 'Booleaanse waarde'-sectie." width="200"/>
+<img src="images/false-block-location.png" alt="Het onderste deel van het Logisch-menu, met de locatie van het 'onwaar'-blok in de 'Booleaanse waarde'-sectie." width="200" />
 
 Plaats dit blok bovenop de `0`.
 
@@ -110,7 +110,7 @@ Het alarm mag alleen afgaan **als:**
 
 Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep het `als...dan`{:class="microbitlogic"} blok.
 
-<img src="images/if-block-location.png" alt="Het Logisch blokmenu met het 'als' blok gemarkeerd." width="350"/>
+<img src="images/if-block-location.png" alt="Het Logisch blokmenu met het 'als' blok gemarkeerd." width="350" />
 
 Plaats het blok in de `elke`{:class="microbitloops"} lus onder het `log data`{:class="microbitdatalogger"} blok.
 
@@ -120,7 +120,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (true) {
 
     }
@@ -131,11 +131,11 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-Open het `Logisch`{:class="microbitlogic"} menu opnieuw en sleep een `en`{:class="microbitlogic"} blok.
+Open het `Logisch`{:class='microbitlogic'} menu opnieuw en sleep een `en`{:class='microbitlogic'} blok.
 
-<img src="images/and-block-location.png" alt="Het onderste deel van het Logisch-menu, met de locatie van het 'en'-blok in de 'Booleaanse waarde'-sectie." width="200"/>
+<img src="images/and-block-location.png" alt="Het onderste deel van het Logisch-menu, met de locatie van het 'en'-blok in de 'Booleaanse waarde'-sectie." width="200" />
 
-Plaats het in het `waar` gedeelte van het `als...dan`{:class="microbitlogic"} blok.
+Plaats het in het `waar` gedeelte van het `als...dan`{:class='microbitlogic'} blok.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -143,7 +143,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (false && false) {
 
     }
@@ -168,7 +168,7 @@ Gebruik het vervolgkeuzemenu om het kleiner dan-symbool (`<`) te wijzigen in een
 
 --- task ---
 
-Sleep vanuit het menu `Invoer`{:class="microbitinput"} een `geluidsniveau`{:class="microbitinput"} blok.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `geluidsniveau`{:class='microbitinput'} blok.
 
 Plaats het in de eerste `0` in het `0 > 0`{:class="microbitlogic"} blok
 
@@ -185,7 +185,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
     if (input.soundLevel() > maximum && false) {
 
     }
@@ -198,7 +198,7 @@ loops.everyInterval(500, function () {
 title: Voor micro:bit V1
 ---
 
-Sleep vanuit het menu `Invoer`{:class="microbitinput"} een `lichtniveau`{:class="microbitinput"} blok.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `lichtniveau`{:class='microbitinput'} blok.
 
 Plaats het in de eerste `0` in het `0 > 0`{:class="microbitlogic"} blok.
 
@@ -240,7 +240,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(false)) {
 
     }
@@ -261,7 +261,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(alarm)) {
 
     }
@@ -278,7 +278,7 @@ Nu is het tijd om je alarmgeluid toe te voegen!
 
 Neem vanuit het menu `Muziek`{:class='microbitmusic'} een `play`{:class='microbitmusic'} blok.
 
-<img src="images/play-block-location-v2.png" alt="De 'micro:bit v2'-sectie van het Muziekmenu, met het 'play'-blok gemarkeerd bovenaan de sectie." width="250"/>
+<img src="images/play-block-location-v2.png" alt="De 'micro:bit v2'-sectie van het Muziekmenu, met het 'play'-blok gemarkeerd bovenaan de sectie." width="250" />
 
 Plaats dit in het `als`{:class='microbitlogic'} blok dat controleert of het alarm moet afgaan.
 
@@ -290,7 +290,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(alarm)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
     }
@@ -307,7 +307,7 @@ De micro:bit V1 heeft geen luidspreker, waardoor je het programma voor het alarm
 
 In plaats van een alarm dat geluid gebruikt, kun je een pictogram op de LED's weergeven wanneer het lichtniveau hoger is dan het maximum.
 
-Sleep vanuit het menu `Basis`{:class='microbitbasic'} het blok `toon pictogram`{:class='microbitbasic'}.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} het blok `toon pictogram`{:class="microbitbasic"}.
 
 Plaats dit in het `als`{:class='microbitlogic'} blok dat controleert of het alarm moet afgaan.
 
@@ -321,7 +321,7 @@ loops.everyInterval(500, function () {
     input.lightLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Lichtniveau", input.lightLevel()))
+    datalogger.log(datalogger.createCV("Light level", input.lightLevel()))
     if (input.lightLevel() > maximum && !(alarm)) {
         basic.showIcon(IconNames.Sad)
     }
@@ -356,7 +356,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(alarm)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
         alarm = true
@@ -372,19 +372,19 @@ Wanneer het alarm af is gegaan, wil je het kunnen resetten.
 
 Je kunt het touch logo op de micro:bit gebruiken om dit te doen.
 
-<img src="images/logo-location.png" alt="Het microbit-logo." width="200"/>
+<img src="images/logo-location.png" alt="Het microbit-logo." width="200" />
 
 --- task ---
 
 Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `bij logo ingedrukt`{:class='microbitinput'} blok.
 
-<img src="images/onlogo-block-location.png" alt="Het logo aan de bovenkant van de microbit boven de LED's." width="200"/>
+<img src="images/onlogo-block-location.png" alt="Het logo aan de bovenkant van de microbit boven de LED's." width="200" />
 
 Vanaf je `bij opstarten`{:class='microbitbasic'} blok, dupliceer het `stel alarm in op`{:class='microbitvariables'} blok en plaats het in de `bij logo ingedrukt`{:class='microbitinput'} blok.
 
 ```microbit
 let alarm = false
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+input.onLogoEvent(TouchButtonEvent.Prested, function () {
     alarm = false
 })
 ```
@@ -399,7 +399,7 @@ Er is geen touch sensor in het logo van de micro:bit dus in plaats daarvan kun j
 
 Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok.
 
-<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok gemarkeerd." width="350"/>
+<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok gemarkeerd." width="350" />
 
 Gebruik het vervolgkeuzemenu om de knop te wijzigen in `A+B`{:class='microbitinput'}.
 

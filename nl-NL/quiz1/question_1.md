@@ -12,7 +12,7 @@ Veel plezier!
 legend: Vraag 1 van 3
 ---
 
-Welk menu bevat de blokken voor `wanneer knop A wordt ingedrukt`{:class='microbitinput'} en `bij logo ingedrukt`{:class='microbitinput'}?
+Welk menu bevat de blokken voor `wanneer knop A wordt ingedrukt`{:class='microbitinput'} en `bij logo ingedrukt `{:class='microbitinput'}?
 
 --- choices ---
 

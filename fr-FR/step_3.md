@@ -19,7 +19,7 @@ Tu devras créer une variable pour maintenir le niveau sonore qui déclenchera l
 
 Ouvre le menu `Variables`{:class="microbitvariables"} et clique sur **Créer une variable**.
 
-<img src="images/variable-menu.png" alt="Le menu Variables avec le bouton &quot;Créer une variable&quot; en surbrillance." width="350"/>
+<img src="images/variable-menu.png" alt="Le menu Variables avec le bouton &quot;Créer une variable&quot; en surbrillance." width="350" />
 
 --- /task ---
 
@@ -27,7 +27,7 @@ Ouvre le menu `Variables`{:class="microbitvariables"} et clique sur **Créer une
 
 Nomme ta nouvelle variable `maximum`.
 
-<img src="images/max-variable-name.png" alt="La fenêtre &quot;Nom de la nouvelle variable&quot; avec le nom &quot;maximum&quot; écrit dans la case." width="400"/>
+<img src="images/max-variable-name.png" alt="La fenêtre &quot;Nom de la nouvelle variable&quot; avec le nom &quot;maximum&quot; écrit dans la case." width="400" />
 
 --- /task ---
 
@@ -35,7 +35,7 @@ Nomme ta nouvelle variable `maximum`.
 
 Dans le menu `Variables`{:class="microbitvariables"}, prends le bloc `définir maximum`{:class="microbitvariables"}.
 
-<img src="images/set-max-start.png" alt="Le menu Variables avec le bloc &quot;définir maximum à 0&quot; en surbrillance." width="350"/>
+<img src="images/set-max-start.png" alt="Le menu Variables avec le bloc &quot;définir maximum à 0&quot; en surbrillance." width="350" />
 
 Place le bloc à l'intérieur du bloc `au démarrage`{:class="microbitbasic"} et modifie `0` par `150`.
 
@@ -67,7 +67,7 @@ Pour cela, tu utiliseras une autre variable qui sera définie sur `faux` pour co
 
 Crée une nouvelle `Variable`{:class="microbitvariables"}, cette fois appelée `alarme`.
 
-<img src="images/alarm-variable-name.png" alt="La fenêtre &quot;Nom de la nouvelle variable&quot; avec le nom &quot;alarme&quot; écrit dans la case." width="350"/>
+<img src="images/alarm-variable-name.png" alt="La fenêtre &quot;Nom de la nouvelle variable&quot; avec le nom &quot;alarme&quot; écrit dans la case." width="350" />
 
 --- /task ---
 
@@ -87,13 +87,13 @@ Ouvre le menu `Logique`{:class="microbitlogic"}.
 
 Prends un bloc `faux`{:class="microbitlogic"}.
 
-<img src="images/false-block-location.png" alt="La partie inférieure du menu Logique, montrant l'emplacement du bloc faux dans la section &quot;Booléen&quot;." width="200"/>
+<img src="images/false-block-location.png" alt="La partie inférieure du menu Logique, montrant l'emplacement du bloc faux dans la section &quot;Booléen&quot;." width="200" />
 
 Place ce bloc au-dessus du `0`.
 
 ```microbit
 let maximum = 150
-let alarme = false
+let alarm = false
 ```
 
 --- /task ---
@@ -110,7 +110,7 @@ L'alarme ne doit sonner que **si :**
 
 Dans le menu `Logique`{:class="microbitlogic"}, prends un bloc `si...alors`{:class="microbitlogic"}.
 
-<img src="images/if-block-location.png" alt="Le menu Logique avec un bloc &quot;si&quot; en surbrillance." width="350"/>
+<img src="images/if-block-location.png" alt="Le menu Logique avec un bloc &quot;si&quot; en surbrillance." width="350" />
 
 Place le bloc à l'intérieur de la boucle `chaque`{:class="microbitloops"} sous le bloc `log data`{:class="microbitdatalogger"}.
 
@@ -120,7 +120,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (true) {
 
     }
@@ -133,7 +133,7 @@ loops.everyInterval(500, function () {
 
 Ouvre à nouveau le menu `Logique`{:class="microbitlogic"} et prends un bloc `et`{:class="microbitlogic"}.
 
-<img src="images/and-block-location.png" alt="La partie inférieure du menu Logique, montrant l'emplacement du bloc &quot;et&quot; dans la section &quot;Booléen&quot;." width="200"/>
+<img src="images/and-block-location.png" alt="La partie inférieure du menu Logique, montrant l'emplacement du bloc &quot;et&quot; dans la section &quot;Booléen&quot;." width="200" />
 
 Place-le dans la section `vrai` du bloc `si...alors`{:class="microbitlogic"}.
 
@@ -143,7 +143,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (false && false) {
 
     }
@@ -185,7 +185,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
     if (input.soundLevel() > maximum && false) {
 
     }
@@ -240,7 +240,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(false)) {
 
     }
@@ -255,14 +255,14 @@ Place un bloc variable `alarme`{:class='microbitvariables'} dans le bloc `non`{:
 
 ```microbit
 loops.everyInterval(500, function () {
-    let alarme = 0
+    let alarm = 0
     let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
-    if (input.soundLevel() > maximum && !(alarme)) {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
 
     }
 })
@@ -278,20 +278,20 @@ Il est maintenant temps d'ajouter ton son d'alarme !
 
 Dans le menu `Musique`{:class='microbitmusic'}, prends un bloc `jouer`{:class='microbitmusic'}.
 
-<img src="images/play-block-location-v2.png" alt="La section 'micro:bit v2' du menu Musique, avec le bloc &quot;jouer&quot; en surbrillance en haut de la section." width="250"/>
+<img src="images/play-block-location-v2.png" alt="La section 'micro:bit v2' du menu Musique, avec le bloc &quot;jouer&quot; en surbrillance en haut de la section." width="250" />
 
 Place ceci à l'intérieur du bloc `si`{:class='microbitlogic'} qui vérifie si l'alarme doit sonner.
 
 ```microbit
 loops.everyInterval(500, function () {
-    let alarme = 0
+    let alarm = 0
     let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
-    if (input.soundLevel() > maximum && !(alarme)) {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
     }
 })
@@ -315,14 +315,14 @@ Place ceci à l'intérieur du bloc `si`{:class='microbitlogic'} qui vérifie si 
 
 ```microbit
 loops.everyInterval(500, function () {
-    let alarme = 0
+    let alarm = 0
     let maximum = 0
     led.plotBarGraph(
     input.lightLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.lightLevel()))
-    if (input.lightLevel() > maximum && !(alarme)) {
+    datalogger.log(datalogger.createCV("Light level", input.lightLevel()))
+    if (input.lightLevel() > maximum && !(alarm)) {
         basic.showIcon(IconNames.Sad)
     }
 })
@@ -349,17 +349,17 @@ Place le bloc dupliqué sous le bloc `jouer`{:class='microbitmusic'}.
 Remplace `faux`{:class='microbitlogic'} par `vrai`{:class='microbitlogic'}.
 
 ```microbit
-let alarme = false
+let alarm = false
 loops.everyInterval(500, function () {
     let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
-    if (input.soundLevel() > maximum && !(alarme)) {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
-        alarme = true
+        alarm = true
     }
 })
 ```
@@ -372,20 +372,20 @@ Lorsque l'alarme se déclenche, tu dois la réinitialiser.
 
 Tu peux utiliser le logo tactile sur le micro:bit pour faire cela.
 
-<img src="images/logo-location.png" alt="Le logo micro:bit." width="200"/>
+<img src="images/logo-location.png" alt="Le logo micro:bit." width="200" />
 
 --- task ---
 
 Dans le menu `Entrée`{:class='microbitinput'}, fais glisser un bloc `sur le logo`{:class='microbitinput'}.
 
-<img src="images/onlogo-block-location.png" alt="Le logo sur le dessus du micro:bit au-dessus des LED." width="200"/>
+<img src="images/onlogo-block-location.png" alt="Le logo sur le dessus du micro:bit au-dessus des LED." width="200" />
 
 Depuis ton bloc `au démarrage`{:class='microbitbasic'}, duplique le bloc `définir alarme`{:class='microbitvariables'} et place-le à l'intérieur du bloc `sur le logo`{:class='microbitinput'}.
 
 ```microbit
-let alarme = false
+let alarm = false
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    alarme = false
+    alarm = false
 })
 ```
 
@@ -399,16 +399,16 @@ Il n'y a pas de capteur tactile dans le logo du micro:bit V1, tu peux donc utili
 
 Dans le menu `Entrée`{:class='microbitinput'}, fais glisser un bloc `lorsque le bouton`{:class='microbitinput'}.
 
-<img src="images/on-button-location.png" alt="Le menu Entrée avec le bloc &quot;lorsque le bouton A&quot; en surbrillance." width="350"/>
+<img src="images/on-button-location.png" alt="Le menu Entrée avec le bloc &quot;lorsque le bouton A&quot; en surbrillance." width="350" />
 
 Utilise le menu déroulant pour changer le bouton en `A+B`{:class='microbitinput'}.
 
 Depuis ton bloc `au démarrage`{:class='microbitbasic'}, duplique le bloc `définir alarme`{:class='microbitvariables'} et place-le à l'intérieur du bloc `lorsque le bouton`{:class='microbitinput'}.
 
 ```microbit
-let alarme = false
+let alarm = false
 input.onButtonPressed(Button.AB, function () {
-    alarme = false
+    alarm = false
 })
 ```
 

@@ -5,7 +5,7 @@
 Je maakt je MakeCode project en voegt code toe om de geluids- (of licht) niveaus te meten. Je geeft het huidige niveau weer op de LED's voor de gebruiker. 
 </div>
 <div>
-![De micro:bit simulator toont een staafdiagram van het huidige geluidsniveau. Het niveau wordt omhoog en omlaag gesleept en de staafdiagram groeit en krimpt met het geluidsniveau.](images/sound-level-demo.gif){:width="300px"}
+![De micro:bit simulator toont een staafdiagram van het huidige geluidsniveau. Het niveau wordt omhoog en omlaag gesleept en de staafdiagram groeit en krimpt met het geluidsniveau.](images/geluidslevel-demo.gif){:width="300px"}
 </div>
 </div>
 
@@ -39,9 +39,9 @@ Zodra de editor is geopend, moet je een nieuw project aanmaken en je project een
 
 --- task ---
 
-Klik op de knop **Nieuw Project**.
+Klik op de knop **Nieuw project**.
 
-<img src="images/new-project-button.png" alt="De knop Nieuw project in MakeCode." width="250"/>
+<img src="images/new-project-button.png" alt="De knop Nieuw project in MakeCode." width="250" />
 
 --- /task ---
 
@@ -49,7 +49,7 @@ Klik op de knop **Nieuw Project**.
 
 Geef je nieuwe project de naam `geluidsniveau meter` en klik op **Aanmaken**.
 
-<img src="images/soundlevel-meter.png" alt="De naam 'geluidsniveaumeterr' in het dialoogvenster 'Een project maken'." width="350"/>
+<img src="images/soundlevel-meter.png" alt="De naam 'geluidsniveaumeterr' in het dialoogvenster 'Een project maken'." width="350" />
 
 **Tip:** Om het makkelijker te maken om je project later terug te vinden, geef het een logische naam die gerelateerd is aan de activiteit die je aan doen bent.
 
@@ -73,7 +73,7 @@ De eerste stap is om de micro:bit met regelmatige tussenpozen de geluidsniveaus 
 
 Vanuit het `Lussen`{:class="microbitloops"} menu, sleep je een `elk 500 ms`{:class="microbitloops"} blok en plaats het in het bewerkingspaneel.
 
-<img src="images/every-500ms.png" alt="Het Lusssen-menu met het 'elk 500 ms' blok geaccentueerd." width="350"/>
+<img src="images/every-500ms.png" alt="Het Lusssen-menu met het 'elk 500 ms' blok geaccentueerd." width="350" />
 
 Elke code binnen deze lus wordt elke **500 milliseconden uitgevoerd**.
 
@@ -85,7 +85,7 @@ Elke code binnen deze lus wordt elke **500 milliseconden uitgevoerd**.
 
 Vanuit het `Lichtjes`{:class="microbitled"} menu, sleep je een `plot bar graph of`{:class="microbitled"} (teken staafdiagram) blok.
 
-<img src="images/plot-bargraph.png" alt="Het Lichtjes menu met het 'plot bar graph' blok geaccentueerd." width="350"/>
+<img src="images/plot-bargraph.png" alt="Het Lichtjes menu met het 'plot bar graph' blok geaccentueerd." width="350" />
 
 Plaats het in het `elk 500 ms`{:class="microbitloops"} blok.
 
@@ -102,7 +102,7 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-Sleep vanuit het menu `Invoer`{:class="microbitinput"} een `geluidsniveau`{:class="microbitinput"} blok.
+Sleep vanuit het menu `Invoer`{:class='microbitinput'} een `geluidsniveau`{:class='microbitinput'} blok.
 
 Plaats het in de eerste `0` in het `plot bar graph of`{:class="microbitled"} blok.
 
@@ -147,7 +147,7 @@ Klik op het menu paneel op **Uitbreidingen**. Er wordt een ander venster geopend
 
 Vanuit het `Data Logger`{:class="microbitdatalogger"} menu, sleep je een `log data`{:class="microbitdatalogger"} blok.
 
-<img src="images/data-logger.png" alt="Het Data Logger menu met het getoonde blok 'log data column...value' geaccentueerd." width="350"/>
+<img src="images/data-logger.png" alt="Het Data Logger menu met het getoonde blok 'log data column...value' geaccentueerd." width="350" />
 
 Plaats het onder het `plot bar graph of`{:class='microbitled'} blok.
 
@@ -173,7 +173,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", 0))
+    datalogger.log(datalogger.createCV("Sound level", 0))
 })
 ```
 
@@ -189,7 +189,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Geluidsniveau", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
 })
 ```
 

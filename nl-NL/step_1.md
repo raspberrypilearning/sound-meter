@@ -1,8 +1,8 @@
 ## Gebruik je de micro:bit voor de eerste keer?
 
 Je kunt onze geweldige `Ontdek` projecten uitproberen:
-- [Kies een hobby](https://projects.raspberrypi.org/nl-NL/projects/hobby-selector)
-- [Tijd voor gekkigheid](https://projects.raspberrypi.org/nl-NL/projects/silly-reminder)
+- [Kies een hobby](https://projects.raspberrypi.org/en/projects/hobby-selector)
+- [Tijd voor gekkigheid](https://projects.raspberrypi.org/en/projects/silly-reminder)
 
 ## Wat ga je maken
 

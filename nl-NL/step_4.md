@@ -19,9 +19,9 @@ De **A-knop** bevindt zich aan de linkerkant, dus deze gebruik je om de maximale
 
 --- task ---
 
-Vanuit het `Invoer`{:class='microbitinput'} menu, sleep je het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok naar het bewerkingspaneel.
+Vanuit het `Invoer`{:class="microbitinput"} menu, sleep je het `wanneer knop wordt ingedrukt`{:class="microbitinput"} blok naar het bewerkingspaneel.
 
-<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok bovenaan gemarkeerd." width="300"/>
+<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok bovenaan gemarkeerd." width="300" />
 
 --- /task ---
 
@@ -33,7 +33,7 @@ Nu maak je nog een variabele voor het gevoeligheids**niveau**.
 
 Van het `Variabelen`{:class='microbitvariables'} menu, klik op **Maak een variabele** om een variabele te maken met de naam `niveau`.
 
---- /task --- 
+--- /task ---
 
 --- task ---
 
@@ -42,9 +42,9 @@ Sleep het `verander met`{:class='microbitvariables'} blok en plaats het in blok 
 Verander de `1` naar `-1`.
 
 ```microbit
-let niveau = 0
+let level = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
 })
 ```
 
@@ -52,7 +52,7 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Sleep vanuit het menu `Variabelen`{:class='microbitvariables'} nog een blok `verander met`{:class='microbitvariables'}.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} nog een blok `verander met`{:class="microbitvariables"}.
 
 Plaats het **hieronder** om het `verander niveau met -1`{:class='microbitvariables'} blok.
 
@@ -60,13 +60,13 @@ Wijzig de variabele die in het blok wordt weergegeven van `niveau` naar `maximum
 
 Verander de `1` naar `-50`.
 
-<img src="images/change-variable.gif" alt="Animatie die het vervolgkeuzemenu toont op het variabele blok 'Verander maximum met 1'." width="300"/>
+<img src="images/change-variable.gif" alt="Animatie die het vervolgkeuzemenu toont op het variabele blok 'Verander maximum met 1'." width="300" />
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
 })
 ```
@@ -79,15 +79,15 @@ Als knop A wordt ingedrukt terwijl het niveau al 1 is, moet je ervoor zorgen dat
 
 --- task ---
 
-Vanuit het `Logisch`{:class='microbitlogic'} menu, sleep een `als`{:class='microbitlogic'} blok.
+Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep een `als`{:class="microbitlogic"} blok.
 
 Plaats het onder het `verander maximum met -50`{:class='microbitvariables'} blok.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
     if (true) {
 
@@ -101,13 +101,13 @@ input.onButtonPressed(Button.A, function () {
 
 Sleep vanuit het menu `Logisch`{:class='microbitlogic'} het vergelijkingsblok `0 < 0`{:class='microbitlogic'}.
 
-Plaats dit in het `waar`{:class="microbitlogic"} deel van het `als`{:class='microbitlogic'} blok.
+Plaats dit in het `waar`{:class="microbitlogic"} deel van het `als`{:class="microbitlogic"} blok.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
     if (0 < 0) {
 
@@ -119,17 +119,17 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Sleep vanuit het menu `Variabelen`{:class='microbitvariables'} een blok `niveau`{:class='microbitvariables'}.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `niveau`{:class="microbitvariables"}.
 
 Plaats het in de eerste `0` van het `0 < 0`{:class='microbitlogic'} vergelijkingsblok.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 0) {
+    if (level < 0) {
 
     }
 })
@@ -145,20 +145,20 @@ Verander de `0` naar `1` aan de rechterkant van het `0 < 0`{:class='microbitlogi
 
 --- task ---
 
-Sleep vanuit het menu `Variabelen`{:class='microbitvariables'} een blok `stel in op`{:class='microbitvariables'}.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel in op`{:class="microbitvariables"}.
 
-Plaats het in het `als`{:class='microbitlogic'} blok. Zorg ervoor dat de geselecteerde variabele `niveau`{:class='microbitvariables'} is.
+Plaats het in het `als`{:class="microbitlogic"} blok. Zorg ervoor dat de geselecteerde variabele `niveau`{:class='microbitvariables'} is.
 
-Wijzig de `0` in `5` in het `stel in op`{:class='microbitvariables'} blok.
+Wijzig de `0` in `5` in het `stel in op`{:class="microbitvariables"} blok.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 1) {
-        niveau = 5
+    if (level < 1) {
+        level = 5
     }
 })
 ```
@@ -167,20 +167,20 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Sleep vanuit het menu `Variabelen`{:class='microbitvariables'} opnieuw een blok `stel in op`{:class='microbitvariables'}.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} opnieuw een blok `stel in op`{:class="microbitvariables"}.
 
 Plaats het onder het `stel niveau in op 5`{:class='microbitvariables'} blok.
 
 Verander de `0` naar `250`.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 1) {
-        niveau = 5
+    if (level < 1) {
+        level = 5
         maximum = 250
     }
 })
@@ -190,18 +190,18 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Sleep vanuit het menu `Basis`{:class='microbitbasic'} een blok `toon nummer`{:class='microbitbasic'}.
+Sleep vanuit het menu `Basis`{:class="microbitbasic"} een blok `toon nummer`{:class="microbitbasic"}.
 
 Plaats het **onder** het `als`{:class='microbitlogic'} blok.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 1) {
-        niveau = 5
+    if (level < 1) {
+        level = 5
         maximum = 250
     }
     basic.showNumber(0)
@@ -212,21 +212,21 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Sleep vanuit het menu `Variabelen`{:class='microbitvariables'} een blok `niveau`{:class='microbitvariables'}.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `niveau`{:class="microbitvariables"}.
 
 Plaats het in de `0` van het `toon nummer`{:class='microbitbasic'} blok.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 1) {
-        niveau = 5
+    if (level < 1) {
+        level = 5
         maximum = 250
     }
-    basic.showNumber(niveau)
+    basic.showNumber(level)
 })
 ```
 
@@ -234,23 +234,23 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Sleep ook vanuit het menu `Basis`{:class='microbitbasic'} het blok `pauzeer (ms)`{:class='microbitbasic'}.
+Sleep ook vanuit het menu `Basis`{:class="microbitbasic"} het blok `pauzeer (ms)`{:class="microbitbasic"}.
 
 Plaats het onder het blok `toon nummer`{:class='microbitbasic'}.
 
 Verander de `100` naar `500`.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 1) {
-        niveau = 5
+    if (level < 1) {
+        level = 5
         maximum = 250
     }
-    basic.showNumber(niveau)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```
@@ -279,7 +279,7 @@ Klik op de `A` in het gedupliceerde `wanneer knop A wordt ingedrukt`{:class='mic
 
 Verander de `A` naar `B`.
 
-<img src="images/button-menu.png" alt="Het vervolgkeuzemenu voor 'wanneer knop A wordt ingedrukt' waarmee je het blok naar knop B kunt wijzigen." width="400"/>
+<img src="images/button-menu.png" alt="Het vervolgkeuzemenu voor 'wanneer knop A wordt ingedrukt' waarmee je het blok naar knop B kunt wijzigen." width="400" />
 
 --- /task ---
 
@@ -291,7 +291,7 @@ In het `wanneer knop B wordt ingedrukt`{:class='microbitinput'} blok:
 
 - Verander de `-50` naar `50` in het `verander maximum`{:class='microbitvariables'} blok
 
-<img src="images/onbuttonB-changes.png" alt="Het blok 'wanneer knop B wordt ingedrukt' met het verander niveau en verander maximum variabelen weergegeven." width="350"/>
+<img src="images/onbuttonB-changes.png" alt="Het blok 'wanneer knop B wordt ingedrukt' met het verander niveau en verander maximum variabelen weergegeven." width="350" />
 
 --- /task ---
 
@@ -308,16 +308,16 @@ Binnen het `als`{:class='microbitlogic'} blok:
 - Verander de `250` naar `50` in het `stel maximum in op 50`{:class='microbitvariables'} blok
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.B, function () {
-    niveau += 1
+    level += 1
     maximum += 50
-    if (niveau > 5) {
-        niveau = 1
+    if (level > 5) {
+        level = 1
         maximum = 50
     }
-    basic.showNumber(niveau)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```
@@ -330,7 +330,7 @@ Je moet een normaal alarmgevoeligheidsniveau programmeren door het `bij opstarte
 
 --- task ---
 
-Sleep vanuit het menu `Variabelen`{:class='microbitvariables'} een blok `stel maximum in op`{:class='microbitvariables'}.
+Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel maximum in op`{:class="microbitvariables"}.
 
 Plaats het in het `bij opstarten`{:class='microbitbasic'} blok.
 
@@ -340,12 +340,12 @@ Plaats het in het `bij opstarten`{:class='microbitbasic'} blok.
 
 Klik op de variabele naam `maximum` en verander deze naar `niveau`.
 
-Verander de `0` naar `3` in het `stel niveau in op`{:class='microbitvariables'} blok.
+Verander de `` naar `3` in het `stel niveau in op`{:class='microbitvariables'} blok.
 
 ```microbit
 let maximum = 150
 let alarm = false
-let niveau = 3
+let level = 3
 ```
 
 --- /task ---

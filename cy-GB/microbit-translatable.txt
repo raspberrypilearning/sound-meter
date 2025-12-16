@@ -1,0 +1,9 @@
+maximum
+
+alarm
+
+Sound Level
+
+lefel
+
+activity

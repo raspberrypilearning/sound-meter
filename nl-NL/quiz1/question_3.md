@@ -7,26 +7,26 @@ legend: Vraag 3 van 3
 Hier is de code voor het programmeren van de `wanneer knop A wordt ingedrukt` en `wanneer knop B wordt ingedrukt` blokken.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 1) {
-        niveau = 5
+    if (level < 1) {
+        level = 5
         maximum = 250
     }
-    basic.showNumber(niveau)
+    basic.showNumber(level)
     basic.pause(500)
 })
 input.onButtonPressed(Button.B, function () {
-    niveau += 1
+    level += 1
     maximum += 50
-    if (niveau < 5) {
-        niveau = 5
+    if (level < 5) {
+        level = 5
         maximum = 250
     }
-    basic.showNumber(niveau)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```

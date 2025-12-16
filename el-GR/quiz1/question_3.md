@@ -7,26 +7,26 @@ legend: Ερώτηση 3 από 3
 Εδώ είναι ο κώδικας για τον προγραμματισμό των μπλοκ `όταν πιεστεί το πλήκτρο button A` και `όταν πιεστεί το πλήκτρο button B`.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 1) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
     }
-    basic.showNumber(επίπεδο)
+    basic.showNumber(level)
     basic.pause(500)
 })
 input.onButtonPressed(Button.B, function () {
-    επίπεδο += 1
-    μέγιστο += 50
-    if (επίπεδο < 5) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += 1
+    maximum += 50
+    if (level < 5) {
+        level = 5
+        maximum = 250
     }
-    basic.showNumber(επίπεδο)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```
@@ -52,7 +52,7 @@ input.onButtonPressed(Button.B, function () {
 
   --- /feedback ---
 
-- (x) Η στάθμη του ήχου θα αλλάξει κατά 1 και η ευαισθησία κατά 50.
+- ( x) Η στάθμη του ήχου θα αλλάξει κατά 1 και η ευαισθησία κατά 50.
 
   --- feedback ---
 

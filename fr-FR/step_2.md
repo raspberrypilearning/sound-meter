@@ -41,7 +41,7 @@ Une fois que l'éditeur est ouvert, tu devras créer un nouveau projet et donner
 
 Clique sur le bouton **Nouveau projet**.
 
-<img src="images/new-project-button.png" alt="Le bouton Nouveau projet dans MakeCode." width="250"/>
+<img src="images/new-project-button.png" alt="Le bouton Nouveau projet dans MakeCode." width="250" />
 
 --- /task ---
 
@@ -73,7 +73,7 @@ La première étape consiste à amener le micro:bit à capturer les niveaux sono
 
 Dans le menu `Boucles`{:class="microbitloops"}, fais glisser un bloc `chaque 500 ms`{:class="microbitloops"} et place-le dans le panneau de l'éditeur de code.
 
-<img src="images/every-500ms.png" alt="Le menu Boucles avec le bloc &quot;chaque 500 ms&quot; en surbrillance." width="350"/>
+<img src="images/every-500ms.png" alt="Le menu Boucles avec le bloc &quot;chaque 500 ms&quot; en surbrillance." width="350" />
 
 Tout code à l'intérieur de cette boucle s'exécutera toutes les **500 millisecondes**.
 
@@ -85,7 +85,7 @@ Tout code à l'intérieur de cette boucle s'exécutera toutes les **500 millise
 
 Dans le menu `LED`{:class="microbitled"}, fais glisser un bloc `tracer graphique en barres`{:class="microbitled"}.
 
-<img src="images/plot-bargraph.png" alt="Le menu LED avec le bloc &quot;tracer graphique en barres&quot; en surbrillance." width="350"/>
+<img src="images/plot-bargraph.png" alt="Le menu LED avec le bloc &quot;tracer graphique en barres&quot; en surbrillance." width="350" />
 
 Place-le à l'intérieur du bloc `chaque 500 ms`{:class="microbitloops"}.
 
@@ -147,7 +147,7 @@ Dans le panneau de menu, clique sur **Extensions**. Une autre fenêtre s'ouvrira
 
 Dans le menu `Data Logger`{:class="microbitdatalogger"}, fais glisser un bloc `log data`{:class="microbitdatalogger"}.
 
-<img src="images/data-logger.png" alt="Le menu Data Logger avec le bloc &quot;log data column...value&quot; en surbrillance." width="350"/>
+<img src="images/data-logger.png" alt="Le menu Data Logger avec le bloc &quot;log data column...value&quot; en surbrillance." width="350" />
 
 Place-le sous le bloc `tracer graphique en barres de`{:class='microbitled'}.
 
@@ -173,7 +173,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", 0))
+    datalogger.log(datalogger.createCV("Sound level", 0))
 })
 ```
 
@@ -189,7 +189,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("niveau sonore", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
 })
 ```
 

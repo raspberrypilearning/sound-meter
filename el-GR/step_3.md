@@ -19,7 +19,7 @@
 
 Άνοιξε το μενού `Μεταβλητές`{:class="microbitvariables"} και κάνε κλικ στο κουμπί **Δημιουργία μεταβλητής**.
 
-<img src="images/variable-menu.png" alt="Το μενού μπλοκ Μεταβλητές με τονισμένο το κουμπί &quot;Δημιουργία Μεταβλητής&quot;." width="350"/>
+<img src="images/variable-menu.png" alt="Το μενού μπλοκ Μεταβλητές με τονισμένο το κουμπί &quot;Δημιουργία Μεταβλητής&quot;." width="350" />
 
 --- /task ---
 
@@ -27,7 +27,7 @@
 
 Ονόμασε τη νέα σου μεταβλητή `μέγιστο`.
 
-<img src="images/max-variable-name.png" alt="Το παράθυρο &quot;Όνομα νέας μεταβλητής&quot;, με το όνομα &quot;μέγιστο&quot; γραμμένο στο πλαίσιο." width="400"/>
+<img src="images/max-variable-name.png" alt="Το παράθυρο &quot;Όνομα νέας μεταβλητής&quot;, με το όνομα &quot;μέγιστο&quot; γραμμένο στο πλαίσιο." width="400" />
 
 --- /task ---
 
@@ -35,12 +35,12 @@
 
 Από το μενού `Μεταβλητές`{:class="microbitvariables"}, πάρε ένα μπλοκ `ορισμός μέγιστο`{:class="microbitvariables"}.
 
-<img src="images/set-max-start.png" alt="Το μενού Μεταβλητές με τονισμένο το μπλοκ «ορισμός μέγιστο σε 0»." width="350"/>
+<img src="images/set-max-start.png" alt="Το μενού Μεταβλητές με τονισμένο το μπλοκ «ορισμός μέγιστο σε 0»." width="350" />
 
 Τοποθέτησε το μπλοκ μέσα στο μπλοκ `κατά την έναρξη`{:class="microbitbasic"} και άλλαξε το `0` σε `150`.
 
 ```microbit
-let μέγιστο = 150
+let maximum = 150
 ```
 
 --- /task ---
@@ -67,7 +67,7 @@ title: Για το micro:bit V1
 
 Δημιούργησε μια άλλη νέα `μεταβλητή`{:class="microbitvariables"}, που αυτή τη φορά ονομάζεται `συναγερμός`.
 
-<img src="images/alarm-variable-name.png" alt="Το παράθυρο &quot;Όνομα νέας μεταβλητής&quot;, με το όνομα &quot;συναγερμός&quot; γραμμένο στο πλαίσιο." width="350"/>
+<img src="images/alarm-variable-name.png" alt="Το παράθυρο &quot;Όνομα νέας μεταβλητής&quot;, με το όνομα &quot;συναγερμός&quot; γραμμένο στο πλαίσιο." width="350" />
 
 --- /task ---
 
@@ -87,13 +87,13 @@ title: Για το micro:bit V1
 
 Πάρε ένα μπλοκ `ψευδές`{:class="microbitlogic"}.
 
-<img src="images/false-block-location.png" alt="Το κάτω μέρος του μενού Λογική, που δείχνει τη θέση του μπλοκ ψευδές στην ενότητα 'Δυαδικές τιμές'." width="200"/>
+<img src="images/false-block-location.png" alt="Το κάτω μέρος του μενού Λογική, που δείχνει τη θέση του μπλοκ ψευδές στην ενότητα 'Δυαδικές τιμές'." width="200" />
 
 Τοποθέτησε αυτό το μπλοκ πάνω στο `0`.
 
 ```microbit
-let μέγιστο = 150
-let συναγερμός = false
+let maximum = 150
+let alarm = false
 ```
 
 --- /task ---
@@ -110,7 +110,7 @@ let συναγερμός = false
 
 Από το μενού `Λογική`{:class="microbitlogic"} σύρε το μπλοκ `εάν...αλλιώς`{:class="microbitlogic"}.
 
-<img src="images/if-block-location.png" alt="Το μενού Λογική με τονισμένο ένα μπλοκ «εάν»." width="350"/>
+<img src="images/if-block-location.png" alt="Το μενού Λογική με τονισμένο ένα μπλοκ «εάν»." width="350" />
 
 Τοποθέτησε το μπλοκ μέσα στο βρόχο `every`{:class="microbitloops"} κάτω από το μπλοκ `log data`{:class="microbitdatalogger"}.
 
@@ -120,7 +120,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (true) {
 
     }
@@ -133,7 +133,7 @@ loops.everyInterval(500, function () {
 
 Άνοιξε ξανά το μενού `Λογική`{:class="microbitlogic"} και πάρε ένα μπλοκ `and`{:class="microbitlogic"}.
 
-<img src="images/and-block-location.png" alt="Το κάτω μέρος του μενού Λογική, που δείχνει τη θέση του μπλοκ 'and' στην ενότητα 'Δυαδικές τιμές'." width="200"/>
+<img src="images/and-block-location.png" alt="Το κάτω μέρος του μενού Λογική, που δείχνει τη θέση του μπλοκ 'and' στην ενότητα 'Δυαδικές τιμές'." width="200" />
 
 Τοποθετησέ το στο τμήμα `αληθές` του μπλοκ `εάν...αλλιώς`{:class="microbitlogic"}.
 
@@ -143,7 +143,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (false && false) {
 
     }
@@ -180,13 +180,13 @@ loops.everyInterval(500, function () {
 
 ```microbit
 loops.everyInterval(500, function () {
-    let μέγιστο = 0
+    let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
-    if (input.soundLevel() > μέγιστο && false) {
+    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
+    if (input.soundLevel() > maximum && false) {
 
     }
 })
@@ -210,12 +210,12 @@ title: Για το micro:bit V1
 
 ```microbit
 loops.everyInterval(500, function () {
-    let μέγιστο = 0
+    let maximum = 0
     led.plotBarGraph(
     input.lightLevel(),
     255
     )
-    if (input.lightLevel() > μέγιστο && false) {
+    if (input.lightLevel() > maximum && false) {
 
     }
 })
@@ -235,13 +235,13 @@ loops.everyInterval(500, function () {
 
 ```microbit
 loops.everyInterval(500, function () {
-    let μέγιστο = 0
+    let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
-    if (input.soundLevel() > μέγιστο && !(false)) {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(false)) {
 
     }
 })
@@ -255,14 +255,14 @@ loops.everyInterval(500, function () {
 
 ```microbit
 loops.everyInterval(500, function () {
-    let συναγερμός = 0
-    let μέγιστο = 0
+    let alarm = 0
+    let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
-    if (input.soundLevel() > μέγιστο && !(συναγερμός)) {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
 
     }
 })
@@ -278,20 +278,20 @@ loops.everyInterval(500, function () {
 
 Από το μενού `Μουσική`{:class='microbitmusic'}, σύρε ένα μπλοκ `play`{:class='microbitmusic'}.
 
-<img src="images/play-block-location-v2.png" alt="Η ενότητα «micro:bit v2» του μενού Μουσική, με το μπλοκ «play» τονισμένο στην κορυφή της ενότητας." width="250"/>
+<img src="images/play-block-location-v2.png" alt="Η ενότητα «micro:bit v2» του μενού Μουσική, με το μπλοκ «play» τονισμένο στην κορυφή της ενότητας." width="250" />
 
 Τοποθέτησέ το μέσα στο μπλοκ `εάν`{:class='microbitlogic'} που ελέγχει εάν θα ηχήσει ο συναγερμός.
 
 ```microbit
 loops.everyInterval(500, function () {
-    let συναγερμός = 0
-    let μέγιστο = 0
+    let alarm = 0
+    let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
-    if (input.soundLevel() > μέγιστο && !(συναγερμός)) {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
     }
 })
@@ -315,14 +315,14 @@ title: Για το micro:bit V1
 
 ```microbit
 loops.everyInterval(500, function () {
-    let συναγερμός = 0
-    let μέγιστο = 0
+    let alarm = 0
+    let maximum = 0
     led.plotBarGraph(
     input.lightLevel(),
     255
     )
     datalogger.log(datalogger.createCV("Light level", input.lightLevel()))
-    if (input.lightLevel() > μέγιστο && !(συναγερμός)) {
+    if (input.lightLevel() > maximum && !(alarm)) {
         basic.showIcon(IconNames.Sad)
     }
 })
@@ -349,17 +349,17 @@ loops.everyInterval(500, function () {
 Άλλαξε το `ψευδές`{:class='microbitlogic'} σε `αληθές`{:class='microbitlogic'}.
 
 ```microbit
-let συναγερμός = false
+let alarm = false
 loops.everyInterval(500, function () {
-    let μέγιστο = 0
+    let maximum = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
-    if (input.soundLevel() > μέγιστο && !(συναγερμός)) {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    if (input.soundLevel() > maximum && !(alarm)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
-        συναγερμός = true
+        alarm = true
     }
 })
 ```
@@ -372,20 +372,20 @@ loops.everyInterval(500, function () {
 
 Μπορείς να χρησιμοποιήσεις το λογότυπο αφής στο micro:bit για να το κάνεις αυτό.
 
-<img src="images/logo-location.png" alt="Το λογότυπο microbit." width="200"/>
+<img src="images/logo-location.png" alt="Το λογότυπο microbit." width="200" />
 
 --- task ---
 
 Από το μενού `Είσοδος`{:class='microbitinput'}, σύρε ένα μπλοκ `on logo`{:class='microbitinput'}.
 
-<img src="images/onlogo-block-location.png" alt="Το λογότυπο στο επάνω μέρος του microbit πάνω από τα LED." width="200"/>
+<img src="images/onlogo-block-location.png" alt="Το λογότυπο στο επάνω μέρος του microbit πάνω από τα LED." width="200" />
 
 Από το μπλοκ `κατά την έναρξη`{:class='microbitbasic'}, αντίγραψε το μπλοκ `ορισμός συναγερμός`{:class='microbitvariables'} και τοποθέτησέ το μέσα στο μπλοκ `on logo`{:class='microbitinput'}.
 
 ```microbit
-let συναγερμός = false
+let alarm = false
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    συναγερμός = false
+    alarm = false
 })
 ```
 
@@ -399,16 +399,16 @@ title: Για το micro:bit V1
 
 Από το μενού `Είσοδος`{:class='microbitinput'}, σύρε ένα μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'}.
 
-<img src="images/on-button-location.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;όταν πιεστεί το πλήκτρο button A'&quot;." width="350"/>
+<img src="images/on-button-location.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;όταν πιεστεί το πλήκτρο button A'&quot;." width="350" />
 
 Χρησιμοποίησε το αναπτυσσόμενο μενού για να αλλάξεις το κουμπί σε `A+B`{:class='microbitinput'}.
 
 Από το `κατά την έναρξη`{:class='microbitbasic'}, αντίγραψε το μπλοκ `ορισμός συναγερμός`{:class='microbitvariables'} και τοποθέτησέ το μέσα στο μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'}.
 
 ```microbit
-let συναγερμός = false
+let alarm = false
 input.onButtonPressed(Button.AB, function () {
-    συναγερμός = false
+    alarm = false
 })
 ```
 
