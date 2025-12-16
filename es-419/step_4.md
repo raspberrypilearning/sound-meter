@@ -33,7 +33,7 @@ Ahora crearas otra variable para el **nivel** de sensibilidad.
 
 Desde el menu `Variables`{:class='microbitvariables'}, haz click en**Crear variable** para crear una varibale llamada `nivel`.
 
---- /task ---
+--- /task --- 
 
 --- task ---
 

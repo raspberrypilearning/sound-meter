@@ -7,20 +7,15 @@ listed: true
 copyedit: true
 last_tested: '2023-08-15'
 steps:
-  - 
-    title: Realizaras
-  - 
-    title: Medidor de nivel
+  - title: Realizaras
+  - title: Medidor de nivel
     completion:
       - engaged
-  - 
-    title: '¡Suena la alarma!'
-  - 
-    title: Cambia la sensibilidad
+  - title: '¡Suena la alarma!'
+  - title: Cambia la sensibilidad
     completion:
       - internal
-  - 
-    title: Examen rapido
+  - title: Examen rapido
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -28,5 +23,4 @@ steps:
       passing_score: 3
     completion:
       - external
-  - 
-    title: Mejora tu proyecto
+  - title: Mejora tu proyecto
