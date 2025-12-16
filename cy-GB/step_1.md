@@ -1,8 +1,8 @@
 ## New to the micro:bit?
 
 You can try out our amazing `Discover` projects:
-- [Detholwr hobi](https://projects.raspberrypi.org/en/projects/hobby-selector)
-- [Nodyn atgoffa gwirion](https://projects.raspberrypi.org/en/projects/silly-reminder)
+- [Detholwr hobi](https://projects.raspberrypi.org/cy-GB/projects/hobby-selector)
+- [Nodyn atgoffa gwirion](https://projects.raspberrypi.org/cy-GB/projects/silly-reminder)
 
 ## Cyflwyniad
 

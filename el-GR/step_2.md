@@ -181,7 +181,7 @@ loops.everyInterval(500, function () {
 
 --- task ---
 
-Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα ακόμη μπλοκ `sound level`{:class="microbitinput"} και τοποθέτησέ το μέσα στο `0` στο μπλοκ `log data`{:class="microbitdatalogger "}.
+Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα ακόμη μπλοκ `sound level`{:class="microbitinput"} και τοποθέτησέ το μέσα στο `0` στο μπλοκ `log data`{:class="microbitdatalogger"}.
 
 ```microbit
 loops.everyInterval(500, function () {

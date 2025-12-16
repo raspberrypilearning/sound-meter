@@ -1,8 +1,8 @@
 ## micro:bitは初めてですか？
 
 You can try out our amazing `Discover` projects:
-- [趣味の選択](https://projects.raspberrypi.org/en/projects/hobby-selector)
-- [おかしなアラーム](https://projects.raspberrypi.org/en/projects/silly-reminder)
+- [趣味の選択](https://projects.raspberrypi.org/ja-JP/projects/hobby-selector)
+- [おかしなアラーム](https://projects.raspberrypi.org/ja-JP/projects/silly-reminder)
 
 ## はじめに
 

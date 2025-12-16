@@ -33,7 +33,7 @@ Nu maak je nog een variabele voor het gevoeligheids**niveau**.
 
 Van het `Variabelen`{:class='microbitvariables'} menu, klik op **Maak een variabele** om een variabele te maken met de naam `niveau`.
 
---- /task ---
+--- /task --- 
 
 --- task ---
 
@@ -340,7 +340,7 @@ Plaats het in het `bij opstarten`{:class='microbitbasic'} blok.
 
 Klik op de variabele naam `maximum` en verander deze naar `niveau`.
 
-Verander de `` naar `3` in het `stel niveau in op`{:class='microbitvariables'} blok.
+Verander de `` naar`3`in het`stel niveau in op`{:class='microbitvariables'} blok.
 
 ```microbit
 let maximum = 150

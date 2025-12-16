@@ -1,8 +1,8 @@
 ## ¿Eres nuevo con el micro:bit?
 
 Puedes probar nuestros increibles proyectos `Descubrir`:
-- [Selector de Hobby](https://projects.raspberrypi.org/en/projects/hobby-selector)
-- [Recordatorio](https://projects.raspberrypi.org/en/projects/silly-reminder)
+- [Selector de Hobby](https://projects.raspberrypi.org/es-419/projects/hobby-selector)
+- [Recordatorio](https://projects.raspberrypi.org/es-419/projects/silly-reminder)
 
 ## Haras
 

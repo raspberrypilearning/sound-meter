@@ -1,8 +1,8 @@
 ## C'est la première fois sur le micro:bit ?
 
 Tu peux essayer nos merveilleux projets `Découvrir` :
-- [Sélecteur de loisirs](https://projects.raspberrypi.org/en/projects/hobby-selector)
-- [Rappel idiot](https://projects.raspberrypi.org/en/projects/silly-reminder)
+- [Sélecteur de loisirs](https://projects.raspberrypi.org/fr-FR/projects/hobby-selector)
+- [Rappel idiot](https://projects.raspberrypi.org/fr-FR/projects/silly-reminder)
 
 ## Ce que tu vas faire
 

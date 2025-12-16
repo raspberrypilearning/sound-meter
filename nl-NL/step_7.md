@@ -1,6 +1,6 @@
 ## Wat kun je verder nog doen?
 
-Als je het [Introductie tot micro:bit](https://projects.raspberrypi.org/en/raspberrypi/path-name) pad volgt, kun je verdergaan naar het [Slaapmonitor](https://projects.raspberrypi.org/en/projects/sleep-tracker) project.
+Als je het [Introductie tot micro:bit](https://projects.raspberrypi.org/nl-NL/raspberrypi/path-name) pad volgt, kun je verdergaan naar het [Slaapmonitor](https://projects.raspberrypi.org/nl-NL/projects/sleep-tracker) project.
 
 In dit project maak je een slaapmonitor die de versnellingsmeter van de micro:bit gebruikt om te volgen hoeveel keer je 's nachts beweegt. Goed slapen is erg belangrijk om je te helpen je op je best te voelen!
 
@@ -16,4 +16,15 @@ In dit project maak je een slaapmonitor die de versnellingsmeter van de micro:bi
 
 --- /no-print ---
 
-Als je meer plezier wilt hebben met het verkennen van micro:bit, dan kun je een [van deze projecten](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=microbit) uitproberen.
+Als je meer plezier wilt hebben met het verkennen van micro:bit, dan kun je een [van deze projecten](https://projects.raspberrypi.org/nl-NL/projects?hardware%5B%5D=microbit) uitproberen.
+
+***
+Dit project werd vertaald door vrijwilligers:
+
+[name]
+
+[name]
+
+[name]
+
+Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
