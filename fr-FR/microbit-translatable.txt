@@ -1,9 +1,0 @@
-maximum
-
-alarme
-
-niveau sonore
-
-niveau
-
-activité
