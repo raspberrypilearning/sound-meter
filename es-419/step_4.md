@@ -1,45 +1,45 @@
-## Cambia la sensibilidad
+## Change the sensitivity
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-En este paso, programaras los botones del micro:bit para ajustar la sensibilidad de la alarma, con configuraciones desde 1 (volumen minimo) a 5 (volumen maximo). 
+In this step, you will program the buttons on the micro:bit to adjust the sensitivity of the alarm with settings from 1 (lowest maximum value) to 5 (highest maximum value).
 
 </div>
 <div>
 
-![El simulador del micro:bit mostrara los numeros del nivel de sonido al presionar los botones `A` y `B`. El boton `A` disminuye el nivel, mientras que el boton `B` aumenta el nivel.](images/buttons-pressed-demo.gif){:width="300px"}
+![The micro:bit simulator displaying the sound level numbers when the A and B buttons are clicked. The A button decreases the levels while the B button increases the levels.](images/buttons-pressed-demo.gif){:width="300px"}
 
 </div>
 </div>
 
-### Disminuir el nivel máximo de sonido
+### Decrease the maximum sound level
 
-El **Bboton A** se encuentra a la izquierda asi que lo usaras para disminuir el valor maximo de la alarma.
+The **A button** is on the left so you will use this to decrease the maximum value for the alarm.
 
---- task ---
+\--- task ---
 
-Desde el menu `Entrada`{:class='microbitinput'}, arrastrea un bloque `al presionar el boton`{:class='microbitinput'} y colocalo en el editor de codigo.
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block and place it in the code editor.
 
-<img src="images/on-button-location.png" alt="El menu de entrada con el bloque 'al presionar el boton A' resaltado en la parte superior." width="300" />
+<img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="300"/>
 
---- /task ---
+\--- /task ---
 
-En el paso anterior, creaste dos variables, `maximo`{:class='microbitvariables'} y `alarma`{:class='microbitvariables'}.
+In the previous step, you created two variables, `maximum`{:class='microbitvariables'} and `alarm`{:class='microbitvariables'}.
 
-Ahora crearas otra variable para el **nivel** de sensibilidad.
+Now you will create another variable for the sensitivity **level**.
 
---- task ---
+\--- task ---
 
-Desde el menu `Variables`{:class='microbitvariables'}, haz click en**Crear variable** para crear una varibale llamada `nivel`.
+From the `Variables`{:class='microbitvariables'} menu, click on **Make a variable** to create a variable called `level`.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Arrastra el bloque `cambiar`{:class='microbitvariables'} y colocalo dentro del bloque `al presionar el boton`{:class='microbitinput'}.
+Drag the `change`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
 
-Cambia el `1` a `-1`.
+Change the `1` to `-1`.
 
 ```microbit
 let level = 0
@@ -48,19 +48,19 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Variables`{:class='microbitvariables'}, arrasttra otro bloque `cambiar`{:class='microbitvariables'}.
+From the `Variables`{:class='microbitvariables'} menu, drag another `change`{:class='microbitvariables'} block.
 
-Colocalo **debajo** del bloque`cambiar nivel en -1`{:class='microbitvariables'}.
+Place it **below** the `change level by -1`{:class='microbitvariables'} block.
 
-Cambia la variable `nivel` mostrada en el bloque a `maximo` haciendo click en el nombre de la variable.
+Change the variable shown in the block from `level` to `maximum` by clicking on the variable name.
 
-Cambia el `1` a `-50`.
+Change the `1` to `-50`.
 
-<img src="images/change-variable.gif" alt="La animacion muestra el menu desplegable en el bloque de la variable 'cambiar maximo en 1'." width="300" />
+<img src="images/change-variable.gif" alt="Animation showing the drop-down menu on the `change maximum by 1` variable block." width="300"/>
 
 ```microbit
 let level = 0
@@ -71,17 +71,17 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-Esto significa que cada vez que presiones el boton A, disminuira el nivel de sensibilidad en 1 y la sensiblidad de sonida en 50.
+This means that every time you press button A, it will decrease the sensitivity level by 1 and reduce the sound sensitivity by 50.
 
-Si se presiona el boton A cuando el nivel ya es 1, entonces necesitaras hacer que el nivel cambie a `5` y no a `0`.
+If button A is pressed when the level is already 1, then you need to make it so the level changes to `5` and not `0`.
 
---- task ---
+\--- task ---
 
-Desde el menu `Logica`{:class='microbitlogic'}, arrastra un bloque `si`{:class='microbitlogic'}.
+From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
 
-Colocalo debjo del bloque `cambiar maximo en -50`{:class='microbitvariables'} block.
+Place it below the `change maximum by -50`{:class='microbitvariables'} block.
 
 ```microbit
 let level = 0
@@ -90,18 +90,18 @@ input.onButtonPressed(Button.A, function () {
     level += -1
     maximum += -50
     if (true) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Logica`{:class='microbitlogic'}, arrasttra el bloque de comparacion `0 < 0`{:class='microbitlogic'}.
+From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
 
-Colocalo dentro del espacio de `Verdadero` en el bloque `si`{:class='microbitlogic'}.
+Place it inside the `true` space in the `if`{:class='microbitlogic'} block.
 
 ```microbit
 let level = 0
@@ -110,18 +110,18 @@ input.onButtonPressed(Button.A, function () {
     level += -1
     maximum += -50
     if (0 < 0) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Variables`{:class='microbitvariables'}, arrastra el bloque `nivel`{:class='microbitvariables'}.
+From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
 
-Colocalo encima del primer `0` del bloque de comparacion `0 < 0`{:class='microbitlogic'}.
+Place it inside the first `0` of the `0 < 0`{:class='microbitlogic'} comparison block.
 
 ```microbit
 let level = 0
@@ -130,26 +130,26 @@ input.onButtonPressed(Button.A, function () {
     level += -1
     maximum += -50
     if (level < 0) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Cambia el `0` a `1` en la parte derecha del bloque de comparacion `0 < 0`{:class='microbitlogic'}.
+Change the `0` to `1` on the right-hand side of the `0 < 0`{:class='microbitlogic'} comparison block.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Variables`{:class='microbitvariables'}, arrastra el bloque `establecer`{:class='microbitvariables'}.
+From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block.
 
-Colocalo dentro del bloque `si`{:class='microbitlogic'}. Asegurate que la variable seleecionada sea `nivel`{:class='microbitvariables'}.
+Place it inside the `if`{:class='microbitlogic'} block. Ensure the variable selected is `level`{:class='microbitvariables'}.
 
-Cambia el `0` a `5` en el bloque `establecer nivel a 0`{:class='microbitvariables'}.
+Change the `0` to `5` on the `set level to 0`{:class='microbitvariables'} block.
 
 ```microbit
 let level = 0
@@ -163,15 +163,15 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-De nuevo, desde el menu `Variables`{:class='microbitvariables'}, arrasttra otro bloque `establecer`{:class='microbitvariables'}.
+Again from the `Variables`{:class='microbitvariables'} menu, drag another `set`{:class='microbitvariables'} block.
 
-Colocalo debajo del bloque `establecer nivel en 5`{:class='microbitvariables'}.
+Place it below the `set level to 5`{:class='microbitvariables'} block.
 
-Cambia el `0` a `250`.
+Change the `0` to `250`.
 
 ```microbit
 let level = 0
@@ -186,13 +186,13 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Basico`{:class='microbitbasic'}, arrastra el bloque `mostrar numero`{:class='microbitbasic'}.
+From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block.
 
-Colocalo **debajo** del bloque `si`{:class='microbitlogic'}.
+Place it **below** the `if`{:class='microbitlogic'} block.
 
 ```microbit
 let level = 0
@@ -208,13 +208,13 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Variables`{:class='microbitvariables'}, arrastra el bloque `nivel`{:class='microbitvariables'}.
+From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
 
-Colocalo en el `0` del bloque `mostrar numero`{:class='microbitbasic'}.
+Place it in the `0` in the `show number`{:class='microbitbasic'} block.
 
 ```microbit
 let level = 0
@@ -230,15 +230,15 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Tambien, desde el menu `Basico`{:class='microbitbasic'}, arrastra el bloque de `pausa`{:class='microbitbasic'}.
+Also from the `Basic`{:class='microbitbasic'} menu, drag the `pause`{:class='microbitbasic'} block.
 
-Colocalo debajo del bloque `mostrar numero`{:class='microbitbasic'}.
+Place it below the `show number`{:class='microbitbasic'} block.
 
-Cambia el `100` a `500`.
+Change the `100` to `500`.
 
 ```microbit
 let level = 0
@@ -255,57 +255,57 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Aumenta el nuvel maximo de sonido
+### Increase the maximum sound level
 
-Ya has programado el bloque `al presionar el boton A`{:class='microbitinput'} block.
+You have now programmed the `on button A pressed`{:class='microbitinput'} block.
 
-Necesita shacer lo mismo para el bloque `al presionar el boton B`{:class='microbitinput'} para incrementar el maximo.
+You will need to do the same for `on button B pressed`{:class='microbitinput'} to increase the maximum.
 
---- task ---
+\--- task ---
 
-Haz click derecho en el bloque `al presionar el boton A`{:class='microbitinput'} y haz click en **Duplicar**.
+Right-click on the entire `on button A pressed`{:class='microbitinput'} block and click **Duplicate**.
 
-![La animacion muestra el menu que aparece al hacer click derecho en el bloque 'al presionar el boton A' con la opcion 'Duplicar' resaltado.](images/onbuttonA-duplicate.gif)
+![Animation showing the right-click menu on the 'on button A pressed' block with 'Duplicate' highlighted.](images/onbuttonA-duplicate.gif)
 
-Ahora habra dos bloques `al presionar el boton A`{:class='microbitinput'} en el panel del editor de codigo.
+There will now be two `on button A pressed`{:class='microbitinput'} blocks in the code editor panel.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Haz click en `A` en bloque duplicado de `al presionar el boton A`{:class='microbitinput'}. Un menu desplegable se abrira.
+Click on the `A` in the duplicated `on button A pressed`{:class='microbitinput'} block. A drop-down menu will open.
 
-Cambia el `A` a `B`.
+Change the `A` to `B`.
 
-<img src="images/button-menu.png" alt="El menu desplegable del bloque 'al pulsar el botón A' te permite cambiar el bloque al botón B." width="400" />
+<img src="images/button-menu.png" alt="The drop-down menu for 'on button A pressed' that lets you change the block to button B." width="400"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Dentro del bloque `al presionar el boton B`{:class='microbitinput'}:
+Inside the `on button B pressed`{:class='microbitinput'} block:
 
-- Cambia el `-1` a `1` en el bloque `cambiar nivel`{:class='microbitvariables'}
+- Change the `-1` to `1` in the `change level`{:class='microbitvariables'} block
 
-- Cambia el `-50` a `50` en el bloque `cambiar maximo`{:class='microbitvariables'}
+- Change the `-50` to `50` in the `change maximum`{:class='microbitvariables'} block
 
-<img src="images/onbuttonB-changes.png" alt="El bloque 'al presionar el boton B' con las variables 'cambiar nivel' y 'cambiar maximo'." width="350" />
+<img src="images/onbuttonB-changes.png" alt="The `on button B pressed` block with the change level and change maximum variables shown." width="350"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Para las condiciones del bloque `si`{:class='microbitlogic'}:
+For the `if`{:class='microbitlogic'} block's conditions:
 
-- Cambia el `<` a `>`
-- Cambia el `1` a `5`
+- Change the `<` to a `>`
+- Change the `1` to `5`
 
-Dentro del bloque `si`{:class='microbitlogic'}:
+Inside the `if`{:class='microbitlogic'} block:
 
-- Cambia el `5` a `1` en el bloque `establecer nivel en 5`{:class='microbitvariables'}
-- Cambia el `250` a `50` en el bloque `establecer maximo en 50`{:class='microbitvariables'}
+- Change the `5` to `1` in the `set level to 5`{:class='microbitvariables'} block
+- Change the `250` to `50` in the `set maximum to 50`{:class='microbitvariables'} block
 
 ```microbit
 let level = 0
@@ -322,25 +322,25 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Establecer un nivel de sonido normal
+### Set a normal sound level
 
-Necesitas programar una sensibilidad normal de alarma utilizando el bloque `al iniciar`{:class='microbitbasic'}.
+You need to program a normal alarm sensitivity level by using the `on start`{:class='microbitbasic'} block.
 
---- task ---
+\--- task ---
 
-Desde el menu `Variables`{:class='microbitvariables'}, arrastra un bloque `establecer el mazimo en 0`{:class='microbitvariables'}.
+From the `Variables`{:class='microbitvariables'} menu, drag a `set maximum to 0`{:class='microbitvariables'} block.
 
-Colocalo dentro del bloque `al iniciar`{:class='microbitbasic'}.
+Place it inside the `on start`{:class='microbitbasic'} block.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Haz click en el nombre de la variable `maximo` y cambialo a `nivel`.
+Click on the variable name `maximum` and change it to `level`.
 
-Cambia el `0` a `3` en el bloque `establecer nivel`{:class='microbitvariables'}.
+Change the `0` to `3` in the `set level`{:class='microbitvariables'} block.
 
 ```microbit
 let maximum = 150
@@ -348,28 +348,28 @@ let alarm = false
 let level = 3
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-**Prueba tu programa**
+**Test your program**
 
-+ Presiona los botones A y B para observar como los niveles de sonido aumentan y disminuyen
+- Press the A and B buttons to see the sound levels increase and decrease
 
-El punto de inicio predeterminado es el nivel 3.
+The default starting point is level 3.
 
-**Arrastra** los niveles de entrada del micrófono hacia arriba y abajo para probar el sonido máximo de cada nivel al usar el simulador.
+**Drag** the mic input levels up and down to test the maximum sound for each level when using the simulator.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-¡Descarga el programa en tu micro:bit!
+Download your program onto your micro:bit!
 
---- /task ---
+\--- /task ---
 
 [[[download-to-microbit]]]
 
-¡Bien hecho! ¡Ahora tienes un medidor de sonido o luz completamente funcional!
+Well done! You now have a fully working sound or light meter!
 
-A continuacion, ¡es momento de revisar lo que has aprendido!
+Next, it is time to check what you have learnt!
