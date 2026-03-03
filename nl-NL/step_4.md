@@ -1,45 +1,45 @@
-## Wijzig de gevoeligheid
+## Change the sensitivity
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-In deze stap programmeer je de knoppen op de micro:bit om de gevoeligheid van het alarm aan te passen met instellingen van 1 (laagste maximale waarde) tot 5 (hoogste maximale waarde). 
+In this step, you will program the buttons on the micro:bit to adjust the sensitivity of the alarm with settings from 1 (lowest maximum value) to 5 (highest maximum value).
 
 </div>
 <div>
 
-![De micro:bit-simulator toont het geluidsniveau in een getal wanneer op de knoppen `A` en `B` wordt geklikt. De `A`-knop verlaagt de niveaus, terwijl de `B`-knop de niveaus verhoogt.](images/buttons-pressed-demo.gif){:width="300px"}
+![The micro:bit simulator displaying the sound level numbers when the A and B buttons are clicked. The A button decreases the levels while the B button increases the levels.](images/buttons-pressed-demo.gif){:width="300px"}
 
 </div>
 </div>
 
-### Verlaag het maximale geluidsniveau
+### Decrease the maximum sound level
 
-De **A-knop** bevindt zich aan de linkerkant, dus deze gebruik je om de maximale waarde voor het alarm te verlagen.
+The **A button** is on the left so you will use this to decrease the maximum value for the alarm.
 
---- task ---
+\--- task ---
 
-Vanuit het `Invoer`{:class="microbitinput"} menu, sleep je het `wanneer knop wordt ingedrukt`{:class="microbitinput"} blok naar het bewerkingspaneel.
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block and place it in the code editor.
 
-<img src="images/on-button-location.png" alt="Het invoermenu met het 'wanneer knop A wordt ingedrukt' blok bovenaan gemarkeerd." width="300" />
+<img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="300"/>
 
---- /task ---
+\--- /task ---
 
-In de vorige stap heb je twee variabelen gemaakt, `maximum`{:class='microbitvariables'} en `alarm`{:class='microbitvariables'}.
+In the previous step, you created two variables, `maximum`{:class='microbitvariables'} and `alarm`{:class='microbitvariables'}.
 
-Nu maak je nog een variabele voor het gevoeligheids**niveau**.
+Now you will create another variable for the sensitivity **level**.
 
---- task ---
+\--- task ---
 
-Van het `Variabelen`{:class='microbitvariables'} menu, klik op **Maak een variabele** om een variabele te maken met de naam `niveau`.
+From the `Variables`{:class='microbitvariables'} menu, click on **Make a variable** to create a variable called `level`.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep het `verander met`{:class='microbitvariables'} blok en plaats het in blok `wanneer knop wordt ingedrukt`{:class='microbitinput'}.
+Drag the `change`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
 
-Verander de `1` naar `-1`.
+Change the `1` to `-1`.
 
 ```microbit
 let level = 0
@@ -48,19 +48,19 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} nog een blok `verander met`{:class="microbitvariables"}.
+From the `Variables`{:class='microbitvariables'} menu, drag another `change`{:class='microbitvariables'} block.
 
-Plaats het **hieronder** om het `verander niveau met -1`{:class='microbitvariables'} blok.
+Place it **below** the `change level by -1`{:class='microbitvariables'} block.
 
-Wijzig de variabele die in het blok wordt weergegeven van `niveau` naar `maximum` door op de naam van de variabele te klikken.
+Change the variable shown in the block from `level` to `maximum` by clicking on the variable name.
 
-Verander de `1` naar `-50`.
+Change the `1` to `-50`.
 
-<img src="images/change-variable.gif" alt="Animatie die het vervolgkeuzemenu toont op het variabele blok 'Verander maximum met 1'." width="300" />
+<img src="images/change-variable.gif" alt="Animation showing the drop-down menu on the `change maximum by 1` variable block." width="300"/>
 
 ```microbit
 let level = 0
@@ -71,17 +71,17 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-Dit betekent dat elke keer dat je op knop A drukt, het gevoeligheidsniveau met 1 zal verlagen en de geluidsgevoeligheid met 50 zal verminderen.
+This means that every time you press button A, it will decrease the sensitivity level by 1 and reduce the sound sensitivity by 50.
 
-Als knop A wordt ingedrukt terwijl het niveau al 1 is, moet je ervoor zorgen dat het niveau verandert naar `5` en niet `0`.
+If button A is pressed when the level is already 1, then you need to make it so the level changes to `5` and not `0`.
 
---- task ---
+\--- task ---
 
-Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep een `als`{:class="microbitlogic"} blok.
+From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
 
-Plaats het onder het `verander maximum met -50`{:class='microbitvariables'} blok.
+Place it below the `change maximum by -50`{:class='microbitvariables'} block.
 
 ```microbit
 let level = 0
@@ -90,18 +90,18 @@ input.onButtonPressed(Button.A, function () {
     level += -1
     maximum += -50
     if (true) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Logisch`{:class='microbitlogic'} het vergelijkingsblok `0 < 0`{:class='microbitlogic'}.
+From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
 
-Plaats dit in het `waar`{:class="microbitlogic"} deel van het `als`{:class="microbitlogic"} blok.
+Place it inside the `true` space in the `if`{:class='microbitlogic'} block.
 
 ```microbit
 let level = 0
@@ -110,18 +110,18 @@ input.onButtonPressed(Button.A, function () {
     level += -1
     maximum += -50
     if (0 < 0) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `niveau`{:class="microbitvariables"}.
+From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
 
-Plaats het in de eerste `0` van het `0 < 0`{:class='microbitlogic'} vergelijkingsblok.
+Place it inside the first `0` of the `0 < 0`{:class='microbitlogic'} comparison block.
 
 ```microbit
 let level = 0
@@ -130,26 +130,26 @@ input.onButtonPressed(Button.A, function () {
     level += -1
     maximum += -50
     if (level < 0) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Verander de `0` naar `1` aan de rechterkant van het `0 < 0`{:class='microbitlogisch'} vergelijkingsblok.
+Change the `0` to `1` on the right-hand side of the `0 < 0`{:class='microbitlogic'} comparison block.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel in op`{:class="microbitvariables"}.
+From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block.
 
-Plaats het in het `als`{:class="microbitlogic"} blok. Zorg ervoor dat de geselecteerde variabele `niveau`{:class='microbitvariables'} is.
+Place it inside the `if`{:class='microbitlogic'} block. Ensure the variable selected is `level`{:class='microbitvariables'}.
 
-Wijzig de `0` in `5` in het `stel in op`{:class="microbitvariables"} blok.
+Change the `0` to `5` on the `set level to 0`{:class='microbitvariables'} block.
 
 ```microbit
 let level = 0
@@ -163,15 +163,15 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} opnieuw een blok `stel in op`{:class="microbitvariables"}.
+Again from the `Variables`{:class='microbitvariables'} menu, drag another `set`{:class='microbitvariables'} block.
 
-Plaats het onder het `stel niveau in op 5`{:class='microbitvariables'} blok.
+Place it below the `set level to 5`{:class='microbitvariables'} block.
 
-Verander de `0` naar `250`.
+Change the `0` to `250`.
 
 ```microbit
 let level = 0
@@ -186,13 +186,13 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Basis`{:class="microbitbasic"} een blok `toon nummer`{:class="microbitbasic"}.
+From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block.
 
-Plaats het **onder** het `als`{:class='microbitlogic'} blok.
+Place it **below** the `if`{:class='microbitlogic'} block.
 
 ```microbit
 let level = 0
@@ -208,13 +208,13 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `niveau`{:class="microbitvariables"}.
+From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
 
-Plaats het in de `0` van het `toon nummer`{:class='microbitbasic'} blok.
+Place it in the `0` in the `show number`{:class='microbitbasic'} block.
 
 ```microbit
 let level = 0
@@ -230,15 +230,15 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Sleep ook vanuit het menu `Basis`{:class="microbitbasic"} het blok `pauzeer (ms)`{:class="microbitbasic"}.
+Also from the `Basic`{:class='microbitbasic'} menu, drag the `pause`{:class='microbitbasic'} block.
 
-Plaats het onder het blok `toon nummer`{:class='microbitbasic'}.
+Place it below the `show number`{:class='microbitbasic'} block.
 
-Verander de `100` naar `500`.
+Change the `100` to `500`.
 
 ```microbit
 let level = 0
@@ -255,57 +255,57 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Verhoog het maximale geluidsniveau
+### Increase the maximum sound level
 
-Je hebt nu het `wanneer knop A wordt ingedrukt`{:class='microbitinput'} blok geprogrammeerd.
+You have now programmed the `on button A pressed`{:class='microbitinput'} block.
 
-Je moet hetzelfde doen voor `wanneer knop B wordt ingedrukt`{:class='microbitinput'} om het maximum te verhogen.
+You will need to do the same for `on button B pressed`{:class='microbitinput'} to increase the maximum.
 
---- task ---
+\--- task ---
 
-Klik met de rechtermuisknop op het volledige `wanneer knop A wordt ingedrukt`{:class='microbitinput'} blok en klik **Dupliceren**.
+Right-click on the entire `on button A pressed`{:class='microbitinput'} block and click **Duplicate**.
 
-![Animatie van het menu op de rechtermuisknop op het 'wanneer knop A wordt ingedrukt'-blok met 'Dupliceren' gemarkeerd.](images/onbuttonA-duplicate.gif)
+![Animation showing the right-click menu on the 'on button A pressed' block with 'Duplicate' highlighted.](images/onbuttonA-duplicate.gif)
 
-Er zullen nu twee `wanneer knop A wordt ingedrukt`{:class='microbitinput'} blokken in het bewerkingspaneel staan.
+There will now be two `on button A pressed`{:class='microbitinput'} blocks in the code editor panel.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Klik op de `A` in het gedupliceerde `wanneer knop A wordt ingedrukt`{:class='microbitinput'} blok. Er wordt een vervolgkeuzemenu geopend.
+Click on the `A` in the duplicated `on button A pressed`{:class='microbitinput'} block. A drop-down menu will open.
 
-Verander de `A` naar `B`.
+Change the `A` to `B`.
 
-<img src="images/button-menu.png" alt="Het vervolgkeuzemenu voor 'wanneer knop A wordt ingedrukt' waarmee je het blok naar knop B kunt wijzigen." width="400" />
+<img src="images/button-menu.png" alt="The drop-down menu for 'on button A pressed' that lets you change the block to button B." width="400"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-In het `wanneer knop B wordt ingedrukt`{:class='microbitinput'} blok:
+Inside the `on button B pressed`{:class='microbitinput'} block:
 
-- Verander de `-1` naar `1` in het `verander niveau`{:class='microbitvariables'} blok
+- Change the `-1` to `1` in the `change level`{:class='microbitvariables'} block
 
-- Verander de `-50` naar `50` in het `verander maximum`{:class='microbitvariables'} blok
+- Change the `-50` to `50` in the `change maximum`{:class='microbitvariables'} block
 
-<img src="images/onbuttonB-changes.png" alt="Het blok 'wanneer knop B wordt ingedrukt' met het verander niveau en verander maximum variabelen weergegeven." width="350" />
+<img src="images/onbuttonB-changes.png" alt="The `on button B pressed` block with the change level and change maximum variables shown." width="350"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Voor de voorwaarden van het blok `als`{:class='microbitlogic'}:
+For the `if`{:class='microbitlogic'} block's conditions:
 
-- Verander de `<` naar `>`
-- Verander de `1` naar `5`
+- Change the `<` to a `>`
+- Change the `1` to `5`
 
-Binnen het `als`{:class='microbitlogic'} blok:
+Inside the `if`{:class='microbitlogic'} block:
 
-- Verander de `5` naar `1` in het `stel niveau in op 5`{:class='microbitvariables'} blok
-- Verander de `250` naar `50` in het `stel maximum in op 50`{:class='microbitvariables'} blok
+- Change the `5` to `1` in the `set level to 5`{:class='microbitvariables'} block
+- Change the `250` to `50` in the `set maximum to 50`{:class='microbitvariables'} block
 
 ```microbit
 let level = 0
@@ -322,25 +322,25 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Stel een normaal geluidsniveau in
+### Set a normal sound level
 
-Je moet een normaal alarmgevoeligheidsniveau programmeren door het `bij opstarten`{:class='microbitbasic'} blok te gebruiken.
+You need to program a normal alarm sensitivity level by using the `on start`{:class='microbitbasic'} block.
 
---- task ---
+\--- task ---
 
-Sleep vanuit het menu `Variabelen`{:class="microbitvariables"} een blok `stel maximum in op`{:class="microbitvariables"}.
+From the `Variables`{:class='microbitvariables'} menu, drag a `set maximum to 0`{:class='microbitvariables'} block.
 
-Plaats het in het `bij opstarten`{:class='microbitbasic'} blok.
+Place it inside the `on start`{:class='microbitbasic'} block.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Klik op de variabele naam `maximum` en verander deze naar `niveau`.
+Click on the variable name `maximum` and change it to `level`.
 
-Verander de `` naar `3` in het `stel niveau in op`{:class='microbitvariables'} blok.
+Change the `0` to `3` in the `set level`{:class='microbitvariables'} block.
 
 ```microbit
 let maximum = 150
@@ -348,28 +348,28 @@ let alarm = false
 let level = 3
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-**Test je programma**
+**Test your program**
 
-+ Druk op de knoppen A en B om het geluidsniveau te zien stijgen en dalen
+- Press the A and B buttons to see the sound levels increase and decrease
 
-Het standaard startpunt is niveau 3.
+The default starting point is level 3.
 
-**Sleep** de microfoon-invoerniveaus omhoog en omlaag om het maximale geluid voor elk niveau te testen bij het gebruik van de simulator.
+**Drag** the mic input levels up and down to test the maximum sound for each level when using the simulator.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Download je programma naar de micro:bit!
+Download your program onto your micro:bit!
 
---- /task ---
+\--- /task ---
 
 [[[download-to-microbit]]]
 
-Goed gedaan! Je hebt nu een volledig werkende geluids- of lichtmeter!
+Well done! You now have a fully working sound or light meter!
 
-Nu is het tijd om te kijken wat je hebt geleerd!
+Next, it is time to check what you have learnt!
