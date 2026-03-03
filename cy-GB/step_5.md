@@ -1,3 +1,3 @@
-## Myfyrio
+## Quick quiz
 
 
