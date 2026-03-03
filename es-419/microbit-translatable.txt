@@ -1,9 +1,9 @@
-maximo
+maximum
 
-alarma
+alarm
 
-Nivel de sonido
+Sound Level
 
-nivel
+level
 
-actividad
+activity
