@@ -4,6 +4,6 @@ alarm
 
 Sound Level
 
-lefel
+level
 
 activity
