@@ -1,3 +1,3 @@
-## Examen rapido
+## Quick quiz
 
 
