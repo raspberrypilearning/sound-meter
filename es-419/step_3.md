@@ -1,118 +1,118 @@
-## Suena la alarma
+## Sound the alarm
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-En este paso, implementaras una alarma que se activara cuando el nivel de sonido sea muy alto. Para evitar que la alarma aumente el ruido, debes asegurarte de que la alarma solo suene una vez y que pueda ser reiniciada cuando quieras. 
+In this step, you will add an alarm that triggers when the sound level get too high. To stop the alarm adding to the noise, you will make sure it only goes off once and can be reset whenever you want. 
 </div>
 <div>
 
-![El codigo para activar la alarma. Dentro de un bloque 'cada 500 ms', el nivel de sonido se grafica en los LEDs. Despues, se utiliza una instrucción 'si' para comprobar si el nivel de sonido excede el maximo y si la variable de alarma está configurada como falsa. Dentro del bloque si, se reproduce un sonido y la variable de la alarma se establece como 'verdadero.](images/alarm-code-demo.png){:width="300px"}
+![The code to trigger the alarm. Inside an 'every 500 ms' block, the sound level is plotted on the LEDs. Afterwards, an if statement is used to check if the sound level exceeds the maximum and whether the alarm variable is set to false. Inside the if block, a sound is played and the alarm variable is set to 'true'.](images/alarm-code-demo.png){:width="300px"}
 
 </div>
 </div>
 
-### Establecer el maximo
+### Set the maximum
 
-Necesitaras crear una variable para mantener el nivel de sonido que activara la alarma.
+You will need to make a variable to hold the sound level that will trigger the alarm.
 
---- task ---
+\--- task ---
 
-Abre el menu de `Variables`{:class="microbitvariables"} y haz click en **Crear una Variable**.
+Open the `Variables`{:class="microbitvariables"} menu and click **Make a Variable**.
 
-<img src="images/variable-menu.png" alt="El menu de bloques de variables con el boton 'Crear una variable' resaltado." width="350" />
+<img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a Variable' button highlighted." width="350"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Nombra tu nueva variable como `maximo`.
+Name your new variable `maximum`.
 
-<img src="images/max-variable-name.png" alt="La ventana de 'Nuevo nombre de variable' con el nombre 'maximo' escrito en el recuadro." width="400" />
+<img src="images/max-variable-name.png" alt="The 'New variable name' window with the name 'maximum' written in the box." width="400"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Variables`{:class="microbitvariables"}, obten el bloque `Establecer maximo`{:class="microbitvariables"}.
+From the `Variables`{:class="microbitvariables"} menu, get the `set maximum`{:class="microbitvariables"} block.
 
-<img src="images/set-max-start.png" alt="El menu de variables con el bloque 'Establecer maximo a 0' resaltado." width="350" />
+<img src="images/set-max-start.png" alt="The Variables menu with the 'set maximum to 0' block highlighted." width="350"/>
 
-Coloca el bloque dentro del bloque `al iniciar`{:class="microbitbasic"}, y cambia el `0` a `150`.
+Place the block inside the `on start`{:class="microbitbasic"} block, and change the `0` to `150`.
 
 ```microbit
 let maximum = 150
 ```
 
---- /task ---
+\--- /task ---
 
-El valor `150` es un poco mas de la mitad del nivel maximo de sonido que el micro:bit puede percibir, asi que ese deberia de ser un buen nivel para empezar.
+The value `150` is a little more than half the maximum sound level the micro:bit can sense, so that should be a good level to start with.
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Para el micro:bit V1
----
 
-¡El valor maximo tambien funciona para los niveles de salud!
+## title: For micro:bit V1
 
---- /collapse ---
+This maximum value works for light levels, too!
 
-### Apaga la alarma
+\--- /collapse ---
 
-¡Tambien quieres asegurarte de que el ruido de la alarma no se sume al ruido del entorno!
+### Turn the alarm off
 
-Para hacer esto, usaras otra variable que estableceras como `falsa`, y cambiara a `verdadero` cuando suene la alarma.
+You also want to make sure the alarm noise does not add to the already noisy environment!
 
---- task ---
+To do this, you will use another variable that will be set to `false` to start, and it will change to `true` when the alarm sounds.
 
-Crea una nueva `Variable`{:class="microbitvariables"}, esta vez llamala `alarma`.
+\--- task ---
 
-<img src="images/alarm-variable-name.png" alt="La ventana de 'Nuevo nombre de variable' con el nombre 'alarma' escrito en el recuadro." width="350" />
+Create another new `Variable`{:class="microbitvariables"}, this time called `alarm`.
 
---- /task ---
+<img src="images/alarm-variable-name.png" alt="The 'New variable name' window with the name 'alarm' written in the box." width="350"/>
 
---- task ---
+\--- /task ---
 
-Arrastra el bloque `establecer alarma`{:class="microbitvariables"} desde el menu `Variables`{:class="microbitvariables"}.
+\--- task ---
 
-Colocalo dentro del bloque `al iniciar`{:class="microbitbasic"}.
+Drag the `set alarm`{:class="microbitvariables"} block from the `Variables`{:class="microbitvariables"} menu.
 
---- /task ---
+Place it inside the `on start`{:class="microbitbasic"} block.
 
-Necesitas establecer esta nueva variable a `Falso` en vez de un numero.
+\--- /task ---
 
---- task ---
+You need to set this new variable to `false` instead of a number.
 
-Abre el menu `Logica`{:class="microbitlogic"}.
+\--- task ---
 
-Obten un bloque `Falso`{:class="microbitlogic"}.
+Open the `Logic`{:class="microbitlogic"} menu.
 
-<img src="images/false-block-location.png" alt="La parte inferior del menu de logica, que muestra la ubicación del bloque falso en la seccion 'Boleano'." width="200" />
+Get a `false`{:class="microbitlogic"} block.
 
-Coloca este bloque encima del `0`.
+<img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section." width="200"/>
+
+Place this block over the top of the `0`.
 
 ```microbit
 let maximum = 150
 let alarm = false
 ```
 
---- /task ---
+\--- /task ---
 
-### Verifica si la alarma suena
+### Check if the alarm should sound
 
-La alarma solo debe de sonar **si:**
+The alarm should only sound **if:**
 
-+ El nivel de sonido es **mas grande** que el maximo   
-  **Y**
-+ La variable de alarma **no es verdadero**
+- The sound level is **larger** than the maximum  
+  **AND**
+- The alarm variable is **not true**
 
---- task ---
+\--- task ---
 
-Desde el menu `Logica`{:class="microbitlogic"}, obten un bloque `si...entonces`{:class="microbitlogic"}.
+From the `Logic`{:class="microbitlogic"} menu, get an `if...then`{:class="microbitlogic"} block.
 
-<img src="images/if-block-location.png" alt="El menu de logica con un bloque 'si' resaltado." width="350" />
+<img src="images/if-block-location.png" alt="The Logic menu with an 'if' block highlighted." width="350"/>
 
-Coloca el bloque dentro del bucle `cada`{:class="microbitloops"} debajo del bloque `registrar datos`{:class="microbitdatalogger"}.
+Place the block inside the `every`{:class="microbitloops"} loop underneath the `log data`{:class="microbitdatalogger"} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -122,20 +122,20 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (true) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Abre nuevamente el menu `Logica`{:class="microbitlogic"} y toma un bloque`y`{:class="microbitlogic"}.
+Open the `Logic`{:class="microbitlogic"} menu again and take an `and`{:class="microbitlogic"} block.
 
-<img src="images/and-block-location.png" alt="La parte inferior del menu de logica, que muestra la ubicación del bloque 'y' en la seccion 'Boleano'." width="200" />
+<img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'and' block in the 'Boolean' section." width="200"/>
 
-Colocalo en la seccion `verdadero` del bloque `si...entonces`{:class="microbitlogic"}.
+Place it in the `true` section of the `if...then`{:class="microbitlogic"} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -145,38 +145,38 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (false && false) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
-Ahora necesitas agregar **dos** condiciones en cada lado del **y**.
+Now you need to add the **two** conditions either side of the **and**.
 
---- task ---
+\--- task ---
 
-De nuevo en el menu de `Logica`{:class="microbitlogic"}, obten un bloque condicional `0 < 0`{:class="microbitlogic"}.
+Again in the `Logic`{:class="microbitlogic"} menu, get a `0 < 0`{:class="microbitlogic"} condition block.
 
-Colocalo a un lado del bloque `y`{:class="microbitlogic"}.
+Place it on one side of the `and`{:class="microbitlogic"} block.
 
-Utiliza el menu desplegable para cambiar el simbolo menor que por un simbolo (`<`) mayor que (`>`).
+Use the drop-down menu to change the less than symbol (`<`) to a greater than (`>`) symbol.
 
-![Una demostración de como hacer clic en el menu desplegable y cambiar el símbolo de 'menor que' por el de 'mayor que' en la condición.](images/changing-condition.gif)
+![A demo of clicking the drop-down menu and changing the less than symbol to a greater than symbol in the condition.](images/changing-condition.gif)
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Desde el menu `Entrada`{:class="microbitinput"}, arrastra un bloque `nivel de sonido`{:class="microbitinput"}.
+From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
 
-Colocalo en el primer `0` del bloque `0 > 0`{:class="microbitlogic"}
+Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block
 
-Desde el menu `Variables`{:class="microbitvariables"}, arrastra el bloque `maximo`{:class="microbitvariables"}.
+From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
 
-Colocalo en el segundo `0` del bloque `0 > 0`{:class="microbitlogic"}.
+Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
 
-Tu codigo deberia de verse asi:
+Your code should look like this:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -187,26 +187,26 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
     if (input.soundLevel() > maximum && false) {
-
+    	
     }
 })
 ```
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Para micro:bit V1
----
 
-Desde el menu `Entrada`{:class="microbitinput"}, arrastra el bloque `nivel de luz`{:class="microbitinput"}.
+## title: For micro:bit V1
 
-Colocalo en el primer `0` del bloque `0 > 0`{:class="microbitlogic"}.
+From the `Input`{:class="microbitinput"} menu, drag a `light level`{:class="microbitinput"} block.
 
-Desde el menu `Variables`{:class="microbitvariables"}, arrastra el bloque `maximo`{:class="microbitvariables"}.
+Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block.
 
-Colocalo en el segundo `0` del bloque`0 > 0`{:class="microbitlogic"}.
+From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
 
-Tu codigo deberia de verse asi:
+Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
+
+Your code should look like this:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -216,22 +216,22 @@ loops.everyInterval(500, function () {
     255
     )
     if (input.lightLevel() > maximum && false) {
-
+    	
     }
 })
 ```
 
---- /collapse ---
+\--- /collapse ---
 
---- /task ---
+\--- /task ---
 
-Solo necesitas apagar la alarma si la variable `alarma`{:class="microbitvariables"} **no** esta configuradado como`verdadero`{:class="microbitlogic"}.
+You only want to set the alarm off if the `alarm`{:class="microbitvariables"} variable is **not** set `true`{:class="microbitlogic"}.
 
---- task ---
+\--- task ---
 
-Obten un bloque `no`{:class='microbitlogic'} desde el menu `Logica`{:class='microbitlogic'}.
+Get a `not`{:class='microbitlogic'} block from the `Logic`{:class='microbitlogic'} menu.
 
-Colocalo en el otro lado del bloque `y`{:class='microbitlogic'}.
+Place it on the other side of the `and`{:class='microbitlogic'} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -242,16 +242,16 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(false)) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Coloca el bloque de la variable `alarma`{:class='microbitvariables'} en el bloque `no`{:class='microbitlogic'} as:
+Place an `alarm`{:class='microbitvariables'} variable block in the `not`{:class='microbitlogic'} block like this:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -263,24 +263,24 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(alarm)) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Suena la alarma
+### Sound the alarm
 
-¡Ahora es momento de agregarle sonido a tu alarma!
+Now it's time to add your alarm sound!
 
---- task ---
+\--- task ---
 
-Desde el menu `Musica`{:class='microbitmusic'}, toma el bloque `reproducir`{:class='microbitmusic'}.
+From the `Music`{:class='microbitmusic'} menu, take a `play`{:class='microbitmusic'} block.
 
-<img src="images/play-block-location-v2.png" alt="La seccion 'micro:bit v2' del menu de Musica, con el bloque 'reproducir' resaltado en la parte superior de la seccion." width="250" />
+<img src="images/play-block-location-v2.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
 
-Colocalo dentro del bloque `si`{:class='microbitlogic'} que verifica si la alarma debe de sonar.
+Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -297,21 +297,21 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Para micro:bit V1
----
 
-El micro:bit V1 ni tiene vocinas, asi que tienes que adaptar el programa para la alarma.
+## title: For micro:bit V1
 
-En lugar de que la alarma utilice sonido, puedes mostrar un icono en los LED cuando el nivel de luz sea superior al máximo.
+The micro:bit V1 has no speaker, so you have to adapt the program for the alarm.
 
-Desde el menu `Basico`{:class='microbitbasic'}, obten un bloque `mostrar logotipo`{:class='microbitbasic'}.
+Rather than an alarm that uses sound, you can display an icon on the LEDs when the light level is higher than the maximum.
 
-Colocalo dentro del bloque `si`{:class='microbitlogic'} que verifica si la alrma debe de sonar.
+From the `Basic`{:class='microbitbasic'} menu, get a `show icon`{:class='microbitbasic'} block.
 
-**Selecciona** un logotipo que utilizaras para tu alarma.
+Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
+
+**Select** an icon to use for your alarm.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -328,25 +328,25 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /collapse ---
+\--- /collapse ---
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-**Escoge** que ruido deberias utilizar para la alarma, de los sonidos disponibles en el menu desplegable.
+**Choose** which alarm sound you would like to use, from the available sounds in the drop-down menu.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Dentro del bloque `al iniciar`{:class='microbitbasic'}, **haz click derecho** en el bloque `establecer`{:class='microbitvariables'} y selecciona **Duplicar**.
+Inside your `on start`{:class='microbitbasic'} block, **right-click** on the `set`{:class='microbitvariables'} block and select **Duplicate**.
 
-![Una demostración de como hacer click derecho en el bloque 'establecer alarma en falso' y luego duplicarlo.](images/duplicate-block.gif)
+![A demo of right clicking on the 'set alarm to false' block, and then duplicating it.](images/duplicate-block.gif)
 
-Coloca el bloque duplicado debajo del bloque `reproducir`{:class='microbitmusic'}.
+Place the duplicated block below the `play`{:class='microbitmusic'} block.
 
-Cambia el `falso`{:class='microbitlogic'} a `verdadero`{:class='microbitlogic'}.
+Change the `false`{:class='microbitlogic'} to `true`{:class='microbitlogic'}.
 
 ```microbit
 let alarm = false
@@ -364,23 +364,23 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Reinicia la alarma
+### Reset the alarm
 
-Cuando la alarma se apague, querras reiniciarla.
+When the alarm goes off, you will want to reset it.
 
-Puedes utilizar el logotipo tactil del micro:bit para hacer esto.
+You can use the touch logo on the micro:bit to do this.
 
-<img src="images/logo-location.png" alt="El logotipo del micro: bit." width="200" />
+<img src="images/logo-location.png" alt="The microbit logo." width="200"/>
 
---- task ---
+\--- task ---
 
-Desde el menu `Entrada`{:class='microbitinput'}, arrastra el bloque `al pulsar el logotipo`{:class='microbitinput'}.
+From the `Input`{:class='microbitinput'} menu, drag an `on logo`{:class='microbitinput'} block.
 
-<img src="images/onlogo-block-location.png" alt="El logo en la parte superior del micro: bit, encima de los LEDs." width="200" />
+<img src="images/onlogo-block-location.png" alt="The logo on the top of the microbit above the LEDs." width="200"/>
 
-Desde el bloque `al iniciar`{:class='microbitbasic'}, duplica el bloque `establecer alarma`{:class='microbitvariables'}y colocalo dentro del bloque `al pulsar el logotipo`{:class='microbitinput'}.
+From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on logo`{:class='microbitinput'} block.
 
 ```microbit
 let alarm = false
@@ -389,21 +389,21 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 ```
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Para micro:bit V1
----
 
-No hay un logotipo tactil en el micro:bit V1, asi que puedes utilizar los botones `A` y `B`.
+## title: For micro:bit V1
 
-Desde el menu `Entrada`{:class='microbitinput'}, arrastra el bloque `al presionar el boton`{:class='microbitinput'}.
+There is no touch sensor in the logo on the micro:bit V1, so instead you can use both the `A` and `B` buttons.
 
-<img src="images/on-button-location.png" alt="El menu de entrada con el bloque 'al presionar el boton A' resaltado." width="350" />
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
 
-Utiliza el menu desplegable para cambiar el boton`A+B`{:class='microbitinput'}.
+<img src="images/on-button-location.png" alt="The Input menu with the 'on button A' block highlighted." width="350"/>
 
-Desde el bloque `al iniciar`{:class='microbitbasic'}, duplica el bloque `establecer alarma`{:class='microbitvariables'} y colocalo dentro del bloque `al presionar el boton`{:class='microbitinput'}.
+Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
+
+From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
 
 ```microbit
 let alarm = false
@@ -412,8 +412,8 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
---- /collapse ---
+\--- /collapse ---
 
---- /task ---
+\--- /task ---
 
-¡A continuacion utilizaras el boton `A` y `B` para cambiar la sensibilidad de la alarma!
+Next you are going to use the `A` button and `B` button to change the sensitivity of your alarm!
