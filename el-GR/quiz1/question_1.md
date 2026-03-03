@@ -1,45 +1,45 @@
-## Αναστοχασμός
+## Reflection
 
-Απάντησε στις τρεις ερωτήσεις. Υπάρχουν στοιχεία που θα σε οδηγήσουν στη σωστή απάντηση.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Όταν έχεις απαντήσει σε κάθε ερώτηση, πάτησε στο ** Έλεγξε την απάντησή μου**.
+When you have answered each question, click on **Check my answer**.
 
-Καλή διασκέδαση!
+Have fun!
 
---- question ---
+\--- question ---
 
 ---
-legend: Ερώτηση 1 από 3
----
 
-Ποιο μενού περιέχει τα μπλοκ για το κουμπί `όταν πιεστεί το πλήκτρο button A`{:class='microbitinput'} και `on logo pressed`{:class='microbitinput'};
+## legend: Question 1 of 3
 
---- choices ---
+Which menu contains the blocks for `on button A pressed`{:class='microbitinput'} and `on logo pressed`{:class='microbitinput'}?
 
-- ( ) Βασικά
+\--- choices ---
 
-  --- feedback ---
+- ( ) Basic
 
-Περίπου! Το μενού Βασικά περιέχει μπλοκ για τη βασική λειτουργικότητα του micro:bit.
+  \--- feedback ---
 
-  --- /feedback ---
+Not quite! The Basic menu contains blocks for the basic functionality of the micro:bit.
 
-- (x) Είσοδος
+\--- /feedback ---
 
-  --- feedback ---
+- (x) Input
 
-Φοβερό! Απάντησες σωστά, το μενού Είσοδος περιέχει όλα τα μπλοκ εισαγωγής και χειρονομιών.
+  \--- feedback ---
 
-  --- /feedback ---
+Awesome! You have answered correctly, the Input menu contains all the input and gesture blocks.
 
-- ( ) Λογική
+\--- /feedback ---
 
-  --- feedback ---
+- ( ) Logic
 
-Όχι ακριβώς! Το μενού Λογική περιέχει μπλοκ για τη λογική με συνθήκες και λογική Boole.
+  \--- feedback ---
 
-  --- /feedback ---
+Not quite! The Logic menu contains blocks for conditional and Boolean logic.
 
---- /choices ---
+\--- /feedback ---
 
---- /question ---
+\--- /choices ---
+
+\--- /question ---
