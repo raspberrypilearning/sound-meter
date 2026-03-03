@@ -1,93 +1,93 @@
-## Κατάγραψε το επίπεδο έντασης
+## Log the sound level
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Θα δημιουργήσεις το δικό σου έργο MakeCode και θα προσθέσεις κώδικα για να μετρήσεις τα επίπεδα έντασης ήχου (ή φωτός). Θα εμφανίσεις το τρέχον επίπεδο στα LED για τον χρήστη. 
+You will create your MakeCode project and add code to measure the sound (or light) levels. You will display the current level on the LEDs for the user. 
 </div>
 <div>
-![Ο προσομοιωτής micro:bit που εμφανίζει ένα γράφημα με μπάρες για την τρέχουσα στάθμη έντασης ήχου. Το επίπεδο σύρεται πάνω και κάτω και το γράφημα με μπάρες αυξάνεται και συρρικνώνεται ανάλογα με το επίπεδο της έντασης.](images/sound-level-demo.gif){:width="300px"}
+![The micro:bit simulator displaying a bar graph of the current sound level. The level is dragged up and down and the bar graph grows and shrinks with the sound level.](images/sound-level-demo.gif){:width="300px"}
 </div>
 </div>
 
-### Άνοιξε το MakeCode
+### Open MakeCode
 
-Για να ξεκινήσεις τη δημιουργία του έργου σου με το micro:bit, πρέπει να ανοίξεις το πρόγραμμα επεξεργασίας MakeCode.
+To start creating your micro:bit project, you need to open the MakeCode editor.
 
---- task ---
+\--- task ---
 
-Άνοιξε το πρόγραμμα επεξεργασίας MakeCode στη διεύθυνση [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Εκτός σύνδεσης έκδοση του επεξεργαστή
----
 
-Υπάρχει επίσης μια έκδοση με [δυνατότητα λήψης του προγράμματος επεξεργασίας MakeCode](https://makecode.microbit.org/offline-app)"{:target="_blank"}.
+## title: Offline version of the editor
 
---- /collapse ---
+There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
---- /task ---
+\--- /collapse ---
 
-### Πρώτο έργο micro:bit;
+\--- /task ---
+
+### First micro:bit project?
 
 [[[makecode-tour]]]
 
-### Δημιούργησε το έργο σου
+### Create your project
 
-Μόλις ανοίξει το πρόγραμμα επεξεργασίας, θα χρειαστεί να δημιουργήσεις ένα νέο έργο και να δώσεις ένα όνομα στο έργο σου.
+Once the editor is open, you will need to create a new project and give your project a name.
 
---- task ---
+\--- task ---
 
-Κάνε κλικ στο κουμπί **Νέο έργο**.
+Click on the **New Project** button.
 
-<img src="images/new-project-button.png" alt="Το κουμπί νέου έργου στο MakeCode." width="250" />
+<img src="images/new-project-button.png" alt="The new project button in MakeCode." width="250"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Δώσε στο νέο σου έργο το όνομα `μετρητής έντασης ήχου` και κάνε κλικ στο **Δημιουργία**.
+Give your new project the name `sound level meter` and click **Create**.
 
-<img src="images/soundlevel-meter.png" alt="Το όνομα «μετρητής έντασης ήχου» εμφανίζεται στο πλαίσιο διαλόγου Νέο έργο." width="350" />
+<img src="images/soundlevel-meter.png" alt="The name 'sound level meter' written in the New Project dialogue box." width="350"/>
 
-**Συμβουλή:** Για να γίνει πιο εύκολη η εύρεση του έργου σου αργότερα, δώσε του ένα όνομα που να σχετίζεται με τη δραστηριότητα που δημιουργείς.
+**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
 
---- /task ---
+\--- /task ---
 
-### Σχεδίασε ένα γράφημα της στάθμης έντασης του ήχου
+### Plot a graph of the sound level
 
-Σε αυτό το έργο, θα χρησιμοποιήσεις το μπλοκ `κατά την έναρξη`{:class="microbitbasic"}, αλλά όχι το μπλοκ `για πάντα`{:class="microbitbasic"}.
+In this project, you will make use of the `on start`{:class="microbitbasic"} block, but not the `forever`{:class="microbitbasic"} block.
 
---- task ---
+\--- task ---
 
-Μπορείς να διαγράψεις το μπλοκ `για πάντα`{:class="microbitbasic"} τώρα σύροντάς το στον πίνακα του μενού.
+You can delete the `forever`{:class="microbitbasic"} block now by dragging it to the menu panel.
 
-![Κινούμενη εικόνα που δείχνει το μπλοκ για πάντα να διαγράφεται σύροντάς το πάνω από τα μενού των μπλοκ.](images/delete-forever.gif)
+![Animation showing the forever block being deleted by dragging it back on top of the block menus.](images/delete-forever.gif)
 
---- /task ---
+\--- /task ---
 
-Το πρώτο βήμα είναι να δώσεις εντολή στο micro:bit να καταγράφει τα επίπεδα ήχου σε τακτά χρονικά διαστήματα. Υπάρχει ένας συγκεκριμένος βρόχος που μπορείς να χρησιμοποιήσεις για να το κάνεις αυτό.
+The first step is to get the micro:bit to capture the sound levels at regular intervals. There is a specifc loop you can use to do this.
 
---- task ---
+\--- task ---
 
-Από το μενού `Βρόχοι`{:class="microbitinput"}, σύρε το μπλοκ `every 500 ms`{:class="microbitinput"} στον πίνακα επεξεργασίας κώδικα.
+From the `Loops`{:class="microbitloops"} menu, drag an `every 500 ms`{:class="microbitloops"} block and place it in the code editor panel.
 
-<img src="images/every-500ms.png" alt="Το μενού Βρόχοι με τονισμένο το μπλοκ &quot;every 500 ms&quot;." width="350" />
+<img src="images/every-500ms.png" alt="The Loops menu with the 'every 500 ms' block highlighted." width="350"/>
 
-Οποιοσδήποτε κώδικας μέσα σ' αυτόν τον βρόχο θα εκτελείται κάθε **500 χιλιοστά του δευτερολέπτου**.
+Any code inside this loop will run every **500 milliseconds**.
 
-Τα 1000 χιλιοστά του δευτερολέπτου είναι 1 δευτερόλεπτο, επομένως αυτός ο βρόχος θα εκτελείται κάθε **μισό δευτερόλεπτο**.
+1000 milliseconds is 1 second, so this loop will run every **half second**.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Από το μενού `Led`{:class="microbitmath"}, σύρε ένα μπλοκ `plot bar graph`{:class="microbitmath"}.
+From the `Led`{:class="microbitled"} menu, drag a `plot bar graph`{:class="microbitled"} block.
 
-<img src="images/plot-bargraph.png" alt="Το μενού Led με τονισμένο το μπλοκ «plot bar graph»." width="350" />
+<img src="images/plot-bargraph.png" alt="The Led menu with the 'plot bar graph' block highlighted." width="350"/>
 
-Τοποθέτησέ το μέσα στο μπλοκ `every 500 ms`{:class='microbitlogic'}.
+Place it inside the `every 500 ms`{:class="microbitloops"} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -98,15 +98,15 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα μπλοκ `sound level`{:class="microbitinput"}.
+From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
 
-Τοποθέτησέ το μέσα στο πρώτο `0` στο μπλοκ `plot bar graph of`{:class="microbitled"}.
+Place it inside the first `0` in the `plot bar graph of`{:class="microbitled"} block.
 
-Άλλαξε το δεύτερο `0` σε `255`.
+Change the second `0` to `255`.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -117,39 +117,39 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Για το micro:bit V1
----
 
-Δεν υπάρχει μικρόφωνο στο micro:bit V1, επομένως μπορείς να χρησιμοποιήσεις το μπλοκ `επίπεδο φωτισμού`{:class="microbitinput"} για να μετρήσεις τα επίπεδα φωτισμού του περιβάλλοντός σου.
+## title: For micro:bit V1
 
-![Κινούμενη εικόνα που δείχνει το μπλοκ επίπεδο φωτός να τοποθετείται μέσα στο πρώτο «0» στο μπλοκ «plot bar graph of».](images/light-level.gif)
+There is no microphone on the micro:bit V1, so instead you can use the `light level`{:class="microbitinput"} block to measure the light levels of your environment.
 
---- /collapse ---
+![Animation showing the light level block being placed inside the first '0' on the 'plot bar graph of' block.](images/light-level.gif)
 
---- /task ---
+\--- /collapse ---
 
-### Καταγραφή των επιπέδων έντασης ήχου (μόνο V2)
+\--- /task ---
 
-Το V2 micro:bit διαθέτει ενσωματωμένο καταγραφικό δεδομένων, το οποίο σου επιτρέπει να παρακολουθείς δεδομένα από διάφορους αισθητήρες και εισόδους. Θα χρειαστεί να εγκαταστήσεις μια επέκταση για να το χρησιμοποιήσεις.
+### Log the sound levels (V2 only)
 
---- task ---
+The V2 micro:bit has a built-in data logger, which enables you to track data from various sensors and inputs. You will need to install an extension to use this.
 
-Στον πίνακα μενού, κάνε κλικ στο **Επεκτάσεις**. Θα ανοίξει ένα παράθυρο που δείχνει τις προτεινόμενες επεκτάσεις. Κάνε κλικ στο **data logger** και θα εγκατασταθεί ως στοιχείο μενού.
+\--- task ---
 
-![Η επέκταση data logger εγκαθίσταται κάνοντας κλικ στο μενού επεκτάσεων και, στη συνέχεια, στο «data logger». Εμφανίζεται ένα νέο μενού μπλοκ με την ένδειξη «Data Logger».](images/installing-datalogger.gif)
+On the menu panel, click on **Extensions**. Another window will open showing recommended extensions. Click on the **data logger** and it will be installed as a menu item.
 
---- /task ---
+![The data logger extension being installed by clicking the extensions menu and then 'data logger'. A new block menu appears labelled 'Data Logger'.](images/installing-datalogger.gif)
 
---- task ---
+\--- /task ---
 
-Από το μενού `Data Logger`{:class="microbitdatalogger"}, σύρε ένα μπλοκ `log data`{:class="microbitdatalogger"}.
+\--- task ---
 
-<img src="images/data-logger.png" alt="Το μενού Data Logger με τονισμένο το μπλοκ 'log data column...value'." width="350" />
+From the `Data Logger`{:class="microbitdatalogger"} menu, drag a `log data`{:class="microbitdatalogger"} block.
 
-Τοποθέτησέ το κάτω από το μπλοκ`plot bar graph of`{:class='microbitled'}.
+<img src="images/data-logger.png" alt="The Data Logger menu with the 'log data column...value' block highlighted." width="350"/>
+
+Place it below the `plot bar graph of`{:class='microbitled'} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -161,11 +161,11 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Πληκτρολόγησε `Επίπεδο έντασης ήχου` στο πεδίο στήλης.
+Type `Sound level` in the column field.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -177,11 +177,11 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα ακόμη μπλοκ `sound level`{:class="microbitinput"} και τοποθέτησέ το μέσα στο `0` στο μπλοκ `log data`{:class="microbitdatalogger "}.
+From the `Input`{:class="microbitinput"} menu, drag another `sound level`{:class="microbitinput"} block and place it inside the `0` on the `log data`{:class="microbitdatalogger"} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -193,20 +193,20 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Δοκίμασε το έργο σου
+### Test your program
 
-Όταν κάνεις μια αλλαγή σε ένα μπλοκ στο πρόγραμμα επεξεργασίας κώδικα, ο προσομοιωτής θα επανεκκινήσει.
+When you make a change to a code block in the code editor panel, the simulator will restart.
 
-**Δοκίμασε το έργο σου**
+**Test your program**
 
-+ Σύρε την κόκκινη γραμμή στάθμης έντασης ήχου πάνω και κάτω για να αλλάξεις τα επίπεδα έντασης ήχου.
+- Drag the red sound level bar up and down to change the sound levels.
 
-**Μόνο για το V2**
+**V2 only**
 
-+ Κάνε κλικ στο σύνδεσμο «**Show data** προσομοιωτή» κάτω από τον προσομοιωτή micro:bit για να δεις τα επίπεδα έντασης ήχου που καταγράφονται.
+- Click The '**Show data** Simulator' link below the micro:bit simulator to see the sound levels being logged.
 
-![Animation showing the microphone bar on the micro:bit simulator being dragged up and down to increase and reduce the sound. Το κουμπί "Show data" γίνεται κλικ για να εμφανίσει τα δεδομένα που καταγράφονται.](images/mic-test.gif)
+![Animation showing the microphone bar on the micro:bit simulator being dragged up and down to increase and reduce the sound. The 'Show data' button is clicked to show the data being logged.](images/mic-test.gif)
 
-Εκπληκτική δουλειά! Έχεις δημιουργήσει το πρώτο σου πρόγραμμα εμφάνισης δεδομένων σε micro:bit!
+Awesome work! You have created your first data display program on a micro:bit!
