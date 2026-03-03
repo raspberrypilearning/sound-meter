@@ -7,26 +7,26 @@ legend: Pregunta 3 de 3
 Aqui esta el codigo para programar los bloques `al presionar el boton A` y `al presionar el boton B`.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
-    if (level < 1) {
-        level = 5
-        maximum = 250
+    nivel += -1
+    maximo += -50
+    if (nivel < 1) {
+        nivel = 5
+        maximo = 250
     }
-    basic.showNumber(level)
+    basic.showNumber(nivel)
     basic.pause(500)
 })
 input.onButtonPressed(Button.B, function () {
-    level += 1
-    maximum += 50
-    if (level < 5) {
-        level = 5
-        maximum = 250
+    nivel += 1
+    maximo += 50
+    if (nivel < 5) {
+        nivel = 5
+        maximo = 250
     }
-    basic.showNumber(level)
+    basic.showNumber(nivel)
     basic.pause(500)
 })
 ```

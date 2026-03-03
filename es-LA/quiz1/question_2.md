@@ -15,7 +15,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
 })
 ```
 

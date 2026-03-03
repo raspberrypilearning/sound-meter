@@ -40,7 +40,7 @@ Desde el menu `Variables`{:class="microbitvariables"}, obten el bloque `Establec
 Coloca el bloque dentro del bloque `al iniciar`{:class="microbitbasic"}, y cambia el `0` a `150`.
 
 ```microbit
-let maximum = 150
+let maximo = 150
 ```
 
 --- /task ---
@@ -92,8 +92,8 @@ Obten un bloque `Falso`{:class="microbitlogic"}.
 Coloca este bloque encima del `0`.
 
 ```microbit
-let maximum = 150
-let alarm = false
+let maximo = 150
+let alarma = false
 ```
 
 --- /task ---
@@ -120,7 +120,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
     if (true) {
 
     }
@@ -143,7 +143,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
     if (false && false) {
 
     }
@@ -180,13 +180,13 @@ Tu codigo deberia de verse asi:
 
 ```microbit
 loops.everyInterval(500, function () {
-    let maximum = 0
+    let maximo = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
-    if (input.soundLevel() > maximum && false) {
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
+    if (input.soundLevel() > maximo && false) {
 
     }
 })
@@ -210,12 +210,12 @@ Tu codigo deberia de verse asi:
 
 ```microbit
 loops.everyInterval(500, function () {
-    let maximum = 0
+    let maximo = 0
     led.plotBarGraph(
     input.lightLevel(),
     255
     )
-    if (input.lightLevel() > maximum && false) {
+    if (input.lightLevel() > maximo && false) {
 
     }
 })
@@ -225,7 +225,7 @@ loops.everyInterval(500, function () {
 
 --- /task ---
 
-Solo necesitas apagar la alarma si la variable `alarma`{:class="microbitvariables"} **no** esta configuradado como`verdadero`{:class="microbitlogic"}.
+Solo necesitas apagar la alarma si la variable `alarma`{:class="microbitvariables"} **no** esta configuradado como `verdadero`{:class="microbitlogic"}.
 
 --- task ---
 
@@ -235,13 +235,13 @@ Colocalo en el otro lado del bloque `y`{:class='microbitlogic'}.
 
 ```microbit
 loops.everyInterval(500, function () {
-    let maximum = 0
+    let maximo = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
-    if (input.soundLevel() > maximum && !(false)) {
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
+    if (input.soundLevel() > maximo && !(false)) {
 
     }
 })
@@ -255,14 +255,14 @@ Coloca el bloque de la variable `alarma`{:class='microbitvariables'} en el bloqu
 
 ```microbit
 loops.everyInterval(500, function () {
-    let alarm = 0
-    let maximum = 0
+    let alarma = 0
+    let maximo = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
-    if (input.soundLevel() > maximum && !(alarm)) {
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
+    if (input.soundLevel() > maximo && !(alarma)) {
 
     }
 })
@@ -284,14 +284,14 @@ Colocalo dentro del bloque `si`{:class='microbitlogic'} que verifica si la alarm
 
 ```microbit
 loops.everyInterval(500, function () {
-    let alarm = 0
-    let maximum = 0
+    let alarma = 0
+    let maximo = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
-    if (input.soundLevel() > maximum && !(alarm)) {
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
+    if (input.soundLevel() > maximo && !(alarma)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
     }
 })
@@ -315,14 +315,14 @@ Colocalo dentro del bloque `si`{:class='microbitlogic'} que verifica si la alrma
 
 ```microbit
 loops.everyInterval(500, function () {
-    let alarm = 0
-    let maximum = 0
+    let alarma = 0
+    let maximo = 0
     led.plotBarGraph(
     input.lightLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Light level", input.lightLevel()))
-    if (input.lightLevel() > maximum && !(alarm)) {
+    datalogger.log(datalogger.createCV("Nivel de luz", input.lightLevel()))
+    if (input.lightLevel() > maximo && !(alarma)) {
         basic.showIcon(IconNames.Sad)
     }
 })
@@ -349,17 +349,17 @@ Coloca el bloque duplicado debajo del bloque `reproducir`{:class='microbitmusic'
 Cambia el `falso`{:class='microbitlogic'} a `verdadero`{:class='microbitlogic'}.
 
 ```microbit
-let alarm = false
+let alarma = false
 loops.everyInterval(500, function () {
-    let maximum = 0
+    let maximo = 0
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
-    if (input.soundLevel() > maximum && !(alarm)) {
+    datalogger.log(datalogger.createCV("Nivel de sonido", input.soundLevel()))
+    if (input.soundLevel() > maximo && !(alarma)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
-        alarm = true
+        alarma = true
     }
 })
 ```
@@ -383,9 +383,9 @@ Desde el menu `Entrada`{:class='microbitinput'}, arrastra el bloque `al pulsar e
 Desde el bloque `al iniciar`{:class='microbitbasic'}, duplica el bloque `establecer alarma`{:class='microbitvariables'}y colocalo dentro del bloque `al pulsar el logotipo`{:class='microbitinput'}.
 
 ```microbit
-let alarm = false
+let alarma = false
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    alarm = false
+    alarma = false
 })
 ```
 
@@ -406,9 +406,9 @@ Utiliza el menu desplegable para cambiar el boton`A+B`{:class='microbitinput'}.
 Desde el bloque `al iniciar`{:class='microbitbasic'}, duplica el bloque `establecer alarma`{:class='microbitvariables'} y colocalo dentro del bloque `al presionar el boton`{:class='microbitinput'}.
 
 ```microbit
-let alarm = false
+let alarma = false
 input.onButtonPressed(Button.AB, function () {
-    alarm = false
+    alarma = false
 })
 ```
 

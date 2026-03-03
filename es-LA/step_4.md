@@ -42,9 +42,9 @@ Arrastra el bloque `cambiar`{:class='microbitvariables'} y colocalo dentro del b
 Cambia el `1` a `-1`.
 
 ```microbit
-let level = 0
+let nivel = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
+    nivel += -1
 })
 ```
 
@@ -54,7 +54,7 @@ input.onButtonPressed(Button.A, function () {
 
 Desde el menu `Variables`{:class='microbitvariables'}, arrasttra otro bloque `cambiar`{:class='microbitvariables'}.
 
-Colocalo **debajo** del bloque`cambiar nivel en -1`{:class='microbitvariables'}.
+Colocalo **debajo** del bloque `cambiar nivel en -1`{:class='microbitvariables'}.
 
 Cambia la variable `nivel` mostrada en el bloque a `maximo` haciendo click en el nombre de la variable.
 
@@ -63,11 +63,11 @@ Cambia el `1` a `-50`.
 <img src="images/change-variable.gif" alt="La animacion muestra el menu desplegable en el bloque de la variable 'cambiar maximo en 1'." width="300" />
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
+    nivel += -1
+    maximo += -50
 })
 ```
 
@@ -84,11 +84,11 @@ Desde el menu `Logica`{:class='microbitlogic'}, arrastra un bloque `si`{:class='
 Colocalo debjo del bloque `cambiar maximo en -50`{:class='microbitvariables'} block.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
+    nivel += -1
+    maximo += -50
     if (true) {
 
     }
@@ -104,11 +104,11 @@ Desde el menu `Logica`{:class='microbitlogic'}, arrasttra el bloque de comparaci
 Colocalo dentro del espacio de `Verdadero` en el bloque `si`{:class='microbitlogic'}.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
+    nivel += -1
+    maximo += -50
     if (0 < 0) {
 
     }
@@ -124,12 +124,12 @@ Desde el menu `Variables`{:class='microbitvariables'}, arrastra el bloque `nivel
 Colocalo encima del primer `0` del bloque de comparacion `0 < 0`{:class='microbitlogic'}.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
-    if (level < 0) {
+    nivel += -1
+    maximo += -50
+    if (nivel < 0) {
 
     }
 })
@@ -152,13 +152,13 @@ Colocalo dentro del bloque `si`{:class='microbitlogic'}. Asegurate que la variab
 Cambia el `0` a `5` en el bloque `establecer nivel a 0`{:class='microbitvariables'}.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
-    if (level < 1) {
-        level = 5
+    nivel += -1
+    maximo += -50
+    if (nivel < 1) {
+        nivel = 5
     }
 })
 ```
@@ -174,14 +174,14 @@ Colocalo debajo del bloque `establecer nivel en 5`{:class='microbitvariables'}.
 Cambia el `0` a `250`.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
-    if (level < 1) {
-        level = 5
-        maximum = 250
+    nivel += -1
+    maximo += -50
+    if (nivel < 1) {
+        nivel = 5
+        maximo = 250
     }
 })
 ```
@@ -195,14 +195,14 @@ Desde el menu `Basico`{:class='microbitbasic'}, arrastra el bloque `mostrar nume
 Colocalo **debajo** del bloque `si`{:class='microbitlogic'}.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
-    if (level < 1) {
-        level = 5
-        maximum = 250
+    nivel += -1
+    maximo += -50
+    if (nivel < 1) {
+        nivel = 5
+        maximo = 250
     }
     basic.showNumber(0)
 })
@@ -217,16 +217,16 @@ Desde el menu `Variables`{:class='microbitvariables'}, arrastra el bloque `nivel
 Colocalo en el `0` del bloque `mostrar numero`{:class='microbitbasic'}.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
-    if (level < 1) {
-        level = 5
-        maximum = 250
+    nivel += -1
+    maximo += -50
+    if (nivel < 1) {
+        nivel = 5
+        maximo = 250
     }
-    basic.showNumber(level)
+    basic.showNumber(nivel)
 })
 ```
 
@@ -241,16 +241,16 @@ Colocalo debajo del bloque `mostrar numero`{:class='microbitbasic'}.
 Cambia el `100` a `500`.
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.A, function () {
-    level += -1
-    maximum += -50
-    if (level < 1) {
-        level = 5
-        maximum = 250
+    nivel += -1
+    maximo += -50
+    if (nivel < 1) {
+        nivel = 5
+        maximo = 250
     }
-    basic.showNumber(level)
+    basic.showNumber(nivel)
     basic.pause(500)
 })
 ```
@@ -308,16 +308,16 @@ Dentro del bloque `si`{:class='microbitlogic'}:
 - Cambia el `250` a `50` en el bloque `establecer maximo en 50`{:class='microbitvariables'}
 
 ```microbit
-let level = 0
-let maximum = 0
+let nivel = 0
+let maximo = 0
 input.onButtonPressed(Button.B, function () {
-    level += 1
-    maximum += 50
-    if (level > 5) {
-        level = 1
-        maximum = 50
+    nivel += 1
+    maximo += 50
+    if (nivel > 5) {
+        nivel = 1
+        maximo = 50
     }
-    basic.showNumber(level)
+    basic.showNumber(nivel)
     basic.pause(500)
 })
 ```
@@ -343,9 +343,9 @@ Haz click en el nombre de la variable `maximo` y cambialo a `nivel`.
 Cambia el `0` a `3` en el bloque `establecer nivel`{:class='microbitvariables'}.
 
 ```microbit
-let maximum = 150
-let alarm = false
-let level = 3
+let maximo = 150
+let alarma = false
+let nivel = 3
 ```
 
 --- /task ---
