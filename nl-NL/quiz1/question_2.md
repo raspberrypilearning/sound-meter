@@ -1,13 +1,12 @@
-
---- question ---
+\--- question ---
 
 ---
-legend: Vraag 2 van 3
----
 
-Dit codeblok toont een `elke 500 ms` lusblok.
+## legend: Question 2 of 3
 
-Wat is een lus?
+This block of code shows a `every 500 ms` loop block.
+
+What is a loop?
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -19,32 +18,32 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- choices ---
+\--- choices ---
 
-- (x) Een reeks instructies die constant wordt herhaald of totdat een bepaalde voorwaarde is bereikt.
+- (x) A sequence of instructions that is repeated constantly or until a certain condition is reached.
 
-  --- feedback ---
+  \--- feedback ---
 
-Goed gedaan! Lussen zijn een concept dat in alle programmeertalen wordt gebruikt. Lussen herhalen constant of totdat een voorwaarde is bereikt.
+Fantastic work! Loops are a concept used across all programming languages. Loops repeat constantly or until a condition is reached.
 
-  --- /feedback ---
+\--- /feedback ---
 
-- ( ) Een voorwaarde die bepaalt wat er in een logisch blok gebeurt.
+- ( ) A condition that controls what happens in a logic block.
 
-  --- feedback ---
+  \--- feedback ---
 
-  Niet helemaal. Een voorwaarde kan worden gebruikt om een variabele waarde met iets anders te vergelijken. De voorwaarde herhaalt niet.
+  Not quite. A condition can be used to compare a variable value with something else. The condition does not loop.
 
-  --- /feedback ---
+  \--- /feedback ---
 
-- ( ) Een reeks van instructies die een specifieke taak uitvoert.
+- ( ) A sequence of instructions that performs a specific task.
 
-  --- feedback ---
+  \--- feedback ---
 
-  Niet helemaal. Een reeks instructies voor een specifieke taak heet een `functie`.
+  Not quite. A sequence of instructions for a specific task is called a `function`.
 
-  --- /feedback ---
+  \--- /feedback ---
 
---- /choices ---
+\--- /choices ---
 
---- /question ---
+\--- /question ---
