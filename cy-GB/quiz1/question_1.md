@@ -1,45 +1,45 @@
-## Myfyrio
+## Reflection
 
-Ateba'r tri chwestiwn. Mae yna awgrymiadau i dy helpu i gael yr ateb cywir.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Atebwch y tri chwestiwn isod i fyfyrio ar yr hyn rydych chi wedi'i ddysgu.
+When you have answered each question, click on **Check my answer**.
 
-Ar ôl bob cwestiwn, pwyswch **cyflwyno**. Byddi di'n cael dy dywys i'r ateb cywir. Galli di wneud hyn gymaint ag y mynni.
+Have fun!
 
---- question ---
+\--- question ---
 
 ---
-legend: Cwestiwn 1 o 3
----
+
+## legend: Question 1 of 3
 
 Which menu contains the blocks for `on button A pressed`{:class='microbitinput'} and `on logo pressed`{:class='microbitinput'}?
 
---- choices ---
+\--- choices ---
 
 - ( ) Basic
 
-  --- feedback ---
+  \--- feedback ---
 
-Ddim cweit! The Basic menu contains blocks for the basic functionality of the micro:bit.
+Not quite! The Basic menu contains blocks for the basic functionality of the micro:bit.
 
-  --- /feedback ---
+\--- /feedback ---
 
 - (x) Input
 
-  --- feedback ---
+  \--- feedback ---
 
 Awesome! You have answered correctly, the Input menu contains all the input and gesture blocks.
 
-  --- /feedback ---
+\--- /feedback ---
 
 - ( ) Logic
 
-  --- feedback ---
+  \--- feedback ---
 
-Ddim cweit! The Logic menu contains blocks for conditional and Boolean logic.
+Not quite! The Logic menu contains blocks for conditional and Boolean logic.
 
-  --- /feedback ---
+\--- /feedback ---
 
---- /choices ---
+\--- /choices ---
 
---- /question ---
+\--- /question ---
