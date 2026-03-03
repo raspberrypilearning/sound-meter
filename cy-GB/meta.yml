@@ -7,26 +7,20 @@ listed: true
 copyedit: true
 last_tested: '2023-08-15'
 steps:
-  - 
-    title: Cyflwyniad
-  - 
-    title: Level meter
-    completion:
-      - engaged
-  - 
-    title: Sound the alarm!
-  - 
-    title: Change the sensitivity
-    completion:
-      - internal
-  - 
-    title: Effeithiau llwyfan
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
-    completion:
+- title: You will make
+- title: Level meter
+  completion:
+    - engaged
+- title: Sound the alarm!
+- title: Change the sensitivity
+  completion:
+    - internal
+- title: Quick quiz
+  knowledge_quiz:
+    path: quiz1
+    version: 1
+    questions: 3
+    passing_score: 3
+  completion:
       - external
-  - 
-    title: Myfyrio
+- title: Upgrade your project
