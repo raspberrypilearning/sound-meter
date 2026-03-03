@@ -1,118 +1,118 @@
-## Σήμανση συναγερμού
+## Sound the alarm
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Σε αυτό το βήμα, θα προσθέσεις έναν συναγερμό που ενεργοποιείται όταν η στάθμη του ήχου είναι πολύ υψηλή. Για να εμποδίσεις τον συναγερμό να προκαλεί κι αυτός θόρυβο, να βεβαιωθείς ότι θα χτυπήσει μόνο μία φορά και ότι μπορεί να επανέλθει στην αρχική κατάσταση όποτε θέλεις. 
+In this step, you will add an alarm that triggers when the sound level get too high. To stop the alarm adding to the noise, you will make sure it only goes off once and can be reset whenever you want. 
 </div>
 <div>
 
-![Ο κώδικας για την ενεργοποίηση του συναγερμού. Μέσα σε ένα μπλοκ «'every 500 m», η στάθμη έντασης του ήχου απεικονίζεται στα LED. Στη συνέχεια, μια δήλωση εάν, χρησιμοποιείται για να ελέγξει εάν η στάθμη ήχου υπερβαίνει το μέγιστο και εάν η μεταβλητή συναγερμού έχει οριστεί σε ψευδές. Μέσα στο μπλοκ εάν, αναπαράγεται ένας ήχος και η μεταβλητή συναγερμού έχει οριστεί σε "αληθές".](images/alarm-code-demo.png){:width="300px"}
+![The code to trigger the alarm. Inside an 'every 500 ms' block, the sound level is plotted on the LEDs. Afterwards, an if statement is used to check if the sound level exceeds the maximum and whether the alarm variable is set to false. Inside the if block, a sound is played and the alarm variable is set to 'true'.](images/alarm-code-demo.png){:width="300px"}
 
 </div>
 </div>
 
-### Ορισμός του μέγιστου
+### Set the maximum
 
-Θα χρειαστεί να δημιουργήσεις μια μεταβλητή για να αποθηκεύσεις το επίπεδο έντασης ήχου που θα ενεργοποιήσει τον συναγερμό.
+You will need to make a variable to hold the sound level that will trigger the alarm.
 
---- task ---
+\--- task ---
 
-Άνοιξε το μενού `Μεταβλητές`{:class="microbitvariables"} και κάνε κλικ στο κουμπί **Δημιουργία μεταβλητής**.
+Open the `Variables`{:class="microbitvariables"} menu and click **Make a Variable**.
 
-<img src="images/variable-menu.png" alt="Το μενού μπλοκ Μεταβλητές με τονισμένο το κουμπί &quot;Δημιουργία Μεταβλητής&quot;." width="350" />
+<img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a Variable' button highlighted." width="350"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Ονόμασε τη νέα σου μεταβλητή `μέγιστο`.
+Name your new variable `maximum`.
 
-<img src="images/max-variable-name.png" alt="Το παράθυρο &quot;Όνομα νέας μεταβλητής&quot;, με το όνομα &quot;μέγιστο&quot; γραμμένο στο πλαίσιο." width="400" />
+<img src="images/max-variable-name.png" alt="The 'New variable name' window with the name 'maximum' written in the box." width="400"/>
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Από το μενού `Μεταβλητές`{:class="microbitvariables"}, πάρε ένα μπλοκ `ορισμός μέγιστο`{:class="microbitvariables"}.
+From the `Variables`{:class="microbitvariables"} menu, get the `set maximum`{:class="microbitvariables"} block.
 
-<img src="images/set-max-start.png" alt="Το μενού Μεταβλητές με τονισμένο το μπλοκ «ορισμός μέγιστο σε 0»." width="350" />
+<img src="images/set-max-start.png" alt="The Variables menu with the 'set maximum to 0' block highlighted." width="350"/>
 
-Τοποθέτησε το μπλοκ μέσα στο μπλοκ `κατά την έναρξη`{:class="microbitbasic"} και άλλαξε το `0` σε `150`.
+Place the block inside the `on start`{:class="microbitbasic"} block, and change the `0` to `150`.
 
 ```microbit
 let maximum = 150
 ```
 
---- /task ---
+\--- /task ---
 
-Η τιμή `150` είναι λίγο παραπάνω από το μισό της μέγιστης στάθμης ήχου που μπορεί να ανιχνεύσει το micro:bit, οπότε πρόκειται για ένα καλό επίπεδο για αρχή.
+The value `150` is a little more than half the maximum sound level the micro:bit can sense, so that should be a good level to start with.
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Για το micro:bit V1
----
 
-Αυτή η μέγιστη τιμή λειτουργεί και για επίπεδα φωτός!
+## title: For micro:bit V1
 
---- /collapse ---
+This maximum value works for light levels, too!
 
-### Απενεργοποίηση συναγερμού
+\--- /collapse ---
 
-Χρειάζεται επίσης να βεβαιωθείς ότι ο θόρυβος του συναγερμού δεν προσθέτει στο ήδη θορυβώδες περιβάλλον!
+### Turn the alarm off
 
-Για να το κάνεις αυτό, θα χρησιμοποιήσεις μια άλλη μεταβλητή που θα οριστεί σε `ψευδές` για να ξεκινήσει και θα αλλάξει σε `αληθές` όταν σημάνει ο συναγερμός.
+You also want to make sure the alarm noise does not add to the already noisy environment!
 
---- task ---
+To do this, you will use another variable that will be set to `false` to start, and it will change to `true` when the alarm sounds.
 
-Δημιούργησε μια άλλη νέα `μεταβλητή`{:class="microbitvariables"}, που αυτή τη φορά ονομάζεται `συναγερμός`.
+\--- task ---
 
-<img src="images/alarm-variable-name.png" alt="Το παράθυρο &quot;Όνομα νέας μεταβλητής&quot;, με το όνομα &quot;συναγερμός&quot; γραμμένο στο πλαίσιο." width="350" />
+Create another new `Variable`{:class="microbitvariables"}, this time called `alarm`.
 
---- /task ---
+<img src="images/alarm-variable-name.png" alt="The 'New variable name' window with the name 'alarm' written in the box." width="350"/>
 
---- task ---
+\--- /task ---
 
-Σύρε το μπλοκ `ορισμός συναγερμός`{:class="microbitvariables"} από το μενού `Μεταβλητές`{:class="microbitvariables"}.
+\--- task ---
 
-Τοποθέτησέ το μέσα στο μπλοκ `κατά την αρχή`{:class="microbitbasic"}.
+Drag the `set alarm`{:class="microbitvariables"} block from the `Variables`{:class="microbitvariables"} menu.
 
---- /task ---
+Place it inside the `on start`{:class="microbitbasic"} block.
 
-Πρέπει να ορίσεις αυτή τη νέα μεταβλητή σε `ψευδές` αντί για αριθμό.
+\--- /task ---
 
---- task ---
+You need to set this new variable to `false` instead of a number.
 
-Άνοιξε το μενού `Λογική`{:class="microbitlogic"}.
+\--- task ---
 
-Πάρε ένα μπλοκ `ψευδές`{:class="microbitlogic"}.
+Open the `Logic`{:class="microbitlogic"} menu.
 
-<img src="images/false-block-location.png" alt="Το κάτω μέρος του μενού Λογική, που δείχνει τη θέση του μπλοκ ψευδές στην ενότητα 'Δυαδικές τιμές'." width="200" />
+Get a `false`{:class="microbitlogic"} block.
 
-Τοποθέτησε αυτό το μπλοκ πάνω στο `0`.
+<img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section." width="200"/>
+
+Place this block over the top of the `0`.
 
 ```microbit
 let maximum = 150
 let alarm = false
 ```
 
---- /task ---
+\--- /task ---
 
-### Έλεγξε εάν πρέπει να σημάνει ο συναγερμός
+### Check if the alarm should sound
 
-Ο συναγερμός πρέπει να σημάνει μόνο **εάν:**
+The alarm should only sound **if:**
 
-+ Το επίπεδο έντασης ήχου είναι **μεγαλύτερο** από το μέγιστο   
-  **ΚΑΙ**
-+ Η μεταβλητή συναγερμού δεν είναι **αληθές**
+- The sound level is **larger** than the maximum  
+  **AND**
+- The alarm variable is **not true**
 
---- task ---
+\--- task ---
 
-Από το μενού `Λογική`{:class="microbitlogic"} σύρε το μπλοκ `εάν...αλλιώς`{:class="microbitlogic"}.
+From the `Logic`{:class="microbitlogic"} menu, get an `if...then`{:class="microbitlogic"} block.
 
-<img src="images/if-block-location.png" alt="Το μενού Λογική με τονισμένο ένα μπλοκ «εάν»." width="350" />
+<img src="images/if-block-location.png" alt="The Logic menu with an 'if' block highlighted." width="350"/>
 
-Τοποθέτησε το μπλοκ μέσα στο βρόχο `every`{:class="microbitloops"} κάτω από το μπλοκ `log data`{:class="microbitdatalogger"}.
+Place the block inside the `every`{:class="microbitloops"} loop underneath the `log data`{:class="microbitdatalogger"} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -122,20 +122,20 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (true) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Άνοιξε ξανά το μενού `Λογική`{:class="microbitlogic"} και πάρε ένα μπλοκ `and`{:class="microbitlogic"}.
+Open the `Logic`{:class="microbitlogic"} menu again and take an `and`{:class="microbitlogic"} block.
 
-<img src="images/and-block-location.png" alt="Το κάτω μέρος του μενού Λογική, που δείχνει τη θέση του μπλοκ 'and' στην ενότητα 'Δυαδικές τιμές'." width="200" />
+<img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'and' block in the 'Boolean' section." width="200"/>
 
-Τοποθετησέ το στο τμήμα `αληθές` του μπλοκ `εάν...αλλιώς`{:class="microbitlogic"}.
+Place it in the `true` section of the `if...then`{:class="microbitlogic"} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -145,38 +145,38 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (false && false) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
-Τώρα πρέπει να προσθέσεις τις **δύο** συνθήκες σε κάθε πλευρά του **and**.
+Now you need to add the **two** conditions either side of the **and**.
 
---- task ---
+\--- task ---
 
-Και πάλι στο μενού `Λογική`{:class="microbitlogic"}, πάρε ένα μπλοκ συνθηκών `0 < 0`{:class="microbitlogic"}.
+Again in the `Logic`{:class="microbitlogic"} menu, get a `0 < 0`{:class="microbitlogic"} condition block.
 
-Τοποθέτησέ το στη μία πλευρά του μπλοκ `and`{:class="microbitlogic"}.
+Place it on one side of the `and`{:class="microbitlogic"} block.
 
-Χρησιμοποίησε το αναπτυσσόμενο μενού για να αλλάξεις το σύμβολο μικρότερο από (`<`) σε μεγαλύτερο από (`>`).
+Use the drop-down menu to change the less than symbol (`<`) to a greater than (`>`) symbol.
 
-![Μια επίδειξη στην οποία γίνειται κλικ στο αναπτυσσόμενο μενού και αλλάζει το σύμβολο 'μικρότερο από' σε σύμβολο 'μεγαλύτερο από' στη συνθήκη.](images/changing-condition.gif)
+![A demo of clicking the drop-down menu and changing the less than symbol to a greater than symbol in the condition.](images/changing-condition.gif)
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα μπλοκ `sound level`{:class="microbitinput"}.
+From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
 
-Τοποθέτησέ το στο πρώτο `0` από το μπλοκ `0 > 0`{:class="microbitlogic"}
+Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block
 
-Από το μενού `Μεταβλητές`{:class="microbitvariables"}, σύρε ένα μπλοκ `μέγιστο`{:class="microbitvariables"}.
+From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
 
-Τοποθέτησέ το στο δεύτερο `0` από το μπλοκ `0 > 0`{:class="microbitlogic"}.
+Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
 
-Ο κώδικας θα πρέπει να μοιάζει κάπως έτσι:
+Your code should look like this:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -187,26 +187,26 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
     if (input.soundLevel() > maximum && false) {
-
+    	
     }
 })
 ```
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Για το micro:bit V1
----
 
-Από το μενού `Είσοδος`{:class="microbitinput"}, σύρε ένα μπλοκ `light level`{:class="microbitinput"}.
+## title: For micro:bit V1
 
-Τοποθέτησέ το στο πρώτο `0` από το μπλοκ `0 > 0`{:class="microbitlogic"}.
+From the `Input`{:class="microbitinput"} menu, drag a `light level`{:class="microbitinput"} block.
 
-Από το μενού `Μεταβλητές`{:class="microbitvariables"}, σύρε ένα μπλοκ `μέγιστο`{:class="microbitvariables"}.
+Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block.
 
-Τοποθέτησέ το στο δεύτερο `0` από το μπλοκ `0 > 0`{:class="microbitlogic"}.
+From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
 
-Ο κώδικας θα πρέπει να μοιάζει κάπως έτσι:
+Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
+
+Your code should look like this:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -216,22 +216,22 @@ loops.everyInterval(500, function () {
     255
     )
     if (input.lightLevel() > maximum && false) {
-
+    	
     }
 })
 ```
 
---- /collapse ---
+\--- /collapse ---
 
---- /task ---
+\--- /task ---
 
-Αυτό που χρειάζεται είναι να απενεργοποιήσεις τον συναγερμό μόνο εάν η μεταβλητή `συναγερμός`{:class="microbitvariables"} είναι **όχι** ορισμένη ως `αληθές`{:class="microbitlogic"}.
+You only want to set the alarm off if the `alarm`{:class="microbitvariables"} variable is **not** set `true`{:class="microbitlogic"}.
 
---- task ---
+\--- task ---
 
-Πάρε ένα μπλοκ `όχι`{:class='microbitlogic'} από το μενού `Λογική`{:class='microbitlogic'}.
+Get a `not`{:class='microbitlogic'} block from the `Logic`{:class='microbitlogic'} menu.
 
-Τοποθέτησέ το στην άλλη πλευρά του μπλοκ `and`{:class='microbitlogic'}.
+Place it on the other side of the `and`{:class='microbitlogic'} block.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -242,16 +242,16 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(false)) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Τοποθέτησε ένα μπλοκ μεταβλητής `συναγερμός`{:class='microbitvariables'} στο `όχι`{:class='microbitlogic'} ως εξής:
+Place an `alarm`{:class='microbitvariables'} variable block in the `not`{:class='microbitlogic'} block like this:
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -263,24 +263,24 @@ loops.everyInterval(500, function () {
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && !(alarm)) {
-
+    	
     }
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Σήμανση συναγερμού
+### Sound the alarm
 
-Τώρα ήρθε η ώρα να προσθέσεις τον ήχο του συναγερμού!
+Now it's time to add your alarm sound!
 
---- task ---
+\--- task ---
 
-Από το μενού `Μουσική`{:class='microbitmusic'}, σύρε ένα μπλοκ `play`{:class='microbitmusic'}.
+From the `Music`{:class='microbitmusic'} menu, take a `play`{:class='microbitmusic'} block.
 
-<img src="images/play-block-location-v2.png" alt="Η ενότητα «micro:bit v2» του μενού Μουσική, με το μπλοκ «play» τονισμένο στην κορυφή της ενότητας." width="250" />
+<img src="images/play-block-location-v2.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
 
-Τοποθέτησέ το μέσα στο μπλοκ `εάν`{:class='microbitlogic'} που ελέγχει εάν θα ηχήσει ο συναγερμός.
+Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -297,21 +297,21 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Για το micro:bit V1
----
 
-Το micro:bit V1 δεν έχει ηχείο, επομένως πρέπει να προσαρμόσεις το πρόγραμμα για το συναγερμό.
+## title: For micro:bit V1
 
-Αντί για συναγερμό που χρησιμοποιεί ήχο, μπορείς να εμφανίσεις ένα εικονίδιο στα LED όταν το επίπεδο φωτός είναι υψηλότερο από το μέγιστο.
+The micro:bit V1 has no speaker, so you have to adapt the program for the alarm.
 
-Από το μενού `Βασικά`{:class='microbitbasic'}, πάρε ένα μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'}.
+Rather than an alarm that uses sound, you can display an icon on the LEDs when the light level is higher than the maximum.
 
-Τοποθέτησέ το μέσα στο μπλοκ `εάν`{:class='microbitlogic'} που ελέγχει εάν θα ηχήσει ο συναγερμός.
+From the `Basic`{:class='microbitbasic'} menu, get a `show icon`{:class='microbitbasic'} block.
 
-**Επίλεξε** ένα εικονίδιο που θα χρησιμοποιήσεις για τον συναγερμό σου.
+Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
+
+**Select** an icon to use for your alarm.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -328,25 +328,25 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /collapse ---
+\--- /collapse ---
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-**Επίλεξε** ποιο ήχο συναγερμού θέλεις να χρησιμοποιήσεις, από τους διαθέσιμους ήχους στο αναπτυσσόμενο μενού.
+**Choose** which alarm sound you would like to use, from the available sounds in the drop-down menu.
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
-Μέσα στο μπλοκ `κατά την έναρξη`{:class='microbitbasic'}, **κάνε δεξί κλικ** στο μπλοκ `ορισμός`{:class='microbitvariables'} και επίλεξε **Αντίγραφο**.
+Inside your `on start`{:class='microbitbasic'} block, **right-click** on the `set`{:class='microbitvariables'} block and select **Duplicate**.
 
-![Μια επίδειξη στην οποία γίνεται δεξί κλικ στο μπλοκ «ορισμός συναγερμός σε ψευδές» και στη συνέχεια αντιγραφή του.](images/duplicate-block.gif)
+![A demo of right clicking on the 'set alarm to false' block, and then duplicating it.](images/duplicate-block.gif)
 
-Τοποθέτησε το αντιγραμμένο μπλοκ κάτω από το μπλοκ `play`{:class='microbitmusic'}.
+Place the duplicated block below the `play`{:class='microbitmusic'} block.
 
-Άλλαξε το `ψευδές`{:class='microbitlogic'} σε `αληθές`{:class='microbitlogic'}.
+Change the `false`{:class='microbitlogic'} to `true`{:class='microbitlogic'}.
 
 ```microbit
 let alarm = false
@@ -364,23 +364,23 @@ loops.everyInterval(500, function () {
 })
 ```
 
---- /task ---
+\--- /task ---
 
-### Επαναφορά συναγερμού
+### Reset the alarm
 
-Όταν σημάνει ο συναγερμός, θα χρειαστεί να τον επαναφέρεις.
+When the alarm goes off, you will want to reset it.
 
-Μπορείς να χρησιμοποιήσεις το λογότυπο αφής στο micro:bit για να το κάνεις αυτό.
+You can use the touch logo on the micro:bit to do this.
 
-<img src="images/logo-location.png" alt="Το λογότυπο microbit." width="200" />
+<img src="images/logo-location.png" alt="The microbit logo." width="200"/>
 
---- task ---
+\--- task ---
 
-Από το μενού `Είσοδος`{:class='microbitinput'}, σύρε ένα μπλοκ `on logo`{:class='microbitinput'}.
+From the `Input`{:class='microbitinput'} menu, drag an `on logo`{:class='microbitinput'} block.
 
-<img src="images/onlogo-block-location.png" alt="Το λογότυπο στο επάνω μέρος του microbit πάνω από τα LED." width="200" />
+<img src="images/onlogo-block-location.png" alt="The logo on the top of the microbit above the LEDs." width="200"/>
 
-Από το μπλοκ `κατά την έναρξη`{:class='microbitbasic'}, αντίγραψε το μπλοκ `ορισμός συναγερμός`{:class='microbitvariables'} και τοποθέτησέ το μέσα στο μπλοκ `on logo`{:class='microbitinput'}.
+From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on logo`{:class='microbitinput'} block.
 
 ```microbit
 let alarm = false
@@ -389,21 +389,21 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 ```
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Για το micro:bit V1
----
 
-Δεν υπάρχει αισθητήρας αφής στο λογότυπο του micro:bit V1, επομένως μπορείς να χρησιμοποιήσεις ταυτόχρονα τα δύο κουμπιά `A` και `B`.
+## title: For micro:bit V1
 
-Από το μενού `Είσοδος`{:class='microbitinput'}, σύρε ένα μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'}.
+There is no touch sensor in the logo on the micro:bit V1, so instead you can use both the `A` and `B` buttons.
 
-<img src="images/on-button-location.png" alt="Το μενού Είσοδος με τονισμένο το μπλοκ &quot;όταν πιεστεί το πλήκτρο button A'&quot;." width="350" />
+From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
 
-Χρησιμοποίησε το αναπτυσσόμενο μενού για να αλλάξεις το κουμπί σε `A+B`{:class='microbitinput'}.
+<img src="images/on-button-location.png" alt="The Input menu with the 'on button A' block highlighted." width="350"/>
 
-Από το `κατά την έναρξη`{:class='microbitbasic'}, αντίγραψε το μπλοκ `ορισμός συναγερμός`{:class='microbitvariables'} και τοποθέτησέ το μέσα στο μπλοκ `όταν πιεστεί το πλήκτρο button`{:class='microbitinput'}.
+Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
+
+From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
 
 ```microbit
 let alarm = false
@@ -412,8 +412,8 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
---- /collapse ---
+\--- /collapse ---
 
---- /task ---
+\--- /task ---
 
-Στη συνέχεια θα χρησιμοποιήσεις το κουμπί `A` και το κουμπί `B` για να αλλάξεις την ευαισθησία του συναγερμού σου!
+Next you are going to use the `A` button and `B` button to change the sensitivity of your alarm!
