@@ -1,23 +1,24 @@
-## Mejora tu proyecto
+## Upgrade your project
 
-¡Fantastico esfuerzo! Has creado tu medidor de nivel de sonido para micro:bit. Aqui hay algunas ideas para mejorar tu proyecto y crear un medidor de nivel de sonido mas avanzado:
+Fantastic effort! You have created your micro:bit sound level meter. Here are some ideas to upgrade your project and create a more advanced sound level meter:
 
-+ Usa un sensor diferente - luz para V2 o temperatura para V1
-+ Muestra un icono para los niveles maximo/minimo de sonido
-+ Añade mas niveles a la sensibilidad
+- Use a different sensor - light for V2 or temperature for V1
+- Show an icon for maximum/minimum sound levels
+- Add more levels of sensitivity
 
-### Reproducir ▶️
+### Play ▶️
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-Haz click en el proyecto incorporado.
+Click on the embedded project.
 
-Arrastra el nivel de luz amarillo en el círculo hacia arriba y abajo, y mira lo que pasa con los LEDs. 
-Presiona el boton A o B para cambiar la sensibilidad:
- + ¿Cuantos niveles hay?
-+ ¿Que pasa en el minimo y maximo?
-Una vez que suene la alarma, haz click en el logotipo en la parte superior para reiniciarlo.
+Drag the yellow light level in the circle up and down, see what happens with the LEDs.
+Press the A or B buttons to change the sensitivity:
+
+- How many levels are there?
+- What happens on the minimum and maximum?
+  Once the alarm sounds, click the logo at the top to reset it.
 
 <div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S67714-27742-96763-52596" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
@@ -28,12 +29,12 @@ Una vez que suene la alarma, haz click en el logotipo en la parte superior para 
 
 [[[microbit-share]]]
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Proyecto completado
----
 
-Puedes ver [los proyectos completados aqui](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}.
+## title: Completed project
 
---- /collapse ---
+You can view the [completed project here](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}.
+
+\--- /collapse ---
