@@ -1,9 +1,9 @@
 maximum
 
-alarme
+alarm
 
-niveau sonore
+Sound Level
 
-niveau
+level
 
-activité
+activity
