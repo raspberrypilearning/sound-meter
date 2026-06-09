@@ -1,9 +1,9 @@
-maximum
+上限値
 
-alarm
+アラーム中
 
-Sound Level
+音の大きさ
 
-level
+感度レベル
 
-activity
+学習活動
