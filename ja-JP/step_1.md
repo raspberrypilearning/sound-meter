@@ -1,42 +1,42 @@
-## New to the micro:bit?
+## micro:bitは初めてですか？
 
-You can try out our amazing `Discover` projects:
+まずは以下の素晴らしい発見プロジェクトを試してみましょう：
 
-- [Hobby selector](https://projects.raspberrypi.org/en/projects/hobby-selector)
-- [Silly reminder](https://projects.raspberrypi.org/en/projects/silly-reminder)
+- [趣味決めルーレット](https://projects.raspberrypi.org/en/projects/hobby-selector)
+- [クスっとアラーム](https://projects.raspberrypi.org/en/projects/silly-reminder)
 
-## You will make
+## 作れるもの
 
-Do you sometimes get tired of our noisy lives and just want a bit of quiet time? 🤫
+「毎日の生活がさわがしくて、ちょっと静かに過ごしたいな……」と思うことはありませんか？ 🤫
 
-In this project, you will make a sound level meter that will use the micro:bit to display how noisy the environment is.
+このプロジェクトでは、micro:bitを使ってまわりの環境がどれくらい騒がしいかを表示する音量計を作ります。
 
-You will also create a way to let other people know that the noise level is too high, so they know to keep it quiet, even if just for a few minutes.
+また、騒がしくなりすぎたとき、まわりの人に知らせる仕組みも作り、数風だけでも、静かにするようにと伝えることができるようになります。
 
-This project will also show you how to save the sound level data to your micro:bit so you can find the noisiest times of the day.
+さらに、このプロジェクトでは音量データをmicro:bitに保存する方法も学び、1日の中で、どの時間が一番騒がしかったのかを分析することもできるようになります。
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"><span style="color: #0faeb0">Healthy sound levels</span> are an important part of our wellbeing. Peaceful and soothing sounds such as the sounds of nature or the ocean can help calm us down. However, being around louder noises such as loud music for too long can be bad for our ears. If things get too loud, it is good to take breaks, move away, or use ear protectors.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">私たちの健全な生活にとって、<span style="color: #0faeb0">適切な音量</span>で過ごすことはとても大切です。 自然の音や波の音のような、穏やかで癒やされる音は、心を落ち着かせてくれます。 しかし、大音量の音楽などを長い間聴き続けると、耳に悪影響を及ぼすことがあります。 まわりが騒がしすぎる場合は、休憩を取ったり、その場所から離たり、または耳を守るための防音保護具を使うとよいでしょう。
 </p>
 
-You will:
+このプロジェクトで学ぶこと：
 
-- Use the sound sensor (V2) or the light sensor (V1)
-- Combine conditions to create an alarm
-- Use the buttons to change the alarm sensitivity
-- Log sound data to analyse later
+- サウンドセンサー（V2）または光センサー（V1）の使い方
+- 条件を組み合わせてアラームを作ること
+- ボタンを使ってアラームの感度を変更すること
+- 後で分析するために音量データを記録すること
 
-### Play ▶️
+### 試してみよう ▶️
 
 \--- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-Click on the embedded project.
+埋め込まれているプロジェクトをクリックしてみましょう。
 
-- Drag the red sound level bar up and down, see what happens with the LEDs
-- Press the A or B buttons to change the sensitivity
-- When the alarm has sounded it won't activate again, but you can click the logo at the top to reset it
+- 赤い音量バーを上下に動かして、LEDの表示がどう変わるか確認してください
+- AボタンまたはBボタンを押すと、音量の感度が変わります
+- アラームは一度鳴るとそれ以上作動しなくなりますが、上部にあるロゴをクリックするとリセットできます
 
 <div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_h86K9q8Yb49s" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
