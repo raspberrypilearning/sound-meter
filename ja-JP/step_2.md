@@ -1,21 +1,21 @@
-## Log the sound level
+## 音量を記録しよう
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-You will create your MakeCode project and add code to measure the sound (or light) levels. You will display the current level on the LEDs for the user. 
+MakeCodeのプロジェクトを作成し、音（または光）の大きさを測定するコードを追加します。 現在のレベルをLED画面に表示して確認できるようにしましょう。 
 </div>
 <div>
-![The micro:bit simulator displaying a bar graph of the current sound level. The level is dragged up and down and the bar graph grows and shrinks with the sound level.](images/sound-level-demo.gif){:width="300px"}
+![現在の音量を棒グラフで表示しているmicro:bitシミュレーター。 音量バーを上下に動かすと、音量の変化に合わせてグラフが伸縮します。](images/sound-level-demo.gif){:width="300px"}
 </div>
 </div>
 
-### Open MakeCode
+### MakeCodeを開く
 
-To start creating your micro:bit project, you need to open the MakeCode editor.
+micro:bit プロジェクトの作成を開始するには、MakeCode エディターを開きます。
 
 \--- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+[makecode.microbit.org](https://makecode.microbit.org{:target="_blank"} で MakeCode エディターを開きます
 
 \--- collapse ---
 
