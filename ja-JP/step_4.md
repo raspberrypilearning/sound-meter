@@ -1,45 +1,45 @@
-## Change the sensitivity
+## 感度を変える
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-In this step, you will program the buttons on the micro:bit to adjust the sensitivity of the alarm with settings from 1 (lowest maximum value) to 5 (highest maximum value).
+このステップでは、micro:bitのボタンをプログラミングして、アラームの感度を1（最も感度が低い）から5（最も感度が高い）までで調整できるようにします。
 
 </div>
 <div>
 
-![The micro:bit simulator displaying the sound level numbers when the A and B buttons are clicked. The A button decreases the levels while the B button increases the levels.](images/buttons-pressed-demo.gif){:width="300px"}
+![AボタンとBボタンをクリックしたときに音量のレベル数値がLED画面に表示されるmicro:bitシミュレーター。 Aボタンでレベルが下がり、Bボタンでレベルが上がります。](images/buttons-pressed-demo.gif){:width="300px"}
 
 </div>
 </div>
 
-### Decrease the maximum sound level
+### 上限値を下げる
 
-The **A button** is on the left so you will use this to decrease the maximum value for the alarm.
+Aボタンは左側にあるので、これを使ってアラームの上限値を下げる処理を作ります。
 
 \--- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block and place it in the code editor.
+「入力」{:class='microbitinput'} メニューから 「ボタンAが押されたとき」{:class='microbitinput'} ブロックを取得してコードエディタに配置します。
 
 <img src="images/on-button-location.png" alt="The Input menu with the 'on button A pressed' block highlighted at the top." width="300"/>
 
 \--- /task ---
 
-In the previous step, you created two variables, `maximum`{:class='microbitvariables'} and `alarm`{:class='microbitvariables'}.
+前のステップでは、「上限値」{:class='microbitvariables'} と 「アラーム」{:class='microbitvariables'} という 2 つの変数を作成しました。
 
-Now you will create another variable for the sensitivity **level**.
+ここでは、現在の感度の段階を管理するために、もう一つ **level** という変数を作成します。
 
 \--- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, click on **Make a variable** to create a variable called `level`.
+「変数」{:class='microbitvariables'}メニューから、\*\*変数を追加する...\*\*をクリックして、「レベル」という名前の変数を作成します。
 
 \--- /task ---
 
 \--- task ---
 
-Drag the `change`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
+変数メニューから「変数を 1 ずつ変える」{:class='microbitvariables'} ブロックを取得して、「ボタンAが押されたとき」{:class='microbitinput'} ブロックの中に配置します。
 
-Change the `1` to `-1`.
+「1」を「-1」に変更します。
 
 ```microbit
 let level = 0
@@ -52,15 +52,15 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag another `change`{:class='microbitvariables'} block.
+「変数」{:class='microbitvariables'} メニューから、もう一つ「変数を 1 ずつ変える」{:class='microbitvariables'} ブロックを取得します。
 
-Place it **below** the `change level by -1`{:class='microbitvariables'} block.
+それを先ほどの「変数を -1 ずつ変える」{:class='microbitvariables'} ブロックの**下**に配置します。
 
-Change the variable shown in the block from `level` to `maximum` by clicking on the variable name.
+ブロック内の変数名をクリックして、「レベル」から「上限値」に変更します。
 
-Change the `1` to `-50`.
+「1」を「-50」に変更します。
 
-<img src="images/change-variable.gif" alt="Animation showing the drop-down menu on the `change maximum by 1` variable block." width="300"/>
+<0/>
 
 ```microbit
 let level = 0
@@ -73,9 +73,9 @@ input.onButtonPressed(Button.A, function () {
 
 \--- /task ---
 
-This means that every time you press button A, it will decrease the sensitivity level by 1 and reduce the sound sensitivity by 50.
+これにより、Aボタンを押すたびに感度レベルが1ずつ減り、音量の上限値が50ずつ下がります。
 
-If button A is pressed when the level is already 1, then you need to make it so the level changes to `5` and not `0`.
+もしレベルがすでに「1」の状態でAボタンが押された場合は、レベルが「0」になるのではなく「5」に切り替わるようにする必要があります。
 
 \--- task ---
 
