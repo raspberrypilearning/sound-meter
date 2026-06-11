@@ -21,25 +21,25 @@ micro:bit プロジェクトの作成を開始するには、MakeCode エディ�
 
 ---
 
-## title: Offline version of the editor
+## title: エディターのオフライン版
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+[MakeCode エディターのダウンロード可能バージョン](https://makecode.microbit.org/offline-app){:target="_blank"}もあります。
 
 \--- /collapse ---
 
 \--- /task ---
 
-### First micro:bit project?
+### 初めてのmicro:bitプロジェクトですか？
 
 [[[makecode-tour]]]
 
-### Create your project
+### プロジェクトを作成する
 
-Once the editor is open, you will need to create a new project and give your project a name.
+エディタが開いたら、新しいプロジェクトを作成して名前をつけます。
 
 \--- task ---
 
-Click on the **New Project** button.
+**新規プロジェクト** ボタンをクリックします。
 
 <img src="images/new-project-button.png" alt="The new project button in MakeCode." width="250"/>
 
@@ -47,47 +47,47 @@ Click on the **New Project** button.
 
 \--- task ---
 
-Give your new project the name `sound level meter` and click **Create**.
+新しいプロジェクトの名前を「音量計」と入力し、**作成** をクリックします。
 
 <img src="images/soundlevel-meter.png" alt="The name 'sound level meter' written in the New Project dialogue box." width="350"/>
 
-**Tip:** To make it easier to find your project later, give it a helpful name that relates to the activity you’re creating.
+**ヒント：** あとでプロジェクトを見つけやすくするために、作っている活動に関連した分かりやすい名前をつけるのがおすすめです。
 
 \--- /task ---
 
-### Plot a graph of the sound level
+### 音量のグラフを表示する
 
-In this project, you will make use of the `on start`{:class="microbitbasic"} block, but not the `forever`{:class="microbitbasic"} block.
+このプロジェクトでは、「最初だけ」{:class="microbitbasic"} ブロックを使用しますが、「ずっと」{:class="microbitbasic"} ブロックは使用しません。
 
 \--- task ---
 
-You can delete the `forever`{:class="microbitbasic"} block now by dragging it to the menu panel.
+「ずっと」{:class="microbitbasic"} ブロックをメニューパネルに動かすと削除できます。
 
-![Animation showing the forever block being deleted by dragging it back on top of the block menus.](images/delete-forever.gif)
+![「ずっと」ブロックをメニューの上に動かして削除するアニメーション。](images/delete-forever.gif)
 
 \--- /task ---
 
-The first step is to get the micro:bit to capture the sound levels at regular intervals. There is a specifc loop you can use to do this.
+最初のステップは、micro:bitに一定の間隔で音量を計測させることです。 これを行うための専用のループブロックがあります。
 
 \--- task ---
 
-From the `Loops`{:class="microbitloops"} menu, drag an `every 500 ms`{:class="microbitloops"} block and place it in the code editor panel.
+「ループ」{:class="microbitloops"} メニューから 「500ミリ秒ごと」{:class="microbitloops"} ブロックを取得して、コードエディタパネルに配置します。
 
 <img src="images/every-500ms.png" alt="The Loops menu with the 'every 500 ms' block highlighted." width="350"/>
 
-Any code inside this loop will run every **500 milliseconds**.
+このループの中にあるコードは、**500ミリ秒**ごとに実行されます。
 
-1000 milliseconds is 1 second, so this loop will run every **half second**.
+1000ミリ秒が1秒なので、このループは **0.5秒** ごとに実行されることになります。
 
 \--- /task ---
 
 \--- task ---
 
-From the `Led`{:class="microbitled"} menu, drag a `plot bar graph`{:class="microbitled"} block.
+「LED」{:class="microbitled"} メニューから、「グラフを表示する」{:class="microbitled"} ブロックを取得します。
 
-<img src="images/plot-bargraph.png" alt="The Led menu with the 'plot bar graph' block highlighted." width="350"/>
+<0/>
 
-Place it inside the `every 500 ms`{:class="microbitloops"} block.
+それを「500ミリ秒ごと」{:class="microbitloops"} ブロックの中に配置します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -102,14 +102,14 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
+「入力」{:class="microbitinput"} メニューから、「音量」\`{:class="microbitinput"} ブロックを取得します。
 
-Place it inside the first `0` in the `plot bar graph of`{:class="microbitled"} block.
+「グラフを表示する」{:class="microbitled"} ブロックの一つ目の「0」の中に配置します。
 
-Change the second `0` to `255`.
+二つ目の 0 を 255 に変更します。
 
 ```microbit
-loops.everyInterval(500, function () {
+loops.everInterval(500, function () {
     led.plotBarGraph(
     input.soundLevel(),
     255
@@ -121,35 +121,35 @@ loops.everyInterval(500, function () {
 
 ---
 
-## title: For micro:bit V1
+## title: micro:bit V1の場合
 
-There is no microphone on the micro:bit V1, so instead you can use the `light level`{:class="microbitinput"} block to measure the light levels of your environment.
+micro:bit V1にはマイクが搭載されていないため、代わりに「明るさ」{:class="microbitinput"}ブロックを使用して周囲の明るさを測定できます。
 
-![Animation showing the light level block being placed inside the first '0' on the 'plot bar graph of' block.](images/light-level.gif)
+![「棒グラフを表示する」ブロックの一つ目の「0」の中に明るさブロックが配置されるアニメーション。](images/light-level.gif)
 
 \--- /collapse ---
 
 \--- /task ---
 
-### Log the sound levels (V2 only)
+### 音量を記録する（V2専用）
 
-The V2 micro:bit has a built-in data logger, which enables you to track data from various sensors and inputs. You will need to install an extension to use this.
+micro:bit V2にはデータ記録機能が内蔵されており、さまざまなセンサーや入力からのデータを追跡できます。 これを使用するには、拡張機能をインストールする必要があります。
 
 \--- task ---
 
-On the menu panel, click on **Extensions**. Another window will open showing recommended extensions. Click on the **data logger** and it will be installed as a menu item.
+メニューパネルの **拡張機能** をクリックします。 おすすめの拡張機能が表示された別のウィンドウが開きます。 **datalogger**（データロガー）をクリックすると、メニュー項目としてインストールされます。
 
-![The data logger extension being installed by clicking the extensions menu and then 'data logger'. A new block menu appears labelled 'Data Logger'.](images/installing-datalogger.gif)
+![拡張機能メニューから「datalogger」をクリックしてインストールするアニメーション。 新しく「データロガー」というブロックメニューが表示されます。](images/installing-datalogger.gif)
 
 \--- /task ---
 
 \--- task ---
 
-From the `Data Logger`{:class="microbitdatalogger"} menu, drag a `log data`{:class="microbitdatalogger"} block.
+「データロガー」{:class="microbitdatalogger"}メニューから、「データをログする」{:class="microbitdatalogger"}ブロックを取得します。
 
 <img src="images/data-logger.png" alt="The Data Logger menu with the 'log data column...value' block highlighted." width="350"/>
 
-Place it below the `plot bar graph of`{:class='microbitled'} block.
+それを「グラフを表示する」{:class='microbitled'} ブロックの下に配置します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -165,7 +165,7 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-Type `Sound level` in the column field.
+列の名前として「音量」と入力します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -181,7 +181,7 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-From the `Input`{:class="microbitinput"} menu, drag another `sound level`{:class="microbitinput"} block and place it inside the `0` on the `log data`{:class="microbitdatalogger"} block.
+「入力」{:class="microbitinput"} メニューから、もう一つ 「音量」\`{:class="microbitinput"} ブロックを取得して、「データをログする」{:class="microbitdatalogger"} ブロックの 「0」 の中に配置します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -195,18 +195,18 @@ loops.everyInterval(500, function () {
 
 \--- /task ---
 
-### Test your program
+### プログラムをテストする
 
-When you make a change to a code block in the code editor panel, the simulator will restart.
+コードエディタパネルでコードブロックを変更すると、シミュレーターが自動的に再起動します。
 
-**Test your program**
+**プログラムのテスト方法**
 
-- Drag the red sound level bar up and down to change the sound levels.
+- 赤い音量バーを上下に動かして、音量を変化させてみましょう。
 
-**V2 only**
+**V2 のみ**
 
-- Click The '**Show data** Simulator' link below the micro:bit simulator to see the sound levels being logged.
+- micro:bitシミュレーターの下にある 「**データを表示** シミュレーター」 リンクをクリックすると、音量が記録されていく様子をリアルタイムで確認できます。
 
-![Animation showing the microphone bar on the micro:bit simulator being dragged up and down to increase and reduce the sound. The 'Show data' button is clicked to show the data being logged.](images/mic-test.gif)
+![micro:bitシミュレーターのマイクバーを上下に動かして音量を増減させているアニメーション。 「データを表示」ボタンをクリックすると、記録されているデータが表示されます。](images/mic-test.gif)
 
-Awesome work! You have created your first data display program on a micro:bit!
+すばらしい作品ができましたね！ micro:bitで初めてのデータ表示プログラムが完成しました！
