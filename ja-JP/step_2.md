@@ -15,7 +15,7 @@ micro:bit プロジェクトの作成を開始するには、MakeCode エディ�
 
 \--- task ---
 
-[makecode.microbit.org](https://makecode.microbit.org{:target="_blank"} で MakeCode エディターを開きます
+[makecode.microbit.org](https://makecode.microbit.org){:target="_blank"} で MakeCode エディターを開きます
 
 \--- collapse ---
 
@@ -85,7 +85,7 @@ micro:bit プロジェクトの作成を開始するには、MakeCode エディ�
 
 「LED」{:class="microbitled"} メニューから、「グラフを表示する」{:class="microbitled"} ブロックを取得します。
 
-<0/>
+<img src="images/plot-bargraph.png" alt="The Led menu with the 'plot bar graph' block highlighted." width="350"/>
 
 それを「500ミリ秒ごと」{:class="microbitloops"} ブロックの中に配置します。
 
@@ -137,15 +137,15 @@ micro:bit V2にはデータ記録機能が内蔵されており、さまざま�
 
 \--- task ---
 
-メニューパネルの **拡張機能** をクリックします。 おすすめの拡張機能が表示された別のウィンドウが開きます。 **datalogger**（データロガー）をクリックすると、メニュー項目としてインストールされます。
+メニューパネルの **拡張機能** をクリックします。 おすすめの拡張機能が表示された別のウィンドウが開きます。 \*\*datalogger (データ記録)\*\*をクリックすると、メニュー項目としてインストールされます。
 
-![拡張機能メニューから「datalogger」をクリックしてインストールするアニメーション。 新しく「データロガー」というブロックメニューが表示されます。](images/installing-datalogger.gif)
+![拡張機能メニューから「datalogger (データ記録)」をクリックしてインストールするアニメーション。 新しく「datalogger (データ記録)」というブロックメニューが表示されます。](images/installing-datalogger.gif)
 
 \--- /task ---
 
 \--- task ---
 
-「データロガー」{:class="microbitdatalogger"}メニューから、「データをログする」{:class="microbitdatalogger"}ブロックを取得します。
+「datalogger (データ記録)」{:class="microbitdatalogger"}メニューから、「log data (データを記録する）」{:class="microbitdatalogger"}ブロックを取得します。
 
 <img src="images/data-logger.png" alt="The Data Logger menu with the 'log data column...value' block highlighted." width="350"/>
 
@@ -165,7 +165,7 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-列の名前として「音量」と入力します。
+colum (列の名前) として「音量」と入力します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -181,7 +181,7 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-「入力」{:class="microbitinput"} メニューから、もう一つ 「音量」\`{:class="microbitinput"} ブロックを取得して、「データをログする」{:class="microbitdatalogger"} ブロックの 「0」 の中に配置します。
+「入力」{:class="microbitinput"} メニューから、もう一つ 「音量」\`{:class="microbitinput"} ブロックを取得して、「log data (データを記録する）」{:class="microbitdatalogger"} ブロックの 「0」 の中に配置します。
 
 ```microbit
 loops.everyInterval(500, function () {
