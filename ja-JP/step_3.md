@@ -1,23 +1,23 @@
-## Sound the alarm
+## アラームを鳴らそう
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will add an alarm that triggers when the sound level get too high. To stop the alarm adding to the noise, you will make sure it only goes off once and can be reset whenever you want. 
+このステップでは、音量が大きくなりすぎたときに作動するアラームを追加します。 アラーム自体の音でさらにうるさくなるのを防ぐため、アラームが鳴るのは一回だけに設定し、いつでもリセットできるようにします。 
 </div>
 <div>
 
-![The code to trigger the alarm. Inside an 'every 500 ms' block, the sound level is plotted on the LEDs. Afterwards, an if statement is used to check if the sound level exceeds the maximum and whether the alarm variable is set to false. Inside the if block, a sound is played and the alarm variable is set to 'true'.](images/alarm-code-demo.png){:width="300px"}
+![アラームを作動させるコード。 「500ミリ秒ごと」ブロックの中で、音量のグラフがLEDで表示されます。 データを記録した後に「もし〜なら」を使って、音量が上限を超えていて、かつ、アラーム変数が 「偽」 であるかを判定しています。 条件を満たすと音が鳴り、アラーム変数が「真」に変わります。](images/alarm-code-demo.png){:width="300px"}
 
 </div>
 </div>
 
-### Set the maximum
+### 上限を設定する
 
-You will need to make a variable to hold the sound level that will trigger the alarm.
+アラームを作動させる基準となる音量を保存するために、変数を作成する必要があります。
 
 \--- task ---
 
-Open the `Variables`{:class="microbitvariables"} menu and click **Make a Variable**.
+「変数」{:class="microbitvariables"} メニューを開き、**変数を追加する…** をクリックします。
 
 <img src="images/variable-menu.png" alt="The Variables block menu with the 'Make a Variable' button highlighted." width="350"/>
 
@@ -25,7 +25,7 @@ Open the `Variables`{:class="microbitvariables"} menu and click **Make a Variabl
 
 \--- task ---
 
-Name your new variable `maximum`.
+新しい変数の名前に「上限」と入力します。
 
 <img src="images/max-variable-name.png" alt="The 'New variable name' window with the name 'maximum' written in the box." width="400"/>
 
@@ -33,11 +33,11 @@ Name your new variable `maximum`.
 
 \--- task ---
 
-From the `Variables`{:class="microbitvariables"} menu, get the `set maximum`{:class="microbitvariables"} block.
+「変数」{:class="microbitvariables"} メニューから、「変数 上限 を～にする」{:class="microbitvariables"} ブロックを取得します。
 
 <img src="images/set-max-start.png" alt="The Variables menu with the 'set maximum to 0' block highlighted." width="350"/>
 
-Place the block inside the `on start`{:class="microbitbasic"} block, and change the `0` to `150`.
+そのブロックを「最初だけ」{:class="microbitbasic"} ブロックの中に配置し、「0」 を 「150」 に変更します。
 
 ```microbit
 let maximum = 150
@@ -45,27 +45,27 @@ let maximum = 150
 
 \--- /task ---
 
-The value `150` is a little more than half the maximum sound level the micro:bit can sense, so that should be a good level to start with.
+「150」という値は、micro:bitが感知できる最大音量の半分より少し大きい値です。まずはこの数値を基準として始めてみるのがちょうどよいでしょう。
 
 \--- collapse ---
 
 ---
 
-## title: For micro:bit V1
+## title: micro:bit V1の場合
 
-This maximum value works for light levels, too!
+この上限は、明るさにも適用されます！
 
 \--- /collapse ---
 
-### Turn the alarm off
+### アラームをオフにする
 
-You also want to make sure the alarm noise does not add to the already noisy environment!
+すでに騒がしい環境を、アラームの音でさらにうるさくしたくはありませんよね！
 
-To do this, you will use another variable that will be set to `false` to start, and it will change to `true` when the alarm sounds.
+そこで、もう一つの変数を使います。最初は「偽」にしておき、アラームが鳴ったら「真」に変わるようにします。
 
 \--- task ---
 
-Create another new `Variable`{:class="microbitvariables"}, this time called `alarm`.
+もう一つ新しい変数`Variable`{:class="microbitvariables"}を作成し、名前を「アラーム」にします。
 
 <img src="images/alarm-variable-name.png" alt="The 'New variable name' window with the name 'alarm' written in the box." width="350"/>
 
@@ -73,23 +73,23 @@ Create another new `Variable`{:class="microbitvariables"}, this time called `ala
 
 \--- task ---
 
-Drag the `set alarm`{:class="microbitvariables"} block from the `Variables`{:class="microbitvariables"} menu.
+「変数」{:class="microbitvariables"}メニューから「変数を アラーム にする」{:class="microbitvariables"}ブロックを取得します。
 
-Place it inside the `on start`{:class="microbitbasic"} block.
+それを「最初だけ」{:class="microbitbasic"} ブロックの中に配置します。
 
 \--- /task ---
 
-You need to set this new variable to `false` instead of a number.
+この新しい変数には、数字ではなく「偽」を設定する必要があります。
 
 \--- task ---
 
-Open the `Logic`{:class="microbitlogic"} menu.
+「論理」{:class="microbitlogic"} メニューを開きます。
 
-Get a `false`{:class="microbitlogic"} block.
+「偽」ブロックを取り出します。
 
 <img src="images/false-block-location.png" alt="The bottom part of the Logic menu, showing the location of the false block in the 'Boolean' section." width="200"/>
 
-Place this block over the top of the `0`.
+このブロックを、「0」の上に重ねて配置します。
 
 ```microbit
 let maximum = 150
@@ -98,29 +98,28 @@ let alarm = false
 
 \--- /task ---
 
-### Check if the alarm should sound
+### アラームを鳴らすべきか判定する
 
-The alarm should only sound **if:**
+アラームは、**もし,** 以下の条件を満たしたときだけ鳴るようにします
 
-- The sound level is **larger** than the maximum  
-  **AND**
-- The alarm variable is **not true**
+- 音量が上限 **よりも大きい** **かつ**
+- 変数 アラーム が **真ではない**
 
 \--- task ---
 
-From the `Logic`{:class="microbitlogic"} menu, get an `if...then`{:class="microbitlogic"} block.
+「論理」{:class="microbitlogic"} メニューから、「もし～なら」{:class="microbitlogic"} ブロックを取得します。
 
 <img src="images/if-block-location.png" alt="The Logic menu with an 'if' block highlighted." width="350"/>
 
-Place the block inside the `every`{:class="microbitloops"} loop underneath the `log data`{:class="microbitdatalogger"} block.
+そのブロックを、「500ミリ秒ごと」{:class="microbitloops"} ループ内の「log data (データを記録する)」{:class="microbitdatalogger"} ブロックの下に配置します。
 
 ```microbit
-loops.everyInterval(500, function () {
+loops.everInterval(500, function () {
     led.plotBarGraph(
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+    dataloger.log(dataloger.createCV("sound level", input.soundLevel()))
     if (true) {
     	
     }
@@ -131,11 +130,11 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-Open the `Logic`{:class="microbitlogic"} menu again and take an `and`{:class="microbitlogic"} block.
+もう一度「論理」{:class="microbitlogic"} メニューを開き、「～かつ～」{:class="microbitlogic"} ブロックを選択します。
 
 <img src="images/and-block-location.png" alt="The bottom part of the Logic menu, showing the location of the 'and' block in the 'Boolean' section." width="200"/>
 
-Place it in the `true` section of the `if...then`{:class="microbitlogic"} block.
+それを「もし～なら」{:class="microbitlogic"} ブロックの「真」の部分に配置します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -152,31 +151,31 @@ loops.everyInterval(500, function () {
 
 \--- /task ---
 
-Now you need to add the **two** conditions either side of the **and**.
+ここから、**～かつ～** の左右のスペースに **二つ** の条件を追加していきます。
 
 \--- task ---
 
-Again in the `Logic`{:class="microbitlogic"} menu, get a `0 < 0`{:class="microbitlogic"} condition block.
+再び「論理」{:class="microbitlogic"}メニューから、比較演算子の「0 < 0」{:class="microbitlogic"}ブロックを取得します。
 
-Place it on one side of the `and`{:class="microbitlogic"} block.
+それを「～かつ～」{:class="microbitlogic"} ブロックの片側に配置します。
 
-Use the drop-down menu to change the less than symbol (`<`) to a greater than (`>`) symbol.
+ドロップダウンメニューから、不等号を未満の（「<」） からより大きい（「>」）に変更します。
 
-![A demo of clicking the drop-down menu and changing the less than symbol to a greater than symbol in the condition.](images/changing-condition.gif)
+![比較ブロックのドロップダウンをクリックして、不等号を未満からより大きいに変更するデモ。](images/changing-condition.gif)
 
 \--- /task ---
 
 \--- task ---
 
-From the `Input`{:class="microbitinput"} menu, drag a `sound level`{:class="microbitinput"} block.
+「入力」{:class="microbitinput"} メニューから、「音量」{:class="microbitinput"} ブロックを取得します。
 
-Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block
+それを「0 > 0」{:class="microbitlogic"} ブロックの一つ目の 「0」 に配置します
 
-From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
+「変数」{:class="microbitvariables"}メニューから、「上限」{:class="microbitvariables"}ブロックを取得します。
 
-Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
+それを「0 > 0」{:class="microbitlogic"} ブロックの 二つ目の 「0」 に配置します。
 
-Your code should look like this:
+ここまでのコードは以下のようになります：
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -188,25 +187,24 @@ loops.everyInterval(500, function () {
     datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
     if (input.soundLevel() > maximum && false) {
     	
-    }
-})
+    })
 ```
 
 \--- collapse ---
 
 ---
 
-## title: For micro:bit V1
+## title: micro:bit V1の場合
 
-From the `Input`{:class="microbitinput"} menu, drag a `light level`{:class="microbitinput"} block.
+「入力」{:class="microbitinput"} メニューから、「明るさ」{:class="microbitinput"} ブロックを取得します。
 
-Put it in the first `0` of the `0 > 0`{:class="microbitlogic"} block.
+それを「0 > 0」{:class="microbitlogic"}ブロック一つ目の「0」に配置します。
 
-From the `Variables`{:class="microbitvariables"} menu, drag a `maximum`{:class="microbitvariables"} block.
+「変数」{:class="microbitvariables"}メニューから、「上限」{:class="microbitvariables"}ブロックを取得します。
 
-Put it in the second `0` of the `0 > 0`{:class="microbitlogic"} block.
+それを「0 > 0」{:class="microbitlogic"} ブロックの二つ目の 「0」に配置します。
 
-Your code should look like this:
+ここまでのコードは以下のようになります：
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -225,13 +223,13 @@ loops.everyInterval(500, function () {
 
 \--- /task ---
 
-You only want to set the alarm off if the `alarm`{:class="microbitvariables"} variable is **not** set `true`{:class="microbitlogic"}.
+さらに、変数「アラーム」{:class="microbitvariables"}が、まだ「真」{:class="microbitlogic"}になっていない場合のみ、アラームを作動させたいと考えます。
 
 \--- task ---
 
-Get a `not`{:class='microbitlogic'} block from the `Logic`{:class='microbitlogic'} menu.
+「論理」{:class='microbitlogic'}メニューから「～ではない」{:class='microbitlogic'}ブロックを取得します。
 
-Place it on the other side of the `and`{:class='microbitlogic'} block.
+それを「かつ」{:class='microbitlogic'} ブロックのもう片方のスペースに配置します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -251,7 +249,7 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-Place an `alarm`{:class='microbitvariables'} variable block in the `not`{:class='microbitlogic'} block like this:
+「アラーム」{:class='microbitvariables'} ブロックを取り出し、次のように「～ではない」{:class='microbitlogic'} ブロック内に配置します：
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -270,17 +268,17 @@ loops.everyInterval(500, function () {
 
 \--- /task ---
 
-### Sound the alarm
+### アラームを鳴らす
 
-Now it's time to add your alarm sound!
+いよいよアラームの音を追加します！
 
 \--- task ---
 
-From the `Music`{:class='microbitmusic'} menu, take a `play`{:class='microbitmusic'} block.
+「音楽」{:class='microbitmusic'} メニューから 「鳴らす くすくす笑う 終わるまで」{:class='microbitmusic'} ブロックを選択します。
 
 <img src="images/play-block-location-v2.png" alt="The 'micro:bit v2' section of the Music menu, with the 'play' block highlighted at the top of the section." width="250"/>
 
-Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
+これを、アラームを鳴らすべきか判定する「もし〜なら」{:class='microbitlogic'} ブロックの中に配置します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -301,17 +299,17 @@ loops.everyInterval(500, function () {
 
 ---
 
-## title: For micro:bit V1
+## title: micro:bit V1の場合
 
-The micro:bit V1 has no speaker, so you have to adapt the program for the alarm.
+micro:bit V1にはスピーカーがないため、アラームに合わせてプログラムを調整する必要があります。
 
-Rather than an alarm that uses sound, you can display an icon on the LEDs when the light level is higher than the maximum.
+音を使うアラームではなく、明るさが上限よりも高いときにLEDにアイコンを表示することができます。
 
-From the `Basic`{:class='microbitbasic'} menu, get a `show icon`{:class='microbitbasic'} block.
+「基本」{:class='microbitbasic'} メニューから、「アイコンを表示」{:class='microbitbasic'} ブロックを取得します。
 
-Place this inside the `if`{:class='microbitlogic'} block that checks if the alarm should sound.
+これを、アラームを鳴らすべきか判定する「もし〜なら」{:class='microbitlogic'} ブロックの中に配置します。
 
-**Select** an icon to use for your alarm.
+アラームに使用するアイコンを**選択**します。
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -334,19 +332,19 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-**Choose** which alarm sound you would like to use, from the available sounds in the drop-down menu.
+ドロップダウンメニューに用意されている音の中から、鳴らしたいアラームの音を**選びます**。
 
 \--- /task ---
 
 \--- task ---
 
-Inside your `on start`{:class='microbitbasic'} block, **right-click** on the `set`{:class='microbitvariables'} block and select **Duplicate**.
+「最初だけ」{:class='microbitbasic'} ブロック内で、「変数 アラームを 偽 にする」{:class='microbitvariables'} ブロックを **右クリック**して、**複製**を選択します。
 
-![A demo of right clicking on the 'set alarm to false' block, and then duplicating it.](images/duplicate-block.gif)
+![「変数 アラームを 偽 にする」ブロックを右クリックして複製するデモ。](images/duplicate-block.gif)
 
-Place the duplicated block below the `play`{:class='microbitmusic'} block.
+複製したブロックを「音を鳴らす」{:class='microbitmusic'}ブロックの下に配置します。
 
-Change the `false`{:class='microbitlogic'} to `true`{:class='microbitlogic'}.
+「偽」{:class='microbitlogic'} を 「真」{:class='microbitlogic'} に変更します。
 
 ```microbit
 let alarm = false
@@ -366,21 +364,21 @@ loops.everyInterval(500, function () {
 
 \--- /task ---
 
-### Reset the alarm
+### アラームをリセットする
 
-When the alarm goes off, you will want to reset it.
+一度アラームが鳴った後、再び作動するようにリセットする仕組みが必要です。
 
-You can use the touch logo on the micro:bit to do this.
+micro:bitの表面にある 触ると作動するロゴマーク を使ってリセットできるようにしましょう。
 
 <img src="images/logo-location.png" alt="The microbit logo." width="200"/>
 
 \--- task ---
 
-From the `Input`{:class='microbitinput'} menu, drag an `on logo`{:class='microbitinput'} block.
+「入力」{:class='microbitinput'} メニューから、「ロゴが 短くタップされた とき」{:class='microbitinput'} ブロックを取得します。
 
 <img src="images/onlogo-block-location.png" alt="The logo on the top of the microbit above the LEDs." width="200"/>
 
-From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on logo`{:class='microbitinput'} block.
+「入力」{:class='microbitbasic'} ブロックから 「変数 アラームを 偽 にする」{:class='microbitvariables'} ブロックを複製し、「ロゴが 短くタップされた とき」{:class='microbitinput'} ブロックの中に配置します。
 
 ```microbit
 let alarm = false
@@ -393,17 +391,17 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 ---
 
-## title: For micro:bit V1
+## title: micro:bit V1の場合
 
-There is no touch sensor in the logo on the micro:bit V1, so instead you can use both the `A` and `B` buttons.
+micro:bit V1のロゴにはタッチセンサーが搭載されていないため、代わりに「A」ボタンと「B」ボタンの両方を使用できます。
 
-From the `Input`{:class='microbitinput'} menu, drag an `on button`{:class='microbitinput'} block.
+「入力」{:class='microbitinput'} メニューから、「ボタン A が 押されたとき」{:class='microbitinput'} ブロックを取得します。
 
 <img src="images/on-button-location.png" alt="The Input menu with the 'on button A' block highlighted." width="350"/>
 
-Use the drop-down menu to change the button to `A+B`{:class='microbitinput'}.
+ドロップダウンメニューを使用して、ボタンを「A+B」{:class='microbitinput'}に変更します。
 
-From your `on start`{:class='microbitbasic'} block, duplicate the `set alarm`{:class='microbitvariables'} block and place it inside the `on button`{:class='microbitinput'} block.
+「入力」{:class='microbitbasic'} ブロックから 「変数 アラームを 偽 にする」{:class='microbitvariables'} ブロックを複製し、「ボタン A +B が 押されたとき」{:class='microbitinput'} ブロックの中に配置します。
 
 ```microbit
 let alarm = false
@@ -416,4 +414,4 @@ input.onButtonPressed(Button.AB, function () {
 
 \--- /task ---
 
-Next you are going to use the `A` button and `B` button to change the sensitivity of your alarm!
+次のステップでは、「A」ボタンと「B」ボタンを使って、アラームの感度を変更できるようにします！
