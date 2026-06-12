@@ -25,7 +25,7 @@ Aボタンは左側にあるので、これを使ってアラームの上限値�
 
 \--- /task ---
 
-前のステップでは、「上限値」{:class='microbitvariables'} と 「アラーム」{:class='microbitvariables'} という 2 つの変数を作成しました。
+前のステップでは、「上限値」{:class='microbitvariables'} と 「アラーム」{:class='microbitvariables'} という 二つの変数を作成しました。
 
 ここでは、現在の感度の段階を管理するために、もう一つ **level** という変数を作成します。
 
@@ -277,7 +277,7 @@ input.onButtonPressed(Button.A, function () {
 
 複製された「ボタンAが押されたとき」{:class='microbitinput'}ブロックの「A」をクリックします。 ドロップダウンメニューが開きます。
 
-Change the `A` to `B`.
+「A」を「B」に変更します。
 
 <img src="images/button-menu.png" alt="The drop-down menu for 'on button A pressed' that lets you change the block to button B." width="400"/>
 
@@ -285,11 +285,11 @@ Change the `A` to `B`.
 
 \--- task ---
 
-Inside the `on button B pressed`{:class='microbitinput'} block:
+「ボタンBが押されたとき」{:class='microbitinput'} ブロックの中身を：
 
-- Change the `-1` to `1` in the `change level`{:class='microbitvariables'} block
+- 「変数 レベル を変える」{:class='microbitvariables'} ブロックの 「-1」 を 「1」 にする
 
-- Change the `-50` to `50` in the `change maximum`{:class='microbitvariables'} block
+- 「変数 上限 を変える」{:class='microbitvariables'} ブロック内の 「-50」 を 「50」 にする
 
 <img src="images/onbuttonB-changes.png" alt="The `on button B pressed` block with the change level and change maximum variables shown." width="350"/>
 
@@ -297,15 +297,15 @@ Inside the `on button B pressed`{:class='microbitinput'} block:
 
 \--- task ---
 
-For the `if`{:class='microbitlogic'} block's conditions:
+「もし〜なら」{:class='microbitlogic'} ブロックの条件式を：
 
-- Change the `<` to a `>`
-- Change the `1` to `5`
+- 不等号の「<」を「>」に変更する
+- 数字の「1」を「5」に変更する
 
-Inside the `if`{:class='microbitlogic'} block:
+「もし〜なら」{:class='microbitlogic'} ブロックの条件式を：
 
-- Change the `5` to `1` in the `set level to 5`{:class='microbitvariables'} block
-- Change the `250` to `50` in the `set maximum to 50`{:class='microbitvariables'} block
+- 「変数 レベル を 5 にする」{:class='microbitvariables'} ブロック内の 「5」 を 「1」 に変更する
+- 「変数 上限 を 50 にする」{:class='microbitvariables'} ブロック内の 「250」 を 「50」 に変更する
 
 ```microbit
 let level = 0
@@ -324,23 +324,23 @@ input.onButtonPressed(Button.B, function () {
 
 \--- /task ---
 
-### Set a normal sound level
+### 通常の音量レベルを設定する
 
-You need to program a normal alarm sensitivity level by using the `on start`{:class='microbitbasic'} block.
+プログラムが起動したときに、ちょうどよい通常の感度レベルからスタートするように「最初だけ」{:class='microbitbasic'} にコードを追加します。
 
 \--- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag a `set maximum to 0`{:class='microbitvariables'} block.
+「変数」{:class='microbitvariables'} メニューから、「変数 上限を 0 にする」{:class='microbitvariables'} ブロックを取得します。
 
-Place it inside the `on start`{:class='microbitbasic'} block.
+それを「最初だけ」{:class='microbitbasic'} ブロックの中に配置します。
 
 \--- /task ---
 
 \--- task ---
 
-Click on the variable name `maximum` and change it to `level`.
+変数名をクリックして 「上限」 から「レベル」に変更します。
 
-Change the `0` to `3` in the `set level`{:class='microbitvariables'} block.
+「変数 レベル を 0 にする」{:class='microbitvariables'} ブロック内の 「0」 を 「3」 に変更します。
 
 ```microbit
 let maximum = 150
@@ -352,24 +352,24 @@ let level = 3
 
 \--- task ---
 
-**Test your program**
+**プログラムのテスト方法**
 
-- Press the A and B buttons to see the sound levels increase and decrease
+- AボタンとBボタンを押して、画面に表示される感度レベルが上がったり下がったりすることを確認します
 
-The default starting point is level 3.
+起動時の初期状態はレベル3です。
 
-**Drag** the mic input levels up and down to test the maximum sound for each level when using the simulator.
+シミュレーターのマイクの入力レベル（音量バー）を上下に **動かして** 、それぞれのレベル（1〜5）ごとにアラームが鳴る最大音量が変化することを確認してください。
 
 \--- /task ---
 
 \--- task ---
 
-Download your program onto your micro:bit!
+完成したプログラムをmicro:bitにダウンロードしましょう！
 
 \--- /task ---
 
 [[[download-to-microbit]]]
 
-Well done! You now have a fully working sound or light meter!
+よくできました！ これで、完全に動作する音量計 または 光度計が、完成しました！
 
-Next, it is time to check what you have learnt!
+次へ進んで、これまでに学んだ内容をクイズで確かめてみましょう！
