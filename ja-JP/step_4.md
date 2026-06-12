@@ -60,7 +60,7 @@ input.onButtonPressed(Button.A, function () {
 
 「1」を「-50」に変更します。
 
-<0/>
+<img src="images/change-variable.gif" alt="Animation showing the drop-down menu on the `change maximum by 1` variable block." width="300"/>
 
 ```microbit
 let level = 0
@@ -79,9 +79,9 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
+「論理」{:class='microbitlogic'} メニューから 「もし～なら」{:class='microbitlogic'} ブロックを取得します。
 
-Place it below the `change maximum by -50`{:class='microbitvariables'} block.
+それを 「変数 上限 を -50 だけ増やす」{:class='microbitvariables'} ブロックの下に配置します。
 
 ```microbit
 let level = 0
@@ -99,9 +99,9 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag the `0 < 0`{:class='microbitlogic'} comparison block.
+「論理」{:class='microbitlogic'} メニューから、比較演算子の「0 < 0」{:class='microbitlogic'} を取得します。
 
-Place it inside the `true` space in the `if`{:class='microbitlogic'} block.
+それを「もし～なら」{:class='microbitlogic'} ブロック内の「真」スペース内に配置します。
 
 ```microbit
 let level = 0
@@ -119,9 +119,9 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
+「変数」{:class='microbitvariables'} メニューから、「レベル」{:class='microbitvariables'} ブロックを取得します。
 
-Place it inside the first `0` of the `0 < 0`{:class='microbitlogic'} comparison block.
+それを 比較演算子の「0 < 0」{:class='microbitlogic'} ブロックの一つ目の 「0」 の中に配置します。
 
 ```microbit
 let level = 0
@@ -139,17 +139,17 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-Change the `0` to `1` on the right-hand side of the `0 < 0`{:class='microbitlogic'} comparison block.
+比較演算子の「0 < 0」{:class='microbitlogic'} ブロックの右側の「0」を「1」に変更します。
 
 \--- /task ---
 
 \--- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `set`{:class='microbitvariables'} block.
+「変数」{:class='microbitvariables'} メニューから、「変数を 0 にする」{:class='microbitvariables'} ブロックを取得します。
 
-Place it inside the `if`{:class='microbitlogic'} block. Ensure the variable selected is `level`{:class='microbitvariables'}.
+それを「もし～なら」{:class='microbitlogic'} ブロックの中に配置します。 選択された変数が 「レベル」{:class='microbitvariables'} であることを確認してください。
 
-Change the `0` to `5` on the `set level to 0`{:class='microbitvariables'} block.
+「変数を 0 にする」{:class='microbitvariables'} ブロックの 「0」 を 「5\`に変更します。
 
 ```microbit
 let level = 0
@@ -167,11 +167,11 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-Again from the `Variables`{:class='microbitvariables'} menu, drag another `set`{:class='microbitvariables'} block.
+再び「変数」{:class='microbitvariables'} メニューから、別の「設定」{:class='microbitvariables'}ブロックをドラッグします。
 
-Place it below the `set level to 5`{:class='microbitvariables'} block.
+それを「変数 レベル を 5 にする」{:class='microbitvariables'} ブロックの下に配置します。
 
-Change the `0` to `250`.
+変数名を 上限 に変更し、「0」を「250」に変更します。
 
 ```microbit
 let level = 0
@@ -190,9 +190,9 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block.
+「基本」{:class='microbitbasic'} メニューから、「数を表示」{:class='microbitbasic'} ブロックを取得します。
 
-Place it **below** the `if`{:class='microbitlogic'} block.
+それを「もし～なら」{:class='microbitlogic'} ブロックの **下**（外側） に配置します。
 
 ```microbit
 let level = 0
@@ -212,9 +212,9 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `level`{:class='microbitvariables'} block.
+「変数」{:class='microbitvariables'} メニューから、「レベル」{:class='microbitvariables'} ブロックを取得します。
 
-Place it in the `0` in the `show number`{:class='microbitbasic'} block.
+それを「数を表示」{:class='microbitbasic'} ブロックの 「0」に配置します。
 
 ```microbit
 let level = 0
@@ -234,11 +234,11 @@ input.onButtonPressed(Button.A, function () {
 
 \--- task ---
 
-Also from the `Basic`{:class='microbitbasic'} menu, drag the `pause`{:class='microbitbasic'} block.
+同じく「基本」{:class='microbitbasic'}メニューから、「一時停止（ミリ秒）」{:class='microbitbasic'}ブロックを取得します。
 
-Place it below the `show number`{:class='microbitbasic'} block.
+それを「数を表示」{:class='microbitbasic'} ブロックの下に配置します。
 
-Change the `100` to `500`.
+「100」を「500」に変更します。
 
 ```microbit
 let level = 0
@@ -257,25 +257,25 @@ input.onButtonPressed(Button.A, function () {
 
 \--- /task ---
 
-### Increase the maximum sound level
+### 最大音量を上げる
 
-You have now programmed the `on button A pressed`{:class='microbitinput'} block.
+これで「ボタンAが押されたとき」{:class='microbitinput'} のプログラミングが完了しました。
 
-You will need to do the same for `on button B pressed`{:class='microbitinput'} to increase the maximum.
+次は、最大音量を上げて感度を下げるために、「ボタンBが押されたとき」{:class='microbitinput'}のコードを同じように作ります。
 
 \--- task ---
 
-Right-click on the entire `on button A pressed`{:class='microbitinput'} block and click **Duplicate**.
+配置した「ボタンAが押されたとき」{:class='microbitinput'} ブロックの枠全体を右クリックし、 **複製する** をクリックします。
 
-![Animation showing the right-click menu on the 'on button A pressed' block with 'Duplicate' highlighted.](images/onbuttonA-duplicate.gif)
+![「ボタンAが押されたとき」ブロックを右クリックし、メニューから「複製する」が強調されているアニメーション。](images/onbuttonA-duplicate.gif)
 
-There will now be two `on button A pressed`{:class='microbitinput'} blocks in the code editor panel.
+コードエディタ上に、二つの「ボタンAが押されたとき」{:class='microbitinput'} ブロックが 並びます。
 
 \--- /task ---
 
 \--- task ---
 
-Click on the `A` in the duplicated `on button A pressed`{:class='microbitinput'} block. A drop-down menu will open.
+複製された「ボタンAが押されたとき」{:class='microbitinput'}ブロックの「A」をクリックします。 ドロップダウンメニューが開きます。
 
 Change the `A` to `B`.
 
