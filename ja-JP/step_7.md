@@ -1,12 +1,12 @@
-## What next?
+## 次は何をしましょうか？
 
-If you are following the [Introduction to micro:bit](https://projects.raspberrypi.org/en/raspberrypi/path-name) path, you can move on to the [Sleep tracker](https://projects.raspberrypi.org/en/projects/sleep-tracker) project.
+[micro:bit入門](https://projects.raspberrypi.org/en/raspberrypi/path-name)の手順を踏んでいる場合は、[睡眠トラッカー](https://projects.raspberrypi.org/en/projects/sleep-tracker)プロジェクトに進むことができます。
 
-In this project, you will make a sleep tracker that uses the micro:bit's accelerometer to track how many times you move in the night. Getting good sleep is really important to help you feel your best!
+このプロジェクトでは、micro:bitの加速度センサーを使って、夜間の体の動きの回数を追跡する睡眠トラッカーを作成します。 最高の体調を維持するためには、質の良い睡眠をとることが本当に大切です！
 
 \--- print-only ---
 
-![Sleep tracker](images/sleep-tracker.png)
+![睡眠トラッカー](images/sleep-tracker.png)
 
 \--- /print-only ---
 
@@ -16,4 +16,4 @@ In this project, you will make a sleep tracker that uses the micro:bit's acceler
 
 \--- /no-print ---
 
-If you want to have more fun exploring micro:bit, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=microbit).
+micro:bitをもっと楽しく探求したいなら、[これらのプロジェクト](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=microbit)を試してみるといいでしょう。
