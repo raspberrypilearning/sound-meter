@@ -102,7 +102,7 @@ loops.everyInterval(500, function () {
 
 \--- task ---
 
-「入力」{:class="microbitinput"} メニューから、「音量」\`{:class="microbitinput"} ブロックを取得します。
+「入力」{:class="microbitinput"} メニューから、「まわりの音の大きさ」\`{:class="microbitinput"} ブロックを取得します。
 
 「グラフを表示する」{:class="microbitled"} ブロックの一つ目の「0」の中に配置します。
 
