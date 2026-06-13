@@ -1,42 +1,42 @@
-## Reflection
+## ふりかえり
 
-Answer the three questions. There are hints to guide you to the correct answer.
+3つの質問に答えてみましょう。 正しい答えにたどり着くためのヒントも用意されています。
 
-When you have answered each question, click on **Check my answer**.
+それぞれの質問に答えたら、 **答え合わせ** をクリックしてください。
 
-Have fun!
+楽しんで挑戦しましょう！
 
 \--- question ---
 
 ---
 
-## legend: Question 1 of 3
+## legend: 質問1/3
 
-Which menu contains the blocks for `on button A pressed`{:class='microbitinput'} and `on logo pressed`{:class='microbitinput'}?
+「ボタンAが押されたとき」{:class='microbitinput'} と「ロゴが押されたとき」{:class='microbitinput'} は、どのメニューに含まれていますか？
 
 \--- choices ---
 
-- ( ) Basic
+- ( ) 基本
 
   \--- feedback ---
 
-Not quite! The Basic menu contains blocks for the basic functionality of the micro:bit.
+不正解！ 基本メニューには、micro:bitの基本的な機能を実現するためのブロックが含まれています。
 
 \--- /feedback ---
 
-- (x) Input
+- (x) 入力
 
   \--- feedback ---
 
-Awesome! You have answered correctly, the Input menu contains all the input and gesture blocks.
+素晴らしい！ 正解です。入力メニューには、すべての入力ブロックとジェスチャーブロックが含まれています。
 
 \--- /feedback ---
 
-- ( ) Logic
+- ( ) 論理
 
   \--- feedback ---
 
-Not quite! The Logic menu contains blocks for conditional and Boolean logic.
+不正解！ 論理メニューには、「もし～なら」の条件分岐や、「はい／いいえ」で判断するためのブロックがあります。
 
 \--- /feedback ---
 
