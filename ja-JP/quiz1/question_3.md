@@ -2,9 +2,9 @@
 
 ---
 
-## legend: Question 3 of 3
+## legend: 質問3/3
 
-Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
+以下は、「ボタンAが押されたとき」と「ボタンBが押されたとき」のブロックをプログラミングするためのコードです。
 
 ```microbit
 let level = 0
@@ -31,31 +31,31 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-What will happen when the `B` button is pressed on the micro:bit?
+micro:bitの「B」ボタンを押すと、何が起こるでしょうか？
 
 \--- choices ---
 
-- ( ) The sound level will be changed by -1 and sensitivity by -50.
+- ( )音量は‐1ずつ、感度は‐50ずつに変更されます。
 
   \--- feedback ---
 
-  Not quite! Pressing button `A` will make these changes, but not button `B`.
+  不正解！ ボタン「A」を押すとこれらの変更が実行されますが、ボタン「B」では実行されません。
 
   \--- /feedback ---
 
-- ( ) The sound level will be changed by 5 and sensitivity by -50.
+- ( ) 音量は5ずつ、感度は‐50ずつに変更されます。
 
   \--- feedback ---
 
-  Not quite! Neither button A or button B are programmed to change the sound level or sensitivity by these amounts.
+  不正解！ ボタンAとボタンBはどちらとも、音の大きさや感度をこれだけの値分だけ変更するようにはプログラムされていません。
 
   \--- /feedback ---
 
-- (x) The sound level will be changed by 1 and sensitivity by 50.
+- (x) 音量が1ずつ、感度が50ずつ変更されます。
 
   \--- feedback ---
 
-  Awesome job! Button B has been programmed to increase the sound level by 1 and the sensitivity by 50.
+  大正解です！ ボタンBは、音量を1ずつ、感度を50ずつ上げるようにプログラムされています。
 
   \--- /feedback ---
 
