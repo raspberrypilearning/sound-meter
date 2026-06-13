@@ -2,11 +2,11 @@
 
 ---
 
-## legend: Question 2 of 3
+## legend: 質問2/3
 
-This block of code shows a `every 500 ms` loop block.
+このプログラミングコードは、500ミリ秒ごとに実行されるループブロックを示しています。
 
-What is a loop?
+ループとは何でしょう？
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -20,27 +20,27 @@ loops.everyInterval(500, function () {
 
 \--- choices ---
 
-- (x) A sequence of instructions that is repeated constantly or until a certain condition is reached.
+- （x）一定の条件に達するまで、または継続的に繰り返される一連の命令。
 
   \--- feedback ---
 
-Fantastic work! Loops are a concept used across all programming languages. Loops repeat constantly or until a condition is reached.
+大正解です！ ループは、あらゆるプログラミング言語で用いられる考え方です。 ループは、条件が満たされるまで、または常に繰り返されます。
 
 \--- /feedback ---
 
-- ( ) A condition that controls what happens in a logic block.
+- ( ) 論理ブロック内で何が起こるかを決める条件。
 
   \--- feedback ---
 
-  Not quite. A condition can be used to compare a variable value with something else. The condition does not loop.
+  不正解。 条件を使うと、変数に入っている値を別の値と比べることができます。 この条件はループしません。
 
   \--- /feedback ---
 
-- ( ) A sequence of instructions that performs a specific task.
+- ( ) 特定のタスクを実行する一連の命令。
 
   \--- feedback ---
 
-  Not quite. A sequence of instructions for a specific task is called a `function`.
+  不正解。 関数とは、特定の作業を行うためにまとめられた命令の集まりです。
 
   \--- /feedback ---
 
