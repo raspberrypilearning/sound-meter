@@ -25,7 +25,7 @@ Aボタンは左側にあるので、これを使ってアラームの上限値�
 
 \--- /task ---
 
-前のステップでは、「上限値」{:class='microbitvariables'} と 「アラーム」{:class='microbitvariables'} という 二つの変数を作成しました。
+前のステップでは、「上限」{:class='microbitvariables'} と 「アラーム」{:class='microbitvariables'} という 二つの変数を作成しました。
 
 ここでは、現在の感度の段階を管理するために、もう一つ **level** という変数を作成します。
 
@@ -56,7 +56,7 @@ input.onButtonPressed(Button.A, function () {
 
 それを先ほどの「変数を -1 ずつ変える」{:class='microbitvariables'} ブロックの**下**に配置します。
 
-ブロック内の変数名をクリックして、「レベル」から「上限値」に変更します。
+ブロック内の変数名をクリックして、「レベル」から「上限」に変更します。
 
 「1」を「-50」に変更します。
 
