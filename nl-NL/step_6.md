@@ -1,23 +1,24 @@
-## Verbeter je project
+## Upgrade your project
 
-Goed gedaan! Je hebt een micro:bit geluidsniveaumeter gemaakt. Hier zijn enkele ideeën om je project te verbeteren en een meer geavanceerde geluidsniveaumeter app te maken:
+Fantastic effort! You have created your micro:bit sound level meter. Here are some ideas to upgrade your project and create a more advanced sound level meter:
 
-+ Gebruik een andere sensor: licht voor V2 of temperatuur voor V1
-+ Toon een pictogram voor maximum/minimum geluidsniveaus
-+ Voeg meer gevoeligheidsniveaus toe
+- Use a different sensor - light for V2 or temperature for V1
+- Show an icon for maximum/minimum sound levels
+- Add more levels of sensitivity
 
-### Afspelen ▶️
+### Play ▶️
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-Klik op het ingesloten project.
+Click on the embedded project.
 
-Sleep het gele lichtniveau in de cirkel omhoog en omlaag en kijk wat er met de LED's gebeurt. 
-Druk op de knoppen A of B om de gevoeligheid te wijzigen:
-+ Hoeveel niveaus zijn er?
-+ Wat gebeurt er op het minimum en maximum?
-Als het alarm is afgegaan, klik dan op het logo bovenaan om het te resetten.
+Drag the yellow light level in the circle up and down, see what happens with the LEDs.
+Press the A or B buttons to change the sensitivity:
+
+- How many levels are there?
+- What happens on the minimum and maximum?
+  Once the alarm sounds, click the logo at the top to reset it.
 
 <div style="position:relative;height:0;padding-bottom:125%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=S67714-27742-96763-52596" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
 
@@ -28,12 +29,12 @@ Als het alarm is afgegaan, klik dan op het logo bovenaan om het te resetten.
 
 [[[microbit-share]]]
 
---- collapse ---
+\--- collapse ---
 
 ---
-title: Voltooid project
----
 
-Je kunt het [voltooide project hier](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"} bekijken.
+## title: Completed project
 
---- /collapse ---
+You can view the [completed project here](https://makecode.microbit.org/_DL7dRrWj0D9v){:target="_blank"}.
+
+\--- /collapse ---
