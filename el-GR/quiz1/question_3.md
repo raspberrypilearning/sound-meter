@@ -1,65 +1,64 @@
-
---- question ---
+\--- question ---
 
 ---
-legend: Ερώτηση 3 από 3
----
-Εδώ είναι ο κώδικας για τον προγραμματισμό των μπλοκ `όταν πιεστεί το πλήκτρο button A` και `όταν πιεστεί το πλήκτρο button B`.
+
+## legend: Question 3 of 3
+
+Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
 
 ```microbit
-let επίπεδο = 0
-let μέγιστο = 0
+let level = 0
+let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    επίπεδο += -1
-    μέγιστο += -50
-    if (επίπεδο < 1) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += -1
+    maximum += -50
+    if (level < 1) {
+        level = 5
+        maximum = 250
     }
-    basic.showNumber(επίπεδο)
+    basic.showNumber(level)
     basic.pause(500)
 })
 input.onButtonPressed(Button.B, function () {
-    επίπεδο += 1
-    μέγιστο += 50
-    if (επίπεδο < 5) {
-        επίπεδο = 5
-        μέγιστο = 250
+    level += 1
+    maximum += 50
+    if (level < 5) {
+        level = 5
+        maximum = 250
     }
-    basic.showNumber(επίπεδο)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```
 
-Τι θα συμβεί όταν πατηθεί το κουμπί `B` στο micro:bit;
+What will happen when the `B` button is pressed on the micro:bit?
 
---- choices ---
+\--- choices ---
 
-- ( ) Η στάθμη του ήχου θα αλλάξει κατά -1 και η ευαισθησία κατά -50.
+- ( ) The sound level will be changed by -1 and sensitivity by -50.
 
+  \--- feedback ---
 
-  --- feedback ---
+  Not quite! Pressing button `A` will make these changes, but not button `B`.
 
-  Όχι ακριβώς! Πατώντας το κουμπί `A` θα γίνουν αυτές οι αλλαγές, αλλά όχι το κουμπί `B`.
+  \--- /feedback ---
 
-  --- /feedback ---
+- ( ) The sound level will be changed by 5 and sensitivity by -50.
 
-- ( ) Η στάθμη του ήχου θα αλλάξει κατά 5 και η ευαισθησία κατά -50.
+  \--- feedback ---
 
-  --- feedback ---
+  Not quite! Neither button A or button B are programmed to change the sound level or sensitivity by these amounts.
 
-  Όχι ακριβώς! Ούτε το κουμπί A ούτε το κουμπί B έχουν προγραμματιστεί να αλλάζουν τη στάθμη ή την ευαισθησία του ήχου κατά αυτές τις τιμές.
+  \--- /feedback ---
 
-  --- /feedback ---
+- (x) The sound level will be changed by 1 and sensitivity by 50.
 
-- (x) Η στάθμη του ήχου θα αλλάξει κατά 1 και η ευαισθησία κατά 50.
+  \--- feedback ---
 
-  --- feedback ---
+  Awesome job! Button B has been programmed to increase the sound level by 1 and the sensitivity by 50.
 
-  Εκπληκτική δουλειά! Το κουμπί B έχει προγραμματιστεί να αυξάνει το επίπεδο ήχου κατά 1 και την ευαισθησία κατά 50.
+  \--- /feedback ---
 
-  --- /feedback ---
+\--- /choices ---
 
---- /choices ---
-
---- /question ---
+\--- /question ---
