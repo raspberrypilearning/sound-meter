@@ -1,13 +1,12 @@
-
---- question ---
+\--- question ---
 
 ---
-legend: Ερώτηση 2 από 3
----
 
-Αυτό το μπλοκ κώδικα δείχνει ένα μπλοκ βρόχου `every 500 ms`.
+## legend: Question 2 of 3
 
-Τι είναι ένας βρόχος;
+This block of code shows a `every 500 ms` loop block.
+
+What is a loop?
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -15,36 +14,36 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Ένταση Ήχου", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
 })
 ```
 
---- choices ---
+\--- choices ---
 
-- (x) Μια ακολουθία εντολών που επαναλαμβάνεται συνεχώς ή μέχρι να επιτευχθεί μια ορισμένη συνθήκη.
+- (x) A sequence of instructions that is repeated constantly or until a certain condition is reached.
 
-  --- feedback ---
+  \--- feedback ---
 
-Φανταστική δουλειά! Οι βρόχοι είναι μια έννοια που χρησιμοποιείται σε όλες τις γλώσσες προγραμματισμού. Οι βρόχοι επαναλαμβάνονται συνεχώς ή μέχρι να επιτευχθεί μια συνθήκη.
+Fantastic work! Loops are a concept used across all programming languages. Loops repeat constantly or until a condition is reached.
 
-  --- /feedback ---
+\--- /feedback ---
 
-- ( ) Μια συνθήκη που ελέγχει τι συμβαίνει σε ένα λογικό μπλοκ.
+- ( ) A condition that controls what happens in a logic block.
 
-  --- feedback ---
+  \--- feedback ---
 
-  Όχι ακριβώς. Μια συνθήκη μπορεί να χρησιμοποιηθεί για να συγκρίνει μια τιμή μεταβλητής με κάτι άλλο. Η συνθήκη δεν επαναλαμβάνεται.
+  Not quite. A condition can be used to compare a variable value with something else. The condition does not loop.
 
-  --- /feedback ---
+  \--- /feedback ---
 
-- ( ) Μια ακολουθία εντολών που εκτελεί μια συγκεκριμένη εργασία.
+- ( ) A sequence of instructions that performs a specific task.
 
-  --- feedback ---
+  \--- feedback ---
 
-  Όχι ακριβώς. Μια ακολουθία εντολών για μια συγκεκριμένη εργασία ονομάζεται `συνάρτηση`.
+  Not quite. A sequence of instructions for a specific task is called a `function`.
 
-  --- /feedback ---
+  \--- /feedback ---
 
---- /choices ---
+\--- /choices ---
 
---- /question ---
+\--- /question ---
