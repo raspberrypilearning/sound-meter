@@ -1,45 +1,45 @@
-## Reflectie
+## Reflection
 
-Beantwoord de drie vragen. Er zijn tips om je naar het juiste antwoord te leiden.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
+When you have answered each question, click on **Check my answer**.
 
-Veel plezier!
+Have fun!
 
---- question ---
+\--- question ---
 
 ---
-legend: Vraag 1 van 3
----
 
-Welk menu bevat de blokken voor `wanneer knop A wordt ingedrukt`{:class='microbitinput'} en `bij logo ingedrukt`{:class='microbitinput'}?
+## legend: Question 1 of 3
 
---- choices ---
+Which menu contains the blocks for `on button A pressed`{:class='microbitinput'} and `on logo pressed`{:class='microbitinput'}?
 
-- ( ) Basis
+\--- choices ---
 
-  --- feedback ---
+- ( ) Basic
 
-Niet helemaal! Het basismenu bevat blokken voor de basisfunctionaliteit van de micro:bit.
+  \--- feedback ---
 
-  --- /feedback ---
+Not quite! The Basic menu contains blocks for the basic functionality of the micro:bit.
 
-- (x) Invoer
+\--- /feedback ---
 
-  --- feedback ---
+- (x) Input
 
-Geweldig! Je hebt correct geantwoord, het invoermenu bevat alle invoer- en gebarenblokken.
+  \--- feedback ---
 
-  --- /feedback ---
+Awesome! You have answered correctly, the Input menu contains all the input and gesture blocks.
 
-- ( ) Logisch
+\--- /feedback ---
 
-  --- feedback ---
+- ( ) Logic
 
-Niet helemaal! Het Logica menu bevat blokken voor voorwaardelijke en Booleaanse logica.
+  \--- feedback ---
 
-  --- /feedback ---
+Not quite! The Logic menu contains blocks for conditional and Boolean logic.
 
---- /choices ---
+\--- /feedback ---
 
---- /question ---
+\--- /choices ---
+
+\--- /question ---
