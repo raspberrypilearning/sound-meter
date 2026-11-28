@@ -1,65 +1,64 @@
-
---- question ---
+\--- question ---
 
 ---
-legend: Vraag 3 van 3
----
-Hier is de code voor het programmeren van de `wanneer knop A wordt ingedrukt` en `wanneer knop B wordt ingedrukt` blokken.
+
+## legend: Question 3 of 3
+
+Here is the code for programming the `on button A pressed` and `on button B pressed` blocks.
 
 ```microbit
-let niveau = 0
+let level = 0
 let maximum = 0
 input.onButtonPressed(Button.A, function () {
-    niveau += -1
+    level += -1
     maximum += -50
-    if (niveau < 1) {
-        niveau = 5
+    if (level < 1) {
+        level = 5
         maximum = 250
     }
-    basic.showNumber(niveau)
+    basic.showNumber(level)
     basic.pause(500)
 })
 input.onButtonPressed(Button.B, function () {
-    niveau += 1
+    level += 1
     maximum += 50
-    if (niveau < 5) {
-        niveau = 5
+    if (level < 5) {
+        level = 5
         maximum = 250
     }
-    basic.showNumber(niveau)
+    basic.showNumber(level)
     basic.pause(500)
 })
 ```
 
-Wat gebeurt er als de `B` knop op de micro:bit wordt ingedrukt?
+What will happen when the `B` button is pressed on the micro:bit?
 
---- choices ---
+\--- choices ---
 
-- ( ) Het geluidsniveau wordt gewijzigd met -1 en de gevoeligheid met -50.
+- ( ) The sound level will be changed by -1 and sensitivity by -50.
 
+  \--- feedback ---
 
-  --- feedback ---
+  Not quite! Pressing button `A` will make these changes, but not button `B`.
 
-  Niet helemaal! Als je op knop `A` drukt, worden deze wijzigingen doorgevoerd, maar niet op knop `B`.
+  \--- /feedback ---
 
-  --- /feedback ---
+- ( ) The sound level will be changed by 5 and sensitivity by -50.
 
-- ( ) Het geluidsniveau wordt gewijzigd met -5 en de gevoeligheid met -50.
+  \--- feedback ---
 
-  --- feedback ---
+  Not quite! Neither button A or button B are programmed to change the sound level or sensitivity by these amounts.
 
-  Niet helemaal! Noch knop A, noch knop B zijn geprogrammeerd om het geluidsniveau of de gevoeligheid met deze hoeveelheden te wijzigen.
+  \--- /feedback ---
 
-  --- /feedback ---
+- (x) The sound level will be changed by 1 and sensitivity by 50.
 
-- (x) Het geluidsniveau zal worden gewijzigd met 1 en gevoeligheid met 50.
+  \--- feedback ---
 
-  --- feedback ---
+  Awesome job! Button B has been programmed to increase the sound level by 1 and the sensitivity by 50.
 
-  Goed gedaan! Knop B is geprogrammeerd om het geluidsniveau met 1 en de gevoeligheid met 50 te verhogen.
+  \--- /feedback ---
 
-  --- /feedback ---
+\--- /choices ---
 
---- /choices ---
-
---- /question ---
+\--- /question ---
